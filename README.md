@@ -1,2 +1,4 @@
-# PST-UB-reloaded
-A mod that makes Qwinn's original "PS:T Unfinished Business" available to PST:EE
+# PS:T Unfinished Business - Reloaded
+*A mod for PST and PST:EE, based on Qwinn's PS:T Unfinished Business*
+
+Coming soon...
