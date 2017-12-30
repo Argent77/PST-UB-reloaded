@@ -1,0 +1,164 @@
+
+// ========================== BEGIN Q_VARMacros Macro Definitions ============================
+
+// To add a variable to the VAR.VAR file, include this macro definition .tph file and then
+// do something like this in your .tp2.
+
+// COPY_EXISTING ~VAR.VAR~ ~VAR.TMP~
+//  SPRINT "Q_NewVarType"  ~GLOBAL  ~
+//  SPRINT "Q_NewVarName"  ~Ratbone                         ~
+//  SET    "Q_NewVarValue" = 0
+//  LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+// BUT_ONLY_IF_IT_CHANGES
+
+// COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+
+// Note the padded spaces.  The Q_NewVarType string should be padded to 8 spaces,
+// and the Q_NewVarName string should be padded to 32.  All existing variables in PS:T are
+// padded in that way within the VAR.VAR file.  It's very possible that they would still work
+// perfectly without the padding, but it makes your variables display very differently when
+// looking at the VAR.VAR file in Near Infinity.
+
+// The interim VAR.TMP file is necessary because directing the script to overwrite VAR.VAR via
+// COPY_EXISTING ~VAR.VAR~ ~~ results in "cannot access file" errors.
+
+// Here's a copy of the code that I used to employ these macros to create all 15 variables
+// added by the Restoration Pack.
+
+// COPY_EXISTING ~VAR.VAR~ ~VAR.TMP~
+
+//  SPRINT "Q_NewVarType"  ~AR0400  ~
+//  SPRINT "Q_NewVarName"  ~Grace_Fell_Comment              ~
+//  SET    "Q_NewVarValue" = 0
+//  LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+//  PATCH_FOR_EACH "S1" IN
+//    ~2Devils                         ~
+//    ~Current_Lower_Planes            ~
+//    ~Justifier                       ~
+//    ~Justifier_Lower_Planes          ~
+//    ~Ratbone                         ~
+//    ~RB_Name                         ~
+//    ~RB_Quest                        ~
+//    ~RC_Expln                        ~
+//    ~RC_Pendant                      ~
+//    ~RChaser                         ~
+//    ~RChaser2                        ~
+//    ~TimeResearch_Incarnations       ~
+//    ~TimeResearch_Language           ~
+//    ~TimeResearch_Ravel              ~
+//  BEGIN
+//    SPRINT "Q_NewVarType"  ~GLOBAL  ~
+//    SPRINT "Q_NewVarName"  ~%S1%~
+//    SET    "Q_NewVarValue" = 0
+//    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+//  END
+// BUT_ONLY_IF_IT_CHANGES
+//
+// COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+// ======================= BEGIN Q_VarVar_MakeVarIntoByteArray Definition =======================
+
+DEFINE_PATCH_MACRO Q_VarVar_MakeVarIntoByteArray
+BEGIN
+  DEFINE_ARRAY "Q_StringArray"
+  BEGIN
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  END
+  TO_UPPER "Q_VarType"
+  TO_UPPER "Q_VarName"
+  SET Q_Length = STRING_LENGTH EVALUATE_BUFFER ~%Q_VarType%~
+  INNER_PATCH ~%Q_VarType%~
+  BEGIN
+    FOR (i = 1; i <= 8; i += 1)
+    BEGIN
+      PATCH_IF i <= Q_Length
+        BEGIN READ_BYTE "i" - 1 "Q_Byte" END ELSE SET "Q_Byte" = 32
+      PATCH_IF "Q_Byte" < 48 BEGIN SET "Q_Byte" = 32 END
+      PATCH_IF "Q_Byte" > 90 BEGIN SET "Q_Byte" = 32 END
+      SET $Q_StringArray("%i%") = "Q_Byte"
+    END
+  END
+  SET Q_Length = STRING_LENGTH EVALUATE_BUFFER ~%Q_VarName%~
+  INNER_PATCH ~%Q_VarName%~
+  BEGIN
+    FOR (i = 9; i <= 40; i += 1)
+    BEGIN
+      PATCH_IF i - 8 <= Q_Length
+        BEGIN READ_BYTE "i" - 9 "Q_Byte" END ELSE SET "Q_Byte" = 32
+      PATCH_IF "Q_Byte" < 48 BEGIN SET "Q_Byte" = 32 END
+      PATCH_IF "Q_Byte" > 90 BEGIN SET "Q_Byte" = 32 END
+      SET $Q_StringArray("%i%") = "Q_Byte"
+    END
+  END
+END
+
+// ======================== END Q_VarVar_MakeVarIntoByteArray Definition ========================
+
+// =========================== BEGIN Q_VarVar_AddNewRecord Definition ===========================
+
+DEFINE_PATCH_MACRO Q_VarVar_AddNewRecord
+BEGIN
+  SPRINT "Q_VarType" ~%Q_NewVarType%~
+  SPRINT "Q_VarName" ~%Q_NewVarName%~
+  LAUNCH_PATCH_MACRO Q_VarVar_MakeVarIntoByteArray
+  DEFINE_ARRAY "Q_NewVarArray"
+  BEGIN
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  END
+  FOR (i = 1; i <= 40; i += 1) BEGIN SET $Q_NewVarArray("%i%") = $Q_StringArray("%i%") END
+  SET FoundPos = 0
+  SET CurPosition = 0x0
+  SET SkipFiftyTest = 1
+  WHILE CurPosition < Q_FileSize AND FoundPos = 0
+  BEGIN
+     SET StringPos = 1
+     SET GotoNextRecord = 0
+     READ_ASCII "CurPosition"       "Q_VarType" (8)
+     READ_ASCII "CurPosition" + 0x8 "Q_VarName" (32)
+     LAUNCH_PATCH_MACRO Q_VarVar_MakeVarIntoByteArray
+     WHILE StringPos <= 40 AND GotoNextRecord = 0 AND FoundPos = 0
+     BEGIN
+        PATCH_IF $Q_StringArray("%StringPos%") = $Q_NewVarArray("%StringPos%")
+        BEGIN SET StringPos = StringPos + 1 END
+        ELSE
+        BEGIN
+          PATCH_IF $Q_StringArray("%StringPos%") < $Q_NewVarArray("%StringPos%")
+          BEGIN
+            PATCH_IF SkipFiftyTest = 1
+            BEGIN
+               SET GotoNextRecord = 1
+               SET CurPosition = CurPosition + (0x2c * 50)
+               PATCH_IF CurPosition > Q_FileSize
+               BEGIN
+                  SET SkipFiftyTest = 0
+                  SET CurPosition = CurPosition - (0x2c * 50)
+               END
+            END
+            ELSE
+            BEGIN
+               SET GotoNextRecord = 1
+               SET CurPosition = CurPosition + 0x2c
+            END
+          END
+          ELSE PATCH_IF SkipFiftyTest = 1
+          BEGIN
+             SET SkipFiftyTest = 0
+             SET GotoNextRecord = 1
+             SET CurPosition = CurPosition - (0x2c * 50)
+          END
+          ELSE SET FoundPos = 1
+        END
+        PATCH_IF StringPos = 40 BEGIN SET FoundPos = 1 END
+     END
+  END
+  PATCH_IF FoundPos = 1
+  BEGIN
+    PATCH_IF StringPos < 40 BEGIN INSERT_BYTES "CurPosition" 0x2c END
+    WRITE_ASCIIE "CurPosition" + 0x0 "%Q_NewVarType%" #8
+    WRITE_ASCIIE "CurPosition" + 0x8 "%Q_NewVarName%" #32
+    WRITE_LONG "CurPosition" + 0x28 "Q_NewVarValue"
+    SET Q_FileSize = Q_FileSize + 0x2c
+  END
+END
+
+// ============================ END Q_VarVar_AddNewRecord Definition ============================

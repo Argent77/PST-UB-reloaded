@@ -1,0 +1,292 @@
+
+// ================ SKARDAVNELNATE'S RESTORED ELYCE AND COMPANY QUEST ===================
+// =================== FROM SKARDAVNELNATE'S AIP VERSION 20080408 =======================
+
+// ============================ WEIDUIZATION BY QWINN ===================================
+
+// Last Revision by Qwinn:  20080423
+// Revised by Argent77:     20171225
+
+// From SKARDAVNELNATE's Longlist:
+// ------------------------------
+// Elyce & Company
+// Originally these characters would only play out their animations if you weren't there to see it.
+// As well as turn against you if you refuse to help. Now they play out their animations and kill
+// each other if you refuse to help.
+
+// ELYCE.CRE
+// Default script 0400ELY.BCS
+
+// MAETH.CRE
+// Default script 0400MAE.BCS
+
+// TARIN.CRE
+// Default script 0400TAR.BCS
+
+// DLTCEP
+// Edit Areas
+// Load Area AR0400
+// Actors
+// Add actor
+// Creature ELYCE
+// Refresh fields
+// Position 622 1058
+// Destination 622 1058
+// Direction 12
+
+// Add actor
+// Creature MAETH
+// Refresh fields
+// Position 722 884
+// Destination 722 884
+// Direction 1
+
+// Add actor
+// Creature TARIN
+// Refresh fields
+// Position 567 1165
+// Destination 567 1165
+// Direction 9
+
+// AR0400.ARE
+// Actor 33
+// Name Elyce
+// Actor 34
+// Name Maeth
+// Actor 35
+// Name Tarin
+
+// 0400ELY.BCS
+// Add
+// IF
+//	OnCreation()
+// THEN
+// 	RESPONSE #100
+//		SetTeam(Myself,TEAM_1)
+// END
+
+// IF
+//	Help([0.0.TEAM_2])
+// THEN
+// 	RESPONSE #100
+// 		Enemy()
+//		EscapeArea()
+// END
+
+// Line 51 Global("Elyce","AR0400",0) -> GlobalLT("Elyce","AR0400",4)
+// Add !Global("Elyce","AR0400",2) as line 52
+// Line 70 Global("Elyce","AR0400",1) -> Global("Elyce","AR0400",2)
+// Add !Global("Maeth_DEAD","KAPUTZ",1) as line 71
+// Add !Global("Tarin_DEAD","KAPUTZ",1) as line 72
+// Line 80 GlobalGT("Elyce","AR0400",2) -> GlobalGT("Elyce","AR0400",3)
+
+// 0400MAE.BCS
+// 0400TAR.BCS
+// Add
+// IF
+//	OnCreation()
+// THEN
+//	RESPONSE #100
+//		SetTeam(Myself,TEAM_2)
+// END
+
+// IF
+//	Help([0.0.TEAM_1])
+// THEN
+// 	RESPONSE #100
+//		Enemy()
+//		Attack(LastAttackerOf(LastHelp))
+// END
+
+// IF
+// 	Help([0.0.TEAM_2])
+// THEN
+// 	RESPONSE #100
+//		EscapeArea()
+// END
+
+// Line 57 Global("Elyce","AR0400",0) -> GlobalLT("Elyce","AR0400",4)
+// Add !Global("Elyce","AR0400",1) as line 58
+// Add !Global("Elyce","AR0400",2) as line 59
+// Line 104 GlobalGT("Elyce","AR0400",2) -> GlobalGT("Elyce","AR0400",3)
+
+// 0400MAE.BCS
+// Add MoveToPoint([602.1028]) as line 100
+
+// 0400TAR.BCS
+// Add MoveToPoint([602.1068]) as line 100
+
+// DELYCE.DLG
+// Action 0, 3, 6, 8
+// Remove Enemy()
+
+// DMAETH.DLG
+// DTARIN.DLG
+// Action 2, 4, 6
+// Remove Enemy()
+
+// =========================== BEGIN ELYCE'S COMPANY QUEST =====================
+
+
+COMPILE ~%MOD_FOLDER%/Elyce/dlg/Elyce.d~
+
+// ELYCE.CRE - Default script 0400ELY.BCS
+COPY_EXISTING ~ELYCE.CRE~ ~override~
+  WRITE_ASCII 0x268 ~0400ELY~ #8
+ BUT_ONLY
+
+// MAETH.CRE - Default script 0400MAE.BCS
+COPY_EXISTING ~MAETH.CRE~ ~override~
+  WRITE_ASCII 0x268 ~0400MAE~ #8
+ BUT_ONLY
+
+// TARIN.CRE - Default script 0400TAR.BCS
+COPY_EXISTING ~TARIN.CRE~ ~override~
+  WRITE_ASCII 0x268 ~0400TAR~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~AR0400.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 622
+    fj_loc_y          = 1058
+    fj_orientation    = 12
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Elyce~
+    fj_cre_resref     = ~ELYCE~
+    fj_dlg_resref     = ~DELYCE~
+    fj_bcs_default    = ~0400ELY~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 722
+    fj_loc_y          = 884
+    fj_orientation    = 1
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Maeth~
+    fj_cre_resref     = ~MAETH~
+    fj_dlg_resref     = ~DMAETH~
+    fj_bcs_default    = ~0400MAE~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 567
+    fj_loc_y          = 1165
+    fj_orientation    = 9
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Tarin~
+    fj_cre_resref     = ~TARIN~
+    fj_dlg_resref     = ~DTARIN~
+    fj_bcs_default    = ~0400TAR~
+  END
+BUT_ONLY
+
+
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT sc_kaputz_maeth ~"Maeth_DEAD_KAPUTZ","GLOBAL"~
+  OUTER_TEXT_SPRINT sc_kaputz_tarin ~"Tarin_DEAD_KAPUTZ","GLOBAL"~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT sc_kaputz_maeth ~"Maeth_DEAD","KAPUTZ"~
+  OUTER_TEXT_SPRINT sc_kaputz_tarin ~"Tarin_DEAD","KAPUTZ"~
+END
+<<<<<<<< .../pst-ub/inlinedfile/addelyce.baf
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetTeam(Myself,TEAM_1)
+END
+
+IF
+  %sc_help_init%
+  %sc_team_team2%
+THEN
+  RESPONSE #100
+    Enemy()
+    EscapeArea()
+END
+>>>>>>>>
+EXTEND_TOP ~0400ELY.BCS~ ~.../pst-ub/inlinedfile/addelyce.baf~ EVAL
+
+COPY_EXISTING ~0400ELY.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY 
+      ~IF[ %TAB%%WNL%]+Global("Elyce","AR0400",0)[ %TAB%%WNL%]+THEN~
+      ~IF GlobalLT("Elyce","AR0400",4) !Global("Elyce","AR0400",2) THEN~
+    REPLACE_TEXTUALLY
+      ~GlobalGT("Elyce","AR0400",2)~
+      ~GlobalGT("Elyce","AR0400",3)~
+    REPLACE_TEXTUALLY
+      ~Global("Elyce","AR0400",1)~
+      ~Global("Elyce","AR0400",2) !Global(%sc_kaputz_maeth%,1) !Global(%sc_kaputz_tarin%,1)~
+  END
+ BUT_ONLY
+
+
+<<<<<<<< .../pst-ub/inlinedfile/addmaethtarin.baf
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetTeam(Myself,TEAM_2)
+END
+
+IF
+  %sc_help_init%
+  %sc_team_team1%
+THEN
+  RESPONSE #100
+    Enemy()
+    Attack(LastAttackerOf(LastHelp))
+END
+
+IF
+  %sc_help_init%
+  %sc_team_team2%
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+>>>>>>>>
+EXTEND_TOP ~0400MAE.BCS~ ~.../pst-ub/inlinedfile/addmaethtarin.baf~ EVAL
+EXTEND_TOP ~0400TAR.BCS~ ~.../pst-ub/inlinedfile/addmaethtarin.baf~ EVAL
+
+COPY_EXISTING ~0400MAE.BCS~ ~override~
+              ~0400TAR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY
+      ~GlobalGT("Elyce","AR0400",2)~
+      ~GlobalGT("Elyce","AR0400",3)~
+    REPLACE_TEXTUALLY
+      ~Global("Elyce","AR0400",0)~
+      ~GlobalLT("Elyce","AR0400",4) !Global("Elyce","AR0400",1) !Global("Elyce","AR0400",2)~
+  END
+ BUT_ONLY
+
+COPY_EXISTING ~0400MAE.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY
+      ~Attack("Tarin")~
+      ~MoveToPoint([602.1028]) Attack("Tarin")~
+  END
+ BUT_ONLY
+
+COPY_EXISTING ~0400TAR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY
+      ~Attack("Maeth")~
+      ~MoveToPoint([602.1068]) Attack("Maeth")~
+  END
+ BUT_ONLY
+
+// String 33606 originally says "sister", should say "lover"
+// PSTEE note: Already fixed in PSTEE.
+ACTION_IF (IS_PST) BEGIN
+  STRING_SET 33606 @33606 /* ~"Your lover wanted me to stop the two of you from fighting."~ */
+END

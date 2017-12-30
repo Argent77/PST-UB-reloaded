@@ -1,0 +1,39 @@
+//========================================= VERSION 3.00 ==============================================
+// Revised by Argent77
+
+COMPILE ~%MOD_FOLDER%/Mebbeth/dlg/Mebbeth.d~
+
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT sc_setinternal_1_open ~SetGlobal("cd_int_1","LOCALS"~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT sc_setinternal_1_open ~SetInternal(Myself,INTERNAL_1~
+END
+<<<<<<<< .../pst-ub/inlinedfile/0102mebb_top.baf
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    %sc_setinternal_1_open%,0)
+END
+
+IF
+  Global("Player_Dream","GLOBAL",1)
+THEN
+  RESPONSE #100
+    Dialogue(Protagonist)
+END
+>>>>>>>>
+COPY_EXISTING ~0102MEBB.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    SET ofs1 = INDEX_BUFFER(~OnCreation()~)
+    PATCH_IF (ofs1 >= 0) BEGIN
+      SET ofs1 = RINDEX_BUFFER(~^IF~ ofs1)
+      SET ofs2 = INDEX_BUFFER(~^END~ ofs1)
+      PATCH_IF (ofs2 > ofs1) BEGIN
+        SET ofs2 += 3 // include final "END"
+        DELETE_BYTES ofs1 (ofs2 - ofs1)
+        INSERT_FILE ofs1 ~.../pst-ub/inlinedfile/0102mebb_top.baf~ EVAL
+      END
+    END
+  END
+ BUT_ONLY

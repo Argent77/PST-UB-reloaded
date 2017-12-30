@@ -1,0 +1,142 @@
+// ================================================================================================
+//                         PLANESCAPE: TORMENT UNFINISHED BUSINESS
+//                     COMPONENT:  RESTORED MORE MORTE MORTUARY MOMENTS
+//                                BY QWINN (Paul Escalona)
+// ================================================================================================
+// Last Modification Date:  2008/05/09 - v1
+// ================================================================================================
+// Revised by Argent77
+// ================================================================================================
+
+
+COMPILE ~%MOD_FOLDER%/MorteIntro/dlg/MorteIntro.d~
+
+// PSTEE note: SetDialog() must be added after JoinParty, or the dialog file will be overridden by 
+// the value defined in PDIALOG.2DA.
+ACTION_IF (IS_PSTEE) BEGIN
+  <<<<<<<< .../pst-ub/inlinedfile/MorteIntro_pstee.d
+  REPLACE_TRANS_ACTION DMORTE BEGIN 243 END BEGIN 0 END ~\(JoinParty.*(.*)\)~ ~\1 SetDialog("DMorte1")~
+  >>>>>>>>
+  COMPILE ~.../pst-ub/inlinedfile/MorteIntro_pstee.d~
+END
+
+// If Qwinn's PST Tweak Pack has been installed, then the "GiveItemCreate("CHEATS",1,0,0) from it
+// needs to be moved from DMORTE1 to DMORTE
+
+ACTION_IF (FILE_EXISTS ~override/Q!TCHEAT.xxx~) BEGIN
+  COMPILE ~%MOD_FOLDER%/MorteIntro/dlg/Q!TCHEAT.d~
+END
+
+// ================================== MORTE'S ORIGINAL INTRO ================================
+// ========================== ORIGINALLY RESTORED BY RESTORATION PACK =======================
+// ======================== COMPLETELY REVAMPED AND WEIDUIZED BY QWINN ======================
+
+
+// The main Morte dialog file the game ships with (DMORTE.DLG) contains an introductory conversation
+// with Morte that is much like all the other conversations in game - you have multiple options in
+// what you say, lots of different conversation paths to explore, etc.  Someone must have felt
+// that players just starting out wouldn't be familiar with so many dialog options and would
+// need their hand held a bit more at the beginning, so they produced DMORTE1.DLG, which has a
+// lobotomized, railroaded version with almost no options in your responses.
+
+// This UB component restores Morte's introduction to the originally intended more complex version,
+// for those who enjoy multiple dialog options and conversational paths.  You can get quite a lot
+// more dialog out of Morte in the original intro if you dig for it.
+
+
+// I'm doing this totally different from the way Restoration Pack did it.  Here are the differences
+// between my version and Restoration Pack's:
+
+// 1) After the original conversation is over, I go back to using DMORTE1.DLG, because the interjections
+// around the 1st and 2nd rooms are a bit more fleshed out in the version that shipped.
+
+// 2) I'm -not- completely overwriting DMORTE1.DLG with DMORTE.DLG and changing the triggers.
+// DMORTE1.DLG remains untouched.
+
+// 3) If you simply ignore Morte and abort the "original intro", then talk to him again, he'll repeat
+// his concern for you (reasonable since you just ignored him) and then you will get the DMORTE1.DLG
+// conversation that actually shipped.  So if you install this mod, you -can- still see either
+// introductory conversation, you don't have to uninstall to see the way the game shipped.
+
+
+// Did I make any changes to the "original intro" dialog as it was actually in DMORTE.DLG?  Only
+// three:
+
+// 1)  The first line by Morte when you wake up doesn't have the audio file attached.  I make sure
+// he keeps his voice.
+
+// 2)  Removed a leftover debug response to that first line that was clearly meant only for testing,
+// skips the whole conversation (I use it myself when testing the early game, heh)
+
+// 3)  The "original intro" has the following as what's written on your back (STRREF 1117):
+
+// ===========================================================================================
+// ~"Looks like directions..." Morte clears his throat. "Let's see. It starts with..."
+//
+// NOTE: "I know you feel like you've been drinking a few kegs of Styx wash, but you need to
+// center yourself. Among your possessions should be a JOURNAL that'll shed some light on the
+// dark of the matter. PHAROD should be able to fill you in on the rest of the chant, if he's
+// not in the deadbook already.
+//
+// "Don't lose this scrap of flesh OR the journal or we'll be up the Styx again, right? And trust
+// me, whatever you do, DO NOT tell anyone WHO you are, WHAT happens to you, or WHERE you came
+// from or you'll find yourself on a short trip to the crematorium."~
+// ===========================================================================================
+
+// This doesn't match the many other STRREF's that quote the scars on your back (like your journal,
+// asking Morte later, etc.) and honestly, it's not very good.  You'd expect what you've had carved
+// on your back to be a bit more concise and a good bit less conversationally chatty, "right?"
+//
+// The version of your scars that shipped with the game is much better, and not fixing it would
+// make it inconsistent with the rest of the game.  I make sure it all stays consistent. (see below)
+
+// Otherwise, the quite long and involved "original intro" you're getting here is exactly as it was
+// written by the Black Isle folks and as it shipped with the game in DMORTE.DLG.  Enjoy!
+
+
+
+STRING_SET 1117 @1117
+// See 39516 for similar text
+/* ~"Looks like directions..." Morte clears his throat. "Let's see. It starts with..."
+
+"I know you feel like you've been drinking a few kegs of Styx wash, but you need to CENTER yourself. Among your possessions is a JOURNAL that'll shed some light on the dark of the matter. PHAROD can fill you in on the rest of the chant, if he's not in the dead-book already."
+
+"Don't lose the journal or we'll be up the Styx again. And whatever you do, DO NOT tell anyone WHO you are or WHAT happens to you, or they'll put you on a quick pilgrimage to the crematorium. Do what I tell you: READ the journal, then FIND Pharod."~ */
+
+
+COPY_EXISTING ~MORTE.CRE~ ~override~
+  READ_ASCII 0x004 sig (4)
+  WRITE_ASCII CRE_OFS_DIALOG ~DMORTE~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~0202INTR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~EndCutSceneMode()~ ~SetDialog("DMorte1") EndCutSceneMode()~
+  END
+ BUT_ONLY
+
+
+// ============================== MORTE COMMENTS ON DHALL'S BOOK ============================
+// ========================== ORIGINALLY RESTORED BY SKARDAVNELNATE =========================
+// ============================= CHANGED AND WEIDUIZED BY QWINN =============================
+
+// SKARDAVNELNATE restored this interjection with two script changes, but I do it very differently.
+
+COPY_EXISTING ~0202CS2.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(Set\)?Global\(Set\)?("Mortuary_Walkthrough","GLOBAL",3)~ ~SetGlobal("Mortuary_Walkthrough","GLOBAL",2)~
+  END
+ BUT_ONLY
+
+// Note: PSTEE supports multiple variants to start cutscenes.
+COPY_EXISTING ~0202TRG2.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY 
+     ~\(StartCutScene\(Ex\)?("0202cs3"\(\,.*\)?)\)~ ~SetGlobal("Mortuary_Walkthrough","GLOBAL",3) \1~
+  END
+ BUT_ONLY
+
+// The other changes 0202CS3.BCS to makes Morte switch to DMORTE2.DLG for the length of this
+// cutscene, then back. Since the exact same conversation exists in DMORTE.DLG, I prefer to do
+// it by leaving the script as is and just activating that state within DMORTE.DLG.  See MorteIntro.d.
+

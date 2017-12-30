@@ -1,0 +1,281 @@
+
+// ============== SKARDAVNELNATE'S RESTORED CURST CITIZENS ========================
+
+// Modification by SKARDAVNELNATE as of AIP v 20080408
+// WeiDUization by Qwinn
+// Revised by Argent77
+
+// ======================= Longlist Documentation: ================================
+
+// Curst Population
+// 7 added characters for upper and lower Curst.
+
+// Export CRSTFEM.CRE
+// Remame CSTCPR1.CRE
+// Place in override folder
+
+// Export CRSTFEM2.CRE
+// Remame CSTCPR2.CRE
+// Place in override folder
+
+// Export CRSTFEM3.CRE
+// Remame CSTCPR3.CRE
+// Place in override folder
+
+// Export CRSTMAL.CRE
+// Remame CSTCSER.CRE
+// Place in override folder
+
+// Export CRSTMAL2.CRE
+// Remame CSTCSUS.CRE
+// Place in override folder
+
+// Export CRSTMAL3.CRE
+// Remame CSTCANG.CRE
+// Place in override folder
+
+// Export CRSTMAL4.CRE
+// Remame CSTCROG.CRE
+// Place in override folder
+
+// CSTCPR1.CRE
+// Name StrRef: 1736
+// Apparent name StrRef: 1736
+// Dialog DCSTCPR1.DLG
+
+// CSTCPR2.CRE
+// Name StrRef: 1742
+// Apparent name StrRef: 1742
+// Dialog DCSTCPR2.DLG
+
+// CSTCPR3.CRE
+// Name StrRef: 1736
+// Apparent name StrRef: 1736
+// Dialog DCSTCPR3.DLG
+
+// CSTCSER.CRE
+// Dialog DCSTCSER.DLG
+
+// CSTCSUS.CRE
+// Name StrRef: 52754
+// Apparent name StrRef: 52754
+// Dialog DCSTCSUS.DLG
+
+// CSTCANG.CRE
+// Name StrRef: 53778
+// Apparent name StrRef: 53778
+// Dialog DCSTCANG.DLG
+
+// CSTCROG.CRE
+// Dialog CSTCROG.DLG
+
+
+// DLTCEP
+// Edit Areas
+// Load Area AR0700
+// Actors
+// Add actor
+// Creature CSTCPR2
+// Refresh fields
+// Position 460 1915
+// Destination 460 1915
+// Diection 14
+
+// Add actor
+// Creature CSTCPR1
+// Refresh fields
+// Position 815 945
+// Destination 815 945
+// Diection 12
+
+// Add actor
+// Creature CSTCSER
+// Refresh fields
+// Position 1010 1990
+// Destination 1010 1990
+// Diection 8
+
+// Add actor
+// Creature CSTCSUS
+// Refresh fields
+// Position 930 365
+// Destination 930 365
+// Diection 1
+
+// Load external area override\AR0701.ARE
+// Add actor
+// Creature CSTCANG
+// Refresh fields
+// Position 2885 2080
+// Destination 2885 2080
+// Diection 2
+
+// Add actor
+// Creature CSTCPR3
+// Refresh fields
+// Position 2170 1705
+// Destination 2170 1705
+// Diection 2
+
+// Add actor
+// Creature CSTCROG
+// Refresh fields
+// Position 2420 2860
+// Destination 2420 2860
+// Diection 12
+
+// AR0700.ARE
+// Actor 65 Name Drunk Harlot
+// Actor 66 Name Sharlene
+// Actor 67 Name Servant
+// Actor 68 Name Crazy
+
+// AR0701.ARE
+// Actor 64 Name Angry
+// Actor 65 Name Harlot
+// Actor 66 Name Rogue
+
+// ==================================================================================
+
+// The following is also in the documentation, but is taken care of in the Fixpack.
+
+// DCSTCPR3.DLG
+// Action 3, 4 GivePartyGold -> CreatePartyGold
+
+// DCSTCROG.DLG
+// State trigger 0 True -> !Global("Curst_Rogue_Paid","GLOBAL",1)
+// Action 1, 3 GivePartyGold -> CreatePartyGold
+
+
+// ==================================================================================
+
+COPY_EXISTING ~CRSTFEM.CRE~  ~override/CSTCPR1.CRE~
+  WRITE_LONG 0x8 1736 // Harlot
+  WRITE_LONG 0xc 1736 // Harlot
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCPR1~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTFEM2.CRE~ ~override/CSTCPR2.CRE~
+  WRITE_LONG 0x8 1742 // Drunk Harlot
+  WRITE_LONG 0xc 1742 // Drunk Harlot
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCPR2~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTFEM3.CRE~ ~override/CSTCPR3.CRE~
+  WRITE_LONG 0x8 1736 // Harlot
+  WRITE_LONG 0xc 1736 // Harlot
+  WRITE_LONG 0x1c 10  // 10 gold needed for her quest
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCPR3~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTMAL.CRE~  ~override/CSTCSER.CRE~
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCSER~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTMAL2.CRE~ ~override/CSTCSUS.CRE~
+  WRITE_LONG 0x8 52754 // Crazy Curst Citizen
+  WRITE_LONG 0xc 52754 // Crazy Curst Citizen
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCSUS~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTMAL3.CRE~ ~override/CSTCANG.CRE~
+  WRITE_LONG 0x8 53778 // Angry Curst Citizen
+  WRITE_LONG 0xc 53778 // Angry Curst Citizen
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCANG~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTMAL4.CRE~ ~override/CSTCROG.CRE~
+  WRITE_ASCII CRE_OFS_DIALOG ~DCSTCROG~ #8
+  WRITE_LONG 0x1c 107 // Used to pay you 50 in his dialog, and some more if you choose to kill him for more
+ BUT_ONLY
+
+COPY_EXISTING ~AR0700.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 460
+    fj_loc_y          = 1915
+    fj_orientation    = 14
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Drunk Harlot~
+    fj_cre_resref     = ~CSTCPR2~
+    fj_dlg_resref     = ~DCSTCPR2~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 815
+    fj_loc_y          = 945
+    fj_orientation    = 12
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Sharlene~
+    fj_cre_resref     = ~CSTCPR1~
+    fj_dlg_resref     = ~DCSTCPR1~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1010
+    fj_loc_y          = 1990
+    fj_orientation    = 8
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Servant~
+    fj_cre_resref     = ~CSTCSER~
+    fj_dlg_resref     = ~DCSTCSER~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 930
+    fj_loc_y          = 365
+    fj_orientation    = 1
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Crazy~
+    fj_cre_resref     = ~CSTCSUS~
+    fj_dlg_resref     = ~DCSTCSUS~
+  END
+ BUT_ONLY
+
+
+COPY_EXISTING ~AR0701.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2885
+    fj_loc_y          = 2080
+    fj_orientation    = 2
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Angry~
+    fj_cre_resref     = ~CSTCANG~
+    fj_dlg_resref     = ~DCSTCANG~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2170
+    fj_loc_y          = 1705
+    fj_orientation    = 2
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Harlot~
+    fj_cre_resref     = ~CSTCPR3~
+    fj_dlg_resref     = ~DCSTCPR3~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2420
+    fj_loc_y          = 2860
+    fj_orientation    = 12
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Rogue~
+    fj_cre_resref     = ~CSTCROG~
+    fj_dlg_resref     = ~DCSTCROG~
+  END
+ BUT_ONLY
+
+// ==============================================================================

@@ -1,0 +1,25 @@
+// ================================================================================================
+//                        RESTORED ALLEY OF DANGEROUS ANGLES THUGS
+//                                BY QWINN (Paul Escalona)
+// ================================================================================================
+// Last Modification Date:  2008/05/09 - v1
+// ================================================================================================
+// Revised by Argent77
+// ================================================================================================
+
+
+// All but two of the minor thugs in the Alley of Dangerous Angles are basically lobotomized - they
+// use the GATHUG and BATHUG dialogue files that only make sense if used, if at all, near
+// the zone entrance where the tolltakers are, and that only care whether you owe the toll or not,
+// otherwise oblivious to events around them.  This restores the unused DGATHUG and DBATHUG
+// dialogs that make them aware of events as they unfold.
+
+// All files and strings used are in the original game, I only needed to fix state triggers
+// in the restored dialog files.
+
+COMPILE ~%MOD_FOLDER%/AlleyThug/dlg/AlleyThug.d~
+
+COPY_EXISTING ~AR0301.INI~ ~override~
+  REPLACE_TEXTUALLY ~\(dialog[ %TAB%]+=\) GATHUG~ ~\1 DGATHUG~
+  REPLACE_TEXTUALLY ~\(dialog[ %TAB%]+=\) BATHUG~ ~\1 DBATHUG~
+ BUT_ONLY

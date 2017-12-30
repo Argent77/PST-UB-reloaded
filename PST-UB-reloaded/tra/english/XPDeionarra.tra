@@ -1,0 +1,190 @@
+@1 = ~"I will let your daughter know you thought of her at the end, Mebbeth. May the Planes receive you kindly."~
+@2 = ~"Hello, Kesai. I bring you news of your mother."~
+@3 = ~Kesai sighs. "Must you remind me always? I am no happier about my lineage now than I was when you first told me of it."~
+@4 = ~"She is dead, Kesai."~
+@5 = ~"Very well, I will not trouble you about her any longer. Farewell."~
+@6 = ~Kesai stops abruptly, then laughs. "You must be joking. Ravel dead? How? What could possibly kill her?"~
+@7 = ~"I was forced to kill her in self-defense. I took no pleasure in it."~
+@8 = ~"I killed her. She was a great evil, as you yourself told me, and it needed to be put to an end."~
+@9 = ~"She died by my hand. The hag deserved it, as you well know."~
+@10 = ~"I... see." Several conflicting expressions cross her exotic visage, difficult to interpret. "And why do you feel a need to tell me this?"~
+@11 = ~"Because there's more. She spoke of you near the end."~
+@12 = ~"I suppose there was no need. Never mind."~
+@13 = ~Kesai recoils, looking terrified. "She did? May the Powers help me... what did she say?"~
+@14 = ~"Let me explain, please. It wasn't Ravel, exactly, that spoke of you. Ravel has still been living in Sigil all this time, in a way, or various aspects of her did. One aspect was an old herbalist midwife who made her home in Ragpicker's Square. Her name was Mebbeth."~
+@15 = ~"Mebbeth? I've heard of her, but I've never met her. She's one of the few people in the Hive that some in the Upper Wards would occasionally seek out, for her charms and herbs."~
+@16 = ~"Yes, that sounds like the woman I speak of. After my confrontation with Ravel in the Lady's maze, I visited Mebbeth, and there discovered that Mebbeth was dying. As an aspect of Ravel, she could not long survive the true Ravel's death."~
+@17 = ~Kesai is listening intently, fascinated by your story. "Go on..."~
+@18 = ~"Before Mebbeth died, she spoke with regret that she could not show you kindness, for as she put it, 'There is a saying on the Planes, that a hag's kindness is crueler than her hate, and poisons all it touches.'"~
+@19 = ~"Are you saying that this Mebbeth, that she wasn't evil, like my mother? You just said she was a part of her."~
+@20 = ~"An aspect, yes. Even Ravel had a kind side, I think, and I believe Mebbeth was the purest expression of that part of her. She showed me kindness, and asked for little in return. I'm grateful to her."~
+@21 = ~Kesai looks at you, even more conflicted now. "And you think this part of her wished to be a mother to me, to show me kindness, but feared her nature would bring me harm?"~
+@22 = ~"That is what I gathered from her last words, yes."~
+@23 = ~She shudders involuntarily, then sighs. "I'm not sure if I should be grateful that you've told me this. But now that I know, I have to know the full truth of it. Give me a moment to ask my father of this."~
+@24 = ~"Take your time. I'll wait here, if you don't mind. I would know what he says also."~
+@25 = ~Kesai stares at you silently for a time, then nods. "Give me a moment." She turns from you, and begins to mutter softly as she did once before... the air seems to shimmer around her slightly, and fills with a coppery smell, like warm blood...~
+@26 = ~You lean towards Kesai, attempting to hear what she's muttering.
+
+"Haughazanenel, Banished Prince of Ithag, Marquis of the Bloody Shadow, my father, hear me, for I must call upon you once again..."~
+@27 = ~Her voice is low and hushed as she continues, and the only thing you can hear in her voice is a deep sadness.~
+@28 = ~Kesai returns to you, her exotic eyes rimmed with tears. "My father confirms your tale. My mother is indeed no longer among the living."~
+@29 = ~"As I said. I am sorry, Kesai. I will leave you to your thoughts. Farewell."~
+@30 = ~"As I said. Farewell, Kesai-Serris."~
+@31 = ~"Thank you for taking the time to let me know. It would have been worse always wondering if she would someday come for me. Farewell."~
+@32 = ~"Wait a moment, please. There is more. My father said that you showed my mother a kindness at the end, one he would like to repay."~
+@33 = ~"A kindness? You mean the barbed seed from the garden I gave her?"~
+@34 = ~"Precisely. My father asked me to tell you that something you seek lies in your dreams."~
+@35 = ~"But I don't dream. I haven't for as long as I can remember."~
+@36 = ~"A man in the Foundry claims to be able to build a machine that would allow me to dream, but I haven't finished following up on that."~
+@37 = ~"I found a means to dream again, but I didn't find anything I sought in them."~
+@38 = ~"Father says there is a way. You will need to find it. When you have had a dream, return to me."~
+@39 = ~"Truly? How strange. If you believe him, then I would suggest completing his machine and using it. Come back to me when you have done so."~
+@40 = ~"All right. If I succeed in experiencing a dream, I shall return. Farewell."~
+@41 = ~"Perhaps you should try again. Perhaps..."~
+@42 = ~She sighs, pondering you, then seems to come to a reluctant decision. "Perhaps I can be of help in this matter. You know that I've always been fascinated with dreams. Learning of my heritage has made me realize why. The blood of the Gray Wastes in me means I have power over dreams, though I've never used it because I never knew I possessed it. But perhaps I could use it on your behalf in this instance. Hags are known to ride men's dreams, and turn them to nightmare, and ride them to their death."~
+@43 = ~"I doubt I could do something like that, nor would I want to, but it is possible I could accompany you in your dreams, and could perhaps help you find whatever it is my father has spoken of. Would you be willing? I realize it would be a great invasion of privacy, but perhaps I could render aid that would make it worthwhile to you."~
+@44 = ~"My lady, I would welcome you in my dreams, for I suspect you'll have a place there regardless."~
+@45 = ~"I would appreciate any aid you can render, Kesai. Thank you kindly."~
+@46 = ~"This makes me uncomfortable. I'm sorry, but I think I'll have to decline, though I thank you for the offer."~
+@47 = ~"My dreams are my own, half-hag. Stay out of them."~
+@48 = ~Kesai flashes you a brilliant fanged smile. "My, you *are* a charmer. Perhaps we'll have more to discuss along these lines when we're done."~
+@49 = ~Out of the corner of your eye, you notice Annah bristling, her tail lashing back and forth, but she says nothing.~
+@50 = ~Out of the corner of your eye, you notice that Grace arches a delicate eyebrow at this, but she remains silent.~
+@51 = ~"All right. Give me some time to prepare myself. Come back in a day, and we'll go to this dream machine you spoke of."~
+@52 = ~"I have found a means to dream, Kesai. In the Foundry exists a machine, one that a former self of mine commissioned long ago. It allowed me to dream."~
+@53 = ~"Are you ready, Kesai? I think it's time we explored my dreams."~
+@54 = ~"Not yet. I need a little more time. Remember, I've never tried this before, and only recently found out that I'd even be capable of it. It shouldn't take long for me to try what I have in mind as practice, though. Come back later."~
+@55 = ~Kesai looks a bit disheveled, but strangely more... confident... than the last time you saw her. "Hello again. And before you ask, yes, I'm sure I can help you now. Nenny volunteered to allow me to visit her dreams last night. I figured if anyone's dreams should be relatively safe to visit, it would be hers." She pauses, then whispers. "I had *no* idea. I don't think *she* has any idea."~
+@56 = ~Morte bobs up and down. "Oh, you *can't* leave it at that. C'mon. I *have* to know."~
+@57 = ~Kesai shakes her head. "No, I promised to respect her privacy. I won't share what was there. I shouldn't have even said that much, I'm afraid. I'm just... still... recovering." She closes her eyes for a moment, and gulps at the memory.~
+@58 = ~"That's too bad, I'm as intrigued as Morte. But very well, I won't pry."~
+@59 = ~"Really? What were her dreams like?"~
+@60 = ~"I understand. Please remember to add my thanks to your own for her help in this."~
+@61 = ~"I'm not surprised. The sweetest ones are always hiding the darkest thoughts. What did you see?"~
+@62 = ~Morte starts banging his forehead against the nearby wall. "The..." *bang* "Planes..." *bang* "are..." *bang* "so..." *bang* "CRUEL!*"~
+@63 = ~"Thank you for understanding. And you have my word that I'll keep whatever we find in your dreams in the same confidence. Shall we go?"~
+@64 = ~"Ready when you are, my lady."~
+@65 = ~"Let's. And Kesai? Thank you again for this."~
+@66 = ~"I've changed my mind. I don't think I want to do this."~
+@67 = ~"Very well. But I still feel indebted to you. If you change your mind, I will still do what I can to help."~
+@68 = ~"I shouldn't come in with you, but I should be able to reach your dreams from out here. You may or may not perceive me in your dreams - Nenny didn't." She shudders again, and Morte mutters in frustration. "Go on in. I'll be there watching, and keep an eye out for anything that could be of help to you."~
+@69 = ~"I shouldn't come in with you, but I should be able to reach your dreams from out here. You may or may not perceive me in your dreams - Nenny didn't." She shudders again. "Go on in. I'll be there watching, and keeping an eye out for anything that could be of help to you."~
+@70 = ~"Oh, and there's something else. I do not have the power to let you bring anything you find in your dreams out with you, but I *should* be able to let you bring things *in*. Should it be necessary, anything you're carrying with you when you enter the machine should be available to you in your dreams. Beware, however. Anything you consume or drop in your dreams will likely be gone forever. Good luck!"~
+@71 = ~Once again, you find yourself under a hangman's noose. The gravelly voice cackles, "*Another* dream? Another! Another! Hahahahaha!"~
+@72 = ~As before, your body seems strangely light and airy, like you've lost control of it. The dream soon fragments, though, and each image slips from your mind as soon as the next appears. You can hold on to nothing else upon waking.~
+@73 = ~Once again, you find yourself under a hangman's noose. You find yourself clutching a barbed seed tightly in your left hand. The gravelly voice cackles, "*Another* dream? Another! Another! Wait? Who? Intruders!"~
+@74 = ~As before, your body seems strangely light and airy, like you've lost control of it. This time, however, the winds that blow you about seem directed somehow. You know you are not alone, though you cannot perceive another soul.~
+@75 = ~Once again, you find yourself under a hangman's noose. The gravelly voice seems enraged. "*No*! Dreams are not for shaping! Intruder! Hag! Begone!"~
+@76 = ~As before, your body seems strangely light and airy, like you've lost control of it. This time, however, you can sense Kesai shaping the dream, returning you to the dream of UnderSigil. You vaguely sense a third presence, but you cannot identify it.~
+@81 = ~You find yourself in the Mortuary, surrounded by those you've coerced via various means to follow you. They are speaking to you, but their words pass over and past you like the sound of many shuffling feet. As they prattle on with their inane questions, you check off in your mind all the preparations you've made for this journey...~
+@82 = ~You find yourself in your room in the Festhall, and you approach the storage closet you had commissioned, the one that can only be opened if you know what's inside. You move to put three objects inside, the final pieces of your legacy to your future incarnations should your trip to the Negative Material Plane not go as planned.~
+@83 = ~From the edge of your vision, a strikingly exotic looking woman approaches, with fangs and blue skin. You could swear you know her, yet you're also sure you've never seen her before. How these things can both be true doesn't seem to bother you much, for some reason.~
+@84 = ~"Who are you?"~
+@85 = ~"Oh, just another aspiring Sensate, looking around the Festhall. I saw you through your open door, and couldn't resist finding out more about you. May I ask you what you're doing?"~
+@86 = ~"I'm preparing for a *very* dangerous journey. Always have to think several steps ahead. I have a habit of forgetting things, so I'm just leaving myself some mementos."~
+@87 = ~"I see, how fascinating! Such as?" She looks to see what you hold in your hands, but when you look down all you are holding are three barbed seeds.~
+@88 = ~"Ah, well, there's a key... I had these doors designed so that you must use the key from the *inside*. You must be able to clearly visualize something inside in order to open them. Clever, eh? And a message to myself, but no, you may *not* read it. And lastly, a stout little weapon I picked up in UnderSigil the other day. I can't make any use of it, but maybe someday I'll be able to, so I might as well leave it behind for the next me."~
+@89 = ~"Oooh, UnderSigil? I've never been there!" She approaches you seductively, placing her hand on your chest, and you can't help but appreciate her astoundingly voluptuous form. "I've heard it's so dangerous. Can you show me what it's like?"~
+@90 = ~"Hmm. Sure, why not? Deionarra won't be back for a bit, she's visiting with that fool of a father of hers. As long as you promise not to tell her, She's a jealous thing, and I still have need of her."~
+@91 = ~You can't be sure if the woman just grimaced, for the look is gone almost instantly. "Oh, of course, I won't say a word. I'd just love to see it though."~
+@92 = ~You place the barbed seeds in the closet and close the doors. "Let's go then."~
+@93 = ~Suddenly you're back in UnderSigil, and from the southeast passage the roars of ferocious demons reverberate down the halls. "Hear that? I killed those a few nights ago. All by myself, too," you lie. "I found a nice prize in the room too."~
+@94 = ~The blue-skinned woman gasps prettily. "Really? Can I see? Can you show me how you killed those ferocious beasts? That's so fascinating."~
+@95 = ~You know this woman is manipulating you, for it's something you've done often enough yourself, but for some reason you are unable to resist. "That'll be easy enough. Stay right here, I'll be right back."~
+@96 = ~As you approach the creatures, suddenly you're no longer there at the woman's behest. You are approaching these creatures for the first time, exploring UnderSigil looking for something useful for your upcoming journey.~
+@97 = ~The last glabrezu falls, and you search the room to see if they were hoarding anything of use. Suddenly, under a pile of a demon's refuse, your eye lights upon a formidable weapon, the likes of which you've never seen before. A fearsome aura of power emanates from this massive weapon. Sharp, powerful lines adorn its shaft, which streak directly to a perfect sphere that serves as this weapon's contact point. Perfectly curved spikes emanate from the perfectly-shaped sphere, yielding an image that is at once both arresting, yet awe-inspiring. A vibrant, royal purple hue surrounds this weapon of power.~
+@99 = ~You find yourself back in the Foundry. Kesai's breasts are heaving as she tries to catch her breath. After a moment, she whispers, "That was... an intense experience, I must say. I think I can bring you back to that dream, if you wish to prepare and return to try again. You will need to defeat all of those creatures in your dreams to find what you seek. I will await you here. I'd like to investigate this machine, with your permission. I think I could learn much about dreams from it. It is truly an incredible achievement."~
+@100 = ~"Certainly, Kesai. Thank you for your help. I will prepare myself, and return to try again."~
+@101 = ~"I see, so you accompany me to my dreams, and convince me to get ripped apart by ferocious demons. You've more of your mother in you than I would've guessed. We're done here."~
+@102 = ~Kesai growls angrily at you, her upper lip curling back, baring her fangs. "Fine! I was only trying to help. The creatures had no power to harm you in the real world... and aren't you immortal anyway? If they scared you, then you're not half the man I thought you were. Goodbye!"~
+@103 = ~You hear a feminine whisper through fanged teeth all around you. "Success..." The world dissolves around you...~
+@104 = ~You find yourself back in the Foundry. Kesai looks exhausted but triumphant. "There. You should go to the room in the Festhall we saw in your dream. There's a sealed closet that cannot be opened unless you know what's inside. Remember that mace you saw, and picture it in your mind when you open it. There my father says you will find something else you have long sought."~
+@105 = ~"Thank you very much, Kesai. You've helped me more than I can repay."~
+@106 = ~"Nonsense. I consider us even now. And I don't think I'll be going back to the Brothel. I think I've learned what I can there, and I have other interests and experiences to pursue now, such as studying this machine further."~
+@107 = ~"Nonsense. I consider us even now. And I don't think I'll be going back to the Brothel. I think I've learned what I can there, and I have other interests and experiences to pursue now, such as studying this machine further. Mistress Grace, do I have your permission to leave?"~
+@108 = ~"Of course, Kesai-Serris, you've no need of my permission. It was an honor having you as a student. Thank you for your aid to our leader, and I hope we will meet again."~
+@109 = ~Kesai approaches you, and lays a hand on your chest. "You are a very charming man, and I admit I've found your interest quite flattering. Perhaps someday we can get to know each other better." She kisses your cheek, and you feel her fangs scrape roughly against your cheek as she growls softly. "But now is not the time. You clearly have important matters to pursue, as do I, now."~
+@110 = ~Annah's tail lashes. "Then maybe ye ought to get to seein' to 'em, quick like, ye trollop!"~
+@111 = ~"Calm down, Annah. Kesai is no trollop, and she deserves better."~
+@112 = ~"Annah's right, Kesai. I don't want to delay you from pursuing your path, nor can I brook delay in mine."~
+@113 = ~"Good luck to you, my gentleman-strange of mystery and revelation. However things turn out, I *do* hope we'll meet again." She hugs you tightly and leaves.~
+@114 = ~"Oh, you're back. Did you want to try to defeat the creature in your dreams again?"~
+@115 = ~"Yes, I think I'm ready now. Will you be there to help?"~
+@116 = ~"Of course. I'm sorry that I can't help you more in the fight, but I can watch, and if I can see any way to help you, I will."~
+@117 = ~You find yourself back in UnderSigil. Demonic howls continue to issue from the southeast hallway.~
+@118 = ~"You're such a *fascinating* man. *Please*, show me again how you defeated those enormous monsters! It'd be such an exciting experience, the girls at the Festhall would be so jealous, and I'd be ever so grateful."~
+@119 = ~"All right. Wait here."~
+@121 = ~"We need to speak of your mother's death again, Kesai."~
+@122 = ~"Kesai, I must depart. Perhaps we can continue this conversation later. Farewell."~
+@123 = ~"Wonderful! And did you find what you sought?"~
+@124 = ~"Unfortunately, no. I dreamt of events I've already experienced. Ravel's maze, the Pillar of Skulls... but it revealed nothing I wasn't already aware of."~
+@125 = ~"I'd rather not discuss them, actually. But no, I found nothing new."~
+@126 = ~"Let me prepare myself, and then we can go. I shall return shortly."~
+@127 = ~"That's too bad, I'm intrigued. But very well, I won't pry."~
+@128 = ~"I *MUST* know! You *MUST* tell me, woman!"~
+@129 = ~"I'm afraid I must insist. Tell me Nenny's dreams, Kesai."~
+@130 = ~"Whoa... chief... listen, I wanna know too, but it's okay, let it go..."~
+@131 = ~"I... see. I believe I've changed my mind, I have no interest in helping you any further. Please leave."~
+@132 = ~"Tell me her dreams, half-hag, or I'll carve out your heart!"~
+@133 = ~"I apologize... I... don't know what came over me. You may keep her secrets."~
+@136 = ~"I appreciate your telling me of my mother's fate, but I don't believe we have anything more to say to one another. Goodbye."~
+@137 = ~"I have changed my mind, Kesai. I would ask you to help me unravel my dreams."~
+@138 = ~Kesai seems to have regained her composure. She explores you with her crimson eyes. "It is good to see you again. Have you changed your mind? Shall we explore your dreams?"~
+@141 = ~Grace looks back and forth between you, Annah and Kesai, a delicate eyebrow arched in bemusement. She also says nothing.~
+@142 = ~"What a marvelous machine!"~
+@143 = ~"Yes, I'm certain that part taps into the third layer of the subconscious..."~
+@144 = ~"Oh! So that's how that part works!"~
+@145 = ~"Um, what's a birdcage doing in there?"~
+@146 = ~Kesai rushes to you. "Oh, no! Again? You poor thing! That must hurt terribly, even if it is only in dreams."~
+@147 = ~"I'm all right, Kesai, but thank you. Looks like I'll need to prepare some more."~
+@148 = ~"No, not right now. I'll be back when I'm ready."~
+@149 = ~There is no lock, latch or other obvious way to open this sealed storage closet.~
+@150 = ~Mebbeth is gone, her very being unraveling as the threads of Ravel's sorcery unwinds across the planes. Kesai-Serris in the Brothel should probably know of her mother's fate.~
+@151 = ~Kesai tells me that her father has suggested that I will find something valuable in my dreams. I don't dream, though. If I somehow regain my ability to dream, I should talk to Kesai again.~
+@152 = ~Kesai tells me that her father has suggested that I will find something valuable in my dreams. I don't dream, though. That fellow Xander in the Foundry did mention that he was constructing a machine that could give me the ability to dream again, though. I should probably follow up on that.~
+@153 = ~Kesai tells me that her father has suggested that I will find something valuable in my dreams. My dream in Xander's Dreambuilder didn't show me anything valuable though.~
+@154 = ~I informed Kesai of my dream in the Dreambuilder. She says she's willing to come with me to the Foundry to help me unravel my dreams.~
+@155 = ~Kesai says I need to defeat the demons in my dream to find something valuable to me.~
+@156 = ~After defeating the glabrezus in my dream, I found a powerful mace that my earlier incarnation put in a storage closet in my room in the Festhall. The doors are opened by the knowledge of something contained within it. Well, I got a pretty good look at that mace...~
+@157 = ~I opened the storage closet in my room in the Festhall. Besides the powerful mace from my dream, I found a quill pen that revealed the true depth of my responsibility for what happened to Deionarra. I suppose I owe it to her father, Iannis the Advocate, to tell him the truth.~
+@200 = ~QUILL PEN
+Weight: 0
+
+You found this quill pen in a storage closet in your room in the Festhall. It appears quite ordinary.~
+@201 = ~You decide to try writing an entry in your journal about your find in the storage closet with your new pen. The instant you touch the tip of the pen to paper, however, it suddenly starts writing on its own, scribbling quickly, almost dragging your hand with it as it flies over the page, inscribing words that don't seem to be your own.
+
+It writes:
+
+"If everything's gone according to plan, you followed my directions in the journal we carry with us, found the glass eye I left with the Anarchists that you visualized in order to open the closet in our room, and acquired this pen. Excellent. I wanted to be sure it would be an Incarnation of resources and intelligence that found this before any other. Now listen carefully, because you have a job to do."~
+@202 = ~The pen continues writing: "If you're reading this, it means I failed in defeating our Enemy. As you surely know by now, a malevolent force continues sending shadows against us, killing us time and time again. I have crossed the Planes looking for his identity, and I believe I have, at least, found his location. He resides in a great Fortress on the Negative Material Plane. What's more, I know how to get to him."~
+@203 = ~The pen continues writing, describing what you've already learned from Trias of the portal in the Mortuary, and what you need to do to activate it.~
+@204 = ~The pen continues writing: "You must continue my work, and destroy this creature so that we can finally get some peace from him. Use whomever you need to achieve this end. If they somehow manage to survive our journey, find the githzerai Dak'kon, his blade has the potential to be the mightiest of weapons. Take the Skull, he can be useful, but whatever you do, don't trust him. The old archer Xachariah is a blind, drunken sodding fool, but his aim is unerring. As for the girl Deionarra, if my backup plan works, then you won't be finding her among the living, but she'll be of more use to you than any of them."~
+@205 = ~The pen continues writing: "You'll have an advantage that I don't, you see. She's coming with me to the Fortress, and if I've worked things right, she'll die there. But she loves us greatly, the dimwitted thing, and like the Dustmen say, strong emotions like hers tie us to this world. She will exist both on that Plane, and on ours, probably wherever her memory is laid to rest. She can serve as a spy on our enemy's movements for you, but don't be a fool and tell her that's what she's for, she's not likely to take it kindly and that'll end her use to us."~
+@206 = ~The pen continues writing: "Use the knowledge she can give you wisely, don't let sentimentality get in your way, and stop this killer once and for all."~
+@207 = ~The pen stops for a moment, then adds the last in a more hurried manner: "P.S.  I found this mace in UnderSigil the other day. I can't make any use of it, but maybe you can, so I figured I'd leave it here for you. Enjoy."~
+@208 = ~The pen stops. Whatever enchantment controlled its movements seems spent. It appears to be nothing more than a perfectly ordinary quill pen now.~
+@209 = ~Keep writing.~
+@210 = ~Try writing with it.~
+@211 = ~Put the quill pen away.~
+@212 = ~If everything's gone according to plan, you followed my directions in the journal we carry with us, found the glass eye I left with the Anarchists that you visualized in order to open the closet in our room, and acquired this pen. Excellent. I wanted to be sure it would be an Incarnation of resources and intelligence that found this before any other. Now listen carefully, because you have a job to do.
+
+If you're reading this, it means I failed in defeating our Enemy. As you surely know by now, a malevolent force continues sending shadows against us, killing us time and time again. I have crossed the Planes looking for his identity, and I believe I have, at least, found his location. He resides in a great Fortress on the Negative Material Plane. What's more, I know how to get to him.
+
+... written here is a long passage relating what you already learned from Trias, including how and where to reach your enemy's fortress ...
+
+You must continue my work, and destroy this creature so that we can finally get some peace from him. Use whomever you need to achieve this end. If they somehow manage to survive our journey, find the githzerai Dak'kon, his blade has the potential to be the mightiest of weapons. Take the Skull, he can be useful, but whatever you do, don't trust him. The old archer Xachariah is a blind, drunken sodding fool, but his aim is unerring. As for the girl Deionarra, if my backup plan works, then you won't be finding her among the living, but she'll be of more use to you than any of them.
+
+You'll have an advantage that I don't, you see. She's coming with me to the Fortress, and if I've worked things right, she'll die there. But she loves us greatly, the dimwitted thing, and like the Dustmen say, strong emotions like hers tie us to this world. She will exist both on that Plane, and on ours, probably wherever her memory is laid to rest. She can serve as a spy on our enemy's movements for you, but don't be a fool and tell her that's what she's for, she's not likely to take it kindly and that'll end her use to us.
+
+Use the knowledge she can give you wisely, don't let sentimentality get in your way, and stop this killer once and for all...
+
+P.S.  By the way, I found this mace in UnderSigil the other day. I can't make any use of it, but maybe you can, so I figured I'd leave it here for you. Enjoy.~
+@213 = ~I didn't compose that last entry... the strange quill pen I found in the storage closet in my room in the Festhall wrote it the moment I touched the tip to paper. After writing that entry, it simply stopped. It appears to be nothing more than a perfectly ordinary quill pen now.~
+@214 = ~You touch the pen to paper but it appears to have nothing left to write. It appears to be a perfectly ordinary quill pen now.~
+@215 = ~Concentrate, try to take the pen away from your journal.~
+@216 = ~You try with all your will to stop writing, but you are powerless to do so. The pen has its message to deliver, and whatever enchantment was laid on it is powerful enough to compel you to let it finish.~
+@217 = ~You found this quill pen in the storage closet in your room in the Festhall. It looks perfectly ordinary.~
+@218 = ~Visualize the mace you saw in the Dreambuilder.~
+@219 = ~Leave the storage closet doors alone.~
+@220 = ~You focus on your memory of the mace, visualizing the lines that run up the shaft up to the spiked sphere, imagining the aura of power that surrounded it. You hear a click, and the compartment cracks open enough for you to slide your fingers in and open it the rest of the way.~
+@300 = ~Expanded Deionarra's Truth Mod~

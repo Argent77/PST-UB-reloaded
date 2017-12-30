@@ -1,0 +1,42 @@
+// ================================================================================================
+//                        RESTORED ABLE PONDER-THOUGHT RESEARCH
+//                               BY QWINN (Paul Escalona)
+// ================================================================================================
+// Last Modification Date:  2008/06/01 - v1
+// ================================================================================================
+// Revised by Argent77
+// ================================================================================================
+
+// From the Unfinished Business Readme:
+// Restoration Pack and SKARDAVNELNATE both took a crack at restoring this. The main thing missing
+// from the code (beyond fixes to a whole bunch of bugs), and probably the reason it was disabled,
+// is a means of implementing a delay between the start and completion of his research.  Both other
+// modders implemented a timer that would have to pass (about 80 minutes real time). SKARDAVNELNATE
+// also had a version where you fade to black and back upon asking him to do his research. In my
+// version, you need to leave the Clerk's Ward altogether and return before he'll complete it.
+
+
+// This will complete the research when you enter the Clerk's Ward from anywhere outside the Clerk's
+// Ward or any of its buildings or subsections.
+
+COMPILE ~%MOD_FOLDER%/Able/dlg/Able.d~
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
+
+  COPY ~VAR.VAR~ ~VAR.TMP~
+    SET Q_FileSize = SOURCE_SIZE
+
+    PATCH_FOR_EACH "S1" IN
+      ~Able_Timer_Language             ~
+      ~Able_Timer_Ravel                ~
+      ~Able_Timer_Incarnations         ~
+    BEGIN
+      SPRINT "Q_NewVarType"  ~GLOBAL  ~
+      SPRINT "Q_NewVarName"  ~%S1%~
+      SET    "Q_NewVarValue" = 0
+      LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+    END
+   BUT_ONLY
+  COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+END

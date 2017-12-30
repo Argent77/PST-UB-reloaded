@@ -1,0 +1,322 @@
+// =================== QWINN'S RESTORED LOWER WARD ========================
+// ============Coded:  December 1, 2008 for UB Version 3.0 ================
+// ========================= Revised by Argent77 ==========================
+
+COMPILE ~%MOD_FOLDER%/LowerWard/dlg/LowerWard.d~
+
+// Add Hailcin'n and the 6 Deran customers
+
+COPY_EXISTING ~AR0500.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1000
+    fj_loc_y          = 1754
+    fj_orientation    = 14
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Hailcin'n~
+    fj_cre_resref     = ~HAILCII~
+    fj_dlg_resref     = ~DHAILCII~
+    fj_bcs_default    = ~0500HAIL~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2190
+    fj_loc_y          = 880
+    fj_orientation    = 9
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Deran Customer 1~
+    fj_cre_resref     = ~LWCUSF~
+    fj_dlg_resref     = ~DDERFEM~
+    fj_bcs_default    = ~0500DCUS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2278
+    fj_loc_y          = 902
+    fj_orientation    = 9
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Deran Customer 2~
+    fj_cre_resref     = ~LWSECRE~
+    fj_dlg_resref     = ~DDERMALE~
+    fj_bcs_default    = ~0500DCUS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2331
+    fj_loc_y          = 935
+    fj_orientation    = 8
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Deran Customer 3~
+    fj_cre_resref     = ~LWTIEFF~
+    fj_dlg_resref     = ~DDERFEM~
+    fj_bcs_default    = ~0500DCUS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2367
+    fj_loc_y          = 911
+    fj_orientation    = 8
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Deran Customer 4~
+    fj_cre_resref     = ~LWTALKA~
+    fj_dlg_resref     = ~DDERMALE~
+    fj_bcs_default    = ~0500DCUS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2438
+    fj_loc_y          = 880
+    fj_orientation    = 7
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Deran Customer 5~
+    fj_cre_resref     = ~LWCUSF3~
+    fj_dlg_resref     = ~DDERFEM~
+    fj_bcs_default    = ~0500DCUS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2565
+    fj_loc_y          = 789
+    fj_orientation    = 4
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Deran Customer 6~
+    fj_cre_resref     = ~LWTIEFM~
+    fj_dlg_resref     = ~DDERMALE~
+    fj_bcs_default    = ~0500DCUS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2172
+    fj_loc_y          = 2441
+    fj_orientation    = 4
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Worker 1~
+    fj_cre_resref     = ~LABOR~
+    fj_dlg_resref     = ~DLWGM~
+    fj_bcs_default    = ~0500WRKR~
+    fj_bcs_general    = ~0500WRKG~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2925
+    fj_loc_y          = 2170
+    fj_orientation    = 2
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Worker 2~
+    fj_cre_resref     = ~LABOR2~
+    fj_dlg_resref     = ~DC_WORK~
+    fj_bcs_default    = ~0500WRK2~
+    fj_bcs_general    = ~0500WRKG~
+  END
+ BUT_ONLY
+
+<<<<<<<< .../pst-ub/inlinedfile/0500DCUS.BAF
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetTeam(Myself,TEAM_2)
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    Help()
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    RunAwayFrom(LastAttackerOf(Myself),50)
+END
+
+IF
+  %sc_help_init%
+  %sc_team_team2%
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    RunAwayFrom(NearestEnemyOf(LastHelp),50)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Help()
+    RunAwayFrom(NearestEnemyOf(Myself),50)
+END
+
+IF
+  WasInDialog()
+THEN
+  RESPONSE #100
+    ReturnToSavedPlace()
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/0500DCUS.BAF~ ~override~
+
+
+// Add the 2 workers near Lenny
+<<<<<<<< .../pst-ub/inlinedfile/0500WRKG.BAF
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetTeam(Myself,TEAM_3)
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    Help()
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    RunAwayFrom(LastAttackerOf(Myself),50)
+END
+
+IF
+  %sc_help_init%
+  %sc_team_team3%
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    RunAwayFrom(NearestEnemyOf(LastHelp),50)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Help()
+    RunAwayFrom(NearestEnemyOf(Myself),50)
+END
+
+IF
+  WasInDialog()
+THEN
+  RESPONSE #100
+    ReturnToSavedPlace()
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/0500WRKG.BAF~ ~override~
+
+<<<<<<<< .../pst-ub/inlinedfile/0500WRK2.BAF
+IF
+  True()
+THEN
+  RESPONSE #150
+    Continue()
+  RESPONSE #20
+    FloatMessage(Myself,29247)
+    Continue()
+  RESPONSE #20
+    FloatMessage(Myself,29248)
+    Continue()
+  RESPONSE #20
+    FloatMessage(Myself,29249)
+    Continue()
+  RESPONSE #20
+    FloatMessage(Myself,29250)
+    Continue()
+  RESPONSE #20
+    FloatMessage(Myself,29251)
+    Continue()
+  RESPONSE #20
+    FloatMessage(Myself,29252)
+    Continue()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    PlaySequence(ANIM_STANDFIDGET1)
+    WaitRandom(3,6)
+    Continue()
+  RESPONSE #100
+    PlaySequence(ANIM_ATTACK1)
+    WaitRandom(3,6)
+    Continue()
+  RESPONSE #100
+    PlaySequence(ANIM_STANCETOSTAND)
+    WaitRandom(3,6)
+    Continue()
+END
+>>>>>>>>
+COMPILE ~.../pst-ub/inlinedfile/0500WRK2.BAF~ ~override~
+
+COPY_EXISTING ~0500WRKR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~Face(10)~ ~Face(14)~
+    REPLACE_TEXTUALLY ~Face(NE)~ ~Face(SE)~
+  END
+ BUT_ONLY
+ 
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
+
+  // Return Kii'na after eight days game time
+  // First, create her timer variable
+  COPY ~VAR.VAR~ ~VAR.TMP~
+    SET Q_FileSize = SOURCE_SIZE
+
+    SPRINT "Q_NewVarType"  ~GLOBAL  ~
+    SPRINT "Q_NewVarName"  ~Kiina_Return                    ~
+    SET    "Q_NewVarValue" = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+   BUT_ONLY
+  COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+END
+
+
+// Second, give her CRE a script name and default script
+COPY_EXISTING ~KIINA.CRE~ ~override~
+  WRITE_ASCII CRE_OFS_SCRIPT_NAME ~Kiina~ (18)
+  WRITE_ASCII 0x268 ~0500KINA~ (8)
+ BUT_ONLY
+
+// Lastly, add to the Lower Ward area script the code for her return
+<<<<<<<< .../pst-ub/inlinedfile/KiinaReturn.baf
+IF
+  !Exists("Kiina")
+  !Dead("Kiina")
+  Global("Vristigor","GLOBAL",2)
+  GlobalTimerExpired("Kiina_Return","GLOBAL")
+THEN
+  RESPONSE #100
+    CreateCreature("Kiina",[801.2495]%sc_comma_null%)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0500.BCS~ ~.../pst-ub/inlinedfile/KiinaReturn.baf~ EVAL

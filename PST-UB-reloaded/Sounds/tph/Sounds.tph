@@ -1,0 +1,534 @@
+// ================================================================================================
+//                         PLANESCAPE: TORMENT UNFINISHED BUSINESS
+//                            RESTORED PARTY SOUNDS AND BANTERS
+//                                BY QWINN (Paul Escalona)
+// ================================================================================================
+// Last Modification Date:  January 25 2010 - v4.12
+// ================================================================================================
+// Revised by Argent77
+// ================================================================================================
+
+// Engine patches as of v4.12
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
+  COPY ~VAR.VAR~ ~VAR.TMP~
+    SET Q_FileSize = SOURCE_SIZE
+
+    SPRINT "Q_NewVarType"  ~AR0600  ~
+    SPRINT "Q_NewVarName"  ~Morte_Clerks_Comment            ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+    SPRINT "Q_NewVarType"  ~AR0600  ~
+    SPRINT "Q_NewVarName"  ~Grace_Clerks_Comment            ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+    SPRINT "Q_NewVarType"  ~AR0400  ~
+    SPRINT "Q_NewVarName"  ~Grace_Fell_Comment              ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+    SPRINT "Q_NewVarType"  ~AR0601  ~
+    SPRINT "Q_NewVarName"  ~Grace_Festhall_Comment          ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+    SPRINT "Q_NewVarType"  ~GLOBAL  ~
+    SPRINT "Q_NewVarName"  ~Grace_Hive_Comment              ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+    SPRINT "Q_NewVarType"  ~GLOBAL  ~
+    SPRINT "Q_NewVarName"  ~Banter_Attempt                  ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+    SPRINT "Q_NewVarType"  ~GLOBAL  ~
+    SPRINT "Q_NewVarName"  ~Morte_Zombie_Flirt              ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+
+   BUT_ONLY
+  COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+END
+
+
+// PSTEE note: Patching game executable is currently not feasible for PSTEE. Instead, the missing 
+//             soundclip for copying spells to the spoellbook will be installed.
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/Q_EnginePatcher.tph~
+
+  // Restoring "Copied Spell" voiced lines.
+  COPY ~Torment.exe~ ~Torment.exe~
+    SET Q_VER = 0
+    PATCH_IF (SOURCE_SIZE = 5697597) BEGIN
+      INNER_ACTION BEGIN FAIL ~Game version identified as 4CD v1.0. Please apply official PS:T patch 1.1 and rerun setup.~ END
+    END ELSE PATCH_IF (SOURCE_SIZE = 5713981) BEGIN
+      SET Q_VER = 4
+      PATCH_PRINT ~Game version identified as 4CD v1.1. Proceeding with installation.~
+    END ELSE PATCH_IF (SOURCE_SIZE = 5718077) BEGIN
+      SET Q_VER = 2
+      PATCH_PRINT ~Game version identified as 2CD v1.1. Proceeding with installation.~
+    END ELSE BEGIN
+      INNER_ACTION BEGIN FAIL ~Unknown version of game. Please seek assistance at the forums for this mod at Spellhold Studios.~ END
+    END
+
+    SPRINT "Q_Patch_Name" ~1a. Restoring "Copied Spell" voiced lines.~
+
+    // injecting code into adding spell to spellbook, removing default sound of GAM_44 (not working in vanilla) replacing with clip based on PC id (NAM126, IGN206, DAK151)
+    // search: 8B 95 78 FF FF FF C7 82 92 04 00 00 99 10 00 00
+    // replace 2cd: C7 81 92 04 00 00 99 10 00 00 8B 4D DC 81 C1 94 04 00 00 E8 9D 99 E1 FF 3E 8D 14 C5 A7 32 77 00 52
+    // replace 4cd: C7 81 92 04 00 00 99 10 00 00 8B 4D DC 81 C1 94 04 00 00 E8 DD 97 E1 FF 3E 8D 14 C5 67 34 77 00 52
+
+    SET Q_Starting_Offset = 0x220A00
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 16
+    SPRINT searchpattern  ~1234567890123456~
+    SPRINT searchbytes    ~8B 95 78 FF FF FF C7 82 92 04 00 00 99 10 00 00~
+
+    SET replacelength = 33
+    SPRINT replacepattern ~123456789012345678901234567890123~
+    PATCH_IF (Q_VER = 2) BEGIN SPRINT replacebytes ~C7 81 92 04 00 00 99 10 00 00 8B 4D DC 81 C1 94 04 00 00 E8 9D 99 E1 FF 3E 8D 14 C5 A7 32 77 00 52~ END
+                    ELSE BEGIN SPRINT replacebytes ~C7 81 92 04 00 00 99 10 00 00 8B 4D DC 81 C1 94 04 00 00 E8 DD 97 E1 FF 3E 8D 14 C5 67 34 77 00 52~ END
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+
+
+    SPRINT "Q_Patch_Name" ~1b. Restoring "Container Locked" voiced lines.~
+
+    // injecting code into "locked" branch of UseContainer() to play clip based on PC id (NAM103, MRT371, ANA485D, DAK132, FFG166, NOR126, IGN177, VHA121)
+    // search: D0 FB FF 6A FF A0
+    // replace 2cd: D0 FB FF 6A FF 6A 00 FF 75 EC 8B 0D 5C 1A 97 00 E8 76 D4 DF FF 88 45 FC 8B 8D 64 FF FF FF E8 6F 2D C9 FF E9 8F FC FF FF
+    // replace 4cd: D0 FB FF 6A FF 6A 00 FF 75 EC 8B 0D 0C 09 97 00 E8 F6 D2 DF FF 88 45 FC 8B 8D 64 FF FF FF E8 AF 2B C9 FF E9 8F FC FF FF
+
+    SET Q_Starting_Offset = 0x3A7670
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 6
+    SPRINT searchpattern  ~123456~
+    SPRINT searchbytes    ~D0 FB FF 6A FF A0~
+
+    SET replacelength = 40
+    SPRINT replacepattern ~1234567890123456789012345678901234567890~
+    PATCH_IF (Q_VER = 2) BEGIN SPRINT replacebytes ~D0 FB FF 6A FF 6A 00 FF 75 EC 8B 0D 5C 1A 97 00 E8 76 D4 DF FF 88 45 FC 8B 8D 64 FF FF FF E8 6F 2D C9 FF E9 8F FC FF FF~ END
+                    ELSE BEGIN SPRINT replacebytes ~D0 FB FF 6A FF 6A 00 FF 75 EC 8B 0D 0C 09 97 00 E8 F6 D2 DF FF 88 45 FC 8B 8D 64 FF FF FF E8 AF 2B C9 FF E9 8F FC FF FF~ END
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+
+
+    SPRINT "Q_Patch_Name" ~1c. Restoring "Door Locked" voiced lines.~
+
+    // injecting code into function when door is clicked for doors with bit 1 (door locked) flag enabled to play clip based on PC id (NAM103, MRT371, ANA485D, DAK132, FFG166, NOR126, IGN177, VHA121)
+    // revised to avoid playing audio clip if door is being unlocked with key (v4.12)
+    // search: 8B 85 DC FC FF FF 83 E0 02
+    // replace 2cd: 83 E2 02 85 D2 0F 84 C4 05 00 00 68 1C 01 97 00 8B 8D CC FB FF FF 81 C1 72 05 00 00 E8 B7 9E 37 00 85 C0 75 1B 8B 8D CC FB FF FF 8B C1 05 72 05 00 00 50 E8 EB FB FB FF 85 C0 0F 85 8F 05 00 00 8B 4D 08 83 E9 1C E8 5D 8B F9 FF
+    // replace 4cd: 83 E2 02 85 D2 0F 84 C4 05 00 00 68 CC EF 96 00 8B 8D CC FB FF FF 81 C1 72 05 00 00 E8 45 A1 37 00 85 C0 75 1B 8B 8D CC FB FF FF 8B C1 05 72 05 00 00 50 E8 EB FB FB FF 85 C0 0F 85 8F 05 00 00 8B 4D 08 83 E9 1C E8 1D 8B F9 FF
+
+    SET Q_Starting_Offset = 0xA1860
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 9
+    SPRINT searchpattern  ~123456789~
+    SPRINT searchbytes    ~8B 85 DC FC FF FF 83 E0 02~
+
+    SET replacelength = 75
+    SPRINT replacepattern ~123456789012345678901234567890123456789012345678901234567890123456789012345~
+    PATCH_IF (Q_VER = 2) BEGIN SPRINT replacebytes ~83 E2 02 85 D2 0F 84 C4 05 00 00 68 1C 01 97 00 8B 8D CC FB FF FF 81 C1 72 05 00 00 E8 B7 9E 37 00 85 C0 75 1B 8B 8D CC FB FF FF 8B C1 05 72 05 00 00 50 E8 EB FB FB FF 85 C0 0F 85 8F 05 00 00 8B 4D 08 83 E9 1C E8 5D 8B F9 FF~ END
+                    ELSE BEGIN SPRINT replacebytes ~83 E2 02 85 D2 0F 84 C4 05 00 00 68 CC EF 96 00 8B 8D CC FB FF FF 81 C1 72 05 00 00 E8 45 A1 37 00 85 C0 75 1B 8B 8D CC FB FF FF 8B C1 05 72 05 00 00 50 E8 EB FB FB FF 85 C0 0F 85 8F 05 00 00 8B 4D 08 83 E9 1C E8 1D 8B F9 FF~ END
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+
+
+    SPRINT "Q_Patch_Name" ~1d. Injected code for above clips.~
+
+    // injected code for above two sound sets
+    // offset: 0003A3E8
+    // replace 2cd: 51 E8 C0 2A 38 00 83 C4 04 85 C0 74 14 83 F8 02 75 03 48 EB 0C 83 F8 07 75 05 83 E8 05 EB 02 33 C0 C3 81 C1 94 04 00 00 51 E8 98 2A 38 00 83 C4 04 83 F8 FF 74 19 3E 8D 14 C5 BF 32 77 00 52 A1 68 F9 96 00 8B 88 E2 01 00 00 E8 59 1B 00 00 C3
+    // replace 4cd: 51 E8 80 2C 38 00 83 C4 04 85 C0 74 14 83 F8 02 75 03 48 EB 0C 83 F8 07 75 05 83 E8 05 EB 02 33 C0 C3 81 C1 94 04 00 00 51 E8 58 2C 38 00 83 C4 04 83 F8 FF 74 19 3E 8D 14 C5 7F 34 77 00 52 A1 1C E8 96 00 8B 88 E2 01 00 00 E8 91 1B 00 00 C3
+
+    SET Q_Starting_Offset = 0x3A3E8
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 0
+    SPRINT searchpattern  ~~
+    SPRINT searchbytes    ~~
+
+    SET replacelength = 80
+    SPRINT replacepattern ~12345678901234567890123456789012345678901234567890123456789012345678901234567890~
+    PATCH_IF (Q_VER = 2) BEGIN SPRINT replacebytes ~51 E8 C0 2A 38 00 83 C4 04 85 C0 74 14 83 F8 02 75 03 48 EB 0C 83 F8 07 75 05 83 E8 05 EB 02 33 C0 C3 81 C1 94 04 00 00 51 E8 98 2A 38 00 83 C4 04 83 F8 FF 74 19 3E 8D 14 C5 BF 32 77 00 52 A1 68 F9 96 00 8B 88 E2 01 00 00 E8 59 1B 00 00 C3~ END
+                    ELSE BEGIN SPRINT replacebytes ~51 E8 80 2C 38 00 83 C4 04 85 C0 74 14 83 F8 02 75 03 48 EB 0C 83 F8 07 75 05 83 E8 05 EB 02 33 C0 C3 81 C1 94 04 00 00 51 E8 58 2C 38 00 83 C4 04 83 F8 FF 74 19 3E 8D 14 C5 7F 34 77 00 52 A1 1C E8 96 00 8B 88 E2 01 00 00 E8 91 1B 00 00 C3~ END
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+
+
+    SPRINT "Q_Patch_Name" ~1e. Setup WAV file lookup table in unused space.~
+
+    // sound string id (WAV) table -> setup const table in unused space from fix #13
+    // search: 90 E4 FD FF FF 6B C0 1C 8B 8D 24 F7 FF FF 8B 94 01 AC 0A 00
+    // replace: 00 00 00 4E 41 4D 31 32 36 00 00 49 47 4E 32 30 36 00 00 44 41 4B 31 35 31 00 00 4E 41 4D 31 30 33 00 00 41 4E 41 34 38 35 44 00 49 47 4E 31 37 37 00 00 46 46 47 31 36 36 00 00 4E 4F 52 31 32 36 00 00 56 48 41 31 32 31 00 00 4D 52 54 33 37 31 00 00 44 41 4B 31 33 32 00 00
+
+    SET Q_Starting_Offset = 0x3732A0
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 20
+    SPRINT searchpattern  ~12345678901234567890~
+    SPRINT searchbytes    ~90 E4 FD FF FF 6B C0 1C 8B 8D 24 F7 FF FF 8B 94 01 AC 0A 00~
+
+    SET replacelength = 91
+    SPRINT replacepattern ~1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901~
+    SPRINT replacebytes ~00 00 00 4E 41 4D 31 32 36 00 00 49 47 4E 32 30 36 00 00 44 41 4B 31 35 31 00 00 4E 41 4D 31 30 33 00 00 41 4E 41 34 38 35 44 00 49 47 4E 31 37 37 00 00 46 46 47 31 36 36 00 00 4E 4F 52 31 32 36 00 00 56 48 41 31 32 31 00 00 4D 52 54 33 37 31 00 00 44 41 4B 31 33 32 00 00~
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+    
+    
+    SPRINT "Q_Patch_Name" ~1f. Restoring "Trap Detected" voiced lines (door).~
+
+    // injecting code for "trap detected" sound set (door)(v4.12)
+    // search: EB 0A C7 85 5C F6 FF FF 00 00 00 00 8B 95 5C F6 FF FF 89 95 D4
+    // replace: EB 02 33 C9 89 4D C8 6A FF 6A 00 6A 00 6A 00 6A 0B 8B 8D 8C F6 FF FF E8 DC 71 00 00 EB 07 90 90 90 90 90 90 90
+
+    SET Q_Starting_Offset = 0x3755B0
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 20
+    SPRINT searchpattern  ~12345678901234567890~
+    SPRINT searchbytes    ~0A C7 85 5C F6 FF FF 00 00 00 00 8B 95 5C F6 FF FF 89 95 D4~
+
+    SET replacelength = 36
+    SPRINT replacepattern ~123456789012345678901234567890123456~
+    SPRINT replacebytes ~02 33 C9 89 4D C8 6A FF 6A 00 6A 00 6A 00 6A 0B 8B 8D 8C F6 FF FF E8 DC 71 00 00 EB 07 90 90 90 90 90 90 90~
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+    
+    
+    SPRINT "Q_Patch_Name" ~1g. Restoring "Trap Detected" voiced lines (trigger).~
+
+    // injecting code for "trap detected" sound set (trigger)(v4.12)
+    // search: EB 0A C7 85 4C F6 FF FF 00 00 00 00 8B 95 4C F6 FF FF 89 95 68
+    // replace 2cd: EB 02 33 C9 89 4D C8 6A FF 6A 00 6A 00 6A 00 6A 0B 8B 8D 8C F6 FF FF E8 04 6E 00 00 EB 07 90 90 90 90 90 90 90
+    // replace 4cd: 
+
+    SET Q_Starting_Offset = 0x375980
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 20
+    SPRINT searchpattern  ~12345678901234567890~
+    SPRINT searchbytes    ~0A C7 85 4C F6 FF FF 00 00 00 00 8B 95 4C F6 FF FF 89 95 68~
+
+    SET replacelength = 36
+    SPRINT replacepattern ~123456789012345678901234567890123456~
+    SPRINT replacebytes ~02 33 C9 89 4D C8 6A FF 6A 00 6A 00 6A 00 6A 0B 8B 8D 8C F6 FF FF E8 04 6E 00 00 EB 07 90 90 90 90 90 90 90~
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+    
+    
+    SPRINT "Q_Patch_Name" ~1h. Restoring "Trap Detected" voiced lines (container).~
+
+    // injecting code for "trap detected" sound set (container)(v4.12)
+    // search: EB 0A C7 85 40 F6 FF FF 00 00 00 00 8B 95 40 F6 FF FF 89 95 FC
+    // replace 2cd: EB 02 33 C9 89 4D C8 6A FF 6A 00 6A 00 6A 00 6A 0B 8B 8D 8C F6 FF FF E8 C4 69 00 00 EB 07 90 90 90 90 90 90 90
+    // replace 4cd: 
+
+    SET Q_Starting_Offset = 0x375DC0
+    SET Q_Replace_Offset  = 0
+    SET Q_Loop            = 0
+
+    SET searchlength = 20
+    SPRINT searchpattern  ~12345678901234567890~
+    SPRINT searchbytes    ~0A C7 85 40 F6 FF FF 00 00 00 00 8B 95 40 F6 FF FF 89 95 FC~
+
+    SET replacelength = 36
+    SPRINT replacepattern ~123456789012345678901234567890123456~
+    SPRINT replacebytes ~02 33 C9 89 4D C8 6A FF 6A 00 6A 00 6A 00 6A 0B 8B 8D 8C F6 FF FF E8 C4 69 00 00 EB 07 90 90 90 90 90 90 90~
+
+    LAUNCH_PATCH_MACRO Q_Pattern_Maker
+    LAUNCH_PATCH_MACRO Q_Engine_Patcher
+   BUT_ONLY
+END
+
+ACTION_IF (IS_PSTEE) BEGIN
+  COPY ~%MOD_FOLDER%/Sounds/copy/GAM_44.WAV~ ~override~
+END
+
+
+// Sounds:
+// Morte enters Clerk's Ward for first time:
+// "This ward's usually just home to a bunch of scribes, but this section's got the Festhall in it so it's a
+//  little more lively."
+// Grace enters Clerk's Ward for first time:
+// "It is good to be journeying again. The brothel was a learning experience, but I think it was time I
+//  moved on."
+// Grace enters Festhall for the first time:
+// "Through observation, sensation and experience, the truth of the multiverse shall be revealed."
+
+COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/Sounds.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+
+ACTION_IF (FILE_EXISTS ~override/Q!B4HRS.xxx~) BEGIN
+  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",1200) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B6HRS.xxx~) BEGIN
+  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",1800) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B10HRS.xxx~) BEGIN
+  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",3000) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B15HRS.xxx~) BEGIN
+  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",4500) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B20HRS.xxx~) BEGIN
+  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",6000) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END ELSE ACTION_IF (IS_PST) BEGIN
+  // PST without Banter Accelerator
+  OUTER_SPRINT "BanterDo" ~GlobalSet("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA0.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END ELSE ACTION_IF (IS_PSTEE) BEGIN
+  // PSTEE
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA2.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+END
+
+
+<<<<<<<< .../pst-ub/inlinedfile/0600comments.baf
+IF
+  Global("Morte_Clerks_Comment","AR0600",0)
+  InParty("Morte")
+  !Dead("Morte")
+THEN
+  RESPONSE #100
+    ActionOverride("Morte",StartDialog("DMORTE","Morte"))
+    ActionOverride("Morte",SetDialog("DMORTE"))
+END
+
+IF
+  Global("Grace_Clerks_Comment","AR0600",0)
+  InParty("Grace")
+  !Dead("Grace")
+THEN
+  RESPONSE #100
+    ActionOverride("Grace",StartDialog("DGRACE","Grace"))
+    ActionOverride("Grace",SetDialog("DGRACE"))
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0600.BCS~ ~.../pst-ub/inlinedfile/0600comments.baf~
+
+<<<<<<<< .../pst-ub/inlinedfile/0601grace.baf
+IF
+  Global("Grace_Festhall_Comment","AR0601",0)
+  InParty("Grace")
+  !Dead("Grace")
+THEN
+  RESPONSE #100
+    ActionOverride("Grace",StartDialog("DGRACE","Grace"))
+    ActionOverride("Grace",SetDialog("DGRACE"))
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0601.BCS~ ~.../pst-ub/inlinedfile/0601grace.baf~
+
+<<<<<<<< .../pst-ub/inlinedfile/gracefell.baf
+IF
+  Global("Grace_Fell_Comment","AR0400",0)
+  InParty("Grace")
+  !Dead("Grace")
+THEN
+  RESPONSE #100
+    ActionOverride("Grace",StartDialog("DGRACE","Grace"))
+    ActionOverride("Grace",SetDialog("DGRACE"))
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0400.BCS~ ~.../pst-ub/inlinedfile/gracefell.baf~
+
+
+<<<<<<<< .../pst-ub/inlinedfile/gracehive.baf
+IF
+  Global("Grace_Hive_Comment","GLOBAL",0)
+  InParty("Grace")
+  !Dead("Grace")
+THEN
+  RESPONSE #100
+    ActionOverride("Grace",StartDialog("DGRACE","Grace"))
+    ActionOverride("Grace",SetDialog("DGRACE"))
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0100.BCS~ ~.../pst-ub/inlinedfile/gracehive.baf~
+EXTEND_BOTTOM ~AR0200.BCS~ ~.../pst-ub/inlinedfile/gracehive.baf~
+EXTEND_BOTTOM ~AR0300.BCS~ ~.../pst-ub/inlinedfile/gracehive.baf~
+
+
+// Version 4.0:
+
+// Restoring Annah's unused backstab sounds.  See sounds.tra.
+STRING_SET 36644 @36644 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA520F "Time to kick some back", changed to ANA522D "Backstab"
+STRING_SET 36924 @36924 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA522D "Backstab", changed to ANA523B "Left yerself exposed, ya eejit."
+STRING_SET 36925 @36925 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA522A "Backstab", changed to ANA524B "Left yourself wide open."
+STRING_SET 36926 @36926 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA522D "Backstab", changed to ANA520F "Time to kick some back."
+
+// DAK043, previously a Repeat Select sound, is now being used as a restored banter, so replace its use in Repeat Select with unused DAK027B
+STRING_SET 61916 @61916 USING ~%MOD_FOLDER%/tra/english/sounds.tra~
+
+// Adding unused Fhjull lines to his CRE
+COPY_EXISTING ~FHJULL.CRE~ ~override~
+  WRITE_LONG 0xf0 58970 // Dying
+  SAY 0xdc ~Forked-Tongue Attack 1~ [FFT056]
+  SAY 0xec ~Forked-Tongue Damage 1~ [FFT065]
+ BUT_ONLY
+
+// Fhjull's three floating text lines are now voiced
+// Extensive rescripting is done in order to make it less likely that script sound will overlay dialogue sounds, as initiating dialogue advances script
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT sc_internal_1_open ~Global("cd_internal_1","LOCALS"~
+  OUTER_TEXT_SPRINT sc_setinternal_1_open ~SetGlobal("cd_internal_1","LOCALS"~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT sc_internal_1_open ~Internal(Myself,INTERNAL_1~
+  OUTER_TEXT_SPRINT sc_setinternal_1_open ~SetInternal(Myself,INTERNAL_1~
+END
+<<<<<<<< .../pst-ub/inlinedfile/1101fhju_bottom.baf
+IF
+  !Global("1101_Cutscene","AR1101",1)
+  %sc_internal_1_open%,0)
+THEN
+  RESPONSE #100
+    FloatMessage(Myself,7089)
+    PlaySoundNotRanged("FFT097")
+    Wait(2)
+    PlaySequence(ANIM_STANDFIDGET1)
+    WaitRandom(6,12)
+    MoveToPoint([1302.1249])
+    %sc_setinternal_1_open%,1)
+END
+
+IF
+  !Global("1101_Cutscene","AR1101",1)
+  %sc_internal_1_open%,1)
+THEN
+  RESPONSE #100
+    Face(0)
+    PlaySequence(ANIM_STANDFIDGET1)
+    FloatMessage(Myself,7091)
+    PlaySoundNotRanged("FFT095")
+    WaitRandom(6,12)
+    MoveToPoint([1140.1249])
+    %sc_setinternal_1_open%,2)
+END
+
+IF
+  !Global("1101_Cutscene","AR1101",1)
+  %sc_internal_1_open%,2)
+THEN
+  RESPONSE #100
+    Face(0)
+    PlaySequence(ANIM_STANDFIDGET2)
+    FloatMessage(Myself,7089)
+    PlaySoundNotRanged("FFT097")
+    WaitRandom(6,12)
+    MoveToPoint([1140.924])
+    %sc_setinternal_1_open%,3)
+END
+
+IF
+  !Global("1101_Cutscene","AR1101",1)
+  %sc_internal_1_open%,3)
+THEN
+  RESPONSE #100
+    Face(8)
+    PlaySequence(ANIM_STANDFIDGET1)
+    FloatMessage(Myself,7090)
+    PlaySoundNotRanged("FFT007A")
+    WaitRandom(6,12)
+    MoveToPoint([1279.1065])
+    %sc_setinternal_1_open%,4)
+END
+
+IF
+  !Global("1101_Cutscene","AR1101",1)
+  %sc_internal_1_open%,4)
+THEN
+  RESPONSE #100
+    FloatMessage(Myself,7088)
+    PlaySoundNotRanged("FFT098")
+    Wait(2)
+    MoveToPoint([1409.1065])
+    Face(10)
+    %sc_setinternal_1_open%,0)
+END
+>>>>>>>>
+COPY_EXISTING ~1101FHJU.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    SET ofs1 = INDEX_BUFFER(~!Global("1101_Cutscene","AR1101",1)~)
+    PATCH_IF (ofs1 >= 0) BEGIN
+      SET ofs1 = RINDEX_BUFFER(~^IF~ ofs1)
+      SET ofs2 = INDEX_BUFFER(~^END~ ofs1)
+      PATCH_IF (ofs2 > ofs1) BEGIN
+        SET ofs2 += 3 // include final "END"
+        DELETE_BYTES ofs1 (ofs2 - ofs1)
+        INSERT_FILE ofs1 ~.../pst-ub/inlinedfile/1101fhju_bottom.baf~ EVAL
+      END
+    END
+  END
+ BUT_ONLY
+
+
+// Adding Annah "Damaged" sound
+COPY_EXISTING ~ANNAH.CRE~ ~override~
+  WRITE_LONG 0xec 62329
+ BUT_ONLY
+
+// Moved restoration of MRT182 here from Fixpack's RestoFix.tph, since it really is a restoration.
+// Also adding VHA041 for Vhailor death sounds
+COPY_EXISTING ~DEATH.2DA~ ~override~
+   REPLACE_TEXTUALLY ~ MRT183       ~ ~ MRT182,MRT183~
+   REPLACE_TEXTUALLY ~VHA040~ ~VHA040,VHA041~
+ BUT_ONLY
+
+
+// Alternate Smoldering Corpse theme.  Play it at night.
+COPY ~%MOD_FOLDER%/Sounds/Music/Smo2.mus~ ~Music/Smo2.mus~
+MKDIR ~Music/Smo2~
+COPY ~%MOD_FOLDER%/Sounds/Music/Smo2~ ~Music/Smo2~
+
+ACTION_IF (IS_PSTEE) BEGIN
+  ADD_MUSIC ~smo2~ ~Music/SMO2.mus~
+  APPEND ~SONGLIST.IDS~ ~%smo2% SMO2~ UNLESS ~SMO2~
+END ELSE BEGIN
+  OUTER_SET smo2 = 36
+END
+APPEND_OUTER ~Music/songlist.txt~ ~SMO2.mus     // %smo2% Smoldering Corpse Alternate~ UNLESS ~SMO2.mus~
+APPEND ~SONGS.IDS~ ~%smo2% AREA_SMOLDERING_NIGHT~ UNLESS ~AREA_SMOLDERING_NIGHT~
+
+COPY_EXISTING ~AR0402.ARE~ ~override~
+  READ_LONG 0xbc "SongOffset"
+  WRITE_LONG "SongOffset" + 4 smo2
+ BUT_ONLY
+
+ 
+// Install Morte's Theme
+COPY ~%MOD_FOLDER%/Sounds/Music/char_11.mus~ ~Music/Char_11.mus~
+MKDIR ~Music/Char_11~
+COPY ~%MOD_FOLDER%/Sounds/Music/Char_11~ ~Music/Char_11~
+
+COPY_EXISTING ~Music/songlist.txt~ ~Music/songlist.txt~
+  REPLACE_TEXTUALLY ~CHAR_01.mus\([ %TAB%]*// 11 Char - Morte\)~ ~CHAR_11.mus\1~
+ BUT_ONLY
+
+ACTION_IF (IS_PSTEE) BEGIN
+  COPY_EXISTING ~SONGLIST.2DA~ ~override~
+    REPLACE_TEXTUALLY ~\(11[ %TAB%]*CHAR_11[ %TAB%]*\)CHAR_01.mus~ ~\1CHAR_11.mus~
+   BUT_ONLY
+END

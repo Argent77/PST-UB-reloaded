@@ -1,0 +1,180 @@
+// *** PSTEE-specific code to install an Alu-fiend entry to the bestiary ***
+
+// Updating lua function getBestiaryImage() to fetch images for the bestiary based on the 
+// value of globals. This is used to display different images for the Transcendent One, 
+// before and after meeting him in person.
+
+<<<<<<<< .../pst-ub/inlinedfile/ui_bestiaryimage.lua
+function getBestiaryImage()
+	local creature = bestiary[selectedBestiaryCreature]
+	local ref = nil
+	if (creature) then
+		if (creature.iglobal) then
+			--Image from iglobal
+			local val = Infinity_GetScriptVarInt(creature.iglobal)
+			ref = creature["imageKnown"..val]
+		elseif (creature.global) then
+			--Image from global
+			local val = Infinity_GetScriptVarInt(creature.global)
+			ref = creature["imageKnown"..val]
+		end
+		if (not ref and creature.imageKnown) then
+			ref = creature.imageKnown
+		end
+	end
+	if (not ref) then
+		ref = "default" --bmp named "default"
+	end
+	return ref
+end
+>>>>>>>>
+COPY_EXISTING ~UI.MENU~ ~override~
+  SET ofs1 = INDEX_BUFFER(~^[ %TAB%]*function[ %TAB%]+getBestiaryImage()~)
+  PATCH_IF (ofs1 >= 0) BEGIN
+    SET ofs2 = INDEX_BUFFER(~^[ %TAB%]*\(function[ %TAB%]+.+(.*)\)\|`~ ofs1 + 1)
+    PATCH_IF (ofs2 > ofs1) BEGIN
+      DELETE_BYTES ofs1 (ofs2 - ofs1)
+      INSERT_FILE ofs1 ~.../pst-ub/inlinedfile/ui_bestiaryimage.lua~
+    END
+  END
+ BUT_ONLY
+
+
+COPY_EXISTING ~BGEE.LUA~ ~override~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3598,.*\)~ ~\1\2%WNL%\1desc1=64131,%WNL%\1global='Annah',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3586,.*\)~ ~\1\2%WNL%\1desc1=64143,%WNL%\1desc2=64143,%WNL%\1global='Dakkon',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3534,.*\)~ ~\1\2%WNL%\1desc1=3528,%WNL%\1global='Dhall',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3533,.*\)~ ~\1\2%WNL%\1desc1=3527,%WNL%\1desc2=3527,%WNL%\1global='Know_Dustmen',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3583,.*\)~ ~\1\2%WNL%\1desc1=3583,%WNL%\1desc2=64144,%WNL%\1global='Grace',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3613,.*\)~ ~\1\2%WNL%\1desc1=64196,%WNL%\1desc2=64196,%WNL%\1global='Ignus',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3608,.*\)~ ~\1\2%WNL%\1desc1=64197,%WNL%\1global='Know_Ravel',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3605,.*\)~ ~\1\2%WNL%\1desc1=64198,%WNL%\1desc2=64200,%WNL%\1global='Nordom',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3633,.*\)~ ~\1\2%WNL%\1desc1=64207,%WNL%\1global='Talk_To_Betrayer',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(desc0=3629,.*\)~ ~\1\2%WNL%\1desc1=64199,%WNL%\1global='Vhailor',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(imageKnown='jrtrzkn',.*\)~ ~\1\2%WNL%\1imageKnown1='jrshtkn',~
+  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(global='Transcendent_Final_Speech',.*\)~ ~\1\2%WNL%\1iglobal='Met_TO',~
+ BUT_ONLY
+
+COPY_EXISTING ~1204TRIG.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(StartMovie("t1enter")\)~ ~SetGlobal("Met_TO","GLOBAL",1) \1~
+  END
+ BUT_ONLY
+
+
+// Since bestiary entries are based on creature animations we have to create a duplicate of 
+// Vrischika's animation where we apply her specific Alu-fiend portrait and description. 
+
+INCLUDE ~%MOD_FOLDER%/utils/A7_PSTEEFunctions.tph~
+
+COPY_EXISTING ~VRSCHKA.CRE~ ~override~
+  READ_LONG 0x28 anim_id
+  SPRINTF anim_code ~%x~ (anim_id)
+  INNER_PATCH_SAVE anim_code ~%anim_code%~ BEGIN DELETE_BYTES 0 2 END
+  TO_UPPER "anim_code"
+ BUT_ONLY
+
+LAF FIND_FREE_ANIM_SLOT
+INT_VAR start_index = anim_id + 1
+RET index
+END
+
+ACTION_IF index > 0 BEGIN
+  OUTER_SET new_anim_id = index
+  OUTER_PATCH ~~ BEGIN
+    SPRINTF new_anim_code ~%x~ (new_anim_id)
+    INNER_PATCH_SAVE new_anim_code ~%new_anim_code%~ BEGIN DELETE_BYTES 0 2 END
+    TO_UPPER "new_anim_code"
+  END
+  
+  // Adding a new bestiary entry to bgee.lua. This is somewhat complicated, as WeiDU doesn't 
+  // provide an easy way to parse Lua code. We do a search for the start and end offsets of the 
+  // bestiary definition block and scan each entry to determine the highest occupied bestiary 
+  // index. Afterwards we simply append the structure by another entry.
+
+  OUTER_SET bestiary_index = 70 // default: Aasimar Female (as used by the unmodified game)
+  COPY_EXISTING ~bgee.lua~ ~override~
+    // Determine start and end offset of bestiary definition block
+    SET ofs_start = INDEX_BUFFER(~^[ %TAB%]*bestiary[ %TAB%]*=[ %TAB%%WNL%]*{~)
+    PATCH_IF (ofs_start > 0) BEGIN
+      SET ofs_end = INDEX_BUFFER(~[ %TAB%]*},[ %TAB%%WNL%]*}~ ofs_start)
+      PATCH_IF (ofs_end > ofs_start) BEGIN
+        SET ofs1 = ofs_start
+        SET ofs2 = ofs1
+        // Determine highest occupied bestiary index
+        SET max_index = 0
+        WHILE (ofs1 >= ofs_start && ofs1 < ofs_end) BEGIN
+          SET ofs1 = INDEX_BUFFER(~index[ %TAB%]*=~ ofs2)
+          PATCH_IF (ofs1 >= 0) BEGIN
+            SET ofs2 = INDEX_BUFFER(~,~ ofs1)
+            PATCH_IF (ofs2 > ofs1 && ofs2 < ofs_end) BEGIN
+              READ_ASCII ofs1 entry (ofs2 - ofs1)
+              INNER_PATCH_SAVE entry ~%entry%~ BEGIN
+                REPLACE_TEXTUALLY ~.+=[ %TAB%]*\([0-9]+\).*~ ~\1~
+              END
+              PATCH_IF (IS_AN_INT "entry" && entry > max_index) BEGIN
+                SET max_index = entry
+              END
+            END
+            SET ofs2 = ofs1 + 1
+          END
+        END
+
+        // Add a new entry
+        TEXT_SPRINT INDENT ~%TAB%%TAB%%TAB%  ~
+        PATCH_IF (max_index > 0) BEGIN
+          SET bestiary_index = max_index + 1
+          TEXT_SPRINT new_entry ~%TAB%},%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%TAB%{%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%INDENT%index=%bestiary_index%,%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%INDENT%desc0=3643,%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%INDENT%class=1,%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%INDENT%imageUnknown='image',%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%INDENT%imageKnown='jralukn',%WNL%~
+          TEXT_SPRINT new_entry ~%new_entry%%INDENT%name=30702,%WNL%~
+          SET strlen = STRING_LENGTH ~%new_entry%~
+          INSERT_BYTES ofs_end strlen
+          WRITE_ASCIIE ofs_end ~%new_entry%~ (strlen)
+        END
+      END
+    END ELSE BEGIN
+      PATCH_LOG ~Warning: Could not add Alu-fiend bestiary entry.~
+    END
+   BUT_ONLY
+
+  // Create new xxxx.ini and register it in animate.ids
+  COPY_EXISTING ~%anim_code%.ini~ ~override/%new_anim_code%.ini~
+    SET found = 0
+    REPLACE_TEXTUALLY ~^//.*~ ~// Alu-fiend Female~
+    REPLACE_TEXTUALLY ~\(bestiary[ %TAB%]*\)=.*~ ~\1=%bestiary_index%~
+   BUT_ONLY
+
+  APPEND ~ANIMATE.IDS~ ~0x%new_anim_code% cl_4_Alufiend_Female~
+
+  // Alu-fiend entry, original portrait based on Aasimar portrait, reworked by Leila and Maebe, ported to PSTEE by Argent77.
+  COPY ~%MOD_FOLDER%/Bestiary/copy/pstee/JRALUKN.MOS~ ~override~
+    LPF UPDATE_PVRZ_INDICES
+    RET
+      original_base_index
+      new_base_index
+    END
+
+  ACTION_IF (original_base_index >= 0 && new_base_index >= 0) BEGIN
+    OUTER_WHILE (FILE_EXISTS ~%MOD_FOLDER%/Bestiary/copy/pstee/mos%original_base_index%.pvrz~) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index
+        new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/Bestiary/copy/pstee/mos%original_base_index%.pvrz~
+      END
+      OUTER_SET original_base_index += 1
+      OUTER_SET new_base_index += 1
+    END
+  END
+
+  // updating Vrischika's animation id
+  COPY_EXISTING ~VRSCHKA.CRE~ ~override~
+    WRITE_LONG 0x28 new_anim_id
+   BUT_ONLY
+END

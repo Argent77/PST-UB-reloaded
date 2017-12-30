@@ -1,0 +1,93 @@
+
+
+// =============================== RESTORED ITEMS =====================================
+
+// RESTORED FIEND'S TEETH
+// Restores Murk the Merchant in Curst, which makes the Fiend's Teeth (for Morte) accessible.
+// Resto Pack set price to 4000, I'm setting to 5000, they're almost as good as Teeth of the
+// Fire Drake which is 6500.
+// Resto Pack created a MURK.CRE which wasn't necessary, he already had one, it's CMERCH1.CRE
+// Originally restored in Restoration Pack, though about the only thing I'm doing the same is
+// putting him in the same spot.
+
+COPY_EXISTING ~FTEETH.ITM~ ~override~
+  WRITE_LONG 0x34 5000 // Price
+
+COPY_EXISTING ~AR0701.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1950
+    fj_loc_y          = 1444
+    fj_orientation    = 2
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Murk~
+    fj_cre_resref     = ~CMERCH1~
+    fj_dlg_resref     = ~DMURK~
+    fj_bcs_class      = ~0701RUN~
+    fj_bcs_default    = ~0701TALK~
+  END
+ BUT_ONLY
+
+// ====================================================================================
+
+// RESTORED EYE OF VECNA
+// Originally restored in Restoration Pack by Cilantro.
+
+// Makes it available in Vrischika's store, old check was for Regret > 1, impossible to get.
+// Now you just have to have talked to Trias
+STRING_SET 68425 ~GlobalGT("Regret","GLOBAL",0)~
+
+// Price set to 500, also set cursed flag and removed useless ability so that it cannot be equipped
+// to quick item slot
+COPY_EXISTING ~EYEVECNA.ITM~ ~override~
+  WRITE_LONG 0x34 500
+  WRITE_LONG 0x18 (THIS | 0x10) // Cursed
+  LPF DELETE_ITEM_HEADER INT_VAR header_type = "-1" END
+ BUT_ONLY
+
+// Eye was originally set as an infinite supply item in the store, this fixes it
+COPY_EXISTING ~VRIS.STO~ ~override~
+  READ_LONG 0x34 "ItemSoldOffset"
+  READ_LONG 0x38 "ItemSoldCount"
+  FOR (idx = ItemSoldCount - 1; idx >= 0; --idx) BEGIN
+    SET offset = ItemSoldOffset + (idx * 0x58)
+    READ_ASCII offset resref (8) NULL
+    PATCH_IF (~%resref%~ STR_EQ ~EYEVECNA~) BEGIN
+      WRITE_LONG (offset + 0x18) 0
+      SET idx = "-1"
+    END
+  END
+ BUT_ONLY
+
+// ======================================================================================
+
+// RESTORED DEVIL'S DUE AND CHAOS FEATHER
+// Both placed in the Lady's Maze Campsite with the Bone Framed Journal, as Restoration Pack did
+// I'm not getting rid of the Brimstone Hammer there though
+
+COPY_EXISTING ~AR1900.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_con_itm_idx    = 0   // add to "Campsite" container
+    fj_charge0        = 1
+  STR_VAR
+    fj_structure_type = ~itm~
+    fj_name           = ~FEATHER~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_con_itm_idx    = 0   // add to "Campsite" container
+    fj_charge0        = 1
+  STR_VAR
+    fj_structure_type = ~itm~
+    fj_name           = ~DEVILDUE~
+  END
+ BUT_ONLY
+
+// ======================================================================================
+
+// RESTORED RAT CHARM
+// Realized this was a fix and not a restoration.  Put back in Fixpack PFixPack.d in v4.0.
+

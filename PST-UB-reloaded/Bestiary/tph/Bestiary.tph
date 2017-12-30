@@ -1,0 +1,20 @@
+// ================================================================================================
+//                         PLANESCAPE: TORMENT UNFINISHED BUSINESS
+//                               RESTORED BESTIARY ENTRIES
+//                BY QWINN (Paul Escalona), Alu-fiend portrait by Leila and Maebe
+// ================================================================================================
+// Last Modification Date:  June 11 2009 - v4.00
+// ================================================================================================
+// Revised by Argent77
+// ================================================================================================
+
+// This component contains separate code branches, because of the fundamental differences how the 
+// bestiary is handled in PST and PSTEE.
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/Bestiary/tph/Bestiary_pst.tph~
+END
+
+ACTION_IF (IS_PSTEE) BEGIN
+  INCLUDE ~%MOD_FOLDER%/Bestiary/tph/Bestiary_pstee.tph~
+END

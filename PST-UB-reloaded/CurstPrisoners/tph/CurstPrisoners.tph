@@ -1,0 +1,211 @@
+// ======================== QWINN'S RESTORED CURST PRISONERS ========================
+
+// Modification by SKARDAVNELNATE as of AIP v 20080408
+// WeiDUization by Qwinn
+// Revised by Argent77
+
+// =================================================================================
+
+COMPILE ~%MOD_FOLDER%/CurstPrisoners/dlg/CurstPrisoners.d~
+
+STRING_SET 57437 ~Kemak~
+COPY_EXISTING ~KENAK.CRE~ ~override/KEMAK.CRE~
+  WRITE_LONG 0x8 57437 // Kemak
+  WRITE_LONG 0xc 57437 // Kemak
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTMAL3.CRE~ ~override/GIB2.CRE~
+  WRITE_LONG 0x8 50455 // Gib
+  WRITE_LONG 0xc 50455 // Gib
+ BUT_ONLY
+
+COPY_EXISTING ~CRSTFEM2.CRE~ ~override/YELAAN2.CRE~
+  WRITE_LONG 0x8 50453 // Yelaan
+  WRITE_LONG 0xc 50453 // Yelaan
+ BUT_ONLY
+
+// Turn alignment/murder hits off for Carceri Prisoners.
+// Also set character type.
+COPY_EXISTING ~DYLANA.CRE~  ~override~
+              ~KEMAK.CRE~   ~override~
+              ~ELDAN.CRE~   ~override~
+              ~GERIK.CRE~   ~override~
+              ~PEATO.CRE~   ~override~
+              ~RAE.CRE~     ~override~
+              ~YELAAN2.CRE~ ~override~
+              ~GIB2.CRE~    ~override~
+              ~BINIAN.CRE~  ~override~
+  WRITE_BYTE (CRE_OFS_ATTRIBUTES + 1) 0
+  SET ofs = IS_PSTEE ? CRE_OFS_SCRIPT_NAME : 0x2bc
+  WRITE_ASCII ofs ~curst_prisoner~ (32)
+  WRITE_BYTE CRE_OFS_ATTRIBUTES (THIS | 0x40)
+ BUT_ONLY
+
+
+COPY_EXISTING ~AR0702.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1422
+    fj_loc_y          = 1595
+    fj_orientation    = 1
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Binian~
+    fj_cre_resref     = ~BINIAN~
+    fj_dlg_resref     = ~DBINIAN~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1862
+    fj_loc_y          = 2530
+    fj_orientation    = 8
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Dylana~
+    fj_cre_resref     = ~DYLANA~
+    fj_dlg_resref     = ~DDYLANA~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1023
+    fj_loc_y          = 1864
+    fj_orientation    = 1
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Eldan~
+    fj_cre_resref     = ~ELDAN~
+    fj_dlg_resref     = ~DELDAN~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1136
+    fj_loc_y          = 2758
+    fj_orientation    = 8
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Gerik~
+    fj_cre_resref     = ~GERIK~
+    fj_dlg_resref     = ~DGERIK~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1838
+    fj_loc_y          = 1826
+    fj_orientation    = 1
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Gib~
+    fj_cre_resref     = ~GIB2~
+    fj_dlg_resref     = ~DGIB~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 155
+    fj_loc_y          = 2196
+    fj_orientation    = 12
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Kemak~
+    fj_cre_resref     = ~KEMAK~
+    fj_dlg_resref     = ~DKEMAK~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2142
+    fj_loc_y          = 2179
+    fj_orientation    = 12
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Peato~
+    fj_cre_resref     = ~PEATO~
+    fj_dlg_resref     = ~DPEATO~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1494
+    fj_loc_y          = 2795
+    fj_orientation    = 14
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Rae~
+    fj_cre_resref     = ~RAE~
+    fj_dlg_resref     = ~DRAE~
+    fj_bcs_default    = ~0702PRIS~
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1600
+    fj_loc_y          = 2400
+    fj_orientation    = 1
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Yelaan~
+    fj_cre_resref     = ~YELAAN2~
+    fj_dlg_resref     = ~DYELAAN~
+    fj_bcs_default    = ~0702PRIS~
+  END
+ BUT_ONLY
+
+
+// Make it so all the prisoners you can talk to - including Roberta, Azi'Izium and Siabha, if they're down
+// there, try to escape the area when the doors open.  Jailbreak!
+<<<<<<<< .../pst-ub/inlinedfile/0702PRIS.BAF
+IF
+  Global("Despawn_Prisoners","AR0702",1)
+THEN
+  RESPONSE #100
+    Deactivate(Myself)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  Global("Cassius","GLOBAL",10)
+THEN
+  RESPONSE #100
+    SetDialog("")
+    Wait(5)
+    RunToPoint([750.1430])
+    RunToPoint([1621.423])
+    RunToPoint([3650.1527])
+    RunToPoint([4600.3300])
+    EscapeArea()
+END
+>>>>>>>>
+EXTEND_TOP ~0702TOWN.BCS~ ~.../pst-ub/inlinedfile/0702PRIS.BAF~
+COMPILE ~.../pst-ub/inlinedfile/0702PRIS.BAF~
+
+// In Version 4.0, despawn prisoners variable added so that, if you leave area and come back after jailbreak, prisoners are gone rather
+// than running back toward the jail.
+<<<<<<<< .../pst-ub/inlinedfile/DespawnPrisoners.BAF
+IF
+  !Global("Current_Area","GLOBAL",702)
+  Global("Cassius","GLOBAL",10)
+  Global("Despawn_Prisoners","AR0702",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Despawn_Prisoners","AR0702",1)
+END
+>>>>>>>>
+EXTEND_TOP ~AR0702.BCS~ ~.../pst-ub/inlinedfile/DespawnPrisoners.BAF~

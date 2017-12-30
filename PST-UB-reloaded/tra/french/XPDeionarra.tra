@@ -1,0 +1,190 @@
+@1 = ~"Je ferai en sorte que ta fille sache que tes dernières pensées étaient pour elle, Mebbeth. Que les plans te reçoivent avec bonté."~
+@2 = ~"Salut, Kesai. Je t'apporte des nouvelles de ta mère."~
+@3 = ~Kesai soupire. "Dois-je donc te le rappeler à chaque fois ? Je ne suis pas plus heureuse de mon lignage maintenant que lorsque tu es venu m'en parler la première fois."~
+@4 = ~"Elle est morte, Kesai."~
+@5 = ~"Très bien, je ne t'ennuierai plus avec elle. Au revoir."~
+@6 = ~Kesai s’arrête brusquement, puis rit. "Tu dois plaisanter. Ravel, morte ? Comment ? Qu'est-ce qui a bien pu parvenir à la tuer ?"~
+@7 = ~"J'ai été forcé de la tuer pour me défendre. Je n'y ai pris aucun plaisir."~
+@8 = ~"Je l'ai tuée. Elle était une force maléfique, comme tu me l'avais dit, et il était nécessaire de mettre un terme à son existence."~
+@9 = ~"Elle est morte de ma main. La guenaude l'avait mérité, comme tu le sais."~
+@10 = ~"Je... vois." Plusieurs expressions contradictoires apparaissent sur son visage exotique, difficiles à interpréter. "Et pourquoi as-tu ressenti le besoin de venir me le dire ?"~
+@11 = ~"Parce que ce n'est pas tout. Elle a parlé de toi, quand sa fin était proche."~
+@12 = ~"Je suppose que ce n'était pas nécessaire. Peu importe."~
+@13 = ~Kesai recule, apparemment terrifiée. "Elle a parlé de moi ? Que les Puissances me viennent en aide... qu'a-t-elle dit ?"~
+@14 = ~"S'il te plaît, laisse-moi t'expliquer. Ce n'était pas exactement Ravel qui a parlé de toi. D'une certaine façon, Ravel a toujours vécu à Sigil, ou du moins plusieurs aspects d'elles y sont demeurés. L'un de ces aspects était une vieille sage-femme herboriste, qui habitait dans une maison du Square du Chiffonnier. Son nom était Mebbeth."~
+@15 = ~"Mebbeth ? J'ai entendu parler d'elle, mais je ne l'ai jamais rencontré. C'est une des rares personnes de la Ruche que les gens du Haut Quartier vont parfois voir, pour ses charmes ou ses herbes."~
+@16 = ~"Oui, ça ressemble à la femme dont je parle. Après ma confrontation avec Ravel dans le labyrinthe de la Dame, j'ai rendu visite à Mebbeth, et j'ai découvert qu'elle était en train de mourir. En tant qu'aspect de Ravel, elle ne pouvait pas survivre très longtemps à la mort de l'originale."~
+@17 = ~Kesai écoute attentivement, fascinée par ton récit. "Continue..."~
+@18 = ~"Avant que Mebbeth ne meurt, elle a dit regretter de ne pas avoir pu te montrer la bonté, car comme elle l'a dit, 'Il y a un dicton dans les Plans, que la bonté d'une guenaude est plus cruelle que sa haine, et qu'elle empoisonne tout ce qu'elle touche'."~
+@19 = ~"Es-tu en train de dire que cette Mebbeth... qu'elle n'était pas mauvaise, comme ma mère ? Tu viens de dire qu'elle était une partie d'elle."~
+@20 = ~"Une partie, oui. Mais même Ravel avait ce bon coté je pense, et je crois que Mebbeth était l'expression la plus pure de cet aspect de sa personne. Elle m'a montré la bonté, et a demandé bien peu en retour. Je lui en suis reconnaissant."~
+@21 = ~Kesai te regarde, encore plus confuse qu'auparavant. "Et tu penses que cette partie d'elle a souhaité être une mère pour moi, être bienveillante, mais qu'elle a eu peur que sa nature m'effraie ?"~
+@22 = ~"C'est ce que j'ai compris de ses derniers mots, oui."~
+@23 = ~Elle frémit involontairement, puis soupire. "Je ne suis pas sûr que je dois t'être reconnaissante de m'avoir dit tout ça. Mais maintenant que je le sais, je dois connaître la vérité. Donne-moi un moment pour demander à mon père ce qu'il en est."~
+@24 = ~"Prends ton temps. Je vais attendre ici, si ça ne te dérange pas. Je voudrais aussi entendre ce qu'il a à dire."~
+@25 = ~Kesai te regarde en silence pendant un moment, puis hoche la tête. "Donne-moi un moment." Elle se tourne vers toi, et commence à murmurer doucement, comme elle l'a déjà fait une fois... l'air semble miroiter légèrement autour d'elle, et se remplit d'une odeur de cuivre, comme celle du sang chaud...~
+@26 = ~Tu te penches sur Kesai pour entendre ce qu'elle murmure.
+
+"Haughazanenel, Prince banni d'Ithag, Marquis de l'Ombre Sanglante, mon père, entends-moi, car je t'appelle une fois encore..."~
+@27 = ~Sa voix est faible et étouffée tandis qu'elle continue de parler, et la seule chose que tu arrives à saisir est une profonde tristesse.~
+@28 = ~Kesai se retourne vers toi, les yeux brillants de larmes. "Mon père confirme ton histoire. Ma mère n'est en effet plus parmi les vivants."~
+@29 = ~"Comme je te l'ai dit. Je suis désolé, Kesai. Je vais te laisser penser à tout ça. Au revoir."~
+@30 = ~"Comme je te l'ai dit. Au revoir, Kesai-Serris."~
+@31 = ~"Merci d'avoir pris le temps de venir me parler. Cela aurait été bien pire de continuer à me demander si elle allait venir pour moi, un jour. Au revoir."~
+@32 = ~"Attends, s'il te plaît. Il y a autre chose. Mon père a dit que tu avais été bon avec ma mère, à la fin. Il voudrait te remercier pour ça."~
+@33 = ~"Bon ? Tu veux parler de la graine de noirépine de son jardin que je lui ai donné ?"~
+@34 = ~"Précisément. Mon père m'a demandé de te dire que l'une des choses que tu recherches se trouve dans tes rêves."~
+@35 = ~"Mais je ne rêve pas. Je n'ai jamais rêvé, aussi loin que je me souvienne."~
+@36 = ~"Un homme dans la Fonderie prétend être capable de construire une machine qui me permettrait de rêver, mais je n'ai pas encore pu voir si ça marchait."~
+@37 = ~"J'ai trouvé un moyen de rêver à nouveau, mais je n'y ai rien trouvé de ce que je cherchais."~
+@38 = ~"Père dit qu'il y a un moyen. Tu devras le trouver. Quand tu auras réussi à rêver, reviens me voir."~
+@39 = ~"Vraiment ? Comme c'est étrange. Si tu le crois, je te suggérerais de terminer sa machine et de l'utiliser. Reviens me voir quand tu l'auras fait."~
+@40 = ~"Très bien. Si je parviens à faire un rêve, je reviendrai. Au revoir."~
+@41 = ~"Peut-être que tu devrais essayer encore. Peut-être..."~
+@42 = ~Elle soupire tout en te jaugeant, et semble arriver avec réticence à un décision. "Peut-être que je peux t'aider. Tu sais que j'ai toujours été fascinée par les rêves. Apprendre d'où je venais et quel était mon héritage m'a permis de réaliser pourquoi. Le sang de la Gaste Grise qui coule en moi signifie que j'ai du pouvoir sur les rêves. Je n'ai jamais essayé de l'utiliser, car je ne savais même pas que je possédais un tel pouvoir. Mais peut-être que je pourrais l'utiliser sur toi, avec ta permission. Les guenaudes sont connues pour influencer les rêves des hommes et pour les transformer en cauchemars, jusqu'à les conduire à leur mort."~
+@43 = ~"Je ne pense pas pouvoir faire quelque chose de semblable, et je ne le veux pas, mais il est possible que je puisse t'accompagner dans tes rêves, et peut-être t'aider à trouver ce dont mon père a parlé. Veux-tu essayer ? J'ai bien conscience que ce serait une importante intrusion dans ta vie privée, mais peut-être que je pourrais t'apporter une aide conséquente."~
+@44 = ~"Ma dame, tu es la bienvenue dans mes rêves, car je suppose que tu y apparaîtras de toute façon."~
+@45 = ~"J'apprécierai toute aide que tu pourras m'apporter, Kesai. Merci beaucoup."~
+@46 = ~"Cela me met mal à l'aise. Je suis désolé, je pense que je vais devoir refuser, mais je te remercie de m'avoir proposé ton aide."~
+@47 = ~"Mes rêves n'appartiennent qu'à moi, demi-guenaude. Reste loin d'eux."~
+@48 = ~Un sourire plein de crocs apparaît brièvement sur le visage de Kesai. "Oh, tu *es* un charmeur. Peut-être que nous devrions en discuter un peu plus longtemps une fois que nous aurons terminé."~
+@49 = ~Du coin de l'oeil, tu remarques qu'Annah se crispe, sa queue battant furieusement d'avant en arrière, mais elle ne dit rien.~
+@50 = ~Du coin de l'oeil, tu remarques que Grace lève l'un de ses sourcils délicats en entendant Kesai, mais elle reste silencieuse.~
+@51 = ~"Très bien. Donne-moi un peu de temps pour me préparer. Reviens dans une journée, et nous irons voir la machine à rêves dont tu as parlé."~
+@52 = ~"J'ai trouvé un moyen de rêver, Kesai. Il existe une machine dans la Fonderie, commandée il y a bien longtemps par l'une de mes incarnations. Elle me permet de rêver."~
+@53 = ~"Es-tu prête, Kesai ? Je pense qu'il est temps que nous explorions mes rêves."~
+@54 = ~"Pas maintenant. J'ai besoin d'un peu plus de temps. Rappelle-toi, je n'ai jamais essayé ça avant, et je n'ai su que récemment que je pouvais le faire. Ceci dit, ça ne devrait pas me prendre longtemps pour mettre mes idées en pratique. Reviens plus tard."~
+@55 = ~Kesai semble un peu décoiffée, mais étrangement plus... confiante... que la dernière fois que tu l'a vue. "Encore salut. Et avant que tu ne poses la question, oui, je suis sure de pouvoir t'aider maintenant. Nenny a accepté que je visite ses rêves la nuit dernière. J'ai pensé que si les rêves de quelqu'un devaient être relativement sûr à visiter, ce serait les siens." Elle marque une pause, puis chuchote. "Je n'avais *pas* idée à quel point. Je ne pense pas qu'*elle* ait la moindre idée."~
+@56 = ~Morte s'agite de haut en bas. "Oh, tu ne *peux pas* en rester là. Allez. Je *dois* en savoir plus."~
+@57 = ~Kesai hoche la tête. "Non, j'ai promis de respecter son intimité. Je ne dirais pas ce que j'y ai vu. Je ne devrais même pas en avoir dit autant. Je suis juste en train de... encore... récupérer." Kesai ferme ses yeux un moment, elle semble avoir du mal à déglutir.~
+@58 = ~"C'est vraiment dommage, je suis aussi intrigué que Morte. Mais très bien, je ne vais pas insister."~
+@59 = ~"Vraiment ? A quoi ressemblaient ses rêves ?"~
+@60 = ~"Je comprends. Rappelle-moi d'ajouter mes remerciements aux tiens pour l'aide qu'elle nous a apporté."~
+@61 = ~"Je ne suis pas surpris. Les personnes les plus douces sont toujours celles qui dissimulent les pensées les plus sombres. Qu'as-tu vu ?"~
+@62 = ~Morte commence à cogner son front contre le mur le plus proche. "Les..." *bang* "Plans..." *bang* "sont..." *bang* "vraiment..." *bang* "CRUELS !"~
+@63 = ~"Merci de ta compréhension. Et tu as ma parole que je garderai pour moi tout ce que je pourrais découvrir dans tes rêves. Nous y allons ?"~
+@64 = ~"Si tu es prête, je le suis également, ma dame."~
+@65 = ~"On y va. Kesai... merci encore pour ton aide."~
+@66 = ~"J'ai changé d'avis. Je ne pense pas vouloir faire ça."~
+@67 = ~"Très bien. Mais je pense toujours avoir une dette envers toi. Si tu changes d'avis, je ferai ce que je peux pour t'aider."~
+@68 = ~"Je ne vais pas venir avec toi, mais je devrais pouvoir ressentir tes rêves d'ici. Tu pourras me percevoir, ou non, dans tes rêves - ça n'a pas été le cas pour Nenny." Elle frissonne à nouveau, et Morte se met à marmonner, frustré. "Allons-y. Je vais rester ici et observer, je garderai un oeil sur tout ce qui pourrait t'aider."~
+@69 = ~"Je ne vais pas venir avec toi, mais je devrais pouvoir ressentir tes rêves d'ici. Tu pourras me percevoir, ou non, dans tes rêves - ça n'a pas été le cas pour Nenny." Elle frissonne à nouveau. "Allons-y. Je vais rester ici et observer, je garderai un oeil sur tout ce qui pourrait t'aider."~
+@70 = ~"Oh, il y a autre chose. Je  n'ai pas le pouvoir de ramener avec toi ce que tu trouveras dans tes rêves, mais je *devrais* être capable de te permettre d'en *apporter*. Si nécessaire, tout ce que tu as sur toi en entrant dans la machine devrait être disponible dans tes rêves. Soit néanmoins prudent. Tout ce que tu utiliseras ou déposeras dans tes rêves sera parti pour de bon. Bonne chance !"~
+@71 = ~Une fois encore, tu te retrouves sous le noeud coulant d'une potence. La voix râpeuse s'élève. "*Encore* à rêver ? Encore ! Encore ! Hahahahaha !"~
+@72 = ~Comme la dernière fois, ton corps semble étrangement léger et aérien, comme si tu ne le contrôlais plus. Le rêve se fragmente rapidement, et chaque image glisse de ton esprit dès que la suivante apparaît. Tu ne peux t'arrêter sur aucune d'entre d'elles, et cela continue jusqu'à ton réveil.~
+@73 = ~Une fois encore, tu te retrouves sous le noeud coulant d'une potence. Tu te mets à serrer très fort une graine de Noirépine dans ta main gauche. La voix râpeuse s'élève. "*Encore* à rêver ? Encore ! Encore ! Attends ! Qui ? Des intrus !"~
+@74 = ~Comme la dernière fois, ton corps semble étrangement léger et aérien, comme si tu ne le contrôlais plus. Cette fois-ci, le vent qui te balaye semble être dirigé par quelque chose. Tu sais que tu n'es pas seul, mais tu n'arrives pas à percevoir qui que ce soit.~
+@75 = ~Une fois encore, tu te retrouves sous le noeud coulant d'une potence. La voix râpeuse semble furieuse. "*Non* ! Les rêves ne se façonnent pas ! Intrus ! Guenaude ! Parti !"~
+@76 = ~Comme la dernière fois, ton corps semble étrangement léger et aérien, comme si tu ne le contrôlais plus. Cette fois-ci, tu peux sentir Kesai modeler le rêve, te ramenant au rêve du sous-sol de Sigil. Tu ressens vaguement une troisième présence, mais tu ne parviens pas à l'identifier.~
+@81 = ~Tu te retrouves à la Morgue, entouré de ceux que tu as contraint, d'une façon ou d'une autre, à te suivre. Ils te parlent, mais leurs mots te survolent et te dépassent, comme le bruit de nombreux pieds traînants. Comme ils n'en finissent plus avec leurs questions ineptes, tu commences à vérifier mentalement toutes les préparations effectuées pour ce voyage...~
+@82 = ~Tu te trouves dans ta chambre de la Salle des Fêtes, et tu t'approches du placard que tu avais commandé, celui qui ne peut être ouvert que si tu sais ce qu'il y a à l'intérieur. Tu y déposes trois objets, les pièces finales pour l'héritage de tes futurs incarnations, dans le cas où ton voyage vers le plan d'Energie Négative ne se passerait pas comme prévu.~
+@83 = ~Du coin de l'oeil, tu vois s'approcher une femme particulièrement exotique, possédant des crocs et une peau bleue. Tu pourrais jurer la connaître, mais tu es également convaincu que c'est la première fois que tu la vois. Comment ces deux choses peuvent être vraies simultanément ne semble pas particulièrement t'inquiéter, pour une raison inconnue.~
+@84 = ~"Qui es-tu ?"~
+@85 = ~"Oh, juste une aspirante Sensat, se promenant dans la Salle des Fêtes. Je t'ai vu par la porte ouverte, et je n'ai pas pu résister à l'envie d'en savoir plus sur toi. Puis-je te demander ce que tu es en train de faire ?"~
+@86 = ~"Je me prépare pour un voyage *très* dangereux. Je dois en permanence penser plusieurs coups à l'avance. J'ai tendance à oublier certaines choses, donc je laisse derrière moi de quoi me souvenir."~
+@87 = ~"Je vois, que c'est fascinant !" Elle a l'air de regarder ce que tu tiens dans tes mains, mais, en baissant ton regard, tu vois que tout ce que tu tiens sont trois graines de Noirépine.~
+@88 = ~"Ah, bien, ceci est une clé... J'ai conçu ces portes de façon à ce que la clé doive être utilisée de l'*intérieur*. Tu dois être capable de visualiser clairement ce qu'il y a à l'intérieur pour les ouvrir. Astucieux, hein ? Et le message à mon intention, non, tu ne pourras *pas* le lire. Et enfin, une bonne petite arme que j'ai trouvée dans le sous-sol de Sigil l'autre jour. Je ne peux pas l'utiliser, mais peut-être le pourrai-je un jour, il vaut donc mieux que je la laisse ici pour le prochain moi."~
+@89 = ~"Oooh, le sous-sol de Sigil ? Je n'y suis jamais allée !" Elle s'approche de toi, séduisante, et place sa main sur ta poitrine. Tu ne peux t'empêcher de remarquer ses formes particulièrement généreuses. "J'ai entendu dire que c'était très dangereux. Tu peux me montrer à quoi ça ressemble ?"~
+@90 = ~"Hmm. Bien sûr, pourquoi pas ? Deionarra ne va pas revenir avant un moment, elle est partie rendre visite à son idiot de père. Il faut que tu me promettes de ne pas lui dire, c'est une personne très jalouse, et j'ai encore besoin d'elle."~
+@91 = ~Tu n'en es pas sûr, mais il te semble avoir aperçu une grimace traverser le visage de la femme. "Oh, bien sûr, je n'en dirai rien. J'adorerais vraiment voir ça."~
+@92 = ~Tu places les graines de Noirépine dans le placard et refermes les portes. "Allons-y."~
+@93 = ~Soudain, tu es de retour dans le sous-sol de Sigil. Les rugissements des démons résonnent dans les couloirs, en provenance du passage sud-est. "Tu entends ça ? J'en ai tué un certain nombre il y a quelques nuits. Tout seul, bien sûr," mens-tu. "J'ai également trouvé une jolie récompense dans l'une des salles."~
+@94 = ~Une jolie expression de surprise apparaît sur le visage de la femme à la peau bleue. "Vraiment ? Je peux voir ? Peux-tu me montrer comment tu as tué ces bêtes féroces ? C'est vraiment fascinant."~
+@95 = ~Tu sais que cette femme est en train de te manipuler, car c'est quelque chose que tu as toi-même fait souvent, mais, pour une raison inconnue, tu n'es pas capable d'y résister. "Ce sera facile. Reste bien ici, je vais revenir."~
+@96 = ~Alors que tu t'approches des créatures, tu te rends compte que tu n'es plus là à la demande de la femme. Tu approches de ces créatures pour la première fois, explorant le sous-sol de Sigil à la recherche de quelque chose d'utile pour ton futur voyage.~
+@97 = ~Le dernier des glabrezus tombe, et tu fouilles la pièce pour voir s'ils possédaient quoi que ce soit d'utile. D'un coup, dissimulée sous un tas d'ordure laissé par un démon, tes yeux se posent sur une arme formidable, comme tu n'en as jamais vu auparavant. Une formidable aura de pouvoir émane de cette arme imposante. Des lignes fines et puissantes parent son manche, et se rejoignent en une sphère parfaite qui sert de point de frappe à l'arme. Des pointes parfaitement incurvées partent de cette sphère parfaitement formée, renvoyant une image à la fois saisissante et terrifiante. Une teinte pourpre éclatante et majestueuse entoure cette arme de pouvoir.~
+@99 = ~Tu es de retour à la Fonderie. La poitrine de Kesai se soulève de façon irrégulière, tandis qu'elle essaie de reprendre son souffle. Après un moment, elle murmure, "Je dois dire que c'était... une expérience intense. Je pense pouvoir te ramener dans ce rêve, si tu veux te préparer et y retourner pour essayer à nouveau. Tu devras vaincre toutes les créatures aperçues dans tes rêves pour trouver ce que tu recherches. Je t'attendrai ici. J'aimerais examiner cette machine, avec ta permission. Je pense que je pourrais en apprendre beaucoup sur les rêves grâce à elle. C'est vraiment une réalisation incroyable."~
+@100 = ~"Certainement, Kesai. Merci pour ton aide. Je vais me préparer, et je reviendrai pour essayer une nouvelle fois."~
+@101 = ~"Je vois, donc tu m'accompagnes dans mes rêves, et tu arrives à me convaincre de me faire déchiqueter par des démons féroces. Tu tiens plus de ta mère que je ne l'avais supposé. Nous nous arrêtons là."~
+@102 = ~Kesai grogne de colère, lève sa lèvre supérieure et montre ses crocs. "Bien ! Je voulais seulement essayer de t'aider. Ces créatures ne peuvent te blesser dans le monde réel... et n'es-tu pas immortel, de toutes façons ? Si elles te font peur à ce point, c'est que tu n'es pas la moitié de l'homme que je pensais que tu étais. Salut !"~
+@103 = ~Tu entends une voix féminine qui semble provenir de partout à la fois. Elle murmure, "Tu as réussi..." Le monde se dissout autour de toi...~
+@104 = ~Tu es de retour dans la Fonderie. Kesai semble épuisée mais triomphante. "Nous y sommes. Tu devrais aller dans la pièce de la Salle des Fêtes que nous avons vue dans ton rêve. Il y a un placard verrouillé qui ne peut être ouvert, à moins de savoir ce qu'il y a à l'intérieur. Rappelle-toi la masse que tu as vue, et concentre-toi sur son image au moment d'ouvrir ce placard. D'après mon père, tu y trouveras quelque chose que tu as longtemps cherché."~
+@105 = ~"Merci beaucoup, Kesai. Tu m'as aidé bien plus que je ne pourrais jamais le faire pour toi."~
+@106 = ~"Oublie ça. Je pense que nous avons dépassé ce genre de chose maintenant. Et je ne pense pas que je reviendrai à la Maison de tolérance. J'ai appris tout ce que je pouvais apprendre ici, et j'ai d'autres intérêts et d'autres expériences à mener maintenant, comme étudier plus attentivement cette machine."~
+@107 = ~"Oublie ça. Je pense que nous avons dépassé ce genre ce chose maintenant. Et je ne pense pas que je reviendrai à la Maison de tolérance. J'ai appris tout ce que je pouvais apprendre ici, et j'ai d'autres intérêts et d'autres expériences à mener maintenant, comme étudier plus attentivement cette machine. Maîtresse Grace, m'autoriserez-vous à partir ?"~
+@108 = ~"Bien sur, Kesai-Serris, vous n'avez pas besoin de ma permission. C'était un honneur de vous avoir comme étudiante. Merci pour l'aide que vous nous avez apportée, et j'espère que nous aurons l'occasion de converser à nouveau."~
+@109 = ~Kesai s'approche de toi, et pose une main sur ta poitrine. "Tu es un homme vraiment charmant, et je dois admettre que j'ai trouvé ton intérêt pour moi plutôt flatteur. Peut-être qu'un jour nous pourrons apprendre à mieux nous connaître." Elle embrasse ta joue, et tu sens ses crocs la frotter tandis qu'elle grogne. "Mais ce n'est pas le moment. Tu as clairement des choses plus importantes à faire maintenant, tout comme moi à présent."~
+@110 = ~La queue d'Annah fouette l'air. "Alors tu pourrais aller vit'fait t'occuper d'tes affaires, espèce de traînée !"~
+@111 = ~"Calme-toi, Annah. Kesai n'est pas une traînée, et elle mérite mieux que tes insultes."~
+@112 = ~"Annah a raison, Kesai. Je ne veux pas te ralentir dans tes projets, pas plus que je ne peux me permettre de perdre du temps dans les miens."~
+@113 = ~"Bonne chance, mon étrange gentleman de mystères et de révélations. Qu'importe la tournure que prendront les choses, j'espère *vraiment* que nous nous reverrons." Elle te serre fort dans ses bras et part.~
+@114 = ~"Oh, te revoilà. Veux-tu encore essayer de battre les créatures de tes rêves ?"~
+@115 = ~"Oui, je pense que je suis prêt maintenant. Seras-tu là pour m'aider ?"~
+@116 = ~"Bien sûr. Je suis désolée de ne pas pouvoir t'aider à combattre, mais je peux observer, et si je trouve un moyen de t'aider, je le ferai."~
+@117 = ~Tu te retrouves dans le sous-sol de Sigil. Les hurlements des démons continuent à se faire entendre dans le couloir sud-est.~
+@118 = ~"Tu es un homme tellement *fascinant*. *S'il te plaît*, montre-moi encore comment tu as battu ces énormes monstres ! Ce serait une expérience tellement excitante, les autres filles de la Salle des Fêtes seraient tellement jalouses, et je te serais extrêmement reconnaissante."~
+@119 = ~"Très bien. Attends ici."~
+@121 = ~"Il faut que nous parlions encore de la mort de ta mère, Kesai."~
+@122 = ~"Kesai, je dois partir. Peut-être pourrons-nous continuer cette conversation plus tard. Au revoir."~
+@123 = ~"Formidable ! Et as-tu trouvé ce que tu cherchais ?"~
+@124 = ~"Malheureusement, non. J'ai rêvé d’événements qui se sont déjà produits. Le labyrinthe de Ravel, le Pilier des Crânes... mais ça n'a rien révélé que je ne sache déjà."~
+@125 = ~"Je préfère ne pas en parler, en fait. Mais non, je n'ai rien trouvé de nouveau."~
+@126 = ~"Laisse-moi me préparer, et nous y retournerons. Je reviens vite."~
+@127 = ~"C'est vraiment dommage, je suis intrigué. Mais très bien, je ne vais pas te supplier."~
+@128 = ~"Je *dois* savoir ! Tu *dois* me le dire, femme !"~
+@129 = ~"J'ai peur de devoir insister. Raconte-moi les rêves de Nenny, Kesai."~
+@130 = ~"Whoa... chef... écoute, je voulais les connaître moi aussi, mais c'est bon, allons-y..."~
+@131 = ~"Je... vois. Je crois que j'ai changé d'avis, je ne souhaite pas aller plus loin pour t'aider. Je te prie de partir."~
+@132 = ~"Raconte-moi ses rêves, demi-guenaude, ou je t'arrache le coeur !"~
+@133 = ~"Je suis désolé... je... ne sais pas ce qui m'a pris. Tu dois garder ses secrets."~
+@136 = ~"J'apprécie que tu m’aies raconté ce qui est arrivé à ma mère, mais je crois que nous n'avons rien d'autre à nous dire. Salut."~
+@137 = ~"J'ai changé d'avis, Kesai. Je voudrais te demander de m'aider à comprendre mes rêves."~
+@138 = ~Kesai semble avoir retrouvé son calme. Elle t'examine attentivement. "C'est bon de te revoir. As-tu changé d'avis ? Dois-je explorer tes rêves ?"~
+@141 = ~Le regard de Grace se pose tour à tour sur toi, Annah et Kesai, ses délicats sourcils montrant sa perplexité. Elle ne dit rien.~
+@142 = ~"Quelle merveilleuse machine !"~
+@143 = ~"Oui, je suis certain que cette partie observe la troisième couche de l'inconscient..."~
+@144 = ~"Oh ! C'est donc ainsi que fonctionne cette partie !"~
+@145 = ~"Euh, que fait une cage à oiseaux là-dedans ?"~
+@146 = ~Kesai court vers toi. "Oh, non ! Encore ? Pauvre petit ! Ca doit faire très mal, même si ce n'est qu'en rêve."~
+@147 = ~"Je vais très bien, Kesai, mais merci quand même. On dirait que j'ai besoin d'être mieux préparé."~
+@148 = ~"Non, pas maintenant. Je vais revenir quand je serai prêt."~
+@149 = ~Il n'y a ni verrou, ni serrure, ni aucun autre moyen visible pour ouvrir ce placard.~
+@150 = ~Mebbeth est morte, son existence entière se révélant n'être que l'expression de la magie de Ravel à travers les plans. Kesai-Serris de la Maison de tolérance voudrait probablement savoir ce qui est arrivé à sa mère.~
+@151 = ~Kesai m'a dit que son père a sous-entendu que je trouverai quelque chose d'utile dans mes rêves. Mais je ne rêve pas. Si j'arrivais à rêver à nouveau, je devrais retourner parler à Kesai.~
+@152 = ~Kesai m'a dit que son père a sous-entendu que je trouverai quelque chose d'utile dans mes rêves. Mais je ne rêve pas. Cependant, il y a ce Xander dans la Fonderie, qui dit avoir construit une machine susceptible de me faire rêver. Je devrais probablement suivre cette piste.~
+@153 = ~Kesai m'a dit que son père a sous-entendu que je trouverai quelque chose d'utile dans mes rêves. Mon rêve dans le faiseur de rêves de Xander ne m'a pourtant rien montré d'intéressant.~
+@154 = ~J'ai informé Kesai de mon rêve dans le faiseur de rêves. Elle a dit qu'elle voulait venir avec moi à la Fonderie pour m'aider à comprendre mes rêves.~
+@155 = ~Kesai a dit qu'il fallait que je batte les démons de mon rêve pour trouver quelque chose d'utile.~
+@156 = ~Après avoir battu les glabrezus dans mon rêve, j'ai trouvé une puissante masse que ma précédente incarnation a caché dans un placard dans ma chambre de la Salle des Fêtes. Les portes s'ouvrent avec la connaissance de ce qu'il contient. Excellent, j'ai bien eu l'occasion d'observer cette masse...~
+@157 = ~J'ai ouvert le placard fermé dans ma chambre de la Salle des Fêtes. En plus de la puissante masse vu dans mon rêve, j'ai trouvé une plume qui m'a révélé mon importante responsabilité dans ce qui est arrivé à Deionarra. Je suppose que je dois l'apporter à son père, Iannis l'avocat, pour lui dire la vérité.~
+@200 = ~PLUME D'ECRITURE
+Poids : 0
+
+Tu as trouvé cette plume dans un placard verrouillé dans ta chambre de la Salle des Fêtes. Elle semble tout à fait ordinaire.~
+@201 = ~Tu décides d'essayer d'écrire une nouvelle entrée dans ton journal concernant ce que tu as trouvé dans le placard avec ta nouvelle plume. Au moment où la pointe de la plume touche le papier, elle commence soudainement à écrire toute seule, gribouillant rapidement, en emportant presque ta main avec elle tandis qu'elle vole au-dessus de la page, inscrivant des mots qui ne semblent pas être les tiens.
+
+Elle écrit :
+
+ "Si tout s'est déroulé selon le plan, tu as suivi mes indications dans le journal que nous transportons avec nous, tu as trouvé l'oeil de verre que j'ai laissé aux Anarchistes et que tu as visualisé pour ouvrir le placard de notre chambre, et tu as acquis la plume. Excellent. Je voulais être certain que ce soit une incarnation pleine de ressources et d’intelligence qui trouve tout cela avant quelqu'un d'autre. Maintenant, écoute attentivement, car tu as un travail à faire."~
+@202 = ~La plume continue d'écrire : "Si tu lis ceci, cela signifie que je n'ai pas réussi à battre notre Ennemi. Comme tu le sais sans doute, une force malveillante ne cesse de nous envoyer des ombres pour nous tuer, encore et encore. J'ai parcouru les Plans à la recherche de son identité, et je crois que j'ai, enfin, trouvé où il se cache. Il réside dans une grande Forteresse sur le Plan d'énergie négative. De plus, je sais comment m'y rendre."~
+@203 = ~La plume continue d'écrire, décrivant ce que Trias t'a déjà appris concernant le portail de la Morgue, et ce dont tu as besoin pour l'activer.~
+@204 = ~La plume continue d'écrire : "Tu dois continuer mon oeuvre et détruire cette créature, pour qu'elle nous laisse enfin en paix. Utilise tous ceux dont tu auras besoin pour y parvenir. S'ils ont réussi à survivre à notre voyage, trouve le githzerai Dak'kon, son épée a le potentiel pour devenir la plus puissante des armes. Prends le Crâne, il peut aussi avoir son utilité, mais quoi que tu fasses, ne lui fais pas confiance. Le vieil archer Xachariah est un imbécile aveugle et saoul, mais ses flèches sont infaillibles. Et pour la fille, Deionarra, si mon plan de secours fonctionne, tu ne la trouveras pas parmi les vivants, mais elle te sera la plus utile de tous."~
+@205 = ~La plume continue d'écrire : "Tu auras un avantage que je n'ai pas eu, vois-tu. Elle se rendra avec moi à la Forteresse, et si je me suis correctement débrouillé, elle y mourra. Mais elle est très amoureuse de nous, petite chose stupide qu'elle est, et comme le disent les Hommes-Poussière, de puissantes émotions comme les siennes nous attachent à ce monde. Elle existera à la fois sur ce Plan et sur le nôtre, probablement là où elle reposera. Elle peut te servir à espionner les mouvements de notre ennemi, mais ne sois pas assez stupide pour le lui dire, elle ne le prendrait certainement pas bien, et elle ne nous serait plus d'aucune utilité."~
+@206 = ~La plume continue d'écrire : "Utilise les connaissances qu'elle pourra te donner avec sagesse, ne te laisse pas aller au sentimentalisme, et arrête ce tueur une bonne fois pour toutes."~
+@207 = ~La plume s’arrête un moment, puis ajoute les derniers mots de manière plus hâtive : "P.S. J'ai trouvé cette masse dans le sous-sol de Sigil l'autre jour. Je ne peux pas l'utiliser, mais peut-être que toi tu pourras, j'ai donc décidé de la laisser ici pour toi. Elle devrait te plaire."~
+@208 = ~La plume s’arrête. Quel que soit l’enchantement qui contrôlait ses mouvements, il semble avoir disparu. Elle semble n'être rien de plus qu'une plume parfaitement ordinaire maintenant.~
+@209 = ~Continue d'écrire.~
+@210 = ~Essaie d'écrire avec elle.~
+@211 = ~Met la plume de coté.~
+@212 = ~Si tout s'est déroulé selon le plan, tu as suivi mes indications dans le journal que nous transportons avec nous, tu as trouvé l'oeil de verre que j'ai laissé aux Anarchistes et que tu as visualisé pour ouvrir le placard de notre chambre, et tu as acquis la plume. Excellent. Je voulais être sur que ce soit une incarnation pleine de ressources et d’intelligence qui trouve tout cela avant quelqu'un d'autre. Maintenant, écoute attentivement, car tu as un travail à faire.
+
+Si tu lis ceci, cela signifie que je n'ai pas réussi à battre notre Ennemi. Comme tu le sais sans doute, une force malveillante continue de nous envoyer des ombres pour nous tuer, encore et encore. J'ai parcouru les Plans à la recherche de son identité, et je crois que j'ai, enfin, trouvé où il se cache. Il réside dans une grande Forteresse sur le Plan d'énergie négative. De plus, je sais comment s'y rendre.
+
+... est écrit ici un long passage qui relate ce que t'a appris Trias, incluant comment et où atteindre la forteresse de ton ennemi...
+
+Tu dois continuer mon oeuvre, et détruire cette créature, et ainsi il nous laissera finalement en paix. Utilise tous ceux dont tu auras besoin pour y parvenir. S'ils ont réussi à survivre à notre voyage, trouve le githzerai Dak'kon, son épée est potentiellement la plus puissante des armes. Prends le Crâne, il peut avoir son utilité, mais quoi que tu fasses, ne lui fais pas confiance. Le vieil archer Xachariah est un imbécile aveugle et saoul, mais ses flèches sont infaillibles. Et pour la fille, Deionarra, si mon plan de secours fonctionne, tu ne la trouveras pas parmi les vivants, mais elle te sera la plus utile de tous.
+
+Tu auras un avantage que je n'ai pas eu, tu vois. Elle vient avec moi à la Forteresse, et si j'ai correctement travaillé, elle y mourra. Mais elle est très amoureuse de nous, petite chose stupide qu'elle est, et comme le disent les Hommes-Poussière, de puissantes émotions comme les siennes nous attachent à ce monde. Elle existera à la fois sur ce Plan et sur le nôtre, probablement là où sa mémoire repose. Elle peut te servir à espionner les mouvements de notre ennemi, mais ne sois pas assez stupide pour le lui dire, elle ne le prendrait certainement pas bien, et elle ne nous serait plus d'aucune utilité.
+
+Utilise les connaissances qu'elle pourra te donner avec sagesse, ne te laisse pas aller au sentimentalisme, et arrête ce tueur une bonne fois pour toutes.
+
+P.S. J'ai trouvé cette masse dans le sous-sol de Sigil l'autre jour. Je n'en ai pas l'usage, mais peut-être que toi oui, j'ai donc pensé à la laisser ici pour toi. Elle devrait te plaire.~
+@213 = ~Je n'ai pas écrit la dernière entrée... l'étrange plume que j'ai trouvé dans le placard dans ma chambre de la Salle des Fêtes l'a écrit au moment où j'ai touché le papier avec la pointe. Après avoir écrit cette entrée, elle s'est simplement arrêtée. Il semble que ce n'est rien de plus qu'une plume parfaitement ordinaire maintenant.~
+@214 = ~Tu approches la plume du papier, mais il semble qu'elle n'a rien de plus à écrire. Elle semble être une plume tout à fait ordinaire maintenant.~
+@215 = ~Concentre-toi, essaye d'enlever la plume de ton journal.~
+@216 = ~Tu essaies avec toute la force de ta volonté d'arrêter l'écriture, mais tu n'es pas assez puissant pour y parvenir. La plume a un message à délivrer, et quel que soit l'enchantement qui l’anime, il est assez puissant pour t'obliger à la laisser terminer.~
+@217 = ~Tu as trouvé cette plume dans le placard verrouillé dans ta chambre de la Salle des Fêtes. Elle semble parfaitement ordinaire.~
+@218 = ~Visualise la masse que tu as vue dans le faiseur de rêves.~
+@219 = ~Laisse la porte du placard tranquille.~
+@220 = ~Tu te concentres sur le souvenir de la masse, visualisant les lignes qui parcourent la poignée jusqu'aux pointes de la sphère, imaginant l'aura de puissance qui l'entoure. Tu entends un déclic, et le compartiment s'entrouvre, suffisamment pour que tu puisses passer tes doigts à l'intérieur et ainsi ouvrir la porte.~
+@300 = ~Amélioration des dialogues concernant le sort de Deionarra~

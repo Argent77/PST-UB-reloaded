@@ -1,0 +1,405 @@
+// =========================== Pendant of Yemeth Quest here =============================
+
+
+// ==================== SKARDAVNELNATE'S RESTORED PENDANT OF YEMETH QUEST ===============
+// ======================= FROM SKARDAVNELNATE'S AIP VERSION 20040408 ===================
+
+// ================================ WEIDUIZATION BY QWINN ===============================
+
+// Last Revision by Qwinn:  20080423
+// Revised by Argent77:     20171224
+
+// LONGLIST DOCUMENTATION FROM SKARDAVNELNATE:
+
+// ------------------------------
+// Pendant of Yemeth Quest
+
+// Three New Scripts
+// 0400ADY.BCS
+// 0400RC.BCS
+// 0400RC2.BCS
+
+<<<<<<<< .../pst-ub/inlinedfile/0400ADY.BAF
+IF
+  TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  %sc_help_init%
+  %sc_team_team4%
+THEN
+  RESPONSE #100
+    Enemy()
+    Attack(LastAttackerOf(LastHelp))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Attack(LastAttackerOf(Myself))
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/0400ADY.BAF~
+
+
+<<<<<<<< .../pst-ub/inlinedfile/0400RC.BAF
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetTeam(Myself,TEAM_4)
+END
+
+IF
+  NumCreatureGT("RKCHSR",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  TimeOfDay(NIGHT)
+  NumCreatureGT("RKCHSR2",0)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  TimeOfDay(NIGHT)
+  NumCreatureLT("RKCHSR2",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+    CreateCreature("RKCHSR2",[3165.450]%sc_comma_null%) // Rake-Chaser - Cursed Erinys
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    CreateItem("SKULPEND",0,0,0) // Pendant of Yemeth
+    DropInventory()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Help()
+    RunAwayFrom([PC],50)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    RunAwayFrom([PC],50)
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/0400RC.BAF~
+
+
+<<<<<<<< .../pst-ub/inlinedfile/0400RC2.BAF
+IF
+  NumCreatureGT("RKCHSR2",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !TimeOfDay(NIGHT)
+  NumCreatureGT("RKCHSR",0)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !TimeOfDay(NIGHT)
+  NumCreatureLT("RKCHSR",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+    CreateCreature("RKCHSR",[3165.490]%sc_comma_null%) // Rake-Chaser - Collector
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Help()
+    RunAwayFrom([PC],50)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Help()
+    RunAwayFrom([PC],50)
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/0400RC2.BAF~
+
+
+// ADYZOEL.CRE
+// Default script 0400ADY.BCS
+
+// RKCHSR.CRE
+// Default script 0400RC.BCS
+
+// RKCHSR2.CRE
+// Default script 0400RC2.BCS
+
+COPY_EXISTING ~ADYZOEL.CRE~ ~override~
+  WRITE_ASCII 0x268 ~0400ADY~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~RKCHSR.CRE~ ~override~
+  WRITE_ASCII 0x268 ~0400RC~ #8
+ BUT_ONLY
+
+COPY_EXISTING ~RKCHSR2.CRE~ ~override~
+  WRITE_ASCII 0x268 ~0400RC2~ #8
+ BUT_ONLY
+
+
+// AR0400.BCS
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT sc_kaputz_adyzoel ~"ADYZOEL_DEAD_KAPUTZ","GLOBAL"~
+  OUTER_TEXT_SPRINT sc_kaputz_rkchsr ~"RKCHSR_DEAD_KAPUTZ","GLOBAL"~
+  OUTER_TEXT_SPRINT sc_kaputz_rkchsr2 ~"RKCHSR2_DEAD_KAPUTZ","GLOBAL"~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT sc_kaputz_adyzoel ~"ADYZOEL_DEAD","KAPUTZ"~
+  OUTER_TEXT_SPRINT sc_kaputz_rkchsr ~"RKCHSR_DEAD","KAPUTZ"~
+  OUTER_TEXT_SPRINT sc_kaputz_rkchsr2 ~"RKCHSR2_DEAD","KAPUTZ"~
+END
+<<<<<<<< .../pst-ub/inlinedfile/rakes.baf
+IF
+  !Global("Current_Area","GLOBAL",400)
+  !TimeOfDay(NIGHT)
+  !Exists("RKCHSR")
+  !Exists("RKCHSR2")
+  GlobalLT(%sc_kaputz_rkchsr%,1)
+  GlobalLT(%sc_kaputz_rkchsr2%,1)
+THEN
+  RESPONSE #100
+    CreateCreature("RKCHSR",[3165.490]%sc_comma_null%) // Rake-Chaser - Collector
+END
+
+IF
+  !TimeOfDay(NIGHT)
+  !Exists("ADYZOEL")
+  GlobalLT(%sc_kaputz_adyzoel%,1)
+  GlobalLT(%sc_kaputz_rkchsr%,1)
+  GlobalLT(%sc_kaputz_rkchsr2%,1)
+THEN
+  RESPONSE #100
+    CreateCreature("ADYZOEL",[3135.590]%sc_comma_null%) // Adyzoel Eriane-Ard - Rake
+END
+
+IF
+  !Global("Current_Area","GLOBAL",400)
+  TimeOfDay(NIGHT)
+  !Exists("RKCHSR")
+  !Exists("RKCHSR2")
+  GlobalLT(%sc_kaputz_rkchsr%,1)
+  GlobalLT(%sc_kaputz_rkchsr2%,1)
+THEN
+  RESPONSE #10
+    CreateCreature("RKCHSR2",[3165.450]%sc_comma_null%) // Rake-Chaser - Cursed Erinyes
+END
+>>>>>>>>
+EXTEND_TOP ~AR0400.BCS~ ~.../pst-ub/inlinedfile/rakes.baf~ EVAL
+
+
+// Export 0101RATB.BCS
+// Rename RATBONE.BCS
+// Paste in override
+// Replace lines 29-37 with
+<<<<<<<< .../pst-ub/inlinedfile/ratbone_snippet.baf
+  RESPONSE #20
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,10572)
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,10573)
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,10574)
+    Wait(4)
+  RESPONSE #20
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,14818)
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,14819)
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,14820)
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,14821)
+    Wait(5)
+    PlaySequence(ANIM_TALK)
+    FloatMessage(Myself,14822)
+    Wait(4)
+>>>>>>>>
+COPY_EXISTING ~0101RATB.BCS~ ~override/RATBONE.BCS~
+  DECOMPILE_AND_PATCH BEGIN
+    SET ofs1 = INDEX_BUFFER(~RESPONSE #15[ %TAB%%WNL%]+FloatMessage(Myself,48282)~)
+    PATCH_IF (ofs1 >= 0) BEGIN
+      SET ofs2 = INDEX_BUFFER(~RESPONSE #160~ ofs1)
+      PATCH_IF (ofs2 > ofs1) BEGIN
+        DELETE_BYTES ofs1 (ofs2 - ofs1)
+        INSERT_FILE ofs1 ~.../pst-ub/inlinedfile/ratbone_snippet.baf~
+      END
+    END
+  END
+ BUT_ONLY
+
+// DLTCEP
+// Edit Areas
+// Load Area AR0101
+// Actors
+// Add actor
+// Creature RATBONE
+// Refresh fields
+// Position 1055 1520
+// Desination 1055 1520
+// Direction 2
+// Dialog DRATBONE
+// Default RATBONE
+
+// AR0101.ARE
+// Actor 5
+// Name Ratbone
+
+// DRATBONE.DLG
+// Copy responses 242, 245, 246, 244
+// Paste in that order
+// State 74
+// First transition index 256
+// # transitions 4
+
+// DTEGARIN.DLG
+// Speaking with Tegar'in sends you to Aethelgrin's dialog, speaking with Aethelgrin sends you to
+// Tegar'in's dialog which is missing some options.
+// Copy responses 10-23 from DAETHEL.DLG
+// Paste in DTEGARIN.DLG and sort
+// State 8
+// First transition index 102
+// # transitions 14
+// Copy Response triggers 2-8 from DAETHEL.DLG
+// Paste in DTEGARIN.DLG and sort
+// Response 108 Trigger index 11
+// Response 109 Trigger index 12
+// Response 110 Trigger index 13
+// Response 111 Trigger index 14
+// Response 112 Trigger index 15
+// Response 113 Trigger index 16
+// Response 114 Trigger index 17
+
+// DRKCHSR2.DLG
+// Know Rake-Chaser's identity before you're told.
+// Add Response trigger Global("RC_ID","GLOBAL",3)
+// Response 6, 7 set flag, add  trigger 15
+
+// DAETHEL.DLG
+// Know Rake-Chaser's identity.
+// Action 2 SetGlobal("RC_ID","GLOBAL",3) -> SetGlobal("RC_ID","GLOBAL",2)
+
+// END
+
+
+//== ======================= RENAMING A RATBONE TO CARVER FIX ================================
+
+// PSTEE note: Original Ratbone character is still available in PSTEE. This section is taken 
+// directly from PST Fixpack and adapted for PSTEE.
+
+// Renaming the character named "Ratbone" in the vanilla game to "Carver", in order to avoid any
+// possible conflicts with the other Ratbone in the vanilla game files that is restored in the
+// Unfinished Business Restored Pendant of Yemeth quest.  Doing it in the Fixpack because it
+// requires a large number of changes to the dialog.tlk file which Fixpack does anyway, and because
+// it'll help avoid confusion in any future bug reports for either mod regarding either character.
+
+ACTION_IF (IS_PSTEE) BEGIN
+  STRING_SET 49632 @49632 // ~Carver~
+
+  COPY_EXISTING ~DR_BONE.DLG~ ~override/DCARVER.DLG~
+    REPLACE_TEXTUALLY ~DR_BONE~ ~DCARVER~
+   BUT_ONLY
+
+  COPY_EXISTING ~RATBONE.CRE~ ~override/CARVER.CRE~
+    WRITE_LONG  0x8   49632
+    WRITE_ASCII 0x280 ~Carver~ #32  // script name
+    WRITE_ASCII 0x2cc ~DCARVER~ #8  // dialog
+   BUT_ONLY
+
+  COPY_EXISTING ~RATBONE.CRE~ ~override~
+    WRITE_ASCII 0x268 ~RATBONE~ #8  // default script
+    WRITE_ASCII 0x2cc ~DRATBONE~ #8 // dialog
+   BUT_ONLY
+
+  COPY_EXISTING ~AR0101.ARE~ ~override~
+    READ_LONG 0x54 ofsActors
+    WRITE_ASCII (ofsActors + 3 * 0x110) ~Carver~ #32
+    WRITE_ASCII (ofsActors + 3 * 0x110 + 0x48) ~DCARVER~ #8  // DLG
+    WRITE_ASCII (ofsActors + 3 * 0x110 + 0x80) ~CARVER~ #8  // CRE
+   BUT_ONLY
+END
+
+
+// ======================== BEGIN PENDANT OF YEMETH QUEST =======================
+
+COMPILE ~%MOD_FOLDER%/Yemeth/dlg/Yemeth.d~
+
+COPY_EXISTING ~AR0101.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1055
+    fj_loc_y          = 1520
+    fj_orientation    = 2
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Ratbone~
+    fj_cre_resref     = ~RATBONE~
+    fj_dlg_resref     = ~DRATBONE~
+    fj_bcs_default    = ~RATBONE~
+  END
+ BUT_ONLY
+
+// ================================================================================
+
+// The above is the extent of SKARD's changes.  What follows are changes by Qwinn.
+
+// If you install the quest as is, there are two Ratbones in Ragpicker's Square.
+// The one that came with the vanilla game is the NPC that stands outside Sharegrave's
+// kip and can train you to be a thief.  This quest restores the other one.  Having two toons
+// with the same name, and a name like that no less, is a bit confusing and, well, lame.
+// Not to mention they use the same .CRE, and I'd hate to see what happened if you killed
+// one and not the other.
+
+// I rename the thief-trainer Ratbone to Carver, and make the changes in the Fixpack
+// so as to avoid confusion in future bug reports regarding either character in either
+// mod.
+

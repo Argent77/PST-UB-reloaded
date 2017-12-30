@@ -1,0 +1,103 @@
+// *** A compatibility layer between mod and game to reduce duplicate work for PST and PSTEE ***
+
+ACTION_IF IS_PSTEE BEGIN
+  // Can be used to locating game-specific resources included in the mod
+  OUTER_TEXT_SPRINT game_name ~pstee~
+
+  // Field offset differences
+  OUTER_SET CRE_OFS_SCRIPT_NAME = 0x280
+  OUTER_SET CRE_OFS_DIALOG = 0x2cc
+  OUTER_SET CRE_OFS_ATTRIBUTES = 0x96
+
+  // Script command names
+  OUTER_TEXT_SPRINT sc_nearsavedlocation ~NearSavedLocationPST~
+  OUTER_TEXT_SPRINT sc_createpartygold ~GiveGoldForce~
+  OUTER_TEXT_SPRINT sc_fadetoblack ~FadeToColor([20.0],0)~
+  OUTER_TEXT_SPRINT sc_fadefromblack ~FadeFromColor([20.0],0)~
+  OUTER_TEXT_SPRINT sc_randomface ~RandomFace()~
+  OUTER_TEXT_SPRINT sc_restparty ~RestPartyEx(0,10,FALSE)~
+
+  // Trigger NPC-specific songs
+  OUTER_TEXT_SPRINT sc_song_annah ~PlaySong(9)~
+  OUTER_TEXT_SPRINT sc_song_dakkon ~PlaySong(10)~
+  OUTER_TEXT_SPRINT sc_song_morte ~PlaySong(11)~
+  OUTER_TEXT_SPRINT sc_song_nordom ~PlaySong(12)~
+  OUTER_TEXT_SPRINT sc_song_grace ~PlaySong(13)~
+  OUTER_TEXT_SPRINT sc_song_vhailor ~PlaySong(14)~
+  OUTER_TEXT_SPRINT sc_song_ignus ~PlaySong(15)~
+
+  // PSTEE uses a different target system for factions and teams
+  OUTER_TEXT_SPRINT sc_help_init ~Help([ANYONE])~
+  OUTER_TEXT_SPRINT sc_faction_sensate ~Faction(LastTrigger,SENSATE)~
+  OUTER_TEXT_SPRINT sc_faction_xaositect ~Faction(LastTrigger,XAOSITECT)~
+  OUTER_TEXT_SPRINT sc_faction_hatmonium ~Faction(LastTrigger,HATMONIUM)~
+  OUTER_TEXT_SPRINT sc_team_team1 ~Team(LastTrigger,TEAM_1)~
+  OUTER_TEXT_SPRINT sc_team_team2 ~Team(LastTrigger,TEAM_2)~
+  OUTER_TEXT_SPRINT sc_team_team3 ~Team(LastTrigger,TEAM_3)~
+  OUTER_TEXT_SPRINT sc_team_team4 ~Team(LastTrigger,TEAM_4)~
+
+  // Prefix for checking specific target types
+  OUTER_TEXT_SPRINT sc_target_general ~0~
+  OUTER_TEXT_SPRINT sc_target_race ~0.0~
+  OUTER_TEXT_SPRINT sc_target_class ~0.0.0~
+  OUTER_TEXT_SPRINT sc_target_specific ~0.0.0.0~
+  OUTER_TEXT_SPRINT sc_target_gender ~0.0.0.0.0~
+
+  // For script commands requiring a coordinate parameter in PST and two separate number parameters in PSTEE
+  OUTER_TEXT_SPRINT sc_bracket_l ~~
+  OUTER_TEXT_SPRINT sc_dot_comma ~,~
+  OUTER_TEXT_SPRINT sc_bracket_r ~~
+
+  // For script commands requiring additional number parameters in PSTEE
+  OUTER_TEXT_SPRINT sc_comma_null ~,0~
+END ELSE BEGIN
+  // Can be used to locating game-specific resources included in the mod
+  OUTER_TEXT_SPRINT game_name ~pst~
+
+  // Field offset differences
+  OUTER_SET CRE_OFS_SCRIPT_NAME = 0x324
+  OUTER_SET CRE_OFS_DIALOG = 0x370
+  OUTER_SET CRE_OFS_ATTRIBUTES = 0x2e0
+
+  // Script command names
+  OUTER_TEXT_SPRINT sc_nearsavedlocation ~NearSavedLocation~
+  OUTER_TEXT_SPRINT sc_createpartygold ~CreatePartyGold~
+  OUTER_TEXT_SPRINT sc_fadetoblack ~FadeToBlack()~
+  OUTER_TEXT_SPRINT sc_fadefromblack ~FadeFromBlack()~
+  OUTER_TEXT_SPRINT sc_randomface ~Face(-1)~
+  OUTER_TEXT_SPRINT sc_restparty ~RestParty(-1,10,0)~
+
+  // Trigger NPC-specific songs
+  OUTER_TEXT_SPRINT sc_song_annah ~StartSong(CHAR_ANNAH,[0.0],3)~
+  OUTER_TEXT_SPRINT sc_song_dakkon ~StartSong(CHAR_DAKKON,[0.0],3)~
+  OUTER_TEXT_SPRINT sc_song_morte ~StartSong(CHAR_MORTE,[0.0],3)~
+  OUTER_TEXT_SPRINT sc_song_nordom ~StartSong(CHAR_NORDOM,[0.0],3)~
+  OUTER_TEXT_SPRINT sc_song_grace ~StartSong(CHAR_GRACE,[0.0],3)~
+  OUTER_TEXT_SPRINT sc_song_vhailor ~StartSong(CHAR_VHAILOR,[0.0],3)~
+  OUTER_TEXT_SPRINT sc_song_ignus ~StartSong(CHAR_IGNUS,[0.0],3)~
+
+  // PSTEE uses a different target system for factions and teams
+  OUTER_TEXT_SPRINT sc_help_init ~~
+  OUTER_TEXT_SPRINT sc_faction_sensate ~Help([0.SENSATE])~
+  OUTER_TEXT_SPRINT sc_faction_xaositect ~Help([0.XAOSITECT])~
+  OUTER_TEXT_SPRINT sc_faction_hatmonium ~Help([0.HATMONIUM])~
+  OUTER_TEXT_SPRINT sc_team_team1 ~Help([0.0.TEAM_1])~
+  OUTER_TEXT_SPRINT sc_team_team2 ~Help([0.0.TEAM_2])~
+  OUTER_TEXT_SPRINT sc_team_team3 ~Help([0.0.TEAM_3])~
+  OUTER_TEXT_SPRINT sc_team_team4 ~Help([0.0.TEAM_4])~
+
+  // Prefix for checking specific target types
+  OUTER_TEXT_SPRINT sc_target_general ~0.0.0~
+  OUTER_TEXT_SPRINT sc_target_race ~0.0.0.0~
+  OUTER_TEXT_SPRINT sc_target_class ~0.0.0.0.0~
+  OUTER_TEXT_SPRINT sc_target_specific ~0.0.0.0.0.0~
+  OUTER_TEXT_SPRINT sc_target_gender ~0.0.0.0.0.0.0~
+
+  // For script commands requiring a coordinate parameter in PST and two separate number parameters in PSTEE
+  OUTER_TEXT_SPRINT sc_bracket_l ~[~
+  OUTER_TEXT_SPRINT sc_dot_comma ~.~
+  OUTER_TEXT_SPRINT sc_bracket_r ~]~
+
+  // For script commands requiring additional number parameters in PSTEE
+  OUTER_TEXT_SPRINT sc_comma_null ~~
+END

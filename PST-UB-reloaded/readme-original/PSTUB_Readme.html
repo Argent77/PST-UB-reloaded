@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style type="text/css">
+    /*<![CDATA[*/
+    <!--
+      body {
+        margin: 0;
+        padding: 0;
+        cursor: default;
+        text-align: center;
+        color: #000;
+        background: #e3e3db url('http://spellholdstudios.net/images/sh_bg_main.jpg');
+      }
+
+      #wrap {
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 88%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        font-size: 12px;
+        color: #333;
+      }
+
+      #header {
+        text-align: center;
+        background: #e5e5e5;
+        border: 1px solid #781808;
+        border-top: 5px solid #781808;
+        border-bottom: 5px solid #781808;
+        padding: 5px 0 13px 0;
+      }
+      
+      #header .about {
+        margin: 7px 0 0 0;
+        padding: 0;
+        font-style: italic;
+        color: #555;
+      }
+      
+      #header .menu {
+        font-weight: bold;
+        margin: 0;
+        color: #999;
+      }
+      
+      #header .menu a:link,
+      #header .menu a:visited {
+        color: #333;
+      }
+      
+      #maindiv {
+        margin: 0 auto;
+        margin-top: -20px;
+        width: 80%;
+      }
+      
+      #maindiv .content {
+        counter-increment: kman;
+        counter-reset: h2;
+        background-color: #e8e8e6;
+        padding: 0 0 25px 0;
+        margin: 50px auto;
+        border-width: 1px 1px 4px 10px;
+        border-style: solid;
+        border-color: #781808;
+        position: relative;
+        display: block;
+      }
+
+      #maindiv .content::before {
+        content: counter(kman, lower-roman);
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: #eee;
+        background-color: #781808;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+      }
+      
+      h2 {
+        display: block;
+        font-family: Verdana, Trebuchet MS, Arial, serif;
+        text-align: left;
+        text-indent: 30px;
+        padding: 0px;
+        margin: 20px 0 0 0;
+        border-bottom: dotted 2px #d0d0d0;
+        border-top: dotted 2px #d0d0d0;
+        background: #deded9;
+        font-size: 160%;
+      }
+      
+      h2::first-letter {
+        color: #781808;
+        background-color: transparent;
+      }
+
+      #maindiv p {
+        font-size: 100%;
+        font-style: normal;
+        line-height: 150%;
+        padding: 0px;
+        margin: 10px auto;
+        width: 90%;
+        display: block;
+      }
+      
+      #maindiv address a:link,
+      #maindiv address a:visited {
+        font-weight: bold;
+        text-decoration: underline;
+        background-color: transparent;
+        color: #eaeaea !important;
+        padding-right: 5px;
+        padding-left: 6px;
+      }
+
+      #maindiv address a:focus,
+      #maindiv address a:hover {
+        text-decoration: none;
+        color: #F1F1F1;
+        border: 0;
+      }
+      
+      #maindiv address a:active {
+        color: #fff;
+        text-decoration: line-through;
+        border: none;
+      }
+      
+      #maindiv address {
+        font-size: 95%;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        color: #BBB;
+        background-color: #781808;
+        padding: 3px 0px 0px;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        display: block;
+        text-align: right;
+      }
+
+      #maindiv .important {
+        font-size: 95%;
+        font-family: Verdana;
+        text-align: left;
+        background-color: #F1F1F1;
+        border-top: solid 1px #aaa;
+        border-bottom: solid 1px #aaa;
+        border-left: solid 6px #aaa;
+        border-right: solid 6px #aaa;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        line-height: 160%;
+      }
+      
+      #maindiv .important::before {
+        display: none;
+      }
+      
+      #maindiv .important p {
+        font-size: 100%;
+        text-indent: 0px;
+        margin: 5px 0 10px 0;
+      }
+
+      #maindiv ul {
+        margin: -10px 0 0 30px;
+        *margin-left: 65px;
+      }
+      
+      #maindiv ol {
+        margin: -10px 0 0 35px;
+        *margin-left: 70px;
+      }
+      
+      #maindiv .important ul {
+        margin: -10px 0 0 15px;
+      }
+
+      #maindiv .important ol {
+        margin: -10px 0 0 20px;
+      }
+      
+      #maindiv ul li {
+        list-style-type: square;
+        line-height: 150%;
+      }
+
+      #maindiv ol li {
+        line-height: 150%;
+      }
+
+      .t1 {
+        font-weight: bold;
+        width: 26%;
+        text-align: right;
+        clear: right;
+        float: left;
+        *float: none;
+        *margin-left: 65px;
+        line-height: 22px;
+      }
+
+      .t2 {
+        text-align: left;
+        width: 73%;
+        float: right;
+        *float: none;
+        line-height: 22px;
+      }
+      
+      hr {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        height: 1px;
+        border: 0;
+        color: #aaa;
+        background-color: #aaa;
+      }
+      
+      hr.floatfix {
+        clear: both;
+        color: #e8e8e6;
+        background-color: #e8e8e6;
+        *margin: 0;
+        *padding: 0;
+      }
+
+      h1 {
+        font-size: 225%;
+        color: #444;
+        padding: 5px 0 5px 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      h3,
+      h4,
+      h5 {
+        margin: 10px 40px 10px 40px;
+        padding: 0;
+      }
+      
+      h3 {
+        font-size: 125%;
+        font-style: italic;
+      }
+
+      h4 {
+        font-size: 125%;
+      }
+      
+      h5 {
+        font-size: 100%;
+      }
+      
+      h6 {
+        width: 100%;
+        margin: 10px 0 15px 0;
+        background-color: #ECECEC;
+        text-align: left;
+        text-indent: 30px;
+        font-size: 100%;
+        font-style: italic;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-bottom: solid 1px #bbb;
+        border-top: solid 1px #bbb;
+      }
+
+      a:link,
+      a:visited {
+        color: #781808;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: #222;
+        border-bottom: 1px solid black;
+      }
+
+    -->
+    /*]]>*/
+    </style>
+    <title>SPELLHOLD STUDIOS - Planescape: Torment Unfinished Business</title>
+  </head>
+  <body>
+    <a name="top" id="top"></a>
+    <div id="wrap">
+      <div id="header">
+        <h1>Planescape: Torment Unfinished Business</h1>
+        <strong>A Spellhold Studios mod for Planescape: Torment</strong>
+        <hr />
+        <p class="about">
+          Author:  Qwinn (Paul Escalona)
+        </p>
+        <p class="about">
+          Engine Fixes by:  scient (Brendan Casey)
+        </p>
+        <p class="about">
+          <a href="http://spellholdstudios.net/ie/pst-ub">Mod Website</a> &#8226;
+          <a href="http://www.shsforums.net/index.php?showforum=553">Mod Forum</a> &#8226;
+          Version: 4.12
+        </p>
+        <hr />
+        <p class="menu">
+          <a href="#intro">Introduction</a> &middot;
+          <a href="#installation">Installation</a> &middot;
+          <a href="#components">Component List</a> &middot;
+          <a href="#faq">FAQ</a> &middot;
+          <a href="#credits">Credits</a> &middot;
+          <a href="#version">Version History</a>
+        </p>
+      </div>
+      <div id="maindiv">
+
+        <!-- ================== I n t r o d u c t i o n ================== -->
+        <a name="intro" id="intro"></a>
+        <div class="content">
+          <h2>Introduction</h2>
+
+          <p>This WeiDU mod takes the almost-but-not-quite-finished content that shipped with Black Isle's classic Planescape: Torment CRPG, and finishes and polishes it so you can actually see and enjoy the new content in your game.  And as you shall soon see, there's quite a bit of it.  Version 4.0 of this mod comes with no less than 18 full and non-trivial restorations.</p>
+
+          <p>The key thing to know here is that the vast bulk of the content of this mod was written and developed by the folks at Black Isle that created the rest of the game.  They did the first 95%, we modders are just doing the last 5% to hook it into the game, so you can expect that the material and dialogues here will be within the spirit and style of the original game.</p>
+
+          <p>Here's the short list of components. Click <a href="#components">here</a> for a detailed description of each.</p>
+
+          <br />
+
+<ul>
+<li>"Restored Able Ponder-Thought Research"</li>
+<p> Originally Restored by: Restoration Pack, SKARDAVNELNATE. Completely Redone by Qwinn<p>
+<li>"Restored More Morte Mortuary Moments"</li>
+<p> Originally Restored by: Restoration Pack, SKARDAVNELNATE, Qwinn<p>
+<li>"Restored Candlestick Quest"</li>
+<p> Originally Restored by: Platter</p>
+<li>"Restored Deionarra's Truth Conversations"</li>
+<p> Originally Restored by: SKARDAVNELNATE</p>
+<li>"Restored Pendant of Yemeth Quest"</li>
+<p> Originally Restored by: SKARDAVNELNATE</p>
+<li>"Restored Elyce & Company Quest"</li>
+<p> Originally Restored by: SKARDAVNELNATE</p>
+<li>"Restored Curst Citizens"</li>
+<p> Originally Restored by: SKARDAVNELNATE</p>
+<li>"Restored Curst Prisoners"</li>
+<p> Originally Restored by: Qwinn</p>
+<li>"Restored Carl Parfidor"</li>
+<p> Originally Restored by: SKARDAVNELNATE, scripting by Qwinn</p>
+<li>"Restored Alley of Dangerous Angles Thugs"</li>
+<p> Originally Restored by: Qwinn</p>
+<li>"Restored Morte & Ingress's Teeth Banter"</li>
+<p> Originally Restored by: Qwinn</p>
+<li>"Restored Items"</li>
+<p> Originally Restored by: Platter's Fixpack, Restoration Pack, SKARDAVNELNATE</p>
+<li>"Restored Party Comments and Banters"</li>
+<p> Originally Restored by: Qwinn</p>
+<li>"Restored Mebbeth"</li>
+<p> Originally Restored by: Qwinn</p>
+<li>"Restored Lower Ward Encounters"</li>
+<p> Originally Restored by: Qwinn</p>
+<li>"Restored Bestiary Entries"</li>
+<p> Originally Restored by: Restoration Pack</p>
+<li>"Expanded Deionarra's Truth Mod"</li>
+<p> New Content and Restoration of Old Content by: Qwinn</p>
+<li>"Restored Item Cheats - Not Recommended"</li>
+<p> Originally Restored by: Restoration Pack, Qwinn</p>
+</ul>
+
+
+            <address>
+            <span class="footer">Mod title &gt; Introduction</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+        <!-- ================== I n s t a l l a t i o n ================== -->
+        <a name="installation" id="installation"></a>
+        <div class="content">
+          <h2>Installation</h2>
+
+          <p>Unfinished Business was created and tested on a clean install of the 4-CD version of Planescape: Torment, followed by the application of the <a href="http://www.sorcerers.net/Games/Torment/index_misc.php">Official PS:T Patch 1.1 available at Sorcerer's Place</a>, followed by the <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a>.
+
+          <p>Installing the PS:T Fixpack prior to PS:T Unfinished Business is very strongly recommended. The PS:T Fixpack readme contains instructions for creating a good base for all other mods, including how to patch the game if you have the 4CD version and installing your language pack if necessary.</p>
+
+          <p>Once the base of a patched and bug-fixed install is laid down, any other WeiDU mods you wish to install can be installed in any order.  For example, after installing the Fixpack, feel free to install <a href="http://spellholdstudios.net/ie/pst-qtweaks">Qwinn's PS:T Tweak Pack</a> before or after Unfinished Business, it should make no difference.  All WeiDU mods are designed to play well together and introduce no conflicts with one another.</p>
+
+          <p><strong>To install Unfinished Business</strong>, simply extract pstub.rar into the main directory of your Planescape: Torment game (probably C:\Program Files\Black Isle\Torment).  Click Setup-PST-UB.exe and follow the prompts.</p>
+
+          <p>Your first option during the installation procedure will be to install all of the "Recommended Components".  Saying Yes to that option will install the entire mod except for the "Restored Item Cheats - Not Recommended" component.  You will then have a separate option to install that component, if you so wish.  This is the suggested method of installing the Unfinished Business mod, but you should feel free to customize it and only install the specific components you prefer.</p>
+
+          <p><strong>To uninstall</strong>, simply click Setup-PST-UB.exe once more and follow the prompts.</p>
+
+           <address>
+            <span class="footer">PS:T Unfinished Business &gt; Installation</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+
+        <!-- =========================== C O M P O N E N T   L I S T  ======================== -->
+        <a name="components" id="components"></a>
+        <div class="content">
+          <h2>Detailed Component List</h2>
+
+<h4>1. Restored Able Ponder-Thought Research</h4>
+
+<p>95% of what's necessary to have Able Ponder-Thought conduct research on three subjects for you is in the original game files. This component completes it.  As of version 3.0, it will simply take roughly 20 game hours for Able to complete his research.</p>
+
+<h4>2. Restored More Morte Mortuary Moments</h4>
+
+<p>This component restores two bits regarding Morte in the Mortuary.  They are "Morte's Original Intro" which was originally restored in the Restoration Pack but which I handle <i>completely</i> differently, and "Morte Comments on Dhaal's Book" from SKARDAVNELNATE'S AIP, which I also implement somewhat differently.</p>
+
+<p><strong>"Morte's Original Intro:"</strong>
+
+<p>The main Morte dialog file the game ships with (DMORTE.DLG) contains an introductory conversation with Morte that is much like all the other conversations in game - you have multiple options in what you say, lots of different conversation paths to explore, etc.  What actually shipped is a lobotomized version with almost no options in your responses, probably so as to introduce players new to RPG's more slowly to the whole experience. This UB component restores Morte's introduction to the originally intended more complex version.  You can get quite a lot more dialogue out of Morte now if you dig for it.<p>
+
+<p>I'm doing this <em>completely</em> different from the way Restoration Pack did it.  Also, the entire dialogue is presented exactly as it was written by Black Isle, with three minor exceptions.  See MorteIntro\tph\MorteIntro.tph if you want the details on the differences from Restoration Pack's handling and from the game files.</p>
+
+<p><strong>"Morte Comments on Dhaal's Book:"</strong>
+
+<p>Originally restored by SKARDAVNELNATE and done in a slightly different manner by Qwinn, Morte's walkthrough in the mortuary is extended slightly, and he will comment when you approach Dhaal near the beginning of the game.  All content was within the game files, all that was needed were a couple of script changes.</p>
+
+<h4>3. Restored Candlestick Quest</h4>
+
+<p>Originally restored and distributed as a stand alone restoration mod by Platter, SKARDAVNELNATE provided some good fixes for this restoration of a quest in the Buried Village.  Most of the content here existed in the game files:  the areas, the items, the creatures and the dialog lines, all were already in the game, just not enabled.  Platter added a couple of triggers and actors and scripts to restore it, and SKARDAVNELNATE added the quests to the journal, fixed some script errors and corrected the colors and appearance of the actors.  Qwinn added some additional scripting for the portals.</p>
+
+<h4>4. Restored Deionarra's Truth Conversations</h4>
+
+<p>SKARDAVNELNATE'S description of his restoration:  "There are several dialog options [regarding Deionarra's fate] that can't be accessed before the Fortress of Regrets. However a few of them are non specific enough where TNO doesn't need to know all the details. Using the Deionarra Sensory Stone and speaking with Iannis should be enough to piece together that something happened. Iannis's dialog is too detailed but if it is enabled it will now work properly."</p>
+
+<p>Note that this is NOT the "Deionarra's Truth" mod out there that also restores Iannis's conversation about Deionarra's fate despite the fact that there's no way that TNO could know what he discusses in it.  As he says, SKARDAVNELNATE's version only restores conversational bits that are consistent with what the player can know at that point in the game. If you want more, though, check out the "Expanded Deionarra's Truth Mod", newly available in UB version 3.0, that restores every bit of content regarding Deionarra's Truth, and adds some new content besides.</p>
+
+<h4>5. Restored Pendant of Yemeth Quest</h4>
+
+<p>Originally restored by SKARDAVNELNATE, this is possibly the single biggest restoration in this mod.  This component restores a quest involving 6 actors spanning two different areas, mostly in or near the Smoldering Corpse Bar.  To start it, talk to Ratbone in Ragpicker's Square.  Note that this is NOT the Ratbone that was in that area in the original game - that Ratbone gets renamed to Carver in the <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a> so as to avoid redundancy with -this- Ratbone that is restored by this mod.</p>
+
+<p>Although there were lots of typos and small bugs that needed fixing to get the quest working smoothly, the vast majority of the content of this quest existed in the game files, including all of the dialogue.  The restoration mainly just adds already existing actors to the areas and scripts to control them.</p>
+
+<h4>6. Restored Elyce and Company</h4>
+
+<p>Originally restored by SKARDAVNELNATE, with some additional fixes by Qwinn, this quest restores Elyce, her brother and her boyfriend to the game, and there is a small quest involved. Once again, the dialogues and creatures, etc., were all there in the game files. SKARDAVNELNATE just adds them as actors to the area, and corrects a handful of script errors.  Qwinn fixed a few additional bugs in their dialogues.</p>
+
+<h4>7. Restored Curst Citizens</h4>
+
+<p>Seven cool new Curst Citizens, originally restored by SKARDAVNELNATE, all with interesting dialogues dug up from within the game's unimplemented files.</p>
+
+<h4>8. Restored Curst Prisoners</h4>
+
+<p>This is original to PS:T Unfinished Business, restored by Qwinn.  Ever wonder why the Curst prison, a major planar prison, had so few prisoners in it? Not even a plague could account for how sparse it was. You'd see up to 3 prisoners only if you yourself sent them there, and then a bunch more quickly hacked to pieces later on, and that's it.  There were actually 9 additional prisoner's dialogues coded that were never put into the area. This component puts them there. And if by some chance those prison doors were to ever open, and the prison erupt into riots and chaos, don't expect them to ignore the opportunity!</p>
+
+<h4>9. Restored Carl Parfidor</h4>
+
+<p>Another cool restoration originally done by SKARDAVNELNATE.  In the original game, you can hire someone to kill Carl Parfidor, but you can never actually meet him.  Now you can!  As with all other UB components, the dialogue enabled here was written by the Black Isle staff.  And if you do have Carl Parfidor snuffed, you will meet a "Curst Administrative Assistant" instead, also as intended.  Qwinn added scripting so that the hired help doesn't simply disappear and Carl doesn't just get magically replaced.</p>
+
+<h4>10. Restored Alley of Dangerous Angles Thugs</h4>
+
+<p>This is original to PS:T Unfinished Business, restored by Qwinn. The generic thugs in the Alley always bothered me greatly - they seemed very unintelligent, aware only of whether or not you'd paid their gang's toll, and repeatedly telling you to "Stay right here, someone will be along shortly to talk to you" which in most of the area simply wasn't true, you were only approached near the area exits. Thankfully, I found other buried dialogue files (and these following the correct PS:T naming conventions) where they are actually aware of events unfolding around them, will comment on them, and they will no longer be, down to the last man and woman, maniacally obsessed with your 10 copper piece toll.</p>
+
+<h4>11. Restored Morte & Ingress's Teeth Banter</h4>
+
+<p>This is original to PS:T Unfinished Business, restored by Qwinn. It restores a very amusing (non-voiced) banter between yourself, Morte and Ingress's Teeth. Before Morte can use the teeth, you will need to use them with Morte nearby.</p>
+
+<p>Please be aware that unlike all the other recommended components of Unfinished Business, this restoration includes dialogue not contained within the unmodded game files. Two short lines were needed to connect existing blocks of dialogue together smoothly. More significantly, I had to write an epilogue to the banter to account for a game engine limitation - namely, there is no way to automatically equip Morte with the teeth, but that's how the original banter ends (which was probably why the banter was cut from the game in the first place). Almost all of the dialogue up to him having them equipped is original Black Isle material, everything after that was written by me to account for the limitation.<p>
+
+<p>Since such an epilogue was necessary to 'finish' the content, I decided to have fun with it. I hope you'll find my epilogue as amusing as the original content. It's certain that Annah (if she's there) will find it so.  I do continue the original banter's providing of both a "good" and "evil" track, at least for a little while.</p>
+
+<h4>12. Restored Items</h4>
+
+<p>As of version 2.0, the items restored to the game by this component are the Rat Charm, the Fiend's Teeth, Spiked Gauntlets, Gauntlets of Rending, the Eye of Vecna, Devil's Due and the Chaos Feather.  All except the Rat Charm were originally restored in the Restoration Pack.</p>
+
+<p>Version 3.0 of the Ultimate WeiDU Fixpack fixes the bug with the usability restrictions on the Rat Charm. It is now usable only by Xaositects, as was intended. Previous workarounds that made it usable only by Chaotic characters have been rolled back. The rat charm is available from Barking Wilder if you are a Xaositect, you ask him the right question, and you have the right component item in your inventory. If you install this component without installing the Fixpack, you will not be able to use the Rat Charm.<p>
+
+<p>The Fiend's Teeth (usable by Morte), Spiked Gauntlets and the Gauntlets of Rending are sold by a merchant named Murk who is restored to Curst. His store already contained these items, all I do is restore the merchant.<p>
+
+<p>The Eye of Vecna will not become available until later in the game... be sure to check with Vrischika if you come back after leaving Sigil for any length of time.</p>
+
+<p>Devil's Due and the Chaos Feather will be found in a container somewhere within the walls of Sigil - or at least, it's reputed to be, though no one knows for sure.</p>
+
+<h4>13. Restored Party Comments and Banters</h4>
+
+<p>Version 1.0 and 2.0 of UB did not add any new banters and only 3 voiced comments. One was originally restored in the Restoration Pack, a comment by Grace about Fell the first time she enters the Hive area containing his parlor. Qwinn added another two, both in the main Clerk's Ward area, one when Morte first enters it and another when Grace first enters it.</p>
+
+<p>Version 3.0 of Unfinished Business, however, has greatly expanded this component. It restores 27 fully voiced flirts between Morte and female zombies, which can be enjoyed right at the beginning of the game. Morte will chime in a moment or two after talking to any female zombie. Also added are 15 new and entertaining fully voiced banters between various PC's, and a new comment by Grace that she'll say one time when entering most areas of the Hive for the first time. Note that you're unlikely to ever see the 15 new banters unless you install the accelerated banter component in Qwinn's Tweak Pack.</p>
+
+<p>Version 4.0 adds even more restored sounds and banters - I combed through every available sound file, and this version pretty much restores every banter that can be sanely restored. Also, new and more music! the "Smoldering Corpse Alternate" theme music from the official PS:T soundtrack will now play at night (game time, of course) in the Smoldering Corpse Bar.  Finally, talking with your party members will now play that character's theme music, as several of those themes were very rarely played otherwise in game. Morte's theme music did not ship with the game, but talking to him will play his main theme from the official Planescape Torment soundtrack. Both of these tracks from the soundtrack are by Mark Morgan.</li>
+
+<h4>14. Restored Mebbeth</h4>
+
+<p>This component, new to version 3.0 of UB, restores two significant orphaned blocks of Mebbeth's dialogue. One block is several lines worth and was supposed to occur after you sleep in her hut via her dialogue option to do so, and actually leads to a new journal entry. Another block of dialogue is "Mebbeth's Tale of Ravel", which you will only be able to get from her before you leave for Ravel's maze, and it also leads to a new journal entry. Sound interesting? It is.</p>
+
+<h4>15. Restored Lower Ward Encounters</h4>
+
+<p>This component, new to version 3.0 of UB, is packaged along with the rest of the Recommended components. It restores 9 creatures to the main Lower Ward area, 7 of them with previously unseen dialogues that shipped with the original game, and also brings back an existing character for a little bit of extra original dialogue that you couldn't get after she left the Lower Ward.</p>
+
+<p>The best new addition is Hailcin'n, a scarred and tattooed githzerai warrior who wanders in the same general area as Kii'na. A very colorful character, he thankfully doesn't seem to hold Dak'kon's history against him. This was an easy restoration - the game files already included his creature file, his dialogue file, and his walking-around script. All I needed to do was put him in place, and do a couple of very minor dialogue corrections. His dialogue is quite detailed, and adds a lot of flavor.</p>
+
+<p>Another 6 creatures are placed based on two unused dialogue files, representing customers standing around Deran, the slave auctioneer. Much like the customers at Giltspur's auction, there are 3 males and 3 females. Talking to any one of them can produce one of 3 random dialogues for that gender, again the same as occurs with Giltspur's customers. No corrections to the dialogues were necessary, but I did have to pick creature sprites and write a script for them based on the (fixed by the Fixpack) Giltspur customer script. They also add a good deal of flavor to that area.</p>
+
+<p>Another two characters, laborers working on some strange unidentified device, are restored near where Lenny hangs out. This is restored based on a complex script that existed for the worker that moves around. There wasn't any special interactive dialogue files for them, but there are a good number of original floating text lines. If you do try to talk to them, I gave one a generic Lower Ward citizen dialogue and the other has an original "I'm working, leave me be" dialogue line that I didn't find being used elsewhere.</p>
+
+<p>Finally, if you give Ki'ina information that causes her to leave the Lower Ward, she will now return about a week later so that you can enjoy the rest of her dialogue that was previously inaccessible.</p>
+
+<h4>16. Restored Bestiary Entries</h4>
+
+<p>This component, new to version 4.0 of UB, was originally restored by Kung Fu Man in his Restoration Pack. Most of these restored text entries were incorporated in Fixpack v3.0, but as of version 4.0 are now separated into this UB component. Affected bestiary entries are Annah, Dak'kon, Dhall, Dustmen (both male and female), Grace, Ignus, Lothar, Nordom, Trias and Vhailor.</p>
+
+<p>In addition, the game's dialogue included an alu-fiend text entry for the bestiary, but no corresponding portrait was available. Thankfully, SHS forum poster MaeBe responded to my request for a modified version of the Aasimar portrait, and poster Leila improved upon it further to make the included portrait for Vrischika an excellent addition to the bestiary. I think it fits the PS:T style quite well, and I am very grateful to both posters for lending their excellent artistic skills to this project.</p>
+
+<p>Finally, thanks to our engine guru scient, you can now see the updated bestiary picture for TO in game. The portrait will switch from a vague unlit portrait to a fully lit portrait when you first see him in person, which is marked by a short movie. Make sure to check it out before starting dialogue, as your chances to see it may be very limited afterwards.</p>
+
+<h4>17. Expanded Deionarra's Truth mod</h4>
+
+<p>I am not including this in the "Recommended" section of the installation procedure because it contains a lot more new content than restored content, but I recommend it anyway. As noted in the partial "Restored Deionarra's Truth Mod" listed above, not every original conversation regarding Deionarra's ultimate fate could be restored because the player couldn't know everything he needed to to have those conversations until it was too late. This mod adds a great deal of new content (including 180 new lines of dialogue) that will allow the player to find out her fate before it becomes too late to do anything about it. Once the new content has been played, about 30-40 more lines of original dialogue will become accessible.<p>
+
+<p>Note a few important things if you install this component: A closet in your room in the Festhall that could previously be opened easily will now remain firmly locked until the end of this quest (items it contained have been moved and remain accessible earlier). The quest will not be available until after you have returned to Sigil after a long trip elsewhere. Visit an important character in Ragpicker's Square at that time to start the quest, and pay attention to any hints Ravel might drop about items you should hold on to, you will need one to complete this quest properly (the hint is actually part of her original dialogue, I didn't add it). Your TNO will have to be able to handle a pretty tough fight by himself too, and a very nice prize awaits those who complete the quest (although it is both class and alignment restricted). Lastly, this new quest gives an existing long quest that dead-ended rather anticlimactically some sense of closure.<p>
+
+<p>I must repeat: You MUST keep an item from Ravel's Garden through most of the game to complete this quest. This item has multiple other uses. You may have to forego the other uses to keep one until you need it near the end of the game. You have been warned. And if you can't open a certain closet that you used to be able to, this component is why.</p>
+
+<p>The overall content of this mod - including the tie-in to the existing quest just mentioned - was approved by Chris Avellone, lead designer of Planescape: Torment, and the plot and dialogue also received strong approval from Colin McComb, original designer of the area where most of the quest takes place.</p>
+
+<p>Unfortunately, the initial release of this mod does not include an Italian translation. Spanish and German translations are available. If an Italian translation becomes available, a new 3.1 version will be released to include it. Anyone who would like to volunteer to translate it should contact me at Spellhold Studios - any such help would be greatly appreciated. In the meantime, if this is installed in a game set to Italian, the dialogue particular to this mod will appear in English.</p>
+
+<h4>18. Restored Item Cheats - Not Recommended</h4>
+
+<p>Vrischika's dialogue has disabled conversation paths where she offers to sell you the "Sword of Wh'ynn" - aka "The Cheater's Blade" - and "The Tome o' Cheats".  Their descriptions indicate what they are supposed to do, but neither of them actually did anything.  Restoration Pack enabled them, allowing you to buy both of them and read the descriptions and, in the case of the Sword of Wh'ynn, reenabled it's power (which is basically to skip ahead to the final game cutscene, which basically just spoils the ending, which is why I don't recommend that one).</p>
+
+<p>Note that this in actuality also restores a third item - as buying either of those two items from Vrischika also makes a new tattoo available from Fell (what doesn't?).</p>
+
+<p>Restoration Pack also claimed to enable some of the Tome o' Cheats options, but did not in fact do so.  The Unfinished Business version, however, does.  And it will make the game trivially easy, which is why I don't recommend it (except for modders looking to test their mods, which is the only reason I bothered to make it).  The Cheats available in the UB version 1 Tome of Cheats are the Teleport Cheat, Rest Anywhere Cheat, Wealth Cheat, Attribute Score Cheat, Death Cheat, Experience Cheat, Word 'o Good and Evil Cheat, and Word o' Law and Chaos Cheat.~</p>
+
+<p>Two things of note about the Tome o' Cheats.  One is that <a href="http://spellholdstudios.net/ie/pst-qtweaks">Qwinn's PS:T Tweak Pack</a> also contains a Tome o' Cheats tweak, the difference being that with the Tweak Pack mod you start the game with the Tome o' Cheats in your possession, whereas in this component you have to wait until you get to Vrischika (as was... *cough*... "intended") a fair ways into the game before you can buy the Tome (and it's... rather expensive from her).  The other thing of note is that this has -nothing- to do with Platter's Tome o' Cheat mod, which I've never even downloaded or seen.  The dialog you see when you use the book is entirely authored by Qwinn.  The conversation with Vrischika about the book is what was contained in the original files, and the only thing there that I modify slightly is the listing of the cheats available in the Tome.</p>
+
+           <address>
+            <span class="footer">PS:T Unfinished Business &gt;Component List</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+        <!-- ================== F A Q ================== -->
+        <a name="faq" id="faq"></a>
+        <div class="content">
+          <h2>Frequently Asked Questions</h2>
+
+          <p><strong>Q: While playing one of these components, I ran into a bug.  What can I do?</strong><br />A: Report the bug here at the <a href="http://www.shsforums.net/index.php?showforum=553">PS:T Unfinished Business Mod Forum</a> at Spellhold Studios, and I'll do everything I can to resolve your issues in a timely manner.</p>
+
+          <p><strong>Q: I had problems installing Unfinished Business.  Help?</strong><br />A: Before installing PS:T Unfinished Business, did you install the Official Patch 1.1 (if you have the 4-CD version) and then the <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a>, as described in the <a href="#installation">Installation Procedure</a>?</p>
+
+          <p>If you believe you did, please report the issue here at the <a href="http://www.shsforums.net/index.php?showforum=553">PS:T Unfinished Business Mod Forum</a> at Spellhold Studios, and I'll do everything I can to resolve your issues in a timely manner.  It would be helpful if, in your post describing your problem, you attach the SETUP-PST-UB.DEBUG file which you'll find in your Torment folder.</p>
+
+          <p><strong>Q: When you describe the authors regarding each component, just who is "Platter", "SKARDAVNELNATE" and what is this "Restoration Pack" you keep referring to?</strong><br />A: They are other modders whose work was consulted and integrated into the development of this mod and the PS:T Ultimate WeiDU Fixpack as well.  For the full details regarding their work, and links to where their (non-WeiDU) mods can still be downloaded, please consult the FAQ section of the Readme for the <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a>, where I attempt to answer any related questions.</p>
+
+          <address>
+            <span class="footer">Mod title &gt; FAQ</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+        <!-- ================== C r e d i t s ================== -->
+        <a name="credits" id="credits"></a>
+        <div class="content">
+          <h2>Credits</h2>
+
+<p>This mod integrates some work which was originally created by the talented modders Platter, Kung Fu Man (author of the Restoration Pack) and SKARDAVNELNATE, reimplementing them in a compatibility-friendly WeiDU format and adding some totally new and original content by Qwinn as well.<p>
+
+<p>Unfortunately, <strong>Platter</strong> and <strong>Cilantro</strong> have all but disappeared from the internet since their work, and my attempts to contact them have failed, but they still deserve great credit for the effort and quality of their work which has been reimplemented here.  V4.0 UPDATE: Cilantro, now known as Kung Fu Man, has checked in at the SHS forums and has kindly lent his approval, experience and advice there, all of which are greatly appreciated.</p>
+
+<p><strong>SKARDAVNELNATE</strong> willingly consented to allow me to refer to his All Inclusive Fixpack for this mod and was helpful in answering my many questions, and for that he deserves great credit for the (hopeful) success of this mod and has my gratitude as well.</p>
+
+<p><strong>Qwinn</strong> - that would be me - did all the WeiDUization work which required manually reimplementing every mod by all the other authors.  That means if there's problems in Unfinished Business that don't appear in their work, it's almost certainly all my fault, don't blame them.  Also blame me if you found any typos or grammar errors in the dialogs.  I also did all the testing, at least for Version 1.0.  So yeah, blame me for everything that goes wrong.  But DO let me know about it at the forums, linked at the top of this readme.  The end goal is to have -no- bugs left.</p>
+
+<p>Many thanks also go to the various modders over at the Gibberlings 3 forums who patiently answered many of my dumber questions as I learned how to mod, particularly <strong>Miloch, Isaya, devsin and Nythrun</strong> who pointed me in the right direction at a couple of tricky points, and to the various players who encouraged me to keep up the project over at G3 as well (particularly, but definitely not limited to, <strong>Icendoan, Daulmakan, and Bearwere)</strong>. I'd also like to extend credit to Spellhold Studios, and <strong>K'aeloree</strong> and <strong>SConrad</strong> in particular, for graciously permitting me to host all three mods here and to grant them a prominent position on the main forum page. Finally, thanks to <strong>thebigg</strong> over at the Pocket Plane Group for hearing out and implementing my wish list for additional features to include in WeiDU 207 that made my job easier.</p>
+
+<p>Version 2.0:</p>
+
+<p>Thanks to the many kind players who lent their hard work to translating these mods. <strong>Ghildrean</strong> provided the Spanish translation, <strong>Yakkuz</strong> provided the Italian translation, and the German translation was produced by cooperation between (in alphabetical order) <strong>Arkain, Avantenor, Doctor Who, HomiSite, and Zenju</strong>, with HomiSite and Zenju leading the project. Zenju, incidentally, also did the most recent revisions for the german translation of the game, and as such I am especially grateful for his help.</p>
+
+<p>I hope you enjoy your best Planescape: Torment experience yet!  As fickle as memories can be (as TNO could well assert), may the memory of this, the best CRPG ever written, never die.</p>
+
+<p>Version 3.0:
+
+<p>Many thanks to <strong>Chris Avellone</strong>, lead designer of Planescape: Torment, and <strong>Colin McComb</strong>, original designer of the Foundry among other areas, not only for making this true classic for all of us to enjoy, but also for their guidance and kind encouragement on the Expanded Deionarra's Truth mod.</p>
+
+<p>Many thanks to <strong>Arkain</strong> for the German translation of the Expanded Deionarra's Truth mod, and <strong>Homisite</strong> for additional fine-tuning and editing.</p>
+
+<p>Also, thanks kindly to <strong>Rhaenys</strong> for the Spanish translation of the Expanded Deionarra's Truth mod, and <strong>Immortality</strong> for helping make it happen.</p>
+
+<p>Version 4.0:
+
+<p>Great thanks to engine guru <strong>scient</strong> for his first contribution to Unfinished Business, the engine tweak in Restored Bestiary Entries that switches TO's bestiary pic when you see him in person for the first time.</p>
+
+<p>Many thanks to <strong>MaeBe</strong> and particularly <strong>Leila</strong> for their wonderful work in creating a bestiary portrait for Vrischika (under "alu-fiend") in the new Restored Bestiary Entries component. It really is terrific work.</p>
+
+<p>Also thanks to forum posters <strong>yarpen</strong> and <strong>W. Irving</strong> for their great work in providing a Polish translation for the mod.</p>
+
+<p>Version 4.10:
+
+<p>Many thanks to <strong>tanman</strong> for updating the Italian translation, and <strong>Macbeth</strong> and <strong>Refiler</strong> for the new Russian translation!</p>
+
+<p>Thanks to scient for restoring the Copied Spell sounds.</p>
+
+<p>Also many thanks to <strong>PirroEpirote</strong> for providing versions of the Alternate Smoldering Corpse and Morte's Themes that are truer to the originals (and half the download size as well!)</strong>
+
+<p>Version 4.12:
+
+<p>Thanks to <strong>mirandir</strong> for the French translation and to <strong>Zyl</strong> for proofreading!</p>
+
+          <hr class="floatfix" /><!-- Don't remove the <hr /> unless you have text following the last "t2" in this <div>! -->
+          <address>
+            <span class="footer">Mod title &gt; Credits</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+        <!-- ================== V e r s i o n   H i s t o r y ================== -->
+        <a name="version" id="version"></a>
+        <div class="content">
+          <h2>Version history</h2>
+          <h6>04 June 2008 - Version 1.00</h6>
+          <ul>
+            <li>Initial Release</li>
+          </ul>
+
+          <h6>12 August 2008 - Version 2.00</h6>
+          <ul>
+            <li>Added Spanish, German and Italian translations.</li>
+          </ul>
+
+          <h6>20 December 2008 - Version 3.00</h6>
+          <ul>
+            <li>Added Expanded Deionarra's Truth Mod</li>
+            <li>Added Restored Mebbeth Component</li>
+            <li>Added Restored Lower Ward Encounters Component</li>
+            <li>Greatly expanded Restored Sounds and Banters Component</li>
+          </ul>
+
+          <h6>1 January 2009 - Version 3.01</h6>
+          <ul>
+            <li>Small fix to a new Annah-Morte banter in Restored Sounds and Banters component that would create a dialogue zombie.</li>
+          </ul>
+
+          <h6>1 January 2010 - Version 4.00</h6>
+          <ul>
+            <li>Major update, particularly to the Sounds and Banters component and the Bestiary component. Also added Polish translation.</li>
+          </ul>
+
+          <h6>11 April 2010 - Version 4.10</h6>
+          <ul>
+            <li>Updated two music themes in Restored Sounds component, scient restored "Copied Spell" sounds, updated Italian translation, and added Russian translation.</li>
+          </ul>
+		  
+		  <h6>8 August 2011 - Version 4.11</h6>
+          <ul>
+            <li>Updated Russian translation.</li>
+          </ul>
+		  
+		  <h6>5 August 2012 - Version 4.12</h6>
+          <ul>
+            <li>Fixed a bug with the restored "Door Locked" voiced lines that would cause it to play even though the door was being unlocked with a key.</li>
+			<li>Restored "Trap Detected" voiced lines (TNO/Annah).</li>
+			<li>Added French translation.</li>
+          </ul>
+
+
+          <address>
+            <span class="footer">Mod title &gt; Version History</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

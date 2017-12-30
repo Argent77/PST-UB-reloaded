@@ -1,0 +1,90 @@
+
+// ================= RESTORATION PACK'S RESTORED CHEAT ITEMS =====================
+
+// Modification by Restoration Pack
+// WeiDUization by Qwinn
+// Revised by Argent77
+
+// PSTEE note: This component has become largely redundant, since PSTEE comes with 
+//             a powerful debug console that can do everything this component offers 
+//             and much more.
+
+// ===============================================================================
+
+
+// ======================================= IDS FIXES ===========================================
+
+// Removing the "Bones" modifier from PermanentStatChange and Damage in the ACTION.IDS and
+// INSTANT.IDS.
+
+// Adding here to help eliminate the need to install Fixpack before UB.  Did same for
+// Tweak Pack version of Tome of Cheats.
+
+// Notes: BONES.IDS symbol lookup is only removed temporarily to simplify installation of this 
+//        component.
+
+OUTER_SET bones_action = 0
+COPY_EXISTING ~ACTION.IDS~ ~override~
+  REPLACE_EVALUATE ~^\(.+\)\(\*Bones\)\(.+\)~
+  BEGIN
+    TEXT_SPRINT EVAL ~bones_action_%bones_action%_before~ ~%MATCH1%%MATCH2%%MATCH3%~
+    TEXT_SPRINT EVAL ~bones_action_%bones_action%_after~ ~%MATCH1%*%MATCH3%~
+    SET bones_action += 1
+  END
+  ~\1*\3~
+ BUT_ONLY
+
+OUTER_SET bones_instant = 0
+COPY_EXISTING ~INSTANT.IDS~ ~override~
+  REPLACE_EVALUATE ~^\(.+\)\(\*Bones\)\(.+\)~
+  BEGIN
+    TEXT_SPRINT EVAL ~bones_instant_%bones_instant%_before~ ~%MATCH1%%MATCH2%%MATCH3%~
+    TEXT_SPRINT EVAL ~bones_instant_%bones_instant%_after~ ~%MATCH1%*%MATCH3%~
+    SET bones_instant += 1
+  END
+  ~\1*\3~
+ BUT_ONLY
+
+CLEAR_IDS_MAP
+
+// ==============================================================================================
+
+
+COMPILE ~%MOD_FOLDER%/CheatItems/dlg/CheatItems.d~
+
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT dcheats_pstee_tra ~%MOD_FOLDER%/tra/%LANGUAGE%/dcheats_pstee.tra~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT dcheats_pstee_tra ~~
+END
+COMPILE EVAL ~%MOD_FOLDER%/CheatItems/dlg/DCHEATS.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/dcheats.tra~ ~%dcheats_pstee_tra%~
+
+// The original game files (strref 50577) said:
+// ~There are a number of chapters within the tome:  Teleport Cheat, Healing Cheat, Wealth Cheat, Spell Recharge
+// Cheat, Attribute Score Cheat, Death Cheat, Explore Area Cheat, Word 'o Good Cheat, and Word o' Evil Cheat.~
+// They didn't actually do any of that though, of course.  Here's what I did manage to make it do.
+
+STRING_SET 50577 @50577 // ~There are a number of chapters within the tome:  Teleport Cheat, Rest Anywhere Cheat, Wealth Cheat, Attribute Score Cheat, Death Cheat, Experience Cheat, Word 'o Good and Evil Cheat, and Word o' Law and Chaos Cheat.~
+
+
+// =================================== IDS FIXES (continued) ====================================
+
+// Restoring original ACTION.IDS and INSTANT.IDS
+
+COPY_EXISTING ~ACTION.IDS~ ~override~
+  FOR (idx = 0; idx < bones_action; ++idx) BEGIN
+    TEXT_SPRINT search EVAL ~%bones_action_%idx%_after%~
+    TEXT_SPRINT replace EVAL ~%bones_action_%idx%_before%~
+    REPLACE_TEXTUALLY EXACT_MATCH ~%search%~ ~%replace%~
+  END
+ BUT_ONLY
+
+COPY_EXISTING ~INSTANT.IDS~ ~override~
+  FOR (idx = 0; idx < bones_instant; ++idx) BEGIN
+    TEXT_SPRINT search EVAL ~%bones_instant_%idx%_after%~
+    TEXT_SPRINT replace EVAL ~%bones_instant_%idx%_before%~
+    REPLACE_TEXTUALLY EXACT_MATCH ~%search%~ ~%replace%~
+  END
+ BUT_ONLY
+
+CLEAR_IDS_MAP

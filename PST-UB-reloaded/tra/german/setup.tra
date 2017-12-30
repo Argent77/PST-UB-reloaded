@@ -1,0 +1,53 @@
+@-1000 = ~Die Mod %TP2_FILE_NAME% hat~
+@-1001 = ~verschiedene optionale Komponenten.\nUm Zeit zu sparen, kannst Du allgemein auswaehlen, was mit diesen geschehen soll, anstatt\nzu jeder einzeln gefragt zu werden.\n~
+@-1002 = ~Was soll mit den Komponenten geschehen, die NOCH NICHT installiert sind?\n[I]Installieren, [S]Ueberspringen, [A]einzeln nachfragen?~
+@-1003 = ~Was soll mit den Komponenten geschehen, die BEREITS installiert sind?\n[R]Erneut installieren, [U]deinstallieren, [S]ueberspringen, [A]einzeln nachfragen?~
+@-1004 = ~BITTE maile die Datei~
+@-1005 = ~an~
+@-1006 = ~Installiere [~
+@-1007 = ~?
+[R]Neu installieren, [N]keine Aenderung, [U]deinstallieren oder [Q]abbrechen?~
+@-1008 = ~]?
+[I]Installieren, [N]nicht installieren oder [Q]abbrechen? ~
+@-1009 = ~Gib einen Teil des Modulnamens ein:~
+@-1010 = ~Installiere Komponente [~
+@-1011 = ~] neu~
+@-1012 = ~Installiere neu mit Sprache~
+@-1013 = ~Entferne alte Installation von [~
+@-1014 = ~] zuerst...~
+@-1015 = ~ALTE VERSION ERFOLGREICH ENTFERNT~
+@-1016 = ~Installiere~
+@-1017 = ~FEHLER beim Installieren von [~
+@-1018 = ~], stelle vorherigen Zustand wieder her~
+@-1019 = ~INSTALLATION ERFOLGREICH~
+@-1020 = ~Ueberspringe~
+@-1021 = ~Entferne [~
+@-1022 = ~] (Komponente #~
+@-1023 = ")"
+@-1024 = ~ERFOLGREICH ENTFERNT [~
+@1 = ~Empfohlene "PS:T Unfinished Business"-Komponenten~
+@2 = ~Wiederhergestellt: Faehiger-Nachdenker-Forschungsauftrag~
+@3 = ~Wiederhergestellt: Weitere Leichenhallenkommentare von Morte~
+@4 = ~Wiederhergestellt: Kerzenhalter-Quest~
+@5 = ~Wiederhergestellt: Wahrheit ueber Deionarras Schicksal~
+@6 = ~Wiederhergestellt: "Anhaenger von Yemeth"-Quest~
+@7 = ~Wiederhergestellt: Elyce und ihre Begleitung~
+@8 = ~Wiederhergestellt: Bewohner von Verdammnis~
+@9 = ~Wiederhergestellt: Gefangene von Verdammnis~
+@10 = ~Wiederhergestellt: Carl Parfidor~
+@11 = ~Wiederhergestellt: Gespraech zwischen Morte und Ingress' Zaehnen~
+@12 = ~Wiederhergestellt: Schlaeger in der Gasse der Gefaehrlichen Ecken~
+@13 = ~Wiederhergestellt: Gegenstaende~
+@14 = ~Wiederhergestellt: Gruppengeplaenkel und -kommentare~
+@15 = ~Wiederhergestellt: Cheat-Gegenstaende (nicht empfohlen)~
+@16 = ~   Bereits erfolgreich installiert!~
+
+@20 = ~Wiederhergestellt: Mebbeth~
+@21 = ~Erweiterte Wahrheit ueber Deionarras Schicksal~
+@22 = ~Wiederhergestellt: Begegnungen im Unteren Bezirk~
+
+@25 = ~Wiederhergestellt: Bestiariumseintraege~
+
+@50 = ~Benoetigt Planescape Torment oder Planescape Torment: Enhanced Edition!~
+// @51 = ~Benoetigt Planescape Torment!~
+// @52 = ~Benoetigt Planescape Torment: Enhanced Edition!~

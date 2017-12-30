@@ -1,0 +1,190 @@
+@1 = ~"Powiem twojej córce, ¿e myœla³aœ o niej u kresu swych dni. Oby Sfery przyjê³y ciê ³askawie, Mebbet."~
+@2 = ~"Witaj, Kesai. Przynoszê wieœci o twojej matce."~
+@3 = ~Kesai wzdycha. "Czy musisz mi o niej zawsze przypominaæ? Wcale nie jestem bardziej zadowolona ze swego pochodzenia, ni¿ kiedy uœwiadomi³eœ mi je po raz pierwszy."~
+@4 = ~"Ona nie ¿yje, Kesai."~
+@5 = ~"Dobrze. Nie bêdê ciê ju¿ o ni¹ wiêcej k³opota³. ¯egnaj."~
+@6 = ~Kesai zamiera, po czym wybucha nerwowym œmiechem. "Chyba ¿artujesz. Ravela nie ¿yje? Jak? Có¿ w Sferach mog³oby j¹ zniszczyæ?"~
+@7 = ~"By³em zmuszony zabiæ j¹ w samoobronie. Nie sprawi³o mi to przyjemnoœci."~
+@8 = ~"Zg³adzi³em j¹. Jak sama powiedzia³aœ, by³a istot¹ czystego z³a, któremu nale¿a³o zadaæ kres."~
+@9 = ~"Zginê³a z mej rêki. Sama dobrze wiesz, ¿e wiedŸma zas³ugiwa³a na œmieræ."~
+@10 = ~"Ja... rozumiem." Na jej twarzy maluj¹ siê sprzeczne uczucia, a jej egzotyczna uroda jeszcze bardziej utrudnia ich odczytanie. "Sk¹d w tobie potrzeba, by mi o tym mówiæ?"~
+@11 = ~"Poniewa¿ jest jeszcze coœ. Mówi³a o tobie, pod koniec swego ¿ywota."~
+@12 = ~"Chyba faktycznie nie ma potrzeby. Niewa¿ne."~
+@13 = ~Kesai wzdryga siê z przera¿eniem. "Wspomina³a o mnie? Niech Moce maj¹ mnie w opiece... co ci powiedzia³a?"~
+@14 = ~"Proszê, pozwól mi wyt³umaczyæ. Ta, która o tobie mówi³a, nie by³a ca³kiem Ravel¹. W istocie, rozmaite aspekty twojej matki mieszka³y tu, w Sigil, ca³y ten czas. Jednym z tych wcieleñ by³a stara znachorka, Mebbet. Mia³a le¿e na Placu Szmaciarzy."~
+@15 = ~"Mebbet? S³ysza³am o niej, tak, ale nigdy nie dane mi by³o jej spotkaæ. Dziêki swoim zio³om i zaklêciom by³a jedn¹ z niewielu osób z Ula do której udawali siê mieszkañcy wy¿szej Dzielnicy."~
+@16 = ~"Tak, mówimy o tej samej osobie. Po konfrontacji z Ravel¹ w Labiryncie Pani, wróci³em na Plac i odszuka³em Mebbet. By³a umieraj¹ca; po œmierci prawdziwej Raveli  nie mog³a na d³u¿ej odwlekaæ koñca."~
+@17 = ~Kesai s³ucha ciê z uwag¹, zafascynowana histori¹ swojej matki. "Mów dalej..."~
+@18 = ~"Zanim Mebbet odesz³a, zd¹¿y³a wyraziæ ¿al, ¿e nie mog³a okazaæ ci wiêcej ¿yczliwoœci... przytoczy³a stare sferowe porzekad³o, ‘Mi³oœæ wiedŸmy okrutniejsza jest niŸli jej nienawiœæ, zatruwa bowiem wszystko, czego dotknie.’"~
+@19 = ~"Chcesz powiedzieæ, ¿e ta Mebbet nie by³a równie z³a, co moja matka? Powiedzia³eœ przed chwil¹, ¿e by³a jej czêœci¹."~
+@20 = ~"Tak... jednym z jej aspektów. Nawet Ravela mia³a dobr¹ stronê, jak myœlê, i wydaje mi siê, ¿e Mebbet by³a stosunkowo czyst¹ emanacj¹ tej czêœci. Okaza³a mi ¿yczliwoœæ, nie prosz¹c o wiele w zamian. Jestem jej wdziêczny."~
+@21 = ~Kesai spogl¹da na ciebie, teraz nawet bardziej skonfliktowana. "Zatem uwa¿asz, ¿e ta jej czêœæ chcia³a byæ mi matk¹, ale obawia³a siê, ¿e skrzywdzi mnie przez swoj¹ naturê?"~
+@22 = ~"Tyle us³ysza³em w jej ostatnich s³owach."~
+@23 = ~Wzdryga siê mimowolnie, po czym ciê¿ko wzdycha. "Nie wiem, czy powinnam byæ ci wdziêczna za te wieœci. Teraz jednak muszê poznaæ ca³¹ prawdê. Pozwól mi porozmawiaæ o tym z moim ojcem."~
+@24 = ~"Nie spiesz siê... poczekam tu, jeœli nie masz nic przeciwko. Chcia³bym us³yszeæ, co on ma do powiedzenia."~
+@25 = ~Kesai przez chwilê ci siê przygl¹da i lekko sk³ania g³owê. "Daj mi chwilê." Odwraca siê do ciebie plecami i zaczyna cicho mamrotaæ, jak ju¿ to kiedyœ raz uczyni³a... wydaje siê, ¿e powietrze wokó³ niej delikatnie migocze, wype³niaj¹c siê zapachem miedzi, niczym ciep³a krew...~
+@26 = ~ Pochylasz siê w jej stronê, próbuj¹c us³yszeæ, co mamrocze.
+
+"Haughazanenelu, Wygnany Ksi¹¿ê Ithag, Markizie Krwawego Cienia, ojcze mój, wys³uchaj mnie, gdy¿ musze raz jeszcze wezwaæ twe imiê"~
+@27 = ~Jej g³os jest cichy i jakby przygaszony. Nie wyczuwasz w nim ju¿ nic wiêcej, jak tylko g³êboki smutek.~
+@28 = ~Kesai zwraca siê do ciebie ponownie, a jej egzotyczne oczy okraszone s¹ teraz cienk¹ warstw¹ ³ez. "Mój ojciec potwierdzi³ twoj¹ opowieœæ. Moja matka nie nale¿y ju¿ do ¿yj¹cych."~
+@29 = ~"Tak te¿ mówi³em. Przykro mi , Kesai. Pozostawiê ciê z twoj¹ ¿a³ob¹. ¯egnaj."~
+@30 = ~"Tak te¿ mówi³em. ¯egnaj, Kesai-Serris."~
+@31 = ~"Dziêkujê, ¿e poœwiêci³eœ czas, by mi o tym powiedzieæ. Gorzej by³oby siê ka¿dego dnia zastanawiaæ, czy po mnie przybêdzie. ¯egnaj."~
+@32 = ~"Zaczekaj, proszê. Jest jeszcze coœ. Mój ojciec rzek³, ¿e okaza³eœ mojej matce ¿yczliwoœæ u koñca jej dni. Chcia³by ci siê za ni¹ odwdziêczyæ."~
+@33 = ~"¯yczliwoœæ? Masz na myœli czarnokolce nasienie, które jej da³em?"~
+@34 = ~"Tak, w³aœnie to. Mój ojciec kaza³ przekazaæ ci, ¿e w twych snach le¿y coœ, czego szukasz."~
+@35 = ~"Ale ja nie mam snów. Nie œni³em, odk¹d pamiêtam."~
+@36 = ~"Jest w KuŸni cz³owiek, który twierdzi, i¿ by³by w stanie zbudowaæ maszynê, która pozwoli³aby mi œniæ, ale nie zbada³em jeszcze tej sprawy."~
+@37 = ~"Znalaz³em ju¿ sposób, by przenieœæ siê ponownie w krainê snów, ale nie znalaz³em tam nic, czego bym poszukiwa³."~
+@38 = ~"Ojciec powiedzia³, ¿e jest na to sposób. Sam musisz go znaleŸæ, wróæ do mnie, kiedy zaczniesz ju¿ œniæ."~
+@39 = ~"Naprawdê? Intryguj¹ce... Jeœli uwa¿asz, ¿e mo¿esz mu zaufaæ, sugerowa³abym dokoñczenie tej maszyny i u¿ycie jej. Wróæ do mnie, gdy ju¿ to uczynisz."~
+@40 = ~"W porz¹dku. Jeœli bêdê mia³ jakiœ sen, wrócê do ciebie."~
+@41 = ~"Byæ mo¿e powinieneœ spróbowaæ ponownie."~
+@42 = ~Wzdycha i patrzy, jakby ciê oceniaj¹c. Wreszcie wygl¹da na to, ¿e z niechêci¹ podjê³a ju¿ decyzjê. "Byæ mo¿e ja mogê ci pomóc. Wiesz ju¿, ¿e zawsze interesowa³y mnie sny... Gdy dowiedzia³am siê o swoim pochodzeniu, w koñcu zrozumia³am, dlaczego. Krew Szarych Pustkowi, p³yn¹ca w moich ¿y³ach daje mi moc kszta³towania snów, chocia¿ nieœwiadoma swego dziedzictwa, nigdy nie by³am w stanie jej u¿yæ. Ale byæ mo¿e w twoim przypadku mog³abym spróbowaæ. Mówi siê, ¿e wiedŸmy s¹ w stanie uje¿d¿aæ sny mê¿czyzny, zamieniæ je w koszmar i zajeŸdziæ je na œmieræ."~
+@43 = ~"W¹tpiê, ¿ebym mog³a, a tym bardziej chcia³a, uczyniæ coœ takiego, ale mogê towarzyszyæ ci w twoich snach i pomóc ci znaleŸæ to, o czym mówi³ mój ojciec. Czy zechcia³byœ przyj¹æ moj¹ pomoc? Rozumiem, ¿e by³oby to ogromna ingerencja w twoj¹ prywatnoœæ, ale byæ mo¿e moja pomoc by³aby w stanie ci to wynagrodziæ."~
+@44 = ~"Moja pani, z chêci¹ powitam ciê w swych snach... podejrzewam, ¿e i tak masz w nich swoje miejsce."~
+@45 = ~"Doceniê ka¿d¹ pomoc, jakiej mo¿esz mi udzieliæ, Kesai. Dziêkujê."~
+@46 = ~"Ta myœl sprawia, ¿e czujê siê nieswojo. Przykro mi, ale zmuszony jestem odmówiæ, chocia¿ doceniam propozycjê."~
+@47 = ~"Moje sny s¹ tylko moje, wiedŸmie dzieciê. Trzymaj siê od nich z daleka."~
+@48 = ~Kesai posy³a ci promienny uœmiech, ukazuj¹c przy tym pe³niê swego nietuzinkowego uzêbienia. "Có¿ z ciebie za pochlebca! Byæ mo¿e dokoñczymy ten tok rozumowania, kiedy znajdziemy ju¿ to, czego szukasz."~
+@49 = ~K¹tem oka dostrzegasz, jak Anna wzdryga siê z niesmakiem. Ze z³oœci¹ macha ogonem wprzód i w ty³, nic jednak nie mówi.~
+@50 = ~K¹tem oka dostrzegasz, ¿e S³awa prawie niezauwa¿alnie unosi z nagan¹ brew. Pozostaje jednak cicha i opanowana.~
+@51 = ~"Zatem dobrze. Daj mi trochê czasu na przygotowania... ZajdŸ do mnie jutro i udamy siê do machiny, o której wspomina³eœ."~
+@52 = ~"Uda³o mi siê znaleŸæ sposób, bym odzyska³ sny. W KuŸni Bogowców istnieje maszyna, któr¹ dawno temu zamówi³o jedno z moich wcieleñ w tym w³aœnie celu."~
+@53 = ~"Jesteœ gotowa, Kesai? Chyba czas wkroczyæ w moje sny."~
+@54 = ~"Jeszcze nie teraz... potrzebujê trochê wiêcej czasu. Pamiêtaj, jeszcze nigdy nie próbowa³am czegoœ takiego, a do niedawna nie wiedzia³am nawet, ¿e by³abym w stanie. Przygotowania nie zajm¹ ju¿ d³ugo, ale muszê prosiæ ciê, byœ jeszcze trochê zaczeka³."~
+@55 = ~Kesai wygl¹da na trochê bardziej roztrzêsion¹, a zarazem bardziej pewn¹ siebie, ni¿ gdy j¹ ostatnio widzia³eœ. "Witaj ponownie. Zanim zapytasz – tak, jestem ju¿ pewna, i¿ mogê ci pomóc. Nenny zaoferowa³a, bym w ramach treningu odwiedzi³a jej sny zesz³ej nocy. Uzna³am, ¿e jeœli ktokolwiek mia³by miewaæ *bezpieczne* sny, to by³aby to w³aœnie ona." Przerywa na chwilê i zni¿a g³os do szeptu. "Nie mia³am pojêcia... i w¹tpiê, by *ona* je mia³a."~
+@56 = ~Morte podlatuje w podskokach. "Ooch. Nie mo¿esz tego tak zostawiæ. No dawaj. *Muszê* wiedzieæ."~
+@57 = ~Kesai potrz¹sa przecz¹co g³ow¹. "Obieca³am uszanowaæ jej prywatnoœæ i nie bêdê dzieliæ siê jej snami. Obawiam siê, ¿e i tak powiedzia³am ju¿ za du¿o... chyba nie dosz³am jeszcze ca³kiem do siebie." Zamyka na chwilê oczy i po raz ostatni wzdryga siê na wspomnienie poprzedniej nocy.~
+@58 = ~"Szkoda, mnie te¿ to ciekawi... ale nie bêdê nalega³."~
+@59 = ~"Naprawdê? Co by³o takiego w jej snach?"~
+@60 = ~"Rozumiem. Proszê, przeka¿ jej moje podziêkowania za pomoc, której ci udzieli³a."~
+@61 = ~"Jakoœ mnie to nie dziwi. Najmroczniejsze myœli zawsze kryj¹ siê w umys³ach najwiêkszych cnotek. Co widzia³aœ?"~
+@62 = ~Morte zaczyna ostentacyjnie waliæ czo³em o œcianê. "Sfery..." *³up* "s¹..." *³up* "takie..." *³up* "strasznie..." *³up* "*okrutne*!"~
+@63 = ~"Dziêkujê za wyrozumia³oœæ. Masz moje s³owo, ¿e cokolwiek znajdê w twoich snach, równie¿ zachowam dla siebie. Idziemy?"~
+@64 = ~"Na twój rozkaz, pani."~
+@65 = ~"Ruszajmy. A, Kesai? Jeszcze raz dziêki."~
+@66 = ~"Zmieni³em zdanie. Chyba nie chcê tego teraz robiæ."~
+@67 = ~"Niech i tak bêdzie. Wci¹¿ jestem ci d³u¿na, wiêc jeœli zmienisz zdanie, bêdê tu czekaæ."~
+@68 = ~"Nie zamierzam wchodziæ z tob¹ do œrodka, ale powinnam byæ w stanie siêgn¹æ st¹d twoich snów. Nie wiem, czy bêdziesz œwiadomy mojej obecnoœci - Nenny nie by³a." Wzdryga siê lekko, a ty s³yszysz jak Morte mamrocze ze z³oœci¹ za twoimi plecami. "WchodŸ œmia³o. Ja tu zostanê i bêdê wypatrywaæ czegoœ, co mog³oby ci pomóc."~
+@69 = ~" Nie zamierzam wchodziæ z tob¹ do œrodka, ale powinnam byæ w stanie siêgn¹æ st¹d twoich snów. Nie wiem, czy bêdziesz œwiadomy mojej obecnoœci - Nenny nie by³a." Wzdryga siê lekko, a ty s³yszysz jak Morte mamrocze ze z³oœci¹ za twoimi plecami. "WchodŸ œmia³o. Ja tu zostanê i bêdê wypatrywaæ czegoœ, co mog³oby ci pomóc."~
+@70 = ~"A, i jeszcze coœ. Nie jestem w stanie sprawiæ, byœ móg³ przynieœæ tu cokolwiek ze swoich snów, ale chyba uda nam siê przemyciæ twój ekwipunek do œrodka. Wszystko, co niesiesz ze sob¹ w chwili wejœcia do maszyny powinno przenieœæ siê razem z tob¹ w krainê snów, jednak¿e wszystko, co w niej zostawisz bêdzie stracone bezpowrotnie. Powodzenia."~
+@71 = ~Raz jeszcze znajdujesz siê pod pêtl¹ kata. Grobowy g³os rechocze. "*Znowu* œnisz? Znowu œnisz! Znowu!" G³os zanosi siê szyderczym, nieludzkim œmiechem.~
+@72 = ~Znowu masz wra¿enie, ¿e twoje cia³o staje siê lekkie i zwiewne, nieomal niematerialne, jakbyœ utraci³ nad nim kontrolê. Sen rych³o rozpada siê na tysi¹ce fragmentów, a obrazy uciekaj¹ z twojego umys³u tak szybko, jak siê pojawiaj¹. Tylko tyle udaje ci siê zapamiêtaæ przed przebudzeniem.~
+@73 = ~Raz jeszcze znajdujesz siê pod pêtl¹ kata. Zdajesz sobie sprawê, ¿e w lewej rêce zaciskasz mocno kolczaste nasienie. Grobowy g³os rechocze. "*Znowu* œnisz? Znowu œnisz! Znowu! Nie! Wróæ. Co? *Intruzi*!"~
+@74 = ~Znowu masz wra¿enie, ¿e twoje cia³o staje siê lekkie i zwiewne, nieomal niematerialne, jakbyœ utraci³ nad nim kontrolê. Tym razem masz jednak wra¿enie, ¿e unosz¹ce ciê wichry zdaj¹ siê umyœlnie kierowane... choæ nie dostrzegasz ¿ywej duszy, wiesz, ¿e nie jesteœ tu sam.~
+@75 = ~Raz jeszcze znajdujesz siê pod pêtl¹ kata. Grobowy g³os wydaje siê rozwœcieczony. "*Nie*! Tych snów nie mo¿na *kszta³towaæ*! Intruz! WiedŸma! Won!"~
+@76 = ~Znowu masz wra¿enie, ¿e twoje cia³o staje siê lekkie i zwiewne, nieomal niematerialne, jakbyœ utraci³ nad nim kontrolê. Tym razem czujesz jednak obecnoœæ Kesai nadaj¹cej snom kszta³ty. Czujesz, jak przenosi ciê z powrotem do snu o PodSigil. Mgliœcie wyczuwasz te¿ obecnoœæ jeszcze jednej, obcej istoty, ale nie jesteœ w stanie okreœliæ, sk¹d pochodzi.~
+@81 = ~Znajdujesz siê w Kostnicy, otoczony cieniami tych, którzy z twej woli pod¹¿ali za tob¹. Mówi¹ coœ, lecz ich g³osy ocieraj¹ siê o ciebie i rozp³ywaj¹ siê w przestrzeni, niczym dŸwiêk tysiêcy pow³ócz¹cych stóp. Ignorujesz nieznoœny be³kot ich bezmyœlnych pytañ i punkt po punkcie upewniasz siê, ¿e przygotowa³eœ ju¿ wszystko, co zaplanowa³eœ zrobiæ przed t¹ ostatni¹ podró¿¹...~
+@82 = ~Znajdujesz siê w swoim pokoju w Gmachu Rozrywki i podchodzisz do schowka który zamówi³eœ. Jest to sejf doskona³y - mo¿na go otworzyæ jedynie *wiedz¹c*, co znajduje siê w œrodku. Wk³adasz do œrodka trzy przedmioty, ostateczne fragmenty dziedzictwa, które pozostawiasz dla przysz³ych wcieleñ – zabezpieczenie, na wypadek, gdyby podró¿ do Sfery Materii Negatywnej zakoñczy³a siê pora¿k¹.~
+@83 = ~K¹tem oka dostrzegasz zbli¿aj¹c¹ siê kobietê, egzotyczna piêknoœæ o widocznych k³ach i niebieskiej skórze. Móg³byœ przysi¹c, ¿e sk¹dœ j¹ znasz, ale jesteœ tak¿e pewien, ¿e nigdy jej wczeœniej nie widzia³eœ. Nie wydaje ci siê, by ta sprzecznoœæ w czymkolwiek ci przeszkadza³a.~
+@84 = ~"Kim jesteœ?"~
+@85 = ~"Och! Jestem tylko przysz³ym Czuciowcem. Zauwa¿y³am pana przez otwarte drzwi i nie mog³am powstrzymaæ ciekawoœci. Czy by³oby nietaktem zapytaæ, co pan robi?"~
+@86 = ~"Przygotowujê siê do *bardzo* niebezpiecznej podró¿y. Muszê zaplanowaæ swoje ¿ycie na parê ruchów do przodu... Mam kiepsk¹ pamiêæ, wiêc zostawiam sobie parê wskazówek na przysz³oœæ."~
+@87 = ~"Ale¿ to fascynuj¹ce! Wskazówek, na przyk³ad...?" Spogl¹da na to, co trzymasz w d³oniach, ale kiedy opuszczasz wzrok, widzisz, ¿e to tylko trzy kolczaste nasiona.~
+@88 = ~"Ach, rozumiesz, potrzeba klucza... Zaprojektowa³em te drzwi tak, by nale¿a³o u¿yæ klucza ze *œrodka* schowka. By je otworzyæ, nale¿y dok³adnie wyobraziæ sobie to, co siê w nim znajduje. Sprytne, co? Zostawiam te¿ wiadomoœæ dla siebie samego, ale nie, *nie mo¿esz* jej przeczytaæ. No i ca³kiem potê¿na broñ, któr¹ znalaz³em ostatnio w PodSigil. Nie zrobiê z niej po¿ytku, ale mo¿e kiedyœ bêdzie w stanie mi siê przydaæ – zostawiam j¹ wiêc dla nastêpnego mnie."~
+@89 = ~"Ooch, PodSigil? Nigdy jeszcze tam nie by³am!" Zbli¿a siê uwodzicielsko i delikatnie k³adzie d³oñ na twojej piersi, a ty nie mo¿esz siê oprzeæ, by nie zacz¹æ rozmyœlaæ o jej zmys³owych kszta³tach. "S³ysza³am, ¿e jest tam tak niebezpiecznie... Móg³by mi pan pokazaæ, jak to jest?"~
+@90 = ~"Hm. Jasne, czemu nie? Deionarra nie wróci jeszcze przez parê godzin, odwiedza tego swojego starego g³upca. O ile obiecasz, ¿e nic jej nie powiesz; zazdrosne z niej stworzenie, a ja mam dla niej jeszcze u¿ytek."~
+@91 = ~Wydaje ci siê, ¿e przez twarz kobiety przechodzi przelotny grymas, który znika tak szybko, jak siê pojawi³. "Ale¿ oczywiœcie, nie powiem ani s³owa. Po postu by³oby wspaniale tego *doœwiadczyæ*."~
+@92 = ~Wk³adasz kolczaste nasiona do schowka i zatrzaskujesz drzwi. "ChodŸmy wiêc."~
+@93 = ~Nagle znajdujecie siê z powrotem w PodSigil. Od œcian prowadz¹cego na po³udniowy wschód tunelu odbijaj¹ siê przeci¹g³e ryki uwiêzionych demonów. "S³yszysz? Zabi³em kilka z nich parê dni temu. Sam." K³amiesz. "Znalaz³em tu te¿ parê ciekawych b³yskotek."~
+@94 = ~Niebieskoskóra kobieta . "Naprawdê? Mogê to zobaczyæ? To takie fascynuj¹ce... móg³by mi pan pokazaæ œmieræ jednej z tych bestii?"~
+@95 = ~Wiesz, ¿e kobieta tob¹ manipuluje, i to wcale siê z tym nie kryj¹c, ale z jakiegoœ powodu nie jesteœ w stanie siê jej oprzeæ. "To nie bêdzie takie trudne... zostañ tu. Zaraz wracam."~
+@96 = ~Zbli¿aj¹c siê do demonów, zapominasz o kobiecie. Podchodzisz je dopiero po raz pierwszy, przeszukuj¹c parê dni wczeœniej PodSigil w poszukiwaniu czegoœ, co mog³oby pomóc ci w nadchodz¹cej podró¿y.~
+@97 = ~Ostatni glabrezu upada, a ty przegl¹dasz pokój w poszukiwaniu czegoœ przydatnego. Nagle twój wzrok pada na ledwie widoczny b³ysk pod stert¹ demonicznych odpadków, który okazuje siê byæ potê¿n¹ maczug¹. Nigdy nie widzia³eœ jeszcze podobnej broni – emanuje z niej wyczuwalna aura z³owrogiej mocy. Jej trzonek przyozdabiaj¹ ostre, mocne linie, jej zakoñczenie jest idealn¹ kul¹, niew¹tpliwie s³u¿¹c¹ do trzaskania czaszek przeciwników. Z idealnej kuli wystaj¹ idealne kolce o idealnych krzywiznach - ca³y obraz jest równie wspania³y, jak niepokoj¹cy. Broñ otacza ¿ywa barwa królewskiej purpury.~
+@99 = ~Znajdujesz siê z powrotem w KuŸni. Piersi Kesai faluj¹ ciê¿ko podczas gdy próbuje z³apaæ oddech. Po chwili szepcze, "Musze przyznaæ... to by³o intensywne doœwiadczenie. Jeœli chcesz spróbowaæ ponownie, myœlê, ¿e mogê przenieœæ ciê z powrotem do tamtego momentu. Bêdziesz musia³ pokonaæ wszystkie bestie, jeœli chcesz znaleŸæ czego szukasz. Zaczekam na ciebie tutaj... Jeœli pozwolisz, chcia³abym zbadaæ tê maszynê. Myœlê, ze pomog³aby mi siê z niej wiele nauczyæ o sztuce formowania snów. To prawdziwe dzie³o sztuki."~
+@100 = ~"Oczywiœcie, Kesai, i dziêkujê za pomoc. Przygotuj siê i wrócê spróbowaæ ponownie."~
+@101 = ~"Och, tak, rozumiem. Odwiedzasz moje sny i namawiasz mnie, bym da³ siê rozerwaæ na strzêpy wœciek³ym demonom. Wiêcej w tobie twojej matki ni¿ siê spodziewa³em. Wystarczy."~
+@102 = ~Kesai obna¿a k³y i wydaje z siebie wœciek³e warkniêcie. "W porz¹dku! Chcia³am tylko pomóc. Bestie nie mia³y ¿adnej mocy, by skrzywdziæ ciê w rzeczywistoœci, a nawet gdyby mia³y, to podobno jesteœ nieœmiertelny! Jeœli naprawdê one *pana* przera¿aj¹, to chyba nie jest pan *mê¿czyzn¹*, za którego go mia³am. ¯egnam."~
+@103 = ~S³yszysz dooko³a siebie kobiecy, jakby wysyczany przez k³y, szept. "Uda³o siê..." Œwiat dooko³a zaczyna siê rozp³ywaæ...~
+@104 = ~Znajdujesz siê z powrotem w KuŸni. Kesai wygl¹da na wyczerpan¹, lecz zadowolon¹. "Proszê. Powinieneœ udaæ siê teraz do apartamentu, który widzieliœmy. Jest tam schowek, który otworzysz tylko wiedz¹c, co jest w œrodku. WyobraŸ sobie maczugê, któr¹ znalaz³eœ – powinno to pozwoliæ ci na otwarcie schowka. Mój ojciec powiada, ¿e znajdziesz tam te¿ coœ, czego od dawna szuka³eœ."~
+@105 = ~"Dziêkujê, Kesai. Nie wiem, jak móg³bym ci siê odwdziêczyæ."~
+@106 = ~"Nonsens. Teraz dopiero jesteœmy kwita. Nie s¹dzê, ¿ebym wróci³a jeszcze do Przybytku. Nauczy³am siê ju¿ wszystkiego, co tamto miejsce mia³o mi do zaoferowania, a dziêki tobie mogê teraz poszukiwaæ innych doœwiadczeñ. Na pocz¹tek chcia³abym przestudiowaæ dok³adniej tê machinê."~
+@107 = ~"Nonsens. Teraz dopiero jesteœmy kwita. Nie s¹dzê, ¿ebym wróci³a jeszcze do Przybytku. Nauczy³am siê ju¿ wszystkiego, co tamto miejsce mia³o mi do zaoferowania, a dziêki tobie mogê teraz poszukiwaæ innych doœwiadczeñ. Na pocz¹tek chcia³abym przestudiowaæ dok³adniej tê machinê... Pani S³awo?"~
+@108 = ~"Oczywiœcie, Kesai-Serris. Nie potrzebujesz mojego pozwolenia, by odejœæ. By³o zaszczytem mieæ tak¹ uczennicê, jak ty. Dziêkujê za pomoc udzielon¹ naszemu przywódcy i mam nadziejê, ¿e bêdzie dane siê nam jeszcze spotkaæ."~
+@109 = ~Kesai zbli¿a siê do ciebie i k³adzie d³oñ na twojej piersi. "Jesteœ czaruj¹cym mê¿czyzn¹ i przyznam, ¿e twoje zainteresowanie mi schlebia. Byæ mo¿e któregoœ dnia poznamy siê bli¿ej." Ca³uje ciê w policzek, a ty czujesz, jak jej k³y ocieraj¹ siê o twoj¹ skórê, podczas gdy ona wydaje cichy pomruk. "Ale dziœ nie jest ten dzieñ. Na pewno masz teraz wa¿ne sprawy do za³atwienia, tak jak i ja."~
+@110 = ~Anna macha groŸnie ogonem. "Wienc mo¿e powinnaœ siê nimi zajonæ, i to zaraz, wielkopañska zdziro!"~
+@111 = ~"Uspokój siê, Anno. Kesai nie jest ¿adn¹ zdzir¹ i zas³uguje na coœ wiêcej, ni¿ twoje obelgi."~
+@112 = ~"Anna ma racjê, Kesai. Nie zamierzam przeszkadzaæ ci w kontynuowaniu twych zajêæ, a ju¿ na pewno nie bêdê odwleka³ dla ciebie moich."~
+@113 = ~"Powodzenia, mój tajemniczy panie. Mam nadziejê, ¿e spotkamy siê ponownie, niezale¿nie od tego, jak nasze losy dalej siê potocz¹." Mocno ciê przytula i oddala siê.~
+@114 = ~"O, jesteœ i z powrotem. Czy chcia³byœ ponowie zamierzyæ siê z demonami w twoich snach?"~
+@115 = ~"Wydaje mi siê, ¿e jestem gotowy. Pomo¿esz mi?"~
+@116 = ~"Oczywiœcie. Przykro mi, ¿e nie mogê pomóc w walce, ale bêdê obserwowaæ. Pomogê, jeœli tylko znajdê jakiœ sposób."~
+@117 = ~Znajdujesz siê z powrotem w PodSigil. Wycia demonów wci¹¿ rozbrzmiewaj¹ w po³udniowowschodnich korytarzach.~
+@118 = ~"Jest pan takim *fascynuj¹cym* mê¿czyzn¹. *Proszê*, niech mi pan poka¿e jak pokona³ pan te gigantyczne bestie! To by³oby takie ekscytuj¹ce doœwiadczenie... inne dziewczêta w Gmachu Rozrywki *umar³yby* z zazdroœci."~
+@119 = ~"W porz¹dku. Zaczekaj tutaj."~
+@121 = ~"Musimy ponownie porozmawiaæ o œmierci twojej matki, Kesai."~
+@122 = ~"Musze ju¿ iœæ, Kesai. Byæ mo¿e dokoñczymy tê rozmowê póŸniej. ¯egnaj."~
+@123 = ~"To wspaniale! Czy znalaz³eœ coœ, czego szuka³eœ?"~
+@124 = ~"Niestety nie. Œni³em o wydarzeniach, które ju¿ nast¹pi³y. Labirynt Raveli, S³up Czaszek... nic, czego bym nie wiedzia³."~
+@125 = ~"Tak naprawdê, to wola³bym o tym nie mówiæ. Ale nie, nie dowiedzia³em siê nic nowego."~
+@126 = ~"Daj mi chwilê na przygotowania i pójdziemy. Zaraz wracam."~
+@127 = ~"Szkoda, zaintrygowa³aœ mnie. Ale w porz¹dku, nie bêdê nalega³."~
+@128 = ~"*MUSZÊ* wiedzieæ! *POWIESZ* mi, kobieto!"~
+@129 = ~"Obawiam siê, ¿e muszê nalegaæ. Opowiedz mi sny Nenny, Kesai."~
+@130 = ~"Hej, szefie... s³uchaj, ja te¿ chcê wiedzieæ, ale ju¿ w porz¹dku, daj spokój..."~
+@131 = ~"Ja... có¿. Wygl¹da na to, ¿e zmieni³am zdanie. Nie zamierzam panu wiêcej pomagaæ. Proszê odejœæ."~
+@132 = ~"*Powiedz* mi, wiedŸmi pomiocie, albo wyr¿nê ci serce."~
+@133 = ~"Wybacz. Ja... nie wiem, co mnie napad³o. Zatrzymaj jej tajemnice."~
+@136 = ~"Dziêkujê za wieœci o mojej matce, ale nie s¹dzê, byœmy mieli sobie jeszcze cokolwiek do powiedzenia. Do widzenia."~
+@137 = ~"Zmieni³em zdanie, Kesai. Chcia³bym, ¿ebyœ pomog³a mi zbadaæ moje sny."~
+@138 = ~Kesai zdaje siê byæ ju¿ ca³kiem opanowana. Bada ciê uwa¿nie swymi karmazynowymi oczyma. "Dobrze ciê znowu widzieæ. Czy zmieni³eœ zdanie? Zbadamy teraz twoje sny?"~
+@141 = ~S³awa zerka to na ciebie, to na Annê, to na Kesai, jej delikatna brew unosi siê w zdumieniu. Nic jednak nie mówi.~
+@142 = ~"Có¿ za wspania³a maszyna!"~
+@143 = ~"Och, bez w¹tpienia. Ta czêœæ tutaj z pewnoœci¹ s³u¿y do uruchomiania dostêpu do trzeciej warstwy id..."~
+@144 = ~"Och! Wiêc do tego ona s³u¿y..."~
+@145 = ~"Ach, co robi tam ta klatka na ptaki?"~
+@146 = ~Kesai podbiega do ciebie. "Och, nie! Znowu? Biedactwo! To musia³o okropnie boleæ, nawet, jeœli tylko w snach."~
+@147 = ~"Wszystko w porz¹dku, Kesai. Dziêkujê. Wygl¹da na to, ¿e potrzebujê trochê wiêcej przygotowañ."~
+@148 = ~"Nie, jeszcze nie teraz. Wrócê, gdy bêdê gotowy."~
+@149 = ~Ten zapieczêtowany schowek nie ma ¿adnego zamka, skobla, ani ¿adnego innego widocznego sposobu otwarcia.~
+@150 = ~Mebbet nie ¿yje, a jej istota rozp³ywa siê razem z nikn¹c¹ magi¹ Raveli. Kesai-Serris z Przybytku powinna chyba dowiedzieæ siê o losie swojej matki~
+@151 = ~Kesai powiedzia³a mi, ¿e wed³ug jej ojca, znajdê w swoich snach coœ cennego – ale ja nie mam snów. Gdybym odzyska³ w jakiœ sposób zdolnoœæ œnienia, powinienem wróciæ porozmawiaæ z Kesai.~
+@152 = ~ Kesai powiedzia³a mi, ¿e wed³ug jej ojca, znajdê w swoich snach coœ cennego – ale ja nie mam snów. Stary Nils Xander z KuŸni wspomina³ coœ o maszynie, która pozwoli³aby mi œniæ... Pewnie powinienem siê tym zainteresowaæ.~
+@153 = ~ Kesai powiedzia³a mi, ¿e wed³ug jej ojca, znajdê w swoich snach coœ cennego. Mimo to, mój poprzedni sen w Kreatorze nie da³ mi nic wartoœciowego.~
+@154 = ~Opowiedzia³em Kesai o moim œnie w Kreatorze. Zgodzi³a siê udaæ ze mn¹ do KuŸni, by dok³adniej zbadaæ moje sny.~
+@155 = ~Wed³ug Kesai, muszê pokonaæ demony w moich snach by znaleŸæ to, czego szukam.~
+@156 = ~Kiedy pokona³em w snach glabrezu, znalaz³em potê¿n¹ maczugê, któr¹ jedno z moich poprzednich wcieleñ umieœci³o w schowku w moim apartamencie. Drzwi schowka mo¿na otworzyæ tylko wiedz¹c, co siê za nimi znajduje – na szczêœcie dobrze przypatrzy³em siê tej maczudze...~
+@157 = ~Uda³o mi siê otworzyæ schowek w moim pokoju w Gmachu Rozrywki. Oprócz maczugi, znalaz³em tam tak¿e wiadomoœæ, która ujawni³a pe³niê mojej odpowiedzialnoœci za los Deionarry. Podejrzewam, ¿e powinienem opowiedzieæ o tym Iannisowi.~
+@200 = ~PIÓRO DO PISANIA
+Waga: 0
+
+To gêsie pióro znalaz³eœ w schowku w swoim pokoju w Gmachu Rozrywki. Wygl¹da ca³kiem zwyczajnie.~
+@201 = ~ Swoim nowym piórem postanawiasz dodaæ w dzienniku wpis o znaleziskach ze schowka. W tej samej chwili, w której pióro dotyka papieru, o¿ywa ono w³asnym ¿yciem i zaczyna szybko gryzmoliæ. Wyrywaj¹c siê z twojej rêki, zapisuje s³owa, które nie nale¿¹ do ciebie.
+
+Pisze:
+
+"Jeœli wszystko posz³o zgodnie z planem, post¹pi³eœ zgodnie ze wskazówkami, które zostawi³em w naszym dzienniku, odnalaz³eœ szklane oko, które zostawi³em u Anarchistów i u¿y³eœ zaklêtego w nim obrazu do otwarcia sk³adu w naszym pokoju... Doskonale. Musia³em upewniæ siê, ¿e to w³aœnie inteligentne i zaradne wcielenie znajdzie tê wiadomoœæ. A teraz s³uchaj uwa¿nie, masz bowiem zadanie do wykonania."~
+@202 = ~Pióro wci¹¿ pisze. "Jeœli to czytasz, oznacza to, ¿e odnios³em pora¿kê w walce z naszym wrogiem. Musisz ju¿ wiedzieæ, ¿e jakaœ mœciwa si³a posy³a przeciw nam cienie i raz za razem brutalnie morduje. Przekroczy³em Sfery w poszukiwaniu jego to¿samoœci, a znalaz³em, jak sadzê, zaledwie po³o¿enie miejsca, w którym siê ukrywa. Zamieszkuje on wielk¹ fortecê w Sferze Materii Negatywnej. Co wiêcej, wiem, jak mo¿na siê tam dostaæ."~
+@203 = ~Nastêpne akapity wychodz¹ce spod pióra powtarzaj¹ to, czego o portalu w Kostnicy i jego aktywacji dowiedzia³eœ siê od Triasa.~
+@204 = ~Pióro kontynuuje pisanie. "Musisz dokoñczyæ mego dzie³a, abyœmy wreszcie uwolnili siê od naszego zabójcy i odnaleŸli odrobinê spokoju. U¿yj czegokolwiek i kogokolwiek, by osi¹gn¹æ ten cel. Jeœli uda im siê prze¿yæ nasz¹ podró¿... OdnajdŸ githzerai Dak’kona, gdy¿ jego ostrze jest w stanie staæ siê najpotê¿niejsz¹ broni¹ w Sferach. Zabierz czaszkê, gdy¿ potrafi byæ u¿yteczny – ale cokolwiek zrobisz, NIE ufaj mu. Stary ³ucznik Zachariasz to œlepy, zapijaczony g³upiec, ale jego ³uk nigdy nie chybia. A Deionarra – jeœli mój plan awaryjny powiedzie siê, nie znajdziesz jej ju¿ wœród ¿yj¹cych, ale przyda ci siê bardziej ni¿ którekolwiek z tamtych."~
+@205 = ~Pióro dalej skrobie po pergaminie. "Widzisz, bêdziesz móg³ skorzystaæ z przewagi, której ja nie mia³em. Deionarra udaje siê ze mn¹ do Fortecy, i, jeœli wszystko pójdzie po mojej myœli, zginie. Jednak jej mi³oœæ do nas jest wielka, a jak s³usznie powiadaj¹ Grabarze, emocje tak silne potrafi¹ zwi¹zaæ nas z tym œwiatem. Bêdzie istnieæ zarówno w Sferze Materii Negatywnej, jak i w naszej, najprawdopodobniej tam, gdzie z³o¿y siê ho³d jej pamiêci. Bêdzie w stanie szpiegowaæ dla ciebie naszego wroga, oczywiœcie nieœwiadomie - z oczywistych wzglêdów nie mo¿esz powiedzieæ jej, czym dla nas jest."~
+@206 = ~"M¹drze u¿ywaj wiedzy, któr¹ mo¿e ci daæ. Nie daj siê zwieœæ uczuciom i powstrzymaj naszego zabójcê raz na zawsze."~
+@207 = ~Pióro na chwilê przestaje pisaæ, po czym dodaje pospiesznie ostatni wpis. "P.S. Parê dni temu znalaz³em tê maczugê w PodSigil. Mi siê ju¿ nie przyda, ale mo¿e ty znajdziesz dla niej jakieœ zastosowanie. Powodzenia."~
+@208 = ~Pióro opada bezw³adnie. Zaklêcie kontroluj¹ce jego ruchy zdaje siê byæ calkiem wyczerpane. Wygl¹da na to, ¿e jednak jest to ca³kiem zwyczajne pióro.~
+@209 = ~Pisz dalej.~
+@210 = ~Spróbuj coœ napisaæ.~
+@211 = ~Od³ó¿ pióro.~
+@212 = ~ Jeœli wszystko posz³o zgodnie z planem, post¹pi³eœ zgodnie ze wskazówkami, które zostawi³em w naszym dzienniku, odnalaz³eœ szklane oko, które zostawi³em u Anarchistów i u¿y³eœ zaklêtego w nim obrazu do otwarcia sk³adu w naszym pokoju... Doskonale. Musia³em upewniæ siê, ¿e to w³aœnie inteligentne i zaradne wcielenie znajdzie tê wiadomoœæ. A teraz s³uchaj uwa¿nie, masz bowiem zadanie do wykonania.
+
+Jeœli to czytasz, oznacza to, ¿e odnios³em pora¿kê w walce z naszym wrogiem. Musisz ju¿ wiedzieæ, ¿e jakaœ mœciwa si³a posy³a przeciw nam cienie i raz za razem brutalnie morduje. Przekroczy³em Sfery w poszukiwaniu jego to¿samoœci, a znalaz³em, jak myœlê, zaledwie po³o¿enie miejsca, w którym siê ukrywa. Zamieszkuje on wielk¹ fortecê w Sferze Materii Negatywnej. Co wiêcej, wiem, jak mo¿na siê tam dostaæ.
+
+... nastêpne akapity powtarzaj¹ to, czego o portalu w Kostnicy i jego aktywacji dowiedzia³eœ siê od Triasa ...
+
+Musisz dokoñczyæ mego dzie³a, abyœmy wreszcie uwolnili siê od naszego zabójcy i odnaleŸli odrobinê spokoju. U¿yj czegokolwiek i kogokolwiek, by osi¹gn¹æ ten cel. Jeœli uda im siê prze¿yæ nasz¹ podró¿... OdnajdŸ githzerai Dak’kona, gdy¿ jego ostrze jest w stanie staæ siê najpotê¿niejsz¹ broni¹ w Sferach. Zabierz czaszkê, gdy¿ potrafi byæ u¿yteczny – ale cokolwiek zrobisz, NIE ufaj mu. Stary ³ucznik Zachariasz to œlepy, zapijaczony g³upiec, ale jego ³uk nigdy nie chybia. A Deionarra – jeœli mój plan awaryjny powiedzie siê, nie znajdziesz jej ju¿ wœród ¿yj¹cych, ale przyda ci siê bardziej ni¿ którekolwiek z tamtych.
+
+Widzisz, bêdziesz móg³ skorzystaæ z przewagi, której ja nie mia³em. Deionarra udaje siê ze mn¹ do Fortecy, i, jeœli wszystko pójdzie po mojej myœli, zginie. Jednak jej mi³oœæ do nas jest wielka, a jak s³usznie powiadaj¹ Grabarze, emocje tak silne potrafi¹ zwi¹zaæ nas z tym œwiatem. Bêdzie istnieæ zarówno w Sferze Materii Negatywnej, jak i w naszej, najprawdopodobniej tam, gdzie z³o¿y siê ho³d jej pamiêci. Bêdzie w stanie szpiegowaæ dla ciebie naszego wroga, oczywiœcie nieœwiadomie - z oczywistych wzglêdów nie mo¿esz powiedzieæ jej, czym dla nas jest.
+
+M¹drze u¿ywaj wiedzy, któr¹ mo¿e ci daæ. Nie daj siê zwieœæ uczuciom i powstrzymaj naszego zabójcê raz na zawsze.
+
+P.S. Parê dni temu znalaz³em tê maczugê w PodSigil. Mi siê ju¿ nie przyda, ale mo¿e ty znajdziesz dla niej jakieœ zastosowanie. Powodzenia.~
+@213 = ~Poprzedni wpis nie wyszed³ spod mojej rêki... dziwne pióro, które znalaz³em w pokoju w Gmachu Rozrywki zaczê³o pisaæ samo z siebie gdy tylko dotknê³o pergaminu. Przesta³o ¿yæ gdy tyko skoñczy³o tamten wpis, teraz to ju¿ chyba ca³kiem zwyczajne gêsie pióro.~
+@214 = ~Przyk³adasz pióro do pergaminu, ale nie wydaje siê, ¿eby mia³o jeszcze cokolwiek do napisania. Wygl¹da ca³kiem zwyczajnie.~
+@215 = ~Skoncentruj siê i spróbuj oderwaæ pióro od dziennika.~
+@216 = ~Z ca³ej si³y starasz siê przestaæ pisaæ, ale nie jesteœ w stanie sprzeciwiæ siê ruchom pióra. Ma ono dostarczyæ wiadomoœæ, a zaklêcie na nie na³o¿one jest wystarczaj¹co potê¿ne by zmusiæ ciê do jej dokoñczenia.~
+@217 = ~To gêsie pióro znalaz³eœ w schowku w swoim pokoju w Gmachu Rozrywki. Wygl¹da ca³kiem zwyczajnie.~
+@218 = ~WyobraŸ sobie maczugê, któr¹ widzia³eœ w Kreatorze Snów.~
+@219 = ~Zostaw schowek w spokoju.~
+@220 = ~Koncentrujesz siê na wspomnieniu maczugi, wyobra¿aj¹c sobie misterne linie biegn¹ce po stylisku a¿ do kolczastej kuli oraz otaczaj¹c¹ j¹ aurê mocy. S³yszysz cichy *klik*, a drzwi schowka uchylaj¹ siê na tyle, byœ móg³ wcisn¹æ palce do œrodka i otworzyæ je do koñca.~
+@300 = ~Mod Los Deionarry~

@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style type="text/css">
+    /*<![CDATA[*/
+    <!--
+      body {
+        margin: 0;
+        padding: 0;
+        cursor: default;
+        text-align: center;
+        color: #000;
+        background: #e3e3db url('http://spellholdstudios.net/images/sh_bg_main.jpg');
+      }
+
+      #wrap {
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 88%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        font-size: 12px;
+        color: #333;
+      }
+
+      #header {
+        text-align: center;
+        background: #e5e5e5;
+        border: 1px solid #781808;
+        border-top: 5px solid #781808;
+        border-bottom: 5px solid #781808;
+        padding: 5px 0 13px 0;
+      }
+      
+      #header .about {
+        margin: 7px 0 0 0;
+        padding: 0;
+        font-style: italic;
+        color: #555;
+      }
+      
+      #header .menu {
+        font-weight: bold;
+        margin: 0;
+        color: #999;
+      }
+      
+      #header .menu a:link,
+      #header .menu a:visited {
+        color: #333;
+      }
+      
+      #maindiv {
+        margin: 0 auto;
+        margin-top: -20px;
+        width: 80%;
+      }
+      
+      #maindiv .content {
+        counter-increment: kman;
+        counter-reset: h2;
+        background-color: #e8e8e6;
+        padding: 0 0 25px 0;
+        margin: 50px auto;
+        border-width: 1px 1px 4px 10px;
+        border-style: solid;
+        border-color: #781808;
+        position: relative;
+        display: block;
+      }
+
+      #maindiv .content::before {
+        content: counter(kman, lower-roman);
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: #eee;
+        background-color: #781808;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+      }
+      
+      h2 {
+        display: block;
+        font-family: Verdana, Trebuchet MS, Arial, serif;
+        text-align: left;
+        text-indent: 30px;
+        padding: 0px;
+        margin: 20px 0 0 0;
+        border-bottom: dotted 2px #d0d0d0;
+        border-top: dotted 2px #d0d0d0;
+        background: #deded9;
+        font-size: 160%;
+      }
+      
+      h2::first-letter {
+        color: #781808;
+        background-color: transparent;
+      }
+
+      #maindiv p {
+        font-size: 100%;
+        font-style: normal;
+        line-height: 150%;
+        padding: 0px;
+        margin: 10px auto;
+        width: 90%;
+        display: block;
+      }
+      
+      #maindiv address a:link,
+      #maindiv address a:visited {
+        font-weight: bold;
+        text-decoration: underline;
+        background-color: transparent;
+        color: #eaeaea !important;
+        padding-right: 5px;
+        padding-left: 6px;
+      }
+
+      #maindiv address a:focus,
+      #maindiv address a:hover {
+        text-decoration: none;
+        color: #F1F1F1;
+        border: 0;
+      }
+      
+      #maindiv address a:active {
+        color: #fff;
+        text-decoration: line-through;
+        border: none;
+      }
+      
+      #maindiv address {
+        font-size: 95%;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        color: #BBB;
+        background-color: #781808;
+        padding: 3px 0px 0px;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        display: block;
+        text-align: right;
+      }
+
+      #maindiv .important {
+        font-size: 95%;
+        font-family: Verdana;
+        text-align: left;
+        background-color: #F1F1F1;
+        border-top: solid 1px #aaa;
+        border-bottom: solid 1px #aaa;
+        border-left: solid 6px #aaa;
+        border-right: solid 6px #aaa;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        line-height: 160%;
+      }
+      
+      #maindiv .important::before {
+        display: none;
+      }
+      
+      #maindiv .important p {
+        font-size: 100%;
+        text-indent: 0px;
+        margin: 5px 0 10px 0;
+      }
+
+      #maindiv ul {
+        margin: -10px 0 0 30px;
+        *margin-left: 65px;
+      }
+      
+      #maindiv ol {
+        margin: -10px 0 0 35px;
+        *margin-left: 70px;
+      }
+      
+      #maindiv .important ul {
+        margin: -10px 0 0 15px;
+      }
+
+      #maindiv .important ol {
+        margin: -10px 0 0 20px;
+      }
+      
+      #maindiv ul li {
+        list-style-type: square;
+        line-height: 150%;
+      }
+
+      #maindiv ol li {
+        line-height: 150%;
+      }
+
+      .t1 {
+        font-weight: bold;
+        width: 26%;
+        text-align: right;
+        clear: right;
+        float: left;
+        *float: none;
+        *margin-left: 65px;
+        line-height: 22px;
+      }
+
+      .t2 {
+        text-align: left;
+        width: 73%;
+        float: right;
+        *float: none;
+        line-height: 22px;
+      }
+      
+      hr {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        height: 1px;
+        border: 0;
+        color: #aaa;
+        background-color: #aaa;
+      }
+      
+      hr.floatfix {
+        clear: both;
+        color: #e8e8e6;
+        background-color: #e8e8e6;
+        *margin: 0;
+        *padding: 0;
+      }
+
+      h1 {
+        font-size: 225%;
+        color: #444;
+        padding: 5px 0 5px 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      h3,
+      h4,
+      h5 {
+        margin: 10px 40px 10px 40px;
+        padding: 0;
+      }
+      
+      h3 {
+        font-size: 125%;
+        font-style: italic;
+      }
+
+      h4 {
+        font-size: 125%;
+      }
+      
+      h5 {
+        font-size: 100%;
+      }
+      
+      h6 {
+        width: 100%;
+        margin: 10px 0 15px 0;
+        background-color: #ECECEC;
+        text-align: left;
+        text-indent: 30px;
+        font-size: 100%;
+        font-style: italic;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-bottom: solid 1px #bbb;
+        border-top: solid 1px #bbb;
+      }
+
+      a:link,
+      a:visited {
+        color: #781808;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: #222;
+        border-bottom: 1px solid black;
+      }
+
+    -->
+    /*]]>*/
+    </style>
+    <title>SPELLHOLD STUDIOS - Planescape: Torment Unfinished Business</title>
+  </head>
+  <body>
+    <a name="top" id="top"></a>
+    <div id="wrap">
+      <div id="header">
+        <h1>Planescape: Torment Unfinished Business</h1>
+        <strong>Un mod Spellhold Studios pour Planescape: Torment</strong>
+        <hr />
+        <p class="about">
+          Auteur :  Qwinn (Paul Escalona)
+        </p>
+        <p class="about">
+          Corrections du moteur par :  scient (Brendan Casey)
+        </p>
+        <p class="about">
+          <a href="http://spellholdstudios.net/ie/pst-ub">Site internet</a> &#8226;
+          <a href="http://www.shsforums.net/index.php?showforum=553">Forum</a> &#8226;
+          Version : 4.12
+        </p>
+        <hr />
+        <p class="menu">
+          <a href="#intro">Introduction</a> &middot;
+          <a href="#installation">Installation</a> &middot;
+          <a href="#components">Liste des composants</a> &middot;
+          <a href="#faq">FAQ</a> &middot;
+          <a href="#credits">Remerciements</a> &middot;
+          <a href="#version">Historique</a>
+        </p>
+      </div>
+      <div id="maindiv">
+
+        <!-- ================== I n t r o d u c t i o n ================== -->
+        <a name="intro" id="intro"></a>
+        <div class="content">
+          <h2>Introduction</h2>
+
+          <p>Ce mod WeiDU utilise le contenu presque-mais-pas-compl&egrave;tement-termin&eacute; disponible dans le RPG de Black Isle, Planescape : Torment, le compl&egrave;te et l'am&eacute;liore, ce qui vous permet d'acc&eacute;der et d'appr&eacute;cier ces nouveaut&eacute;s dans vos parties.
+Et comme vous allez le voir, il y en a un certain nombre. La version 4.0 de ce mod propose pas moins de 18 restaurations compl&egrave;tes et originales. </p>
+
+          <p>La chose importante &agrave; savoir est que la grande majorit&eacute; du contenu de ce mod a &eacute;t&eacute; &eacute;crite et d&eacute;velopp&eacute;e par les d&eacute;veloppeurs de Black Isle, qui ont cr&eacute;&eacute; le reste du jeu. Ils ont r&eacute;alis&eacute; les premiers 95% du travail, nous moddeurs avons simplement compl&eacute;t&eacute; les 5% restant pour les raccrocher au jeu. Vous pouvez donc esp&eacute;rer que les nouveaux dialogues et contenus s'inscrivent dans le style et l'esprit du jeu original.</p>
+
+          <p>Vous trouverez ci-dessous une courte liste des composants de ce mod. Cliquez <a href="#components">ici</a> pour une description d&eacute;taill&eacute;e de chacun d'entre eux.</p>
+
+          <br />
+
+<ul>
+<li>"Recherche de Pens&eacute;e pond&eacute;r&eacute;e capable restaur&eacute;e"</li>
+<p> Initialement restaur&eacute;e par : Restoration Pack, SKARDAVNELNATE. Compl&egrave;tement refait par Qwinn<p>
+<li>"Moments suppl&eacute;mentaires dans la Morgue avec Morte restaur&eacute;s"</li>
+<p> Initialement restaur&eacute;s par : Restoration Pack, SKARDAVNELNATE, Qwinn<p>
+<li>"Qu&ecirc;te du Bougeoir restaur&eacute;e"</li>
+<p> Initialement restaur&eacute;e par : Platter</p>
+<li>"Dialogues concernant le sort de Deionarra restaur&eacute;s"</li>
+<p> Initialement restaur&eacute;s par : SKARDAVNELNATE</p>
+<li>"Qu&ecirc;te du pendentif de Yemeth restaur&eacute;e"</li>
+<p> Initialement restaur&eacute;e par : SKARDAVNELNATE</p>
+<li>"Qu&ecirc;te d'Elyce & compagnie restaur&eacute;e"</li>
+<p> Initialement restaur&eacute;e par : SKARDAVNELNATE</p>
+<li>"Citoyens de Maudith restaur&eacute;s"</li>
+<p> Initialement restaur&eacute;s par : SKARDAVNELNATE</p>
+<li>"Prisonniers de Maudith restaur&eacute;s"</li>
+<p> Initialement restaur&eacute;s par : Qwinn</p>
+<li>"Carl Perfidor restaur&eacute;"</li>
+<p> Initialement restaur&eacute; par : SKARDAVNELNATE, script&eacute; par Qwinn</p>
+<li>"Brutes de l'all&eacute;e des Angles Dangereux restaur&eacute;es"</li>
+<p> Initialement restaur&eacute;s par : Qwinn</p>
+<li>"Dialogue entre Morte et les dents d'Ingress restaur&eacute;"</li>
+<p> Initialement restaur&eacute; par : Qwinn</p>
+<li>"Objets restaur&eacute;s"</li>
+<p> Initialement restaur&eacute;s par : Platter's Fixpack, Restoration Pack, SKARDAVNELNATE</p>
+<li>"Dialogues et commentaires du groupe restaur&eacute;s"</li>
+<p> Initialement restaur&eacute;s par : Qwinn</p>
+<li>"Mebbeth restaur&eacute;e"</li>
+<p> Initialement restaur&eacute;e par : Qwinn</p>
+<li>"Rencontres du Bas Quartier restaur&eacute;es"</li>
+<p> Initialement restaur&eacute;es par : Qwinn</p>
+<li>"Entr&eacute;es du bestiaire restaur&eacute;es"</li>
+<p> Initialement restaur&eacute;es par : Restoration Pack</p>
+<li>"Module d'extension des dialogues concernant le sort de Deionarra"</li>
+<p> Nouveau contenu et restauration de l'ancien par : Qwinn</p>
+<li>"Objets de triche restaur&eacute;s - non recommand&eacute;"</li>
+<p> Initialement restaur&eacute;s par : Restoration Pack, Qwinn</p>
+</ul>
+
+
+            <address>
+            <span class="footer">PS:T Unfinished Business &gt; Introduction</span> &#8226;<a href="#top">Revenir au d&eacute;but</a>
+          </address>
+        </div>
+
+        <!-- ================== I n s t a l l a t i o n ================== -->
+        <a name="installation" id="installation"></a>
+        <div class="content">
+          <h2>Installation</h2>
+
+          <p>Unfinished Business a &eacute;t&eacute; cr&eacute;&eacute; et test&eacute; avec une installation propre de la version 4 cd de Planescape: Torment, suivi de l'installation du <a href="http://www.sorcerers.net/Games/Torment/index_misc.php"> Patch officiel 1.1 pour PS:T disponible sur Sorcerer's Place</a>, et du <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a>.
+
+          <p>L'installation du PS:T Fixpack avant le PS:T Unfinished Business est tr&egrave;s fortement recommand&eacute;e. Le fichier Lisez-moi du PS:T Fixpack contient les instructions pour la cr&eacute;ation d'une base saine pour tous les autres mods, et explique comment patcher le jeu si vous avez la version 4 CD ainsi que comment installer votre pack de langue si n&eacute;cessaire.</p>
+
+          <p>Une fois que l'installation patch&eacute;e et corrig&eacute;e est effectu&eacute;e, tous les mods WeiDU peuvent &ecirc;tre install&eacute;s dans n'importe quel ordre. Par exemple, apr&egrave;s l'installation du Fixpack, vous pouvez installer le <a href="http://spellholdstudios.net/ie/pst-qtweaks">Qwinn's PS:T Tweak Pack</a> avant ou apr&egrave;s Unfinished Business, cela ne devrait faire aucune diff&eacute;rence. Tous les mods WeiDU sont pr&eacute;vus pour fonctionner ensemble et pour ne pas cr&eacute;er de conflits entre eux.</p>
+
+          <p><strong>Pour installer Unfinished Business</strong>, vous devez simplement extraire l'archive pstub.rar dans le r&eacute;pertoire principal de Planescape: Torment (probablement C:\Program Files\Black Isle\Torment). Cliquez ensuite sur Setup-PST-UB.exe et suivez les instructions.</p>
+
+          <p>Votre premi&egrave;re possibilit&eacute; durant la proc&eacute;dure d'installation sera d'installer la totalit&eacute; des "composants recommand&eacute;s". R&eacute;pondre Oui installera l'int&eacute;gralit&eacute; du mod &agrave; l'exception du composant "Objets de triche restaur&eacute;s - non recommand&eacute;". Vous aurez la possibilit&eacute; de l'installer ensuite, si vous le souhaitez. Il s'agit de la m&eacute;thode sugg&eacute;r&eacute;e pour installer le mod Unfinished Business, mais vous pouvez &eacute;galement personnaliser l'installation en choisissant uniquement les composants qui vous int&eacute;ressent.</p>
+
+          <p><strong>Pour la d&eacute;sinstallation</strong>, cliquez &agrave; nouveau sur Setup-PST-UB.exe et suivez les instructions.</p>
+
+           <address>
+            <span class="footer">PS:T Unfinished Business &gt; Installation</span> &#8226;<a href="#top">Revenir au d&eacute;but</a>
+          </address>
+        </div>
+
+
+        <!-- =========================== C O M P O N E N T   L I S T  ======================== -->
+        <a name="components" id="components"></a>
+        <div class="content">
+          <h2>Liste d&eacute;taill&eacute;e des composants</h2>
+
+<h4>1. Recherche de Pens&eacute;e Pond&eacute;r&eacute;e Capable restaur&eacute;e</h4>
+
+<p>95% de ce qui est n&eacute;cessaire pour que Pens&eacute;e Pond&eacute;r&eacute;e Capable conduise des recherches pour vous sur trois sujets se trouve dans les fichiers originaux du jeu. Ce composant les compl&egrave;te. Depuis la version 3.0, il faudra environ 20 heures du jeu pour que Pens&eacute;e Pond&eacute;r&eacute;e Capable m&egrave;ne &agrave; bien ses recherches.</p>
+
+<h4>2. Moments suppl&eacute;mentaires dans la Morgue avec Morte restaur&eacute;s</h4>
+
+<p>Ce composant restaure deux petits passages concernant Morte dans la Morgue. Il y a "l'intro originale de Morte" qui &eacute;tait initialement restaur&eacute;e par le Restoration Pack, mais que j'ai impl&eacute;ment&eacute;e d'une fa&ccedil;on <i>compl&egrave;tement</i> diff&eacute;rente. Il y a aussi "les commentaires de Morte sur le livre de Dhaal" de l'AIP de SKARDAVNELNATE, que j'ai &eacute;galement impl&eacute;ment&eacute;s d'une mani&egrave;re diff&eacute;rente.</p>
+
+<p><strong>"Introduction originale de Morte :"</strong>
+
+<p>Le fichier principal de dialogue de Morte (DMORTE.DLG) contient un dialogue d'introduction qui est nettement plus proche des autres dialogues du jeu - vous y avez de multiples options de r&eacute;ponses, plusieurs r&eacute;pliques possibles &agrave; d&eacute;couvrir, etc. Le dialogue utilis&eacute; normalement par le jeu en est une version lobotomis&eacute;e, avec tr&egrave;s peu d'options de r&eacute;ponse, probablement pour introduire d'une mani&egrave;re plus douce les nouveaux joueurs de RPG dans l'univers de Torment. Ce composant restaure la version complexe originale de l'introduction avec Morte. Vous pouvez ainsi obtenir avec lui un dialogue beaucoup plus &eacute;toff&eacute;, en cherchant bien.<p>
+
+<p>J'ai impl&eacute;ment&eacute; cela d'une fa&ccedil;on <em>compl&egrave;tement</em> diff&eacute;rente de celle utilis&eacute;e par le Restoration Pack. Le dialogue est exactement le m&ecirc;me que celui &eacute;crit par Black Isle, avec trois diff&eacute;rences mineures. Regardez le fichier MorteIntro\tph\MorteIntro.tph si vous voulez les d&eacute;tails sur ces diff&eacute;rences par rapport au Restoration Pack et aux fichiers du jeu.</p>
+
+<p><strong>"Commentaires de Morte sur le livre de Dhaal :"</strong>
+
+<p>Initialement restaur&eacute;es par SKARDAVNELNATE et int&eacute;gr&eacute;es d'une mani&egrave;re quelque peu diff&eacute;rente par Qwinn, les explications de Morte sont maintenant un peu plus nombreuses dans la Morgue, et il fera des commentaires lorsque vous approcherez de Dhaal au d&eacute;but du jeu. Ce dialogue figurait dans les fichiers originaux du jeu, l'impl&eacute;menter a juste n&eacute;cessit&eacute; quelques changements de scripts.</p>
+
+<h4>3. Qu&ecirc;te du Bougeoir restaur&eacute;e</h4>
+
+<p>Initialement restaur&eacute; et distribu&eacute; par Platter en tant que mod de restauration, SKARDAVNELNATE a fourni plusieurs corrections pour cette restauration de la qu&ecirc;te du Village Enseveli. La majorit&eacute; du contenu existait d&eacute;j&agrave; dans les fichiers du jeu : les zones, les objets, les cr&eacute;atures et les lignes de dialogue, tout &eacute;tait d&eacute;j&agrave; dans le jeu, mais non activ&eacute;. Platter a ajout&eacute; quelques d&eacute;clencheurs, acteurs et scripts pour le restaurer, et SKARDAVNELNATE a ajout&eacute; les qu&ecirc;tes au journal, a corrig&eacute; quelques erreurs de scripts ainsi que l'apparence et les couleurs des protagonistes. Qwinn a ajout&eacute; plusieurs scripts suppl&eacute;mentaires pour les portails.</p>
+
+<h4>4. Dialogues concernant le sort de Deionarra restaur&eacute;s</h4>
+
+<p>Voici la description de SKARDAVNELNATE &agrave; propos de cette restauration : "Il y a plusieurs options de dialogue [concernant le sort de Deionarra] qui ne sont pas accessibles avant la Forteresse des Regrets. N&eacute;anmoins, certaines d'entre elles ne sont pas extr&ecirc;mement pr&eacute;cises, et pourraient &ecirc;tre disponibles lorsque Sans-Nom n'a pas besoin d'avoir beaucoup de d&eacute;tails. Utiliser la pierre sensorielles de Deionarra et parler avec Iannis devrait &ecirc;tre suffisant pour s'apercevoir que quelque chose est arriv&eacute;. Le dialogue de Iannis contient beaucoup de d&eacute;tails mais s'il est activ&eacute; il marchera maintenant correctement."</p>
+
+<p>Notez que ceci n'est pas le mod "Deionarra's Truth", disponible ailleurs, qui restaure aussi le dialogue de Iannis &agrave; propos du sort de Deionnarra malgr&eacute; le fait qu'il soit impossible &agrave; Sans-Nom de savoir de quoi il parle. Comme il le dit lui-m&ecirc;me, la version de SKARDAVNELNATE restaure uniquement les &eacute;l&eacute;ments de conversation qui sont coh&eacute;rents avec ce que le joueur sait &agrave; ce moment-l&agrave; du jeu. Si vous voulez aller plus loin, voyez le mod "Extension des dialogues concernant le sort de Deionarra", disponible &agrave; partir de la version 3.0 d'UB, qui restaure plus d'&eacute;l&eacute;ments de contenu concernant cet aspect du jeu, et qui y ajoute du contenu suppl&eacute;mentaire.</p>
+
+<h4>5. Qu&ecirc;te du pendentif de Yemeth restaur&eacute;e</h4>
+
+<p>Initialement restaur&eacute; par SKARDAVNELNATE, il s'agit potentiellement de la plus grande restauration de ce mod. Ce composant restaure une qu&ecirc;te impliquant 6 personnages dans deux zones diff&eacute;rentes, majoritairement dans ou pr&egrave;s du bar du Cadavre Fumant. Pour la commencer, parlez &agrave; Ratos dans le Square des Chiffonniers. Notez qu'il ne s'agit PAS du Ratos qui &eacute;tait dans cette zone dans le jeu original - ce Ratos l&agrave; a &eacute;t&eacute; renomm&eacute; en Carver dans le <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a> pour &eacute;viter la redondance avec - le - Ratos qui est restaur&eacute; par ce mod.</p>
+
+<p>M&ecirc;me s'il y avait plusieurs corrections &agrave; faire et des petits bogues &agrave; corriger pour que la qu&ecirc;te fonctionne correctement, la grande majorit&eacute; de son contenu existait dans les fichiers du jeu, dialogues inclus. La restauration a principalement ajout&eacute; les protagonistes existants aux zones, ainsi que les scripts pour les contr&ocirc;ler.</p>
+
+<h4>6. Qu&ecirc;te d'Elyce & compagnie restaur&eacute;e</h4>
+
+<p>Initialement restaur&eacute;e par SKARDAVNELNATE, avec plusieurs corrections faites par Qwinn, cette qu&ecirc;te restaure Elyce, son fr&egrave;re et son petit-ami, ainsi que la petite qu&ecirc;te qui les concerne. Une fois de plus, les dialogues, les cr&eacute;atures, etc..., &eacute;taient tous dans les fichiers du jeu. SKARDAVNELNATE les a juste ajout&eacute;s dans la zone, et a corrig&eacute; une poign&eacute;e d'erreurs de scripts. Qwinn a fix&eacute; quelques bogues suppl&eacute;mentaires dans leurs dialogues.</p>
+
+<h4>7. Citoyens de Maudith restaur&eacute;s</h4>
+
+<p>Sept nouveaux citoyens de Maudith, initialement restaur&eacute;s par SKARDAVNELNATE, tous avec des dialogues int&eacute;ressants issus de fichiers du jeu non impl&eacute;ment&eacute;s.</p>
+
+<h4>8. Prisonniers de Maudith restaur&eacute;s</h4>
+
+<p>Ce composant est propre au PS:T Unfinished Business, et est restaur&eacute; par Qwinn. Vous &ecirc;tes-vous toujours demand&eacute; pourquoi la prison de Maudith, une prison majeure dans les Plans, avait aussi peu de prisonniers ? M&ecirc;me une peste ne pourrait expliquer pourquoi la prison est vide &agrave; ce point. Il n'y a pas plus de 3 prisonniers, et uniquement si vous les y avez envoy&eacute;s, suivis d'un groupe rapidement taill&eacute; en pi&egrave;ce. Neuf dialogues de prisonniers suppl&eacute;mentaires &eacute;taient pr&eacute;vus mais n'ont jamais &eacute;t&eacute; impl&eacute;ment&eacute;s &agrave; la zone. Ce composant les rajoute. Et si par chance les portes de la prison venaient &agrave; &ecirc;tre ouvertes, et que la prison devenait &eacute;meute et chaos, ne vous attendez pas &agrave; les voir ignorer cette opportunit&eacute; !</p>
+
+<h4>9. Carl Perfidor restaur&eacute;</h4>
+
+<p>Une autre restauration sympathique initialement faite par SKARDAVNELNATE. Dans le jeu original, vous pouvez engager quelqu'un pour tuer Carl Parfidor, mais vous ne pouvez pas lui parler. Maintenant vous pouvez ! Comme tous les autres composants de ce mod, le dialogue activ&eacute; ici a &eacute;t&eacute; &eacute;crit par l'&eacute;quipe de Black Isle. Et si vous avez fait en sorte que Carl Parfidor ait cass&eacute; sa pipe, vous rencontrerez un "assistant administratif de Maudith" &agrave; la place, comme pr&eacute;vu. Qwinn a ajout&eacute; le script qui fait que la personne engag&eacute;e ne dispara&icirc;t pas simplement, et que Carl n'est pas magiquement remplac&eacute;.</p>
+
+<h4>10. Brutes de l'all&eacute;e des Angles Dangereux restaur&eacute;es</h4>
+
+<p>Ce composant est propre au PS:T Unfinished Business, et est restaur&eacute; par Qwinn. Les brutes g&eacute;n&eacute;riques situ&eacute;es dans l'All&eacute;e m'ont toujours &eacute;norm&eacute;ment agac&eacute; - elles semblent vraiment stupides, se souciant uniquement de savoir si vous avez pay&eacute; ou non la taxe du gang, et vous r&eacute;p&egrave;tent en permanence "Restez ici, quelqu'un va rapidement venir vous parler", ce qui, dans la majeure partie de la zone, est simplement faux, vous n'&ecirc;tes approch&eacute; que pr&egrave;s des sorties de la zone. Heureusement, j'ai trouv&eacute; d'autres fichiers de dialogues enterr&eacute;s (et qui suivent les bonnes conventions de nommage de PS:T), dans lesquels les brutes sont r&eacute;ellement au courant de ce qui se passe autour d'elles, commenteront les &eacute;v&eacute;nements, et ne seront plus maniaquement obs&eacute;d&eacute;es jusqu'au dernier homme ou femme  par votre taxe de 10 pi&egrave;ces de cuivre.</p>
+
+<h4>11. Dialogue entre Morte et les dents d'Ingress restaur&eacute;</h4>
+
+<p>Ce composant est propre au PS:T Unfinished Business. Il restaure un dialogue (texte uniquement) tr&egrave;s amusant entre vous-m&ecirc;me, Morte et les dents d'Ingress. Avant que Morte ne puisse utiliser les dents, vous aurez besoin de les utiliser une premi&egrave;re fois avec Morte dans les environs. </p>
+
+<p>Notez bien que, contrairement &agrave; tous les autres composants recommand&eacute;s du Unfinished Business, cette restauration inclus un dialogue qui ne vient pas des fichiers originaux du jeu. Deux courtes lignes ont &eacute;t&eacute; n&eacute;cessaires pour relier entre eux de fa&ccedil;on plus naturelle les dialogues existants. Plus pr&eacute;cis&eacute;ment, j'ai d&ucirc; &eacute;crire un &eacute;pilogue &agrave; un dialogue pour contrebalancer une limite du moteur du jeu - il n'est pas possible d'&eacute;quiper automatiquement Morte avec les dents, mais c'est de cette fa&ccedil;on que se termine le dialogue original (ce qui explique probablement pourquoi le dialogue a &eacute;t&eacute; enlev&eacute; du jeu). L'essentiel du dialogue jusqu'&agrave; ce que Morte soit &eacute;quip&eacute; avec les dents provient de Black Isle, j'ai &eacute;crit tout ce qui vient apr&egrave;s, &agrave; cause de la limitation.<p>
+
+<p>Etant donn&eacute; qu'un tel &eacute;pilogue a &eacute;t&eacute; n&eacute;cessaire pour 'terminer' ce contenu, j'ai d&eacute;cid&eacute; de me faire plaisir avec. J'esp&egrave;re que vous trouverez cet &eacute;pilogue aussi amusant que l'est le dialogue original. Il est certain qu'Annah (si elle &eacute;tait l&agrave;) le trouverai &agrave; son go&ucirc;t. Je poursuis le dialogue original en laissant la possibilit&eacute; de choisir entre une "bonne" et une "mauvaise" fa&ccedil;on de faire, au moins pour un temps.</p>
+
+<h4>12. Objets restaur&eacute;s</h4>
+
+<p>Depuis la version 2.0, les objets restaur&eacute;s par ce composant sont le charme de rat, les dents de fi&eacute;lon, les gantelets &agrave; pointes, les gantelets d'&eacute;quarrissage, l'oeil de Vecna, le d&ucirc; du diable et la plume du chaos. Tous ces objets &eacute;taient initialement restaur&eacute;s par le Restoration Pack, sauf le charme de rat.</p>
+
+<p>La version 3.0 du Ultimate WeiDU Fixpack corrige le bogue des restrictions d'utilisation du charme de rat. Il est maintenant utilisable uniquement par les Xaositectes, comme pr&eacute;vu. Les contournements pr&eacute;c&eacute;dents qui le rendaient utilisable uniquement par les personnages chaotiques ne sont plus utilis&eacute;s. Le charme de rat est disponible chez Aboyant-Plusauvage si vous &ecirc;tes un Xaositecte, si vous lui posez la bonne question et si vous avez le bon objet dans votre inventaire. Si vous installez ce composant sans installer le Fixpack, vous ne pourrez pas utiliser le charme de rat.<p>
+
+<p>Les dents de fi&eacute;lon (utilisables par Morte), les gantelets &agrave; pointes et les gantelets d'&eacute;quarrissage sont vendus par un marchand nomm&eacute; Murk, qui est restaur&eacute; &agrave; Maudith. Son magasin contenait d&eacute;j&agrave; ces objets, tout ce que j'ai fait est de restaurer le marchand.<p>
+
+<p>L'oeil de Vecna ne sera disponible que tardivement dans le jeu... n'oubliez pas de v&eacute;rifier aupr&egrave;s de Vrischika, si vous revenez &agrave; Sigil apr&egrave;s en &ecirc;tre partis pendant un certains temps.</p>
+
+<p>Le d&ucirc; du diable et la plume du chaos peuvent &ecirc;tre trouv&eacute;s dans un conteneur, quelque part dans l'enceinte de Sigil - tout du moins, c'est ce que j'ai entendu dire, qui peut savoir.</p>
+
+<h4>13. Dialogues et commentaires du groupe restaur&eacute;s</h4>
+
+<p>------------------------------------</br><b>NOTE IMPORTANTE DU TRADUCTEUR</b> : les fichiers audio restaur&eacute;s par ce composant ne font pas partie du jeu normal, et ont &eacute;t&eacute;  boud&eacute;s par les traducteurs : ils n'ont pas &eacute;t&eacute; tous doubl&eacute;s en fran&ccedil;ais, les fichiers sons correspondant sont parfois vides ou incorrects. Vous n'entendrez donc pas la totalit&eacute; de ces nouveaux dialogues en installant ce composant sur une version fran&ccedil;aise du jeu.</br>------------------------------------</p>
+
+<p>Les versions 1.0 et 2.0 du UB n'ajoutent aucun nouveau dialogue, et seulement 3 commentaires audio. L'un d'entre eux &eacute;tait initialement restaur&eacute; par le Restoration Pack, il s'agit d'un commentaire de Grace au sujet de Fell, la premi&egrave;re fois qu'elle arrive dans la zone de la Ruche o&ugrave; il r&eacute;side. Qwinn en a ajout&eacute; deux autres, tous les deux dans le Quartier des Gratte-papiers, l'un lorsque Morte y entre pour la premi&egrave;re fois, le second pour Grace dans ces m&ecirc;mes conditions.</p>
+
+<p>La version 3.0 du Unfinished Business a cependant grandement am&eacute;lior&eacute; ce composant. Il restaure 27 flirts int&eacute;gralement doubl&eacute;s entre Morte et les zombies f&eacute;minins, ce qui peut &ecirc;tre appr&eacute;ci&eacute; d&egrave;s le d&eacute;but du jeu. Morte interviendra quelques moments apr&egrave;s avoir parl&eacute; &agrave; n'importe quel zombie f&eacute;minin. Sont aussi ajout&eacute;s 15 nouveaux et divertissants dialogues audio entre divers membres du groupe, et un nouveau commentaire de Grace quand elle p&eacute;n&egrave;tre pour la premi&egrave;re fois dans la plupart des zones de la Ruche. Notez que vous ne pourrez probablement pas voir l'int&eacute;gralit&eacute; de ces 15 nouveaux dialogues, &agrave; moins que vous n'installiez le composant acc&eacute;l&eacute;rateur de dialogue du Qwinn's Tweak Pack.</p>
+
+<p>La version 4.0 restaure encore plus de sons et de dialogues - j'ai pass&eacute; au peigne fin tous les fichiers son disponibles, et cette version restaure tous les dialogues qu'il &eacute;tait possible de correctement restaurer. Il y a &eacute;galement plus de musiques, dont certaines sont nouvelles ! Le th&egrave;me musical "Smoldering Corpse Alternate" de la BO officielle de PS:T se fera maintenant entendre la nuit (pendant le jeu, bien s&ucirc;r) dans le bar du Cadavre Fumant. Enfin, parler avec les membres de votre &eacute;quipe fera d&eacute;sormais entendre le th&egrave;me musical du personnage, &eacute;tant donn&eacute; que plusieurs de ces th&egrave;mes n'&eacute;taient que tr&egrave;s rarement entendus dans le jeu. Le th&egrave;me musical de Morte ne vient pas avec le jeu, mais lui parler d&eacute;clenchera la lecture de son th&egrave;me, venant de la BO officielle de Planescape Torment. Ces deux pistes issues de la BO sont toutes deux compos&eacute;es par Mark Morgan (NdT : comme le reste de la musique de Planescape: Torment).</li>
+
+<h4>14. Mebbeth restaur&eacute;e</h4>
+
+<p>Ce composant, nouveau dans la version 3.0 du UB, restaure deux importants blocs orphelins du dialogue de Mebbeth. L'un de ces blocs, d'une longueur de plusieurs lignes, &eacute;tait suppos&eacute; se d&eacute;clencher apr&egrave;s avoir dormi dans sa hutte via l'option de dialogue appropri&eacute;e, et ajoute apr&egrave;s cela une nouvelle entr&eacute;e &agrave; votre journal. L'autre bloc de dialogue est appel&eacute; "l'histoire de Mebbeth sur Ravel", et ne peut &ecirc;tre accessible qu'avant votre d&eacute;part pour le labyrinthe de Ravel. Il rajoute &eacute;galement une nouvelle entr&eacute;e au journal. Cela vous semble int&eacute;ressant ? &Ccedil;a l'est.</p>
+
+<h4>15. Rencontres du Bas Quartier restaur&eacute;es</h4>
+
+<p>Ce composant, nouveau dans la version 3.0 du UB, fait partie des composants recommand&eacute;s. Il restaure 9 cr&eacute;atures dans la zone principale du Bas-Quartier, dont 7 avec des dialogues in&eacute;dits dans le jeu original. Il fait &eacute;galement r&eacute;appara&icirc;tre un personnage existant pour un petit dialogue suppl&eacute;mentaire, que vous ne pourrez pas obtenir une fois qu'elle aura quitt&eacute; le Bas-Quartier.</p>
+
+<p>Le meilleur ajout est Hailcin'n, un guerrier githzerai tatou&eacute; et balafr&eacute;, qui tra&icirc;ne dans la m&ecirc;me zone que Kii'na. Un personnage haut en couleur, qui fort heureusement ne semble pas vouloir se battre avec Dak'kon. Ce fut une restauration tr&egrave;s simple - le jeu contenait d&eacute;j&agrave; le fichier de cr&eacute;ature, son fichier de dialogue, et son script de d&eacute;placement. Tout ce que j'ai eu &agrave; faire &eacute;tait de le mettre au bon endroit, et de faire quelques corrections mineures de dialogue. Son dialogue est tr&egrave;s d&eacute;taill&eacute;, et ajoute de la richesse au jeu.</p>
+
+<p>Six autres cr&eacute;atures sont rajout&eacute;es, en se basant sur deux fichiers de dialogue inutilis&eacute;s de clients situ&eacute;s &agrave; cot&eacute; de Deran, le commissaire-priseur vendeur d'esclaves.  Ces personnes sont assez similaires aux clients de la vente aux ench&egrave;res de Giltspur, 3 hommes et 3 femmes. Parler &agrave; n'importe laquelles de ces personnes d&eacute;clenchera un dialogue al&eacute;atoire parmi trois possibilit&eacute;s, en fonction du genre de la personne, de la m&ecirc;me fa&ccedil;on qu'avec les clients de Giltspur. Aucune correction de ces dialogues a &eacute;t&eacute; n&eacute;cessaire, mais j'ai d&ucirc; choisir l'aspect des cr&eacute;atures et &eacute;crire un script pour elles, bas&eacute; sur celui des clients de Giltspur (la version corrig&eacute;e du Fixpack). Elles ajoutent &eacute;galement de l'int&eacute;r&ecirc;t &agrave; cette zone. </p>
+
+<p>Deux autres personnages ont &eacute;galement &eacute;t&eacute; rajout&eacute;s, des ouvriers travaillant sur un &eacute;trange appareil, restaur&eacute;s pr&egrave;s de l'endroit o&ugrave; attend Lenny. Ces personnages sont restaur&eacute;s sur la base d'un script complexe d&eacute;j&agrave; existant, faisant se d&eacute;placer les ouvriers autour de l'appareil. Il n'y avait pas de dialogue interactif pour eux, mais il y a un bon nombre de lignes de texte flottant. Au cas o&ugrave; vous essaieriez de leur parler, j'ai donn&eacute; &agrave; l'un un dialogue g&eacute;n&eacute;rique des habitants du Bas-Quartier, et &agrave; l'autre un dialogue original "Je travaille, laisse-moi", qui ne semble pas &ecirc;tre utilis&eacute; ailleurs dans le jeu.</p>
+
+<p>Enfin, si vous donnez &agrave; Kii'na l'information qui la conduira &agrave; quitter le Bas-Quartier, elle reviendra environ une semaine apr&egrave;s, ce qui vous permettra d'appr&eacute;cier le reste de son dialogue, qui &eacute;tait auparavant inaccessible. </p>
+
+<h4>16. Entr&eacute;es du bestiaire restaur&eacute;es</h4>
+
+<p>Ce composant, nouveau dans la version 4.0 du UB, &eacute;tait initialement restaur&eacute; par Kung Fu Man dans son Restoration Pack. La plupart de ces entr&eacute;es textes restaur&eacute;es &eacute;taient incorpor&eacute;es dans la version 3.0 du Fixpack, mais &agrave; partir de la version 4.0 elles sont s&eacute;par&eacute;es dans ce composant du UB. Les entr&eacute;es du bestiaire affect&eacute;es sont celles d'Annah, de Dak'kon, de Dhall, des Hommes-Poussi&egrave;res (hommes et femmes), de Grace, d'Ignus, de Lothar, de Nordom, de Trias et de Vhailor.</p>
+
+<p>De plus, les dialogues du jeu incluent une entr&eacute;e de bestiaire pour une alu-fi&eacute;lonne, mais aucun portrait y correspondant &eacute;tait disponible. Heureusement, MaeBe (membre du forum SHS) a r&eacute;pondu &agrave; ma demande d'un portrait d'Aasimar modifi&eacute;, et Leila (&eacute;galement membre du forum) l'a am&eacute;lior&eacute; pour faire du portrait de Vrischika un tr&egrave;s bon ajout pour le bestiaire. Je pense qu'il correspond tr&egrave;s bien au style de PS:T, et je remercie grandement ces deux membres d'avoir pr&ecirc;t&eacute; leur excellent talent artistique &agrave; ce projet.</p>
+
+<p>Finalement, gr&acirc;ce &agrave; notre gourou du moteur du jeu scient, vous pouvez maintenant avoir une image de bestiaire mise &agrave; jour pour le Transcendant. Ce portrait changera quand vous le verrez en personne apr&egrave;s la courte vid&eacute;o le concernant, passant d'un portrait vague et sombre &agrave; un portrait bien net. Assurez-vous de v&eacute;rifier cela dans le bestiaire avant de commencer le dialogue avec le Transcendant, car vous n'en aurez peut-&ecirc;tre pas  l'occasion par la suite.</p>
+
+<h4>17. Extension des dialogues concernant le sort de Deionarra</h4>
+
+<p>Je ne l'ai pas inclus dans la section des composants recommand&eacute;s, car il contient plus de nouveau contenu que de contenu restaur&eacute;, mais je le recommande tout de m&ecirc;me. Comme indiqu&eacute; dans l'incomplet "Dialogues concernant le sort de Deionarra restaur&eacute;s" list&eacute; plus haut, tous les dialogues originaux &agrave; propos du sort final de Deionarra ne peuvent &ecirc;tre restaur&eacute;s, car le joueur n'apprend pas tout ce qu'il a besoin de savoir pour comprendre ces conversations avant qu'il ne soit trop tard. Ce mod ajoute beaucoup de contenu nouveau (dont 180 nouvelles lignes de dialogue) qui permet au joueur de d&eacute;couvrir le sort de Deionarra avant qu'il ne soit trop tard pour faire quelque chose &agrave; ce sujet. Une fois que ce nouveau contenu aura &eacute;t&eacute; jou&eacute;, environ 30-40 lignes de dialogue original deviendront accessibles.<p>
+
+<p>Prenez note de quelques petites choses importantes si vous installez ce composant : un placard de votre chambre situ&eacute;e dans la salle de f&ecirc;tes que vous pouviez facilement ouvrir auparavant restera maintenant verrouill&eacute; jusqu'&agrave; la fin de cette qu&ecirc;te (les objets qu'il contient ont &eacute;t&eacute; d&eacute;plac&eacute;s et restent facilement accessibles). La qu&ecirc;te ne sera pas disponible jusqu'&agrave; ce que vous reveniez &agrave; Sigil apr&egrave;s un long voyage. Rendez visite &agrave; un personnage important du Square du Chiffonnier &agrave; ce moment-l&agrave; pour commencer la qu&ecirc;te, et pr&ecirc;tez attention aux &eacute;ventuelles indications laiss&eacute;es par Ravel au sujet d'objets que vous devriez garder avec vous, vous en aurez besoin pour terminer cette qu&ecirc;te correctement (l'indication fait partie de son dialogue original, je ne l'ai pas ajout&eacute;e). Enfin, cette nouvelle qu&ecirc;te permet de terminer une longue qu&ecirc;te existante, qui s'achevait auparavant par une impasse tr&egrave;s d&eacute;cevante.<p>
+
+<p>Je dois le r&eacute;p&eacute;ter : vous DEVEZ garder un objet du jardin de Ravel pendant pratiquement tout le jeu pour pouvoir terminer cette qu&ecirc;te. Cet objet a plusieurs utilit&eacute;s. Vous pourriez avoir &agrave; renoncer aux autres utilisations possibles, afin de pouvoir l'utiliser quand vous en aurez besoin, vers la fin du jeu. Vous avez &eacute;t&eacute; pr&eacute;venu. Et si vous ne pouvez pas ouvrir l'un des placards que vous avez l'habitude d'ouvrir, ce composant en est la cause.</p>
+
+<p>La totalit&eacute; du contenu de ce mod - y compris le raccordement &agrave; la qu&ecirc;te existante dont je viens de parler - a &eacute;t&eacute; approuv&eacute; par Chris Avellone, concepteur principal de Planescape: Torment, et le fil conducteur et les dialogues ont &eacute;galement &eacute;t&eacute; approuv&eacute;s par Colin McComb, le concepteur original de la zone o&ugrave; se d&eacute;roule une grande partie de la qu&ecirc;te.</p>
+
+<p>Malheureusement, la version initiale de ce mod ne contenait pas de traduction Italienne. Les traductions Allemande et Espagnole sont disponibles. Si une traduction Italienne devenait disponible, une nouvelle version 3.1 sortirait pour l'inclure. Quiconque serait volontaire pour traduire peut me contacter sur Spellhold Studios - tout type d'aide serait tr&egrave;s appr&eacute;ci&eacute;. En attendant, si ce composant est install&eacute; avec un jeu en italien, le dialogue  appara&icirc;tra en anglais.</p>
+
+<h4>18. Objets de triche restaur&eacute;s - non recommand&eacute;</h4>
+
+<p>Le dialogue de Vrischika a une option de conversation d&eacute;sactiv&eacute;e, dans laquelle elle vous propose d'acheter l'"Ep&eacute;e de Wh'ynn" - aka la "Lame du Tricheur" - et "Le Grimoire de Triche". Leurs descriptions indiquent ce qu'ils sont suppos&eacute;s faire, mais ni l'un ni l'autre ne font quoi que ce soit actuellement. Le Restoration Pack les active, vous laissant la possibilit&eacute; de les acheter et de lire leurs descriptions et, dans le cas de l'Ep&eacute;e de Wh'ynn, de r&eacute;-activer son pouvoir (qui est basiquement d'amener &agrave; la derni&egrave;re cin&eacute;matique du jeu, ce qui d&eacute;voile la fin, et explique pourquoi je ne le recommande pas).</p>
+
+<p>Notez qu'il y a &eacute;galement un troisi&egrave;me objet de restaur&eacute; - acheter l'un ou l'autre de ces objets &agrave; Vrischika fera appara&icirc;tre un nouveau tatouage chez Fell (qu'est-ce qui n'en rajoute pas ?).</p>
+
+<p>Le Restoration Pack pr&eacute;tend aussi activer une esp&egrave;ce de Grimoire de Triche, mais il n'en est rien. La version du Unfinished Business le fait. Et cela rend le jeu extr&ecirc;mement facile, c'est pourquoi je ne le recommande pas (sauf aux moddeurs cherchant &agrave; tester leurs mods, ce qui constitue l'unique raison pour laquelle je l'ai fait). Les Triches disponibles dans la version 1 du UB et du Grimoire de Triche sont la Triche de t&eacute;l&eacute;portation, la Triche de repos, la Triche de richesse, la Triche d'attribution des points des caract&eacute;ristiques, la Triche de mort, la Triche d'exp&eacute;rience, la Triche du mot de Bont&eacute; et de M&eacute;chancet&eacute; et la Triche du mot de Loi et de Chaos.</p>
+
+<p>Deux choses &agrave; propos du Grimoire de Triche. L'une est que le <a href="http://spellholdstudios.net/ie/pst-qtweaks">Qwinn's PS:T Tweak Pack</a> contient &eacute;galement un Grimoire de Triche, la diff&eacute;rence &eacute;tant qu'avec celui du Tweak Pack vous commencez avec le Grimoire de Triche en votre possession, tandis qu'avec ce composant vous devez patienter jusqu'&agrave; pouvoir acc&eacute;der &agrave; Vrischika (comme cela &eacute;tait... *gloups*... "pr&eacute;vu") pour lui acheter le grimoire (et c'est... plut&ocirc;t cher chez elle). L'autre chose &agrave; noter est que cela n'a -rien- &agrave; voir avec le mod du Grimoire de Triche de Platter, que je n'ai jamais t&eacute;l&eacute;charg&eacute; ni vu. Le dialogue que vous voyez quand vous utilisez le livre est enti&egrave;rement fait par Qwinn. La conversation avec Vrischika &agrave; propos du livre est ce que contenait les fichiers originaux, et la seule chose que j'ai un peu modifi&eacute; est la liste des triches disponibles dans le Grimoire.</p>
+
+           <address>
+            <span class="footer">PS:T Unfinished Business &gt; Liste des composants</span> &#8226;<a href="#top">Revenir au d&eacute;but</a>
+          </address>
+        </div>
+
+        <!-- ================== F A Q ================== -->
+        <a name="faq" id="faq"></a>
+        <div class="content">
+          <h2>Foire Aux Questions</h2>
+
+          <p><strong>Q: En jouant avec l'un des ces composants, je suis tomb&eacute; sur un bogue. Qu'est-ce-que je peux faire ?</strong><br />R: Rapportez le bogue ici, sur le forum du <a href="http://www.shsforums.net/index.php?showforum=553">PS:T Unfinished Business</a> sur Spellhold Studios, et je ferai tout ce que je peux pour r&eacute;soudre votre probl&egrave;me le plus rapidement possible.</p>
+
+          <p><strong>Q: J'ai des probl&egrave;mes pour installer Unfinished Business. A l'aide !</strong><br />R: Avant d'installer PS:T Unfinished Business, aviez-vous install&eacute; le patch 1.1 officiel (uniquement avec la version 4 CD) et ensuite <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a>, comme expliqu&eacute; dans la <a href="#installation">proc&eacute;dure d'installation</a> ?</p>
+
+          <p>Si vous pensez l'avoir fait, merci de rapporter le souci sur le forum du <a href="http://www.shsforums.net/index.php?showforum=553">PS:T Unfinished Business</a> sur Spellhold Studios, et je ferai tout ce que je peux pour r&eacute;soudre votre probl&egrave;me le plus rapidement possible. Il serait utile d'ajouter, dans votre message d&eacute;crivant le probl&egrave;me, le contenu du fichier SETUP-PST-UB.DEBUG que vous trouverez dans le dossier de Torment.</p>
+
+          <p><strong>Q : Qui sont "Platter" et "SKARDAVNELNATE", et qu'est-ce que c'est que ce "Restoration Pack" auquel vous faites r&eacute;f&eacute;rence quand vous d&eacute;crivez chaque composant ?</strong><br />A : Il s'agit des autres modeurs dont le travail a &eacute;t&eacute; consult&eacute; et int&eacute;gr&eacute; dans le d&eacute;veloppement de ce mod et du PS:T Ultimate WeiDU Fixpack. Pour plus de d&eacute;tails &agrave; propos de leur travail, ainsi que pour des liens vers leurs mods (non WeiDU) encore t&eacute;l&eacute;chargeables, merci de consulter la FAQ du fichier Lisez-moi du <a href="http://spellholdstudios.net/ie/pst-fixpack">PS:T Ultimate WeiDU Fixpack</a>, dans laquelle je r&eacute;ponds &agrave; ces questions.</p>
+
+          <address>
+            <span class="footer">PS:T Unfinished Business &gt; FAQ</span> &#8226;<a href="#top">Revenir au d&eacute;but</a>
+          </address>
+        </div>
+
+        <!-- ================== C r e d i t s ================== -->
+        <a name="credits" id="credits"></a>
+        <div class="content">
+          <h2>Remerciements</h2>
+
+<p>This mod integrates some work which was originally created by the talented modders Platter, Kung Fu Man (author of the Restoration Pack) and SKARDAVNELNATE, reimplementing them in a compatibility-friendly WeiDU format and adding some totally new and original content by Qwinn as well.<p>
+
+<p>Unfortunately, <strong>Platter</strong> and <strong>Cilantro</strong> have all but disappeared from the internet since their work, and my attempts to contact them have failed, but they still deserve great credit for the effort and quality of their work which has been reimplemented here.  V4.0 UPDATE: Cilantro, now known as Kung Fu Man, has checked in at the SHS forums and has kindly lent his approval, experience and advice there, all of which are greatly appreciated.</p>
+
+<p><strong>SKARDAVNELNATE</strong> willingly consented to allow me to refer to his All Inclusive Fixpack for this mod and was helpful in answering my many questions, and for that he deserves great credit for the (hopeful) success of this mod and has my gratitude as well.</p>
+
+<p><strong>Qwinn</strong> - that would be me - did all the WeiDUization work which required manually reimplementing every mod by all the other authors.  That means if there's problems in Unfinished Business that don't appear in their work, it's almost certainly all my fault, don't blame them.  Also blame me if you found any typos or grammar errors in the dialogs.  I also did all the testing, at least for Version 1.0.  So yeah, blame me for everything that goes wrong.  But DO let me know about it at the forums, linked at the top of this readme.  The end goal is to have -no- bugs left.</p>
+
+<p>Many thanks also go to the various modders over at the Gibberlings 3 forums who patiently answered many of my dumber questions as I learned how to mod, particularly <strong>Miloch, Isaya, devsin and Nythrun</strong> who pointed me in the right direction at a couple of tricky points, and to the various players who encouraged me to keep up the project over at G3 as well (particularly, but definitely not limited to, <strong>Icendoan, Daulmakan, and Bearwere)</strong>. I'd also like to extend credit to Spellhold Studios, and <strong>K'aeloree</strong> and <strong>SConrad</strong> in particular, for graciously permitting me to host all three mods here and to grant them a prominent position on the main forum page. Finally, thanks to <strong>thebigg</strong> over at the Pocket Plane Group for hearing out and implementing my wish list for additional features to include in WeiDU 207 that made my job easier.</p>
+
+<p>Version 2.0:</p>
+
+<p>Thanks to the many kind players who lent their hard work to translating these mods. <strong>Ghildrean</strong> provided the Spanish translation, <strong>Yakkuz</strong> provided the Italian translation, and the German translation was produced by cooperation between (in alphabetical order) <strong>Arkain, Avantenor, Doctor Who, HomiSite, and Zenju</strong>, with HomiSite and Zenju leading the project. Zenju, incidentally, also did the most recent revisions for the german translation of the game, and as such I am especially grateful for his help.</p>
+
+<p>I hope you enjoy your best Planescape: Torment experience yet!  As fickle as memories can be (as TNO could well assert), may the memory of this, the best CRPG ever written, never die.</p>
+
+<p>Version 3.0:
+
+<p>Many thanks to <strong>Chris Avellone</strong>, lead designer of Planescape: Torment, and <strong>Colin McComb</strong>, original designer of the Foundry among other areas, not only for making this true classic for all of us to enjoy, but also for their guidance and kind encouragement on the Expanded Deionarra's Truth mod.</p>
+
+<p>Many thanks to <strong>Arkain</strong> for the German translation of the Expanded Deionarra's Truth mod, and <strong>Homisite</strong> for additional fine-tuning and editing.</p>
+
+<p>Also, thanks kindly to <strong>Rhaenys</strong> for the Spanish translation of the Expanded Deionarra's Truth mod, and <strong>Immortality</strong> for helping make it happen.</p>
+
+<p>Version 4.0:
+
+<p>Great thanks to engine guru <strong>scient</strong> for his first contribution to Unfinished Business, the engine tweak in Restored Bestiary Entries that switches TO's bestiary pic when you see him in person for the first time.</p>
+
+<p>Many thanks to <strong>MaeBe</strong> and particularly <strong>Leila</strong> for their wonderful work in creating a bestiary portrait for Vrischika (under "alu-fiend") in the new Restored Bestiary Entries component. It really is terrific work.</p>
+
+<p>Also thanks to forum posters <strong>yarpen</strong> and <strong>W. Irving</strong> for their great work in providing a Polish translation for the mod.</p>
+
+<p>Version 4.10:
+
+<p>Many thanks to <strong>tanman</strong> for updating the Italian translation, and <strong>Macbeth</strong> and <strong>Refiler</strong> for the new Russian translation!</p>
+
+<p>Thanks to scient for restoring the Copied Spell sounds.</p>
+
+<p>Also many thanks to <strong>PirroEpirote</strong> for providing versions of the Alternate Smoldering Corpse and Morte's Themes that are truer to the originals (and half the download size as well!)</strong>
+
+<p>Version 4.12:
+
+<p>Thanks to <strong>mirandir</strong> for the French translation and to <strong>Zyl</strong> for proofreading!</p>
+
+          <hr class="floatfix" /><!-- Don't remove the <hr /> unless you have text following the last "t2" in this <div>! -->
+          <address>
+            <span class="footer">PS:T Unfinished Business &gt; Remerciements</span> &#8226;<a href="#top">Revenir au d&eacute;but</a>
+          </address>
+        </div>
+
+        <!-- ================== V e r s i o n   H i s t o r y ================== -->
+        <a name="version" id="version"></a>
+        <div class="content">
+          <h2>Historique</h2>
+          <h6>04 June 2008 - Version 1.00</h6>
+          <ul>
+            <li>Initial Release</li>
+          </ul>
+
+          <h6>12 August 2008 - Version 2.00</h6>
+          <ul>
+            <li>Added Spanish, German and Italian translations.</li>
+          </ul>
+
+          <h6>20 December 2008 - Version 3.00</h6>
+          <ul>
+            <li>Added Expanded Deionarra's Truth Mod</li>
+            <li>Added Restored Mebbeth Component</li>
+            <li>Added Restored Lower Ward Encounters Component</li>
+            <li>Greatly expanded Restored Sounds and Banters Component</li>
+          </ul>
+
+          <h6>1 January 2009 - Version 3.01</h6>
+          <ul>
+            <li>Small fix to a new Annah-Morte banter in Restored Sounds and Banters component that would create a dialogue zombie.</li>
+          </ul>
+
+          <h6>1 January 2010 - Version 4.00</h6>
+          <ul>
+            <li>Major update, particularly to the Sounds and Banters component and the Bestiary component. Also added Polish translation.</li>
+          </ul>
+
+          <h6>11 April 2010 - Version 4.10</h6>
+          <ul>
+            <li>Updated two music themes in Restored Sounds component, scient restored "Copied Spell" sounds, updated Italian translation, and added Russian translation.</li>
+          </ul>
+
+		  <h6>8 August 2011 - Version 4.11</h6>
+          <ul>
+            <li>Updated Russian translation.</li>
+          </ul>
+		  
+		  <h6>5 August 2012 - Version 4.12</h6>
+          <ul>
+            <li>Fixed a bug with the restored "Door Locked" voiced lines that would cause it to play even though the door was being unlocked with a key.</li>
+			<li>Restored "Trap Detected" voiced lines (TNO/Annah).</li>
+			<li>Added French translation.</li>
+          </ul>
+
+          <address>
+            <span class="footer">PS:T Unfinished Business &gt; Historique</span> &#8226;<a href="#top">Revenir au d&eacute;but</a>
+          </address>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

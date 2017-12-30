@@ -1,0 +1,89 @@
+DEFINE_PATCH_MACRO ~Q_Engine_Patcher~
+BEGIN
+  SET i = 0
+  SET Q_SaveLoop = Q_Loop
+  WHILE (i < 0x10001) BEGIN //search 0x10000 bytes from the starting point for our search pattern.
+    SET offset = "Q_Starting_Offset" + "%i%"
+    READ_ASCII "%offset%" pattern_current (%searchlength%)
+    PATCH_IF ("%pattern_current%" STRING_EQUAL "%searchpattern%") THEN BEGIN
+      INNER_PATCH_SAVE hexoffsetstring ~0x000000~
+      BEGIN
+         SET hexoffset = offset + Q_Replace_Offset
+         SET byte = hexoffset / 1048576
+         PATCH_IF byte < 10 BEGIN WRITE_BYTE 0x2 byte + 48 END
+         PATCH_IF byte >  9 BEGIN WRITE_BYTE 0x2 byte + 55 END
+         SET hexoffset = hexoffset - (byte * 1048576)
+         SET byte = hexoffset / 65536
+         PATCH_IF byte < 10 BEGIN WRITE_BYTE 0x3 byte + 48 END
+         PATCH_IF byte >  9 BEGIN WRITE_BYTE 0x3 byte + 55 END
+         SET hexoffset = hexoffset - (byte * 65536)
+         SET byte = hexoffset / 4096
+         PATCH_IF byte < 10 BEGIN WRITE_BYTE 0x4 byte + 48 END
+         PATCH_IF byte >  9 BEGIN WRITE_BYTE 0x4 byte + 55 END
+         SET hexoffset = hexoffset - (byte * 4096)
+         SET byte = hexoffset / 256
+         PATCH_IF byte < 10 BEGIN WRITE_BYTE 0x5 byte + 48 END
+         PATCH_IF byte >  9 BEGIN WRITE_BYTE 0x5 byte + 55 END
+         SET hexoffset = hexoffset - (byte * 256)
+         SET byte = hexoffset / 16
+         PATCH_IF byte < 10 BEGIN WRITE_BYTE 0x6 byte + 48 END
+         PATCH_IF byte >  9 BEGIN WRITE_BYTE 0x6 byte + 55 END
+         SET byte = hexoffset - (byte * 16)
+         PATCH_IF byte < 10 BEGIN WRITE_BYTE 0x7 byte + 48 END
+         PATCH_IF byte >  9 BEGIN WRITE_BYTE 0x7 byte + 55 END
+      END
+      WRITE_EVALUATED_ASCII ("%offset%" + "Q_Replace_Offset") "%replacepattern%" (%replacelength%)
+      PATCH_IF Q_Loop > 0 BEGIN SET Q_Loop = Q_Loop - 1 END
+      PATCH_IF Q_Loop = 0 BEGIN SET i = 0x10001 END
+      PATCH_PRINT ~%Q_Patch_Name%~
+      PATCH_PRINT ~Engine Patched at Offset: %hexoffsetstring%~
+    END
+    SET i += 1
+    PATCH_IF ("%i%" = 0x10001) AND ( Q_SaveLoop = 0 OR Q_Loop > 0 )  BEGIN
+      INNER_ACTION BEGIN
+        FAIL ~No pattern for %Q_Patch_Name% found.~
+      END
+    END
+  END
+END
+
+DEFINE_PATCH_MACRO ~Q_Pattern_Maker~
+BEGIN
+  PATCH_IF searchlength > 0
+  BEGIN
+     FOR (i = 0; i < searchlength; i += 1)
+     BEGIN
+       INNER_PATCH ~%searchbytes%~
+       BEGIN
+          READ_BYTE ((i * 3) + 0) byte1
+          READ_BYTE ((i * 3) + 1) byte2
+       END
+       INNER_PATCH_SAVE searchpattern ~%searchpattern%~
+       BEGIN
+          PATCH_IF byte1 >= 48 AND byte1 <= 57 THEN BEGIN SET byte1 = (byte1 - 48) * 16 END ELSE BEGIN SET byte1 =(byte1 - 55) * 16 END
+          PATCH_IF byte2 >= 48 AND byte2 <= 57 THEN BEGIN SET byte2 = (byte2 - 48)      END ELSE BEGIN SET byte2 =(byte2 - 55)      END
+          SET byte = byte1 + byte2
+          WRITE_BYTE i byte
+       END
+     END
+  END
+
+  PATCH_IF replacelength > 0
+  BEGIN
+     FOR (i = 0; i < replacelength; i += 1)
+     BEGIN
+       INNER_PATCH ~%replacebytes%~
+       BEGIN
+          READ_BYTE ((i * 3) + 0) byte1
+          READ_BYTE ((i * 3) + 1) byte2
+       END
+       INNER_PATCH_SAVE replacepattern ~%replacepattern%~
+       BEGIN
+          PATCH_IF byte1 >= 48 AND byte1 <= 57 THEN BEGIN SET byte1 = (byte1 - 48) * 16 END ELSE BEGIN SET byte1 =(byte1 - 55) * 16 END
+          PATCH_IF byte2 >= 48 AND byte2 <= 57 THEN BEGIN SET byte2 = (byte2 - 48)      END ELSE BEGIN SET byte2 =(byte2 - 55)      END
+          SET byte = byte1 + byte2
+          WRITE_BYTE i byte
+       END
+     END
+  END
+END

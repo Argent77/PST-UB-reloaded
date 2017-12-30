@@ -1,0 +1,554 @@
+// ================================================================================================
+//                         PLANESCAPE: TORMENT UNFINISHED BUSINESS
+//                             COMPONENT:  CANDLESTICK QUEST
+//                                BY QWINN (Paul Escalona)
+// ================================================================================================
+// Last Modification Date:  2008/05/09 - v1.00
+// ================================================================================================
+// Revised by Argent77
+// ================================================================================================
+
+
+// Originally restored and distributed as a stand alone restoration mod by Platter
+// With several fixes by Skardavnelnate
+
+
+// =================== LONGLIST.TXT DOCUMENTATION FROM SKARD'S FIXES ======================
+// ================================ AS OF AIP 20080408 ====================================
+// ------------------------------
+// quests.ini
+// ------------------------------
+// These add the quest descriptions for finding Sheryl's father and retrieving a leg bone for Ulthera.
+
+// [init]
+// questcount=127
+
+// [125]
+// title=64151
+// descAssigned=64940
+// descCompleted=64941
+// assignedChecks=1
+// aVar1=Sheryl_Quest
+// aValue1=3
+// aCondition1=EQ
+// completeChecks=1
+// cVar1=Sheryl_Quest
+// cValue1=4
+// cCondition1=EQ
+
+// [126]
+// title=64943
+// descAssigned=64944
+// descCompleted=64945
+// assignedChecks=1
+// aVar1=Ulthera_Quest
+// aValue1=3
+// aCondition1=EQ
+// completeChecks=1
+// cVar1=Ulthera_Quest
+// cValue1=4
+// cCondition1=EQ
+
+// AR0109.ARE
+// Actor 11
+// Enter name Ulthera
+
+// SHERYL.CRE (taken from BURIEDF.CRE)
+// Animation ID (cl 4) Townie, LC Female - 24637
+// # colors 4
+// Color 1 hair_Blond - 6
+// Color 2 cloth_Brown_Green - 76
+// Color 3 skin_Light - 41
+// Color 4 leather_Olive_Green - 202
+// Color 1 placement Hair - 224
+// Color 2 placement Main cloth - 160
+// Color 3 placement Skin - 176
+// Color 4 placement Minor cloth - 144
+// Color 5 placement Not used - 0
+// Color 6 placement Not used - 0
+// Color 7 placement Not used - 0
+
+// ULTHERA.CRE (taken from MMOURN.CRE)
+// Animation ID (cl 4) Midwife - 24664
+// # colors 4
+// Color 1 hair_Brassy_White - 9
+// Color 2 cloth_Blue_Grey - 87
+// Color 3 skin_Tan - 39
+// Color 4 cloth_Light_Grey - 83
+// Color 1 placement Hair - 224
+// Color 2 placement Main cloth - 160
+// Color 3 placement Skin - 176
+// Color 4 placement Minor cloth - 144
+// Color 5 placement Not used - 0
+// Color 6 placement Not used - 0
+// Color 7 placement Not used - 0
+
+// DULTHERA.DLG
+// Ask about Pharod after you found him.
+// Add Response trigger Global("Pharod","GLOBAL",0)
+// Response 32 set flag, add Trigger index 3
+
+// The portal opens before you know it's location.
+// The portal reopens while already open.
+// AR0109.ARE
+// cantrig1
+// Flag Reset trap(1)
+
+// CANTRIG.BCS
+// Add Global("Ulthera_Quest","GLOBAL",4) as line 4
+// Add BitSet("0109_Status","AR0109",BIT2) as line 7
+
+// Add
+// IF
+//	HarmlessEntered("Nordom")
+// THEN
+// 	RESPONSE #100
+// 		VerbalConstant("Nordom",NORDOM_PORTAL)
+// 		Continue()
+// END
+
+
+// ============================= Begin Candlestick Quest ==================================
+
+COMPILE EVAL ~%MOD_FOLDER%/Candlestick/dlg/Candlestick.d~
+
+ACTION_IF (IS_PST) BEGIN
+  COPY ~quests.ini~ ~quests.ini~
+    COUNT_REGEXP_INSTANCES CASE_INSENSITIVE ~descAssigned=~ "Quest1"
+    SET "NewTotal" = "Quest1" + 2
+    SET "Quest2" = "Quest1" + 1
+    REPLACE_TEXTUALLY ~questcount=%Quest1%~ ~questcount=%NewTotal%~
+   BUT_ONLY
+
+  COPY ~%MOD_FOLDER%/Candlestick/copy/addtoquests.ini~ ~%MOD_FOLDER%/Candlestick/copy/addtoquests.ini~
+    READ_ASCII 0 addtoquests (BUFFER_LENGTH)
+
+  APPEND_OUTER ~quests.ini~ ~%addtoquests%~ KEEP_CRLF
+END
+
+ACTION_IF (IS_PSTEE) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/A7_PSTEEFunctions.tph~
+  COPY_EXISTING ~BGEE.LUA~ ~override~
+    // Quest1
+    LPF A7_ADD_QUEST_PSTEE
+    INT_VAR
+      title           = 64151
+      descAssigned    = 64940
+      descCompleted   = 64941
+      assignedChecks  = 1
+      aValue1         = 3
+      completeChecks  = 1
+      cValue1         = 4
+    STR_VAR
+      aVar1           = ~Sheryl_Quest~
+      aCondition1     = ~EQ~
+      cVar1           = ~Sheryl_Quest~
+      cCondition1     = ~EQ~
+      comment         = ~Find Sheryl's father.~
+    END
+    // Quest2
+    LPF A7_ADD_QUEST_PSTEE
+    INT_VAR
+      title           = 64943
+      descAssigned    = 64944
+      descCompleted   = 64945
+      assignedChecks  = 1
+      aValue1         = 3
+      completeChecks  = 1
+      cValue1         = 4
+    STR_VAR
+      aVar1           = ~Ulthera_Quest~
+      aCondition1     = ~EQ~
+      cVar1           = ~Ulthera_Quest~
+      cCondition1     = ~EQ~
+      comment         = ~Find a human leg bone for Ulthera.~
+    END
+  BUT_ONLY
+END
+
+// =====================BEGIN AREA 0109 EDIT ===========================
+
+// Adding 1 actor (0x110), 2 trigger points (0xc4 each, total 0x188), 10 vertexes (0x4 each, total 0x28)
+
+COPY_EXISTING ~AR0109.ARE~ ~override~
+  // Add Actor
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1554
+    fj_loc_y          = 2026
+    fj_orientation    = 9
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Ulthera~
+    fj_cre_resref     = ~ULTHERA~
+    fj_dlg_resref     = ~DULTHERA~
+  END
+
+  // Add trigger 1
+  // PSTEE: "Cannot be passed by NPC" and "Use activation point" in addition to "Party required"
+  SET flags = IS_PSTEE ? (1 << 2 | 1 << 9 | 1 << 10) : (1 << 2)
+  SET alt_x = IS_PSTEE ? 749 : 0
+  SET alt_y = IS_PSTEE ? 768 : 0
+  LPF fj_are_structure
+  INT_VAR
+    fj_type             = 2   // travel region
+    fj_flags            = flags
+    fj_box_left         = 695
+    fj_box_top          = 686
+    fj_box_right        = 804
+    fj_box_bottom       = 839
+    fj_cursor_idx       = 48
+    fj_loc_x            = 749
+    fj_loc_y            = 762
+    fj_alt_x            = alt_x
+    fj_alt_y            = alt_y
+    fj_vertex_0         = 804 + (779 << 16)
+    fj_vertex_1         = 784 + (686 << 16)
+    fj_vertex_2         = 698 + (736 << 16)
+    fj_vertex_3         = 695 + (839 << 16)
+    fj_vertex_4         = 804 + (779 << 16)
+  STR_VAR
+    fj_structure_type   = ~region~
+    fj_name             = ~candle1~
+    fj_destination_area = ~AR0207~
+    fj_destination_name = ~fr0109~
+  END
+
+  // Add trigger 2
+  LPF fj_are_structure
+  INT_VAR
+    fj_type             = 0   // trap region
+    fj_flags            = 2   // [Reset trap]
+    fj_box_left         = 572
+    fj_box_top          = 697
+    fj_box_right        = 876
+    fj_box_bottom       = 918
+    fj_cursor_idx       = 0
+    fj_loc_x            = 724
+    fj_loc_y            = 807
+    fj_vertex_0         = 721 + (918 << 16)
+    fj_vertex_1         = 572 + (865 << 16)
+    fj_vertex_2         = 794 + (697 << 16)
+    fj_vertex_3         = 876 + (809 << 16)
+    fj_vertex_4         = 721 + (918 << 16)
+  STR_VAR
+    fj_structure_type   = ~region~
+    fj_name             = ~cantrig1~
+    fj_reg_script       = ~CANTRIG1~
+  END
+ BUT_ONLY
+
+// ==================== BEGIN AREA 0207 EDIT ===========================
+
+// First, delete 4th trigger point (labelled Trigger Point 5 in original game)
+// and it's vertexes, update any other vertex files' First Vertex Index.
+
+COPY_EXISTING ~AR0207.ARE~ ~override~
+
+  // No one assigned AR0207.BCS to be the area script for AR0207.ARE.
+  WRITE_ASCII 0x94 ~AR0207~ #8
+
+  // 0207ATTK script defined below in Qwinn section, replaces ENEMY.BCS
+  READ_LONG 0x54 ofsActors
+  WRITE_ASCII (ofsActors + 0 * 0x110 + 0x70) ~0207ATTK~ #8
+  WRITE_ASCII (ofsActors + 1 * 0x110 + 0x70) ~0207ATTK~ #8
+  WRITE_ASCII (ofsActors + 2 * 0x110 + 0x70) ~0207ATTK~ #8
+
+// Now it's time to insert our proximity trigger for the portal exit as the 4th
+// trigger point, and our actual travel trigger.  Our new trigger 4 has 7 vertexes, and
+// our travel trigger has 9.
+
+  // Remove original travel trigger at index 3
+  LPF fj_are_structure
+  INT_VAR
+    fj_delete_mode      = 3
+  STR_VAR
+    fj_structure_type   = ~region~
+  END
+
+  // Add new proximity trigger
+  LPF fj_are_structure
+  INT_VAR
+    fj_type             = 0   // trap region
+    fj_flags            = 2   // [Reset trap]
+    fj_box_left         = 496
+    fj_box_top          = 428
+    fj_box_right        = 631
+    fj_box_bottom       = 542
+    fj_cursor_idx       = 0
+    fj_loc_x            = 561
+    fj_loc_y            = 485
+    fj_vertex_0         = 534 + (430 << 16)
+    fj_vertex_1         = 496 + (462 << 16)
+    fj_vertex_2         = 547 + (542 << 16)
+    fj_vertex_3         = 611 + (542 << 16)
+    fj_vertex_4         = 631 + (502 << 16)
+    fj_vertex_5         = 576 + (428 << 16)
+    fj_vertex_6         = 534 + (430 << 16)
+  STR_VAR
+    fj_structure_type   = ~region~
+    fj_name             = ~cantrig2~
+    fj_reg_script       = ~CANTRIG2~
+  END
+
+  // Add new travel trigger
+  // PSTEE: "Cannot be passed by NPC" and "Use activation point" in addition to "Party required"
+  SET flags = IS_PSTEE ? (1 << 2 | 1 << 9 | 1 << 10) : (1 << 2)
+  SET alt_x = IS_PSTEE ? 575 : 0
+  SET alt_y = IS_PSTEE ? 470 : 0
+  LPF fj_are_structure
+  INT_VAR
+    fj_type             = 2   // travel region
+    fj_flags            = flags
+    fj_box_left         = 540
+    fj_box_top          = 430
+    fj_box_right        = 595
+    fj_box_bottom       = 526
+    fj_cursor_idx       = 48
+    fj_loc_x            = 575
+    fj_loc_y            = 463
+    fj_alt_x            = alt_x
+    fj_alt_y            = alt_y
+    fj_vertex_0         = 586 + (457 << 16)
+    fj_vertex_1         = 595 + (495 << 16)
+    fj_vertex_2         = 584 + (526 << 16)
+    fj_vertex_3         = 559 + (515 << 16)
+    fj_vertex_4         = 543 + (491 << 16)
+    fj_vertex_5         = 540 + (462 << 16)
+    fj_vertex_6         = 548 + (439 << 16)
+    fj_vertex_7         = 565 + (430 << 16)
+    fj_vertex_8         = 586 + (457 << 16)
+  STR_VAR
+    fj_structure_type   = ~region~
+    fj_name             = ~candle2~
+    fj_destination_area = ~AR0109~
+    fj_destination_name = ~frommap~
+  END
+ BUT_ONLY
+
+// =================================================================================
+// AR0903 EDIT
+
+COPY_EXISTING ~AR0903.ARE~ ~override~
+  READ_LONG 0x54 ofsActors
+  WRITE_ASCII (ofsActors + 0x70) ~~ #8
+  WRITE_ASCII (ofsActors + 0x80) ~SHERYL~ #8
+ BUT_ONLY
+
+// =================================================================================
+
+COPY_EXISTING ~ARKRING.ITM~ ~override~
+  WRITE_LONG 0x8 26009
+  WRITE_LONG 0xc 26009
+ BUT_ONLY
+
+COPY_EXISTING ~SHERYL.CRE~ ~override~
+  PATCH_IF (IS_PST) BEGIN
+    WRITE_SHORT 0x28 24637  // Animation ID
+  END
+  WRITE_ASCII 0x268 ~3004BTHG~ #8
+  PATCH_IF (IS_PST) BEGIN
+    WRITE_BYTE  0x2df 4
+    WRITE_SHORT 0x2e4 6
+    WRITE_SHORT 0x2e6 76
+    WRITE_SHORT 0x2e8 41
+    WRITE_SHORT 0x2ea 202
+    WRITE_SHORT 0x2ec 0
+    WRITE_SHORT 0x2ee 0
+    WRITE_SHORT 0x2f0 0
+    WRITE_BYTE 0x2f5 224
+    WRITE_BYTE 0x2f6 160
+    WRITE_BYTE 0x2f7 176
+    WRITE_BYTE 0x2f8 144
+    WRITE_BYTE 0x2f9 0
+    WRITE_BYTE 0x2fa 0
+    WRITE_BYTE 0x2fb 0
+  END
+  PATCH_IF (IS_PSTEE) BEGIN
+    WRITE_BYTE 0x2c 6
+    WRITE_BYTE 0x2d 76
+    WRITE_BYTE 0x2e 41
+    WRITE_BYTE 0x2f 202
+    WRITE_BYTE 0x30 14
+    WRITE_BYTE 0x31 20
+    WRITE_BYTE 0x32 0
+  END
+ BUT_ONLY
+
+COPY_EXISTING ~ULTHERA.CRE~ ~override~
+  WRITE_SHORT 0x28 (IS_PSTEE ? 61528 : 24664)  // Animation ID
+  WRITE_ASCII 0x268 ~3004BTHG~ #8
+  PATCH_IF (IS_PST) BEGIN
+    WRITE_BYTE  0x2df 4
+    WRITE_SHORT 0x2e4 9
+    WRITE_SHORT 0x2e6 87
+    WRITE_SHORT 0x2e8 39
+    WRITE_SHORT 0x2ea 83
+    WRITE_SHORT 0x2ec 0
+    WRITE_SHORT 0x2ee 0
+    WRITE_SHORT 0x2f0 0
+    WRITE_BYTE 0x2f5 224
+    WRITE_BYTE 0x2f6 160
+    WRITE_BYTE 0x2f7 176
+    WRITE_BYTE 0x2f8 144
+    WRITE_BYTE 0x2f9 0
+    WRITE_BYTE 0x2fa 0
+    WRITE_BYTE 0x2fb 0
+  END
+  PATCH_IF (IS_PSTEE) BEGIN
+    WRITE_BYTE 0x2c 9
+    WRITE_BYTE 0x2d 87
+    WRITE_BYTE 0x2e 39
+    WRITE_BYTE 0x2f 83
+    WRITE_BYTE 0x30 14
+    WRITE_BYTE 0x31 20
+    WRITE_BYTE 0x32 0
+  END
+ BUT_ONLY
+
+<<<<<<<< .../pst-ub/inlinedfile/AR0207.INI
+[nameless]
+destare		= ar0207
+point		= [0296.0578]
+state		= 35
+>>>>>>>>
+COPY ~.../pst-ub/inlinedfile/AR0207.INI~ ~override~
+
+
+// ==================================================================================================
+
+// The above is work by either Platter or SKARDAVNELNATE.  The following is additional fixes and script
+// rewrites by Qwinn.
+
+// Creating "Candle1_Portal_Open" and "Candle2_Portal_Open" variables, instead of the bitset on
+// 0109_Status that SKARDAVNELNATE did, since that variable doesn't exist.
+
+// Rewriting all scripts.
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
+  COPY ~VAR.VAR~ ~VAR.TMP~
+    SET Q_FileSize = SOURCE_SIZE
+    SPRINT "Q_NewVarType"  ~AR0109  ~
+    SPRINT "Q_NewVarName"  ~Candle1_Portal_Open             ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+    SPRINT "Q_NewVarType"  ~AR0207  ~
+    SPRINT "Q_NewVarName"  ~Candle2_Portal_Open             ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+   BUT_ONLY
+  COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+END
+
+// Picking a standard nomenclature rather than "ENEMY.BCS" for enemy script, rewrote it, assigned to the actors
+// in area edit above
+<<<<<<<< .../pst-ub/inlinedfile/0207ATTK.BAF
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    Attack([PC])
+END
+>>>>>>>>
+COMPILE ~.../pst-ub/inlinedfile/0207ATTK.BAF~
+
+// PSTEE note: script actions to activate or deactivate portals are not compatible
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT portalcursor_candle1_on ~SetPortalCursor("Candle1",PORTAL_CURSOR_VISIBLE,TRUE)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_on ~SetPortalCursor("Candle1",PORTAL_ENABLED,TRUE)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle1_off ~SetPortalCursor("Candle1",PORTAL_CURSOR_VISIBLE,FALSE)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_off ~SetPortalCursor("Candle1",PORTAL_ENABLED,FALSE)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_on ~SetPortalCursor("Candle2",PORTAL_CURSOR_VISIBLE,TRUE)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_on ~SetPortalCursor("Candle2",PORTAL_ENABLED,TRUE)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_off ~SetPortalCursor("Candle2",PORTAL_CURSOR_VISIBLE,FALSE)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_off ~SetPortalCursor("Candle2",PORTAL_ENABLED,FALSE)~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT portalcursor_candle1_on ~ActivatePortalCursor("Candle1",1)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_on ~EnablePortalTravel("Candle1",1)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle1_off ~ActivatePortalCursor("Candle1",0)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_off ~EnablePortalTravel("Candle1",0)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_on ~ActivatePortalCursor("Candle2",1)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_on ~EnablePortalTravel("Candle2",1)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_off ~ActivatePortalCursor("Candle2",0)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_off ~EnablePortalTravel("Candle2",0)~
+END
+
+<<<<<<<< .../pst-ub/inlinedfile/CANTRIG1.BAF
+IF
+  HarmlessEntered("Nordom")
+THEN
+  RESPONSE #100
+    VerbalConstant("Nordom",NORDOM_PORTAL)
+    Continue()
+END
+
+IF
+  HarmlessEntered("Nameless")
+  PartyHasItem("Candle") // Candlestick
+  Global("Ulthera_Quest","GLOBAL",4)
+THEN
+  RESPONSE #100
+    SetGlobal("Candle1_Portal_Open","AR0109",1)
+    %portalcursor_candle1_on%
+    %portaltravel_candle1_on%
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/CANTRIG1.BAF~
+
+
+<<<<<<<< .../pst-ub/inlinedfile/CANTRIG2.BAF
+IF
+  HarmlessEntered("Nordom")
+THEN
+  RESPONSE #100
+    VerbalConstant("Nordom",NORDOM_PORTAL)
+    Continue()
+END
+
+IF
+  HarmlessEntered("Nameless")
+  PartyHasItem("Purse") // Leather Purse
+THEN
+  RESPONSE #100
+    SetGlobal("Candle2_Portal_Open","AR0207",1)
+    %portalcursor_candle2_on%
+    %portaltravel_candle2_on%
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/CANTRIG2.BAF~
+
+<<<<<<<< .../pst-ub/inlinedfile/closecantrig1.baf
+IF
+  Global("Candle1_Portal_Open","AR0109",1)
+  !NearLocation(Protagonist,%sc_bracket_l%749%sc_dot_comma%762%sc_bracket_r%,20)
+THEN
+  RESPONSE #100
+    SetGlobal("Candle1_Portal_Open","AR0109",0)
+    %portalcursor_candle1_off%
+    %portaltravel_candle1_off%
+    Continue()
+END
+>>>>>>>>
+EXTEND_TOP ~AR0109.BCS~ ~.../pst-ub/inlinedfile/closecantrig1.baf~ EVAL
+
+<<<<<<<< .../pst-ub/inlinedfile/closecantrig2.baf
+IF
+  Global("Candle2_Portal_Open","AR0207",1)
+  !NearLocation(Protagonist,%sc_bracket_l%575%sc_dot_comma%463%sc_bracket_r%,10)
+THEN
+  RESPONSE #100
+    SetGlobal("Candle2_Portal_Open","AR0207",0)
+    %portalcursor_candle2_off%
+    %portaltravel_candle2_off%
+    Continue()
+END
+>>>>>>>>
+EXTEND_TOP ~AR0207.BCS~ ~.../pst-ub/inlinedfile/closecantrig2.baf~ EVAL

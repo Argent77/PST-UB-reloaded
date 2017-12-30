@@ -1,0 +1,47 @@
+@-1000= "%TP2_FILE_NAME% mod ma"
+@-1001= "opcjonalnych komponentow\nZeby zaoszczedzic na czasie, mozesz zdecydowac co zrobic z nimi wszystkimi teraz, zamiast\nbyc pytanym o kazdy z osobna.\n"
+@-1002= "Co zrobic z komponentami, ktore NIE SA jeszcze zainstalowane?\n[I]nstaluj, [S]Pomin, [A]Pytaj o kazdy? "
+@-1003= "Co zrobic z komponentami ktore SA juz zainstalowane?\n[R]einstaluj, [U]sun, [S]Pomin, [A]Pytaj o kazdy? "
+@-1004= "PROSZE, wyslij plik emailem"
+@-1005= "do"
+@-1006= "Instaluj ["
+@-1007= "]?
+[R]einstaluj, [N]ie instaluj, [U]sun lub [Q]Zakoncz? "
+@-1008= "]?
+[I]nstaluj, [N]ie instaluj lub [Q]Zakoncz? "
+@-1009= "Podaj nazwe modulu: "
+@-1010= "Reinstalacja ["
+@-1011= "]"
+@-1012= "Reinstalacja z uzyciem jezyka"
+@-1013= "Usuwanie starej instalacji ["
+@-1014= "]  ..."
+@-1015= "Pomyslnie usunieto stara wersje"
+@-1016= "Instalacja"
+@-1017= "BLAD podczas instalacji ["
+@-1018= "], przywracanie poprzedniego stanu"
+@-1019= "POMYSLNIE ZAINSTALOWANO"
+@-1020= "Pomijanie "
+@-1021= "Usuwanie ["
+@-1022= "] (komponent #"
+@-1023= ")"
+@-1024= "POMYSLNIE USUNIETO ["
+@1 = ~Wszystkie zalecane komponenty PS:T Unfinished Business ~
+@2 = ~Przywrocone Badania Abla Mysliciela~
+@3 = ~Przywrocone Dialogi Mortego w Kostnicy~
+@4 = ~Przywrocone Zadanie swiecznika~
+@5 = ~Przywrocone Rozmowy o losie Deionarry~
+@6 = ~Przywrocony Wisior Yemetha~
+@7 = ~Przywrocone Towarzystwo Elicji~
+@8 = ~Przywroceni Obywatele Klatwy~
+@9 = ~Przywroceni Wiezniowie Klatwy~
+@10 = ~Przywrocony Karl Parfidor~
+@11 = ~Przywrocony Morte i Zeby Ingressy~
+@12 = ~Przywroceni Opryszkowie z Alei Niebezpiecznych Weglow~
+@13 = ~Przywrocone Przedmioty~
+@14 = ~Przywrocone Rozmowy i komentarze w druzynie~
+@15 = ~Przywrocone Oszustwa (niezalecane)~
+@16 = ~Juz zainstalowane!~
+
+@20 = ~Przywrocona Mebbet~
+@21 = ~Mod Los Deionarry~
+@22 = ~Przywrocone Spotkania w Nizszej Dzielnicy~

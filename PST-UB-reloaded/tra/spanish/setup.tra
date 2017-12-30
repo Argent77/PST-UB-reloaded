@@ -1,0 +1,49 @@
+@-1000= "El mod %TP2_FILE_NAME% tiene"
+@-1001= "distintos componentes opcionales.\nPara ahorrar tiempo, puedes elegir que hacer ahora a nivel general con ellos\nen lugar de ir uno por uno.\n"
+@-1002= "Que quieres hacer con todos los componentes que TODAVIA NO estan instalados?\n[I]Instalarlos, [S]Saltarlos, [A]Preguntar uno por uno? "
+@-1003= "Que quieres hacer con todos los componentes que YA ESTAN instalados?\n[R]Reinstalarlos, [U]Desinstalarlos, [S]Saltarlos, [A]Preguntar uno por uno? "
+@-1004= "POR FAVOR enviar el archivo"
+@-1005= "a"
+@-1006= "Instalar ["
+@-1007= "]?
+[R]Reinstalar, [N]Sin cambios o [U]Desinstalar o [Q]Salir? "
+@-1008= "]?
+[I]Instalar, o [N]No instalar o [Q]Salir? "
+@-1009= "Introduce parte de un nombre de modulo: "
+@-1010= "Reinstalando componente ["
+@-1011= "] "
+@-1012= "Reinstalando usando idioma"
+@-1013= "Eliminando la vieja instalacion de ["
+@-1014= "] primero..."
+@-1015= "ANTIGUO ELIMINADO CON EXITO"
+@-1016= "Instalando"
+@-1017= "ERROR instalando ["
+@-1018= "], volviendo al estado anterior"
+@-1019= "INSTALADO CON EXITO"
+@-1020= "Saltando "
+@-1021= "Eliminando ["
+@-1022= "] (componente #"
+@-1023= ")"
+@-1024= "ELIMINADO CON EXITO ["
+@1 = ~Todos los componentes recomendados de PS:T Unfinished Business~
+@2 = ~Investigacion de Capaz de Ponderar Pensamientos restaurado~
+@3 = ~Mas momentos de Morte en el mortuorio restaurados~
+@4 = ~Busqueda del candelero restaurada~
+@5 = ~Conversaciones verdaderas de Deionarra restauradas~
+@6 = ~Busqueda del Pendiente de Yemeth restaurada~
+@7 = ~Compania de Elyce restaurada~
+@8 = ~Ciudadanos de Curst restaurados~
+@9 = ~Prisioneros de Curst restaurados~
+@10 = ~Carl Parfidor restaurado~
+@11 = ~Banter Morte-Dientes de Ingress restaurado~
+@12 = ~Matones del Callejon de los Angulos Peligrosos restaurados~
+@13 = ~Objetos restaurados~
+@14 = ~Comentarios y banters del grupo restaurados~
+@15 = ~Objetos de trucos restaurados (No recomendado)~
+@16 = ~   Ya esta instalado con exito!~
+
+@20 = ~Mebbeth restaurada~
+@21 = ~La verdad de Deionarra expandida~
+@22 = ~Encuentros del Barrio Inferior restaurados~
+
+@25 = ~Entradas del bestiario restauradas~
