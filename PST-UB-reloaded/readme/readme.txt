@@ -1,11 +1,11 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:      1.0-alpha
-Author:       Argent77
+Version:      1.0-beta1
+Author:       Argent77, original PS:T Unfinished Business by Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
-Discussion:   http://
+Discussion:   https://forums.beamdog.com/discussion/comment/938523
 
 The original readme files from PST-UB 4.12 can be found in the "readme-original" folder of this mod.
 
