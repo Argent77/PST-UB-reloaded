@@ -37,13 +37,13 @@ ADD_TRANS_TRIGGER DABLE 30 ~Global("P_Journal","GLOBAL",3) Global("CW_Research_L
 // Since timers work on game time, not real time, decided to switch to that method.
 REPLACE_TRANS_TRIGGER DABLE BEGIN 16 END BEGIN 0 END
    ~Global("CW_Research_Language",[ ]*"AR0600",[ ]*2)~
-   ~Global("CW_Research_Language","AR0600",1)GlobalTimerExpired("Able_Timer_Language","GLOBAL")~
+   ~Global("CW_Research_Language","AR0600",1) GlobalTimerExpired("Able_Timer_Language","GLOBAL")~
 REPLACE_TRANS_TRIGGER DABLE BEGIN 16 END BEGIN 1 END
    ~Global("CW_Research_Ravel",[ ]*"AR0600",[ ]*2)~
-   ~Global("CW_Research_Ravel","AR0600",1)GlobalTimerExpired("Able_Timer_Ravel","GLOBAL")~
+   ~Global("CW_Research_Ravel","AR0600",1) GlobalTimerExpired("Able_Timer_Ravel","GLOBAL")~
 REPLACE_TRANS_TRIGGER DABLE BEGIN 16 END BEGIN 2 END
    ~Global("CW_Research_Incarnations",[ ]*"AR0600",[ ]*2)~
-   ~Global("CW_Research_Incarnations","AR0600",1)GlobalTimerExpired("Able_Timer_Incarnations","GLOBAL")~
+   ~Global("CW_Research_Incarnations","AR0600",1) GlobalTimerExpired("Able_Timer_Incarnations","GLOBAL")~
 
 ADD_TRANS_ACTION DABLE BEGIN 31 83 END BEGIN 0 END ~SetGlobalTimer("Able_Timer_Language","GLOBAL",6000)~
 ADD_TRANS_ACTION DABLE BEGIN 83 END BEGIN 1 END ~SetGlobalTimer("Able_Timer_Ravel","GLOBAL",6000)~

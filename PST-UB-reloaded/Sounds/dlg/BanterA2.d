@@ -110,7 +110,7 @@ CHAIN
 EXIT
 
 CHAIN
-  IF ~LastPersonTalkedTo("Grace") Global("Morte_Talked_Grace","GLOBAL",7) InParty("Annah")NearbyDialog("DANNAH")~ THEN
+  IF ~LastPersonTalkedTo("Grace") Global("Morte_Talked_Grace","GLOBAL",7) InParty("Annah") NearbyDialog("DANNAH")~ THEN
     BMORTE Morte-Annah-Grace-1
     @63
     == DANNAH @64
@@ -121,7 +121,7 @@ CHAIN
 EXIT
 
 CHAIN
-  IF ~LastPersonTalkedTo("Grace") Global("Morte_Talked_Grace","GLOBAL",8) InParty("Annah")NearbyDialog("DANNAH")~ THEN
+  IF ~LastPersonTalkedTo("Grace") Global("Morte_Talked_Grace","GLOBAL",8) InParty("Annah") NearbyDialog("DANNAH")~ THEN
     BMORTE Morte-Annah-Grace-2
     @68
     == DANNAH @69

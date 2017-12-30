@@ -191,7 +191,7 @@ APPEND DKESAI
 
   IF WEIGHT #-97 ~Global("Kesai_Dream_Quest","GLOBAL",4)~ THEN BEGIN Kesai-Dream-6
     SAY @138
-    IF ~~ THEN REPLY @137 DO ~%sc_fadetoblack% Wait(3) SetGlobal("Kesai_Dream_Quest","GLOBAL",5) DestroySelf()TeleportParty("AR0502",[502.1673],8)~ EXIT
+    IF ~~ THEN REPLY @137 DO ~%sc_fadetoblack% Wait(3) SetGlobal("Kesai_Dream_Quest","GLOBAL",5) DestroySelf() TeleportParty("AR0502",[502.1673],8)~ EXIT
     IF ~~ THEN REPLY @126 GOTO Ravel-Death-24
   END
 
