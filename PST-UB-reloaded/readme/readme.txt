@@ -131,6 +131,12 @@ PST:EE notes:
 Since PST:EE already includes the majority of the PS:T Fixpack, there is no need to install 
 anything in preparation for Unfinished Business.
 
+Important:
+PST:EE patch version 3.1.4 and earlier contains a bug that will reset modded content whenever the 
+party enters or resets the Modron Maze. To work around this issue, it is strongly recommended to 
+download and install Generalized Biffing (http://www.shsforums.net/files/file/741-generalized-biffing/) 
+as the final mod in the mod list.
+
 
 Components
 ~~~~~~~~~~
