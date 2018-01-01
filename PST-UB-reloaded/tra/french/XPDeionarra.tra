@@ -3,7 +3,7 @@
 @3 = ~Kesai soupire. "Dois-je donc te le rappeler à chaque fois ? Je ne suis pas plus heureuse de mon lignage maintenant que lorsque tu es venu m'en parler la première fois."~
 @4 = ~"Elle est morte, Kesai."~
 @5 = ~"Très bien, je ne t'ennuierai plus avec elle. Au revoir."~
-@6 = ~Kesai s’arrête brusquement, puis rit. "Tu dois plaisanter. Ravel, morte ? Comment ? Qu'est-ce qui a bien pu parvenir à la tuer ?"~
+@6 = ~Kesai s'arrête brusquement, puis rit. "Tu dois plaisanter. Ravel, morte ? Comment ? Qu'est-ce qui a bien pu parvenir à la tuer ?"~
 @7 = ~"J'ai été forcé de la tuer pour me défendre. Je n'y ai pris aucun plaisir."~
 @8 = ~"Je l'ai tuée. Elle était une force maléfique, comme tu me l'avais dit, et il était nécessaire de mettre un terme à son existence."~
 @9 = ~"Elle est morte de ma main. La guenaude l'avait mérité, comme tu le sais."~
@@ -49,7 +49,7 @@
 @47 = ~"Mes rêves n'appartiennent qu'à moi, demi-guenaude. Reste loin d'eux."~
 @48 = ~Un sourire plein de crocs apparaît brièvement sur le visage de Kesai. "Oh, tu *es* un charmeur. Peut-être que nous devrions en discuter un peu plus longtemps une fois que nous aurons terminé."~
 @49 = ~Du coin de l'oeil, tu remarques qu'Annah se crispe, sa queue battant furieusement d'avant en arrière, mais elle ne dit rien.~
-@50 = ~Du coin de l'oeil, tu remarques que Grace lève l'un de ses sourcils délicats en entendant Kesai, mais elle reste silencieuse.~
+@50 = ~Du coin de l'oeil, tu remarques que Grâce lève l'un de ses sourcils délicats en entendant Kesai, mais elle reste silencieuse.~
 @51 = ~"Très bien. Donne-moi un peu de temps pour me préparer. Reviens dans une journée, et nous irons voir la machine à rêves dont tu as parlé."~
 @52 = ~"J'ai trouvé un moyen de rêver, Kesai. Il existe une machine dans la Fonderie, commandée il y a bien longtemps par l'une de mes incarnations. Elle me permet de rêver."~
 @53 = ~"Es-tu prête, Kesai ? Je pense qu'il est temps que nous explorions mes rêves."~
@@ -58,7 +58,7 @@
 @56 = ~Morte s'agite de haut en bas. "Oh, tu ne *peux pas* en rester là. Allez. Je *dois* en savoir plus."~
 @57 = ~Kesai hoche la tête. "Non, j'ai promis de respecter son intimité. Je ne dirais pas ce que j'y ai vu. Je ne devrais même pas en avoir dit autant. Je suis juste en train de... encore... récupérer." Kesai ferme ses yeux un moment, elle semble avoir du mal à déglutir.~
 @58 = ~"C'est vraiment dommage, je suis aussi intrigué que Morte. Mais très bien, je ne vais pas insister."~
-@59 = ~"Vraiment ? A quoi ressemblaient ses rêves ?"~
+@59 = ~"Vraiment ? À quoi ressemblaient ses rêves ?"~
 @60 = ~"Je comprends. Rappelle-moi d'ajouter mes remerciements aux tiens pour l'aide qu'elle nous a apporté."~
 @61 = ~"Je ne suis pas surpris. Les personnes les plus douces sont toujours celles qui dissimulent les pensées les plus sombres. Qu'as-tu vu ?"~
 @62 = ~Morte commence à cogner son front contre le mur le plus proche. "Les..." *bang* "Plans..." *bang* "sont..." *bang* "vraiment..." *bang* "CRUELS !"~
@@ -101,7 +101,7 @@
 @104 = ~Tu es de retour dans la Fonderie. Kesai semble épuisée mais triomphante. "Nous y sommes. Tu devrais aller dans la pièce de la Salle des Fêtes que nous avons vue dans ton rêve. Il y a un placard verrouillé qui ne peut être ouvert, à moins de savoir ce qu'il y a à l'intérieur. Rappelle-toi la masse que tu as vue, et concentre-toi sur son image au moment d'ouvrir ce placard. D'après mon père, tu y trouveras quelque chose que tu as longtemps cherché."~
 @105 = ~"Merci beaucoup, Kesai. Tu m'as aidé bien plus que je ne pourrais jamais le faire pour toi."~
 @106 = ~"Oublie ça. Je pense que nous avons dépassé ce genre de chose maintenant. Et je ne pense pas que je reviendrai à la Maison de tolérance. J'ai appris tout ce que je pouvais apprendre ici, et j'ai d'autres intérêts et d'autres expériences à mener maintenant, comme étudier plus attentivement cette machine."~
-@107 = ~"Oublie ça. Je pense que nous avons dépassé ce genre ce chose maintenant. Et je ne pense pas que je reviendrai à la Maison de tolérance. J'ai appris tout ce que je pouvais apprendre ici, et j'ai d'autres intérêts et d'autres expériences à mener maintenant, comme étudier plus attentivement cette machine. Maîtresse Grace, m'autoriserez-vous à partir ?"~
+@107 = ~"Oublie ça. Je pense que nous avons dépassé ce genre ce chose maintenant. Et je ne pense pas que je reviendrai à la Maison de tolérance. J'ai appris tout ce que je pouvais apprendre ici, et j'ai d'autres intérêts et d'autres expériences à mener maintenant, comme étudier plus attentivement cette machine. Maîtresse Grâce, m'autoriserez-vous à partir ?"~
 @108 = ~"Bien sur, Kesai-Serris, vous n'avez pas besoin de ma permission. C'était un honneur de vous avoir comme étudiante. Merci pour l'aide que vous nous avez apportée, et j'espère que nous aurons l'occasion de converser à nouveau."~
 @109 = ~Kesai s'approche de toi, et pose une main sur ta poitrine. "Tu es un homme vraiment charmant, et je dois admettre que j'ai trouvé ton intérêt pour moi plutôt flatteur. Peut-être qu'un jour nous pourrons apprendre à mieux nous connaître." Elle embrasse ta joue, et tu sens ses crocs la frotter tandis qu'elle grogne. "Mais ce n'est pas le moment. Tu as clairement des choses plus importantes à faire maintenant, tout comme moi à présent."~
 @110 = ~La queue d'Annah fouette l'air. "Alors tu pourrais aller vit'fait t'occuper d'tes affaires, espèce de traînée !"~
@@ -117,7 +117,7 @@
 @121 = ~"Il faut que nous parlions encore de la mort de ta mère, Kesai."~
 @122 = ~"Kesai, je dois partir. Peut-être pourrons-nous continuer cette conversation plus tard. Au revoir."~
 @123 = ~"Formidable ! Et as-tu trouvé ce que tu cherchais ?"~
-@124 = ~"Malheureusement, non. J'ai rêvé d’événements qui se sont déjà produits. Le labyrinthe de Ravel, le Pilier des Crânes... mais ça n'a rien révélé que je ne sache déjà."~
+@124 = ~"Malheureusement, non. J'ai rêvé d'événements qui se sont déjà produits. Le labyrinthe de Ravel, le Pilier des Crânes... mais ça n'a rien révélé que je ne sache déjà."~
 @125 = ~"Je préfère ne pas en parler, en fait. Mais non, je n'ai rien trouvé de nouveau."~
 @126 = ~"Laisse-moi me préparer, et nous y retournerons. Je reviens vite."~
 @127 = ~"C'est vraiment dommage, je suis intrigué. Mais très bien, je ne vais pas te supplier."~
@@ -127,10 +127,10 @@
 @131 = ~"Je... vois. Je crois que j'ai changé d'avis, je ne souhaite pas aller plus loin pour t'aider. Je te prie de partir."~
 @132 = ~"Raconte-moi ses rêves, demi-guenaude, ou je t'arrache le coeur !"~
 @133 = ~"Je suis désolé... je... ne sais pas ce qui m'a pris. Tu dois garder ses secrets."~
-@136 = ~"J'apprécie que tu m’aies raconté ce qui est arrivé à ma mère, mais je crois que nous n'avons rien d'autre à nous dire. Salut."~
+@136 = ~"J'apprécie que tu m'aies raconté ce qui est arrivé à ma mère, mais je crois que nous n'avons rien d'autre à nous dire. Salut."~
 @137 = ~"J'ai changé d'avis, Kesai. Je voudrais te demander de m'aider à comprendre mes rêves."~
 @138 = ~Kesai semble avoir retrouvé son calme. Elle t'examine attentivement. "C'est bon de te revoir. As-tu changé d'avis ? Dois-je explorer tes rêves ?"~
-@141 = ~Le regard de Grace se pose tour à tour sur toi, Annah et Kesai, ses délicats sourcils montrant sa perplexité. Elle ne dit rien.~
+@141 = ~Le regard de Grâce se pose tour à tour sur toi, Annah et Kesai, ses délicats sourcils montrant sa perplexité. Elle ne dit rien.~
 @142 = ~"Quelle merveilleuse machine !"~
 @143 = ~"Oui, je suis certain que cette partie observe la troisième couche de l'inconscient..."~
 @144 = ~"Oh ! C'est donc ainsi que fonctionne cette partie !"~
@@ -147,7 +147,7 @@
 @155 = ~Kesai a dit qu'il fallait que je batte les démons de mon rêve pour trouver quelque chose d'utile.~
 @156 = ~Après avoir battu les glabrezus dans mon rêve, j'ai trouvé une puissante masse que ma précédente incarnation a caché dans un placard dans ma chambre de la Salle des Fêtes. Les portes s'ouvrent avec la connaissance de ce qu'il contient. Excellent, j'ai bien eu l'occasion d'observer cette masse...~
 @157 = ~J'ai ouvert le placard fermé dans ma chambre de la Salle des Fêtes. En plus de la puissante masse vu dans mon rêve, j'ai trouvé une plume qui m'a révélé mon importante responsabilité dans ce qui est arrivé à Deionarra. Je suppose que je dois l'apporter à son père, Iannis l'avocat, pour lui dire la vérité.~
-@200 = ~PLUME D'ECRITURE
+@200 = ~PLUME D'ÉCRITURE
 Poids : 0
 
 Tu as trouvé cette plume dans un placard verrouillé dans ta chambre de la Salle des Fêtes. Elle semble tout à fait ordinaire.~
@@ -155,18 +155,18 @@ Tu as trouvé cette plume dans un placard verrouillé dans ta chambre de la Salle 
 
 Elle écrit :
 
- "Si tout s'est déroulé selon le plan, tu as suivi mes indications dans le journal que nous transportons avec nous, tu as trouvé l'oeil de verre que j'ai laissé aux Anarchistes et que tu as visualisé pour ouvrir le placard de notre chambre, et tu as acquis la plume. Excellent. Je voulais être certain que ce soit une incarnation pleine de ressources et d’intelligence qui trouve tout cela avant quelqu'un d'autre. Maintenant, écoute attentivement, car tu as un travail à faire."~
+ "Si tout s'est déroulé selon le plan, tu as suivi mes indications dans le journal que nous transportons avec nous, tu as trouvé l'oeil de verre que j'ai laissé aux Anarchistes et que tu as visualisé pour ouvrir le placard de notre chambre, et tu as acquis la plume. Excellent. Je voulais être certain que ce soit une incarnation pleine de ressources et d'intelligence qui trouve tout cela avant quelqu'un d'autre. Maintenant, écoute attentivement, car tu as un travail à faire."~
 @202 = ~La plume continue d'écrire : "Si tu lis ceci, cela signifie que je n'ai pas réussi à battre notre Ennemi. Comme tu le sais sans doute, une force malveillante ne cesse de nous envoyer des ombres pour nous tuer, encore et encore. J'ai parcouru les Plans à la recherche de son identité, et je crois que j'ai, enfin, trouvé où il se cache. Il réside dans une grande Forteresse sur le Plan d'énergie négative. De plus, je sais comment m'y rendre."~
 @203 = ~La plume continue d'écrire, décrivant ce que Trias t'a déjà appris concernant le portail de la Morgue, et ce dont tu as besoin pour l'activer.~
 @204 = ~La plume continue d'écrire : "Tu dois continuer mon oeuvre et détruire cette créature, pour qu'elle nous laisse enfin en paix. Utilise tous ceux dont tu auras besoin pour y parvenir. S'ils ont réussi à survivre à notre voyage, trouve le githzerai Dak'kon, son épée a le potentiel pour devenir la plus puissante des armes. Prends le Crâne, il peut aussi avoir son utilité, mais quoi que tu fasses, ne lui fais pas confiance. Le vieil archer Xachariah est un imbécile aveugle et saoul, mais ses flèches sont infaillibles. Et pour la fille, Deionarra, si mon plan de secours fonctionne, tu ne la trouveras pas parmi les vivants, mais elle te sera la plus utile de tous."~
 @205 = ~La plume continue d'écrire : "Tu auras un avantage que je n'ai pas eu, vois-tu. Elle se rendra avec moi à la Forteresse, et si je me suis correctement débrouillé, elle y mourra. Mais elle est très amoureuse de nous, petite chose stupide qu'elle est, et comme le disent les Hommes-Poussière, de puissantes émotions comme les siennes nous attachent à ce monde. Elle existera à la fois sur ce Plan et sur le nôtre, probablement là où elle reposera. Elle peut te servir à espionner les mouvements de notre ennemi, mais ne sois pas assez stupide pour le lui dire, elle ne le prendrait certainement pas bien, et elle ne nous serait plus d'aucune utilité."~
 @206 = ~La plume continue d'écrire : "Utilise les connaissances qu'elle pourra te donner avec sagesse, ne te laisse pas aller au sentimentalisme, et arrête ce tueur une bonne fois pour toutes."~
-@207 = ~La plume s’arrête un moment, puis ajoute les derniers mots de manière plus hâtive : "P.S. J'ai trouvé cette masse dans le sous-sol de Sigil l'autre jour. Je ne peux pas l'utiliser, mais peut-être que toi tu pourras, j'ai donc décidé de la laisser ici pour toi. Elle devrait te plaire."~
-@208 = ~La plume s’arrête. Quel que soit l’enchantement qui contrôlait ses mouvements, il semble avoir disparu. Elle semble n'être rien de plus qu'une plume parfaitement ordinaire maintenant.~
+@207 = ~La plume s'arrête un moment, puis ajoute les derniers mots de manière plus hâtive : "P.S. J'ai trouvé cette masse dans le sous-sol de Sigil l'autre jour. Je ne peux pas l'utiliser, mais peut-être que toi tu pourras, j'ai donc décidé de la laisser ici pour toi. Elle devrait te plaire."~
+@208 = ~La plume s'arrête. Quel que soit l'enchantement qui contrôlait ses mouvements, il semble avoir disparu. Elle semble n'être rien de plus qu'une plume parfaitement ordinaire maintenant.~
 @209 = ~Continue d'écrire.~
 @210 = ~Essaie d'écrire avec elle.~
 @211 = ~Met la plume de coté.~
-@212 = ~Si tout s'est déroulé selon le plan, tu as suivi mes indications dans le journal que nous transportons avec nous, tu as trouvé l'oeil de verre que j'ai laissé aux Anarchistes et que tu as visualisé pour ouvrir le placard de notre chambre, et tu as acquis la plume. Excellent. Je voulais être sur que ce soit une incarnation pleine de ressources et d’intelligence qui trouve tout cela avant quelqu'un d'autre. Maintenant, écoute attentivement, car tu as un travail à faire.
+@212 = ~Si tout s'est déroulé selon le plan, tu as suivi mes indications dans le journal que nous transportons avec nous, tu as trouvé l'oeil de verre que j'ai laissé aux Anarchistes et que tu as visualisé pour ouvrir le placard de notre chambre, et tu as acquis la plume. Excellent. Je voulais être sur que ce soit une incarnation pleine de ressources et d'intelligence qui trouve tout cela avant quelqu'un d'autre. Maintenant, écoute attentivement, car tu as un travail à faire.
 
 Si tu lis ceci, cela signifie que je n'ai pas réussi à battre notre Ennemi. Comme tu le sais sans doute, une force malveillante continue de nous envoyer des ombres pour nous tuer, encore et encore. J'ai parcouru les Plans à la recherche de son identité, et je crois que j'ai, enfin, trouvé où il se cache. Il réside dans une grande Forteresse sur le Plan d'énergie négative. De plus, je sais comment s'y rendre.
 
@@ -182,7 +182,7 @@ P.S. J'ai trouvé cette masse dans le sous-sol de Sigil l'autre jour. Je n'en ai 
 @213 = ~Je n'ai pas écrit la dernière entrée... l'étrange plume que j'ai trouvé dans le placard dans ma chambre de la Salle des Fêtes l'a écrit au moment où j'ai touché le papier avec la pointe. Après avoir écrit cette entrée, elle s'est simplement arrêtée. Il semble que ce n'est rien de plus qu'une plume parfaitement ordinaire maintenant.~
 @214 = ~Tu approches la plume du papier, mais il semble qu'elle n'a rien de plus à écrire. Elle semble être une plume tout à fait ordinaire maintenant.~
 @215 = ~Concentre-toi, essaye d'enlever la plume de ton journal.~
-@216 = ~Tu essaies avec toute la force de ta volonté d'arrêter l'écriture, mais tu n'es pas assez puissant pour y parvenir. La plume a un message à délivrer, et quel que soit l'enchantement qui l’anime, il est assez puissant pour t'obliger à la laisser terminer.~
+@216 = ~Tu essaies avec toute la force de ta volonté d'arrêter l'écriture, mais tu n'es pas assez puissant pour y parvenir. La plume a un message à délivrer, et quel que soit l'enchantement qui l'anime, il est assez puissant pour t'obliger à la laisser terminer.~
 @217 = ~Tu as trouvé cette plume dans le placard verrouillé dans ta chambre de la Salle des Fêtes. Elle semble parfaitement ordinaire.~
 @218 = ~Visualise la masse que tu as vue dans le faiseur de rêves.~
 @219 = ~Laisse la porte du placard tranquille.~

@@ -12,7 +12,7 @@
 
 
 
-NOTE : DANGER ! DANGER ! TRIPLE SUPER-EXTRA AVERTISSEMENT : Se téléporter dans un endroit que vous n'avez pas déjà atteint dans le jeu peut complètement bloquer votre partie. Utilisez la téléportation à vos risques et périls, et il s'agit de très très gros risques.~
+NOTE : DANGER ! DANGER ! TRIPLE SUPER-EXTRA AVERTISSEMENT : se téléporter dans un endroit que vous n'avez pas déjà atteint dans le jeu peut complètement bloquer votre partie. Utilisez la téléportation à vos risques et périls, et il s'agit de très très gros risques.~
 @11   = ~"Peu importe. Laisse-moi revoir le sommaire."~
 @12   = ~Un faisceau de lumière jaillit du Grimoire, érigeant un champ de force magique impénétrable autour du groupe, vous permettant de vous reposer ici, à l'abri de tout danger.~
 @13   = ~Sors les oreillers.~
@@ -29,16 +29,16 @@ NOTE : DANGER ! DANGER ! TRIPLE SUPER-EXTRA AVERTISSEMENT : Se téléporter dans u
 @24   = ~"10,000 points d'expérience, pour le groupe."~
 @25   = ~"100,000 points d'expérience, pour le groupe."~
 @26   = ~"1,000,000 points d'expérience, pour le groupe."~
-@27   = ~A quel point veux-tu être Bon (ou Mauvais) ?~
+@27   = ~À quel point veux-tu être Bon (ou Mauvais) ?~
 @28   = ~"TRÈS Bon."~
-@29   = ~"A peine Bon."~
+@29   = ~"À peine Bon."~
 @30   = ~"Neutre."~
-@31   = ~"A peine Mauvais."~
+@31   = ~"À peine Mauvais."~
 @32   = ~"TRÈS Mauvais."~
-@33   = ~A quel point veux-tu être Loyal (ou Chaotique) ?~
+@33   = ~À quel point veux-tu être Loyal (ou Chaotique) ?~
 @34   = ~"TRÈS Loyal."~
-@35   = ~"A peine Loyal."~
-@36   = ~"A peine Chaotique."~
+@35   = ~"À peine Loyal."~
+@36   = ~"À peine Chaotique."~
 @37   = ~"TRÈS Chaotique."~
 @38   = ~Que veux-tu faire avec ta Force ? (l'amener en dessous de 3 ou au-dessus de 25 se fait à tes risques et périls !)~
 @39   = ~"Augmentation de 1 point."~
