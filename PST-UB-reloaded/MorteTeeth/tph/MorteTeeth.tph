@@ -8,8 +8,13 @@
 // Revised by Argent77
 // ================================================================================================
 
-
-COMPILE ~%MOD_FOLDER%/MorteTeeth/dlg/MorteTeeth.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/MorteTeeth.tra~
+// Works around a WeiDU bug that doesn't properly encode PSTEE version of IncrementGlobalOnce() script action. Remove when fixed in WeiDU.
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT sc_incrementglobal_ingress_teeth ~IncrementGlobalOnceEx("GLOBALGood_Ingress_Teeth_1","GLOBALGood",1)~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT sc_incrementglobal_ingress_teeth ~IncrementGlobalOnce("Good_Ingress_Teeth_1","GLOBAL","Good","GLOBAL",1)~
+END
+COMPILE EVAL ~%MOD_FOLDER%/MorteTeeth/dlg/MorteTeeth.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/MorteTeeth.tra~
 
 // Note:  This is just StrRef #6166 with the combat stuff stripped off.
 COPY_EXISTING ~ICTEETH.ITM~ ~override/ITEETH.ITM~
@@ -18,3 +23,7 @@ COPY_EXISTING ~ICTEETH.ITM~ ~override/ITEETH.ITM~
 This is a handful of Ingress' living teeth. Apparently, they didn't want to go with her back through the portal to her home plane. They rattle amongst themselves whenever they are held close together; they remind you of a bunch of creepy ivory hopping bugs.~ */
   WRITE_LONG 0x1e (THIS | 0x2000000)  // Include Morte in usability restrictions
  BUT_ONLY
+
+ACTION_IF (IS_PSTEE) BEGIN
+  APPEND ~ITEMDIAL.2DA~ ~ITEETH  4251  DITEETH 61282~ UNLESS ~^ITEETH~
+END

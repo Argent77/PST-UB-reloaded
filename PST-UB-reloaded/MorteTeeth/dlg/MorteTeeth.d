@@ -19,7 +19,7 @@ ALTER_TRANS DMORTE BEGIN 140 END BEGIN 0 END
    BEGIN "REPLY" ~@33~ /* ~"Well, alright. I'm not going to force... uh oh."~ */ END
 ALTER_TRANS DMORTE BEGIN 140 END BEGIN 0 END
    BEGIN "EPILOGUE" ~GOTO 148~ END
-ADD_TRANS_ACTION DMORTE BEGIN 140 END BEGIN 0 END ~IncrementGlobalOnce("Good_Ingress_Teeth_1","GLOBAL","Good","GLOBAL",1)~
+ADD_TRANS_ACTION DMORTE BEGIN 140 END BEGIN 0 END ~%sc_incrementglobal_ingress_teeth%~
 
 // The above is all that's necessary to restore the content without an epilogue (which doesn't account for why
 // Morte doesn't have the teeth equippped when it's over.  The following is an epilogue, written by me, to
