@@ -15,6 +15,13 @@ ALWAYS
   // Work-around to fix a present bug in WeiDU's own fj_are_struct function. Remove when fixed in WeiDU.
   INCLUDE ~%MOD_FOLDER%/utils/fj_are_struct.tpa~
 
+  // Defining paths to PSTEE-specific translation files
+  ACTION_IF (IS_PSTEE) BEGIN
+    OUTER_TEXT_SPRINT TRA_DCHEATS_PSTEE ~%MOD_FOLDER%/tra/%LANGUAGE%/dcheats_pstee.tra~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT TRA_DCHEATS_PSTEE ~~
+  END
+
   // Tra UTF-8 conversion
   ACTION_DEFINE_ARRAY tra_noconvert BEGIN ~setup dcheats_pstee~ END
   ACTION_DEFINE_ARRAY tra_reload BEGIN ~ub~ END
