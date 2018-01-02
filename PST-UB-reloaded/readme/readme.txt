@@ -30,7 +30,7 @@ Here's the short list of available components. A more detailed description can b
 "Components" chapter further below.
 
 1. "All Recommended PS:T Unfinished Business Components"
-A convenience option that installs all component except "Expanded Deionarra's Truth Mod" and 
+A convenience option that installs all components except "Expanded Deionarra's Truth Mod" and 
 "Restored Item Cheats (Not Recommended)"
 
 2. "Restored Able Ponder-Thought Research"

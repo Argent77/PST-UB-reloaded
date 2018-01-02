@@ -12,7 +12,7 @@ The mod is currently available in English, French, German, Italian, Polish, Russ
 ## Components
 
 ### 1. All Recommended PS:T Unfinished Business Components
-A convenience option that install all component except "Expanded Deionarra's Truth Mod" and "Restored Item Cheats (Not Recommended)"
+A convenience option that installs all component except "Expanded Deionarra's Truth Mod" and "Restored Item Cheats (Not Recommended)"
 
 ### 2. Restored Able Ponder-Thought Research
 Completes a number of subjects Able Ponder-Thought will conduct research on.
