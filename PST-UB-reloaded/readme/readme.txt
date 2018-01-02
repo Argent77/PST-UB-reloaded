@@ -1,7 +1,7 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:      1.0-beta2
+Version:      1.0-beta3
 Author:       Argent77, original PS:T Unfinished Business by Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
@@ -30,7 +30,7 @@ Here's the short list of available components. A more detailed description can b
 "Components" chapter further below.
 
 1. "All Recommended PS:T Unfinished Business Components"
-A convenience option that install all component except "Expanded Deionarra's Truth Mod" and 
+A convenience option that installs all component except "Expanded Deionarra's Truth Mod" and 
 "Restored Item Cheats (Not Recommended)"
 
 2. "Restored Able Ponder-Thought Research"
@@ -193,7 +193,7 @@ content here existed in the game files: the areas, the items, the creatures and 
 all were already in the game, just not enabled. Platter added a couple of triggers and actors and 
 scripts to restore it, and SKARDAVNELNATE added the quests to the journal, fixed some script 
 errors and corrected the colors and appearance of the actors. Qwinn added some additional 
-scripting for the portals. Argent77 updated the code to make it compatible with PST:EE.
+scripting for the portals.
 
 
 5. Restored Deionarra's Truth Conversations
