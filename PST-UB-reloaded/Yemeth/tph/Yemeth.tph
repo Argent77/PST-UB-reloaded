@@ -366,6 +366,61 @@ ACTION_IF (IS_PSTEE) BEGIN
     WRITE_ASCII (ofsActors + 3 * 0x110 + 0x48) ~DCARVER~ #8  // DLG
     WRITE_ASCII (ofsActors + 3 * 0x110 + 0x80) ~CARVER~ #8  // CRE
    BUT_ONLY
+
+  // Updating dialog references from Ratbone to Carver
+  OUTER_SPRINT ratbone #13335   // Ratbone
+
+  OUTER_TEXT_SPRINT weidu_lang ~en_us~
+  ACTION_IF (VARIABLE_IS_SET "EE_LANGUAGE") BEGIN
+    OUTER_TEXT_SPRINT weidu_lang ~%EE_LANGUAGE%~
+    ACTION_TO_LOWER "weidu_lang"
+  END
+  // Languages that are not yet included in PST:EE have been commented out
+  ACTION_MATCH ~%weidu_lang%~ WITH
+    ~fr_fr~
+    BEGIN
+      WITH_TRA ~%MOD_FOLDER%/tra/french/ub.tra~ BEGIN
+        OUTER_SPRINT carver @49632  // "Carver"
+      END
+    END
+    ~de_de~
+    BEGIN
+      WITH_TRA ~%MOD_FOLDER%/tra/german/ub.tra~ BEGIN
+        OUTER_SPRINT carver @49632  // "Carver"
+      END
+    END
+    // ~it_it~
+    // BEGIN
+      // WITH_TRA ~%MOD_FOLDER%/tra/italian/ub.tra~ BEGIN
+        // OUTER_SPRINT carver @49632  // "Carver"
+      // END
+    // END
+    ~pl_pl~
+    BEGIN
+      WITH_TRA ~%MOD_FOLDER%/tra/polish/ub.tra~ BEGIN
+        OUTER_SPRINT carver @49632  // "Carver"
+      END
+    END
+    // ~ru_ru~
+    // BEGIN
+      // WITH_TRA ~%MOD_FOLDER%/tra/russian/ub.tra~ BEGIN
+        // OUTER_SPRINT carver @49632  // "Carver"
+      // END
+    // END
+    // ~es_es~
+    // BEGIN
+      // WITH_TRA ~%MOD_FOLDER%/tra/spanish/ub.tra~ BEGIN
+        // OUTER_SPRINT carver @49632  // "Carver"
+      // END
+    // END
+    DEFAULT
+      WITH_TRA ~%MOD_FOLDER%/tra/english/ub.tra~ BEGIN
+        OUTER_SPRINT carver @49632  // "Carver"
+      END
+  END
+  ALTER_TLK_LIST
+    BEGIN 49647 49653 49659 49670 49681 49686 49690 49697 49700 49703 49706 49709 49710 49712 49717 49718 49719 49720 49721 49722 49723 49724 49727 49728 49729 49735 49737 END
+    BEGIN REPLACE_TEXTUALLY EXACT_MATCH ~%ratbone%~ ~%carver%~ END
 END
 
 
