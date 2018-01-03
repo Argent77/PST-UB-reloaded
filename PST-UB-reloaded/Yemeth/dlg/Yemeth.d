@@ -41,6 +41,8 @@
 // little bit of conversational content.
 ADD_TRANS_TRIGGER DRATBONE 74 ~False()~ DO 1
 
+// Argent77 - Added a check for global "RC_ID" to prevent reply option before making a deal with 
+// the fiends.
 EXTEND_BOTTOM DTEGARIN 8 #1
   IF ~Global("Devil_Offer", "AR0402", 1)~ THEN REPLY #14814 /* ~"I'm considering the bargain you spoke of, earlier."~ */ GOTO 25
   IF ~Global("RC_ID", "GLOBAL", 1) !Global("2Devils", "AR0402", 1)~ THEN REPLY #12364 /* ~"Would you know of a Collector who has dealings with fiends?"~ */ GOTO 19
@@ -48,7 +50,7 @@ EXTEND_BOTTOM DTEGARIN 8 #1
   IF ~Global("2Devils", "AR0402", 1)~ THEN REPLY #14730 /* ~"What sort of 'power' is it that the pendant will give me?"~ */ GOTO 43
   IF ~Global("RC_Contract", "GLOBAL" ,1)~ THEN REPLY #14731 /* ~"I failed to get the pendant from the Erinyes, and now she's gone."~ */ GOTO 57
   IF ~Global("RC_Contract", "GLOBAL" ,1)~ THEN REPLY #14732 /* ~Lie: "I could not find the Erinyes; she was not in the alley you told me about."~ */ DO ~SetGlobal("2Devils", "AR0402", 3)~ GOTO 57
-  IF ~PartyHasItem("SkulPend")~ THEN REPLY #14733 /* ~"Here is the pendant."~ */ EXTERN ~DAETHEL~ 40
+  IF ~Global("RC_ID", "GLOBAL", 2) PartyHasItem("SkulPend")~ THEN REPLY #14733 /* ~"Here is the pendant."~ */ EXTERN ~DAETHEL~ 40
 END
 
 // Documentation above is wrong, RC_ID triggers should be 2, not 3.  Files in override1 were correct.
@@ -90,3 +92,34 @@ ADD_TRANS_TRIGGER DTEGARIN 8 ~GlobalLT("2Devils","AR0402",4)~ DO 10 11
 
 // Version 4.0:  Fix bad epilogues if Adyzoel is dead and you talk to Rakechaser during the daytime.
 ALTER_TRANS DRKCHSR BEGIN 19 END BEGIN 0 1 END BEGIN "EPILOGUE" ~GOTO 18~ END
+
+// ================================================================================
+
+// Additions made by Argent77:
+
+// For some reason Tegar'in uses a different check as Aethelgrin to see if Grace or Annah are nearby. This 
+// action makes it more consistent.
+REPLACE_TRIGGER_TEXT DTEGARIN ~InParty(~ ~NearbyDialog(~
+
+// These additions remove the option to present the pendant before you made a deal with the fiends 
+// about it.
+ADD_TRANS_TRIGGER DAETHEL 8 ~Global("RC_ID","GLOBAL",2)~ DO 12
+ADD_STATE_TRIGGER DAETHEL 47 ~Global("RC_ID","GLOBAL",2)~
+ADD_STATE_TRIGGER DTEGARIN 54 ~Global("RC_ID","GLOBAL",2)~
+
+// These structures are identical with original DLG state 7, except for the state trigger. 
+// They are needed because classic PST doesn't support the OR() trigger yet.
+APPEND DAETHEL
+  IF WEIGHT #7 ~!NearbyDialog("DAnnah") !NearbyDialog("DGrace") NumTimesTalkedToGT(0) !Global("RC_ID","GLOBAL",2) PartyHasItem("SkulPend") !Global("2Devils","AR0402",2) !Global("2Devils","AR0402",3)~ DAETHEL.1
+    SAY #12353  /* "The prodigal returns, eh?" The fiend hisses a smile at you, noxious vapors coiling from the corner of its mouth. "Have your memories returned to you, old friend?" */
+    COPY_TRANS DAETHEL 7
+  END
+END
+
+APPEND DTEGARIN
+  IF WEIGHT #7 ~!NearbyDialog("DAnnah") !NearbyDialog("DGrace") NumTimesTalkedToGT(0) !Global("RC_ID","GLOBAL",2) PartyHasItem("SkulPend") !Global("2Devils","AR0402",2) !Global("2Devils","AR0402",3)~ DTEGARIN.1
+    SAY #12408  /* "The prodigal returns, eh?" The fiend hisses a smile at you, noxious vapors coiling from the corner of its mouth. "Have your memories returned to you, old friend?" */
+    COPY_TRANS DTEGARIN 7
+  END
+END
+
