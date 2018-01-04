@@ -497,11 +497,16 @@ COPY_EXISTING ~DEATH.2DA~ ~override~
    REPLACE_TEXTUALLY ~VHA040~ ~VHA040,VHA041~
  BUT_ONLY
 
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT game_name ~pstee~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT game_name ~pst~
+END
 
 // Alternate Smoldering Corpse theme.  Play it at night.
 COPY ~%MOD_FOLDER%/Sounds/Music/Smo2.mus~ ~Music/Smo2.mus~
 MKDIR ~Music/Smo2~
-COPY ~%MOD_FOLDER%/Sounds/Music/Smo2~ ~Music/Smo2~
+COPY ~%MOD_FOLDER%/Sounds/Music/%game_name%/Smo2~ ~Music/Smo2~
 
 ACTION_IF (IS_PSTEE) BEGIN
   ADD_MUSIC ~smo2~ ~Music/SMO2.mus~
@@ -521,7 +526,7 @@ COPY_EXISTING ~AR0402.ARE~ ~override~
 // Install Morte's Theme
 COPY ~%MOD_FOLDER%/Sounds/Music/char_11.mus~ ~Music/Char_11.mus~
 MKDIR ~Music/Char_11~
-COPY ~%MOD_FOLDER%/Sounds/Music/Char_11~ ~Music/Char_11~
+COPY ~%MOD_FOLDER%/Sounds/Music/%game_name%/Char_11~ ~Music/Char_11~
 
 COPY_EXISTING ~Music/songlist.txt~ ~Music/songlist.txt~
   REPLACE_TEXTUALLY ~CHAR_01.mus\([ %TAB%]*// 11 Char - Morte\)~ ~CHAR_11.mus\1~
