@@ -507,9 +507,18 @@ It might still be useful though, since many cheats are conveniently presented as
 Credits
 ~~~~~~~
 
+*** PS:T Unfinished Business - Reloaded ***
+
 Argent77:
 Greatly revised, modernized and optimized the original code base of PST-UB, and made the mod 
 available for PST:EE.
+
+Additional contributors:
+Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
+French translation updates by mirandir.
+
+
+*** Original PS:T Unfinished Business ***
 
 Qwinn:
 This mod would not be possible without his time and effort to create the original PST-UB.
