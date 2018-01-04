@@ -1,7 +1,7 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:      1.0-beta3
+Version:      1.0-beta4
 Author:       Argent77, original PS:T Unfinished Business by Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
@@ -563,3 +563,5 @@ History
   ("Expanded Deionarra's Truth mod")
 - Restored a generic acoustic feedback when copying spells to the spellbook in PST:EE 
   ("Restored Party Comments and Banters")
+- Fixed dialog conditions of fiends in SCB to return the pendant only after making a deal with them 
+  ("Restored Pendant of Yemeth Quest")
