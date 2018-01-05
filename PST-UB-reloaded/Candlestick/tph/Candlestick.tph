@@ -110,6 +110,33 @@
 
 // ============================= Begin Candlestick Quest ==================================
 
+// PSTEE note: script actions to activate or deactivate portals are not compatible
+ACTION_IF (IS_PSTEE) BEGIN
+  OUTER_TEXT_SPRINT portalcursor_candle1_on ~SetPortalCursor("Candle1",PORTAL_CURSOR_VISIBLE,TRUE)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_on ~SetPortalCursor("Candle1",PORTAL_ENABLED,TRUE)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle1_off ~SetPortalCursor("Candle1",PORTAL_CURSOR_VISIBLE,FALSE)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_off ~SetPortalCursor("Candle1",PORTAL_ENABLED,FALSE)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_on ~SetPortalCursor("Candle2",PORTAL_CURSOR_VISIBLE,TRUE)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_on ~SetPortalCursor("Candle2",PORTAL_ENABLED,TRUE)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_off ~SetPortalCursor("Candle2",PORTAL_CURSOR_VISIBLE,FALSE)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_off ~SetPortalCursor("Candle2",PORTAL_ENABLED,FALSE)~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT portalcursor_candle1_on ~ActivatePortalCursor("Candle1",1)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_on ~EnablePortalTravel("Candle1",1)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle1_off ~ActivatePortalCursor("Candle1",0)~
+  OUTER_TEXT_SPRINT portaltravel_candle1_off ~EnablePortalTravel("Candle1",0)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_on ~ActivatePortalCursor("Candle2",1)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_on ~EnablePortalTravel("Candle2",1)~
+
+  OUTER_TEXT_SPRINT portalcursor_candle2_off ~ActivatePortalCursor("Candle2",0)~
+  OUTER_TEXT_SPRINT portaltravel_candle2_off ~EnablePortalTravel("Candle2",0)~
+END
+
 COMPILE EVAL ~%MOD_FOLDER%/Candlestick/dlg/Candlestick.d~
 
 ACTION_IF (IS_PST) BEGIN
@@ -278,6 +305,8 @@ COPY_EXISTING ~AR0207.ARE~ ~override~
     fj_cursor_idx       = 0
     fj_loc_x            = 561
     fj_loc_y            = 485
+    fj_talk_loc_x       = 561
+    fj_talk_loc_y       = 485
     fj_vertex_0         = 534 + (430 << 16)
     fj_vertex_1         = 496 + (462 << 16)
     fj_vertex_2         = 547 + (542 << 16)
@@ -289,6 +318,7 @@ COPY_EXISTING ~AR0207.ARE~ ~override~
     fj_structure_type   = ~region~
     fj_name             = ~cantrig2~
     fj_reg_script       = ~CANTRIG2~
+    fj_dialog           = ~DCANTRG2~
   END
 
   // Add new travel trigger
@@ -454,33 +484,6 @@ END
 >>>>>>>>
 COMPILE ~.../pst-ub/inlinedfile/0207ATTK.BAF~
 
-// PSTEE note: script actions to activate or deactivate portals are not compatible
-ACTION_IF (IS_PSTEE) BEGIN
-  OUTER_TEXT_SPRINT portalcursor_candle1_on ~SetPortalCursor("Candle1",PORTAL_CURSOR_VISIBLE,TRUE)~
-  OUTER_TEXT_SPRINT portaltravel_candle1_on ~SetPortalCursor("Candle1",PORTAL_ENABLED,TRUE)~
-
-  OUTER_TEXT_SPRINT portalcursor_candle1_off ~SetPortalCursor("Candle1",PORTAL_CURSOR_VISIBLE,FALSE)~
-  OUTER_TEXT_SPRINT portaltravel_candle1_off ~SetPortalCursor("Candle1",PORTAL_ENABLED,FALSE)~
-
-  OUTER_TEXT_SPRINT portalcursor_candle2_on ~SetPortalCursor("Candle2",PORTAL_CURSOR_VISIBLE,TRUE)~
-  OUTER_TEXT_SPRINT portaltravel_candle2_on ~SetPortalCursor("Candle2",PORTAL_ENABLED,TRUE)~
-
-  OUTER_TEXT_SPRINT portalcursor_candle2_off ~SetPortalCursor("Candle2",PORTAL_CURSOR_VISIBLE,FALSE)~
-  OUTER_TEXT_SPRINT portaltravel_candle2_off ~SetPortalCursor("Candle2",PORTAL_ENABLED,FALSE)~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT portalcursor_candle1_on ~ActivatePortalCursor("Candle1",1)~
-  OUTER_TEXT_SPRINT portaltravel_candle1_on ~EnablePortalTravel("Candle1",1)~
-
-  OUTER_TEXT_SPRINT portalcursor_candle1_off ~ActivatePortalCursor("Candle1",0)~
-  OUTER_TEXT_SPRINT portaltravel_candle1_off ~EnablePortalTravel("Candle1",0)~
-
-  OUTER_TEXT_SPRINT portalcursor_candle2_on ~ActivatePortalCursor("Candle2",1)~
-  OUTER_TEXT_SPRINT portaltravel_candle2_on ~EnablePortalTravel("Candle2",1)~
-
-  OUTER_TEXT_SPRINT portalcursor_candle2_off ~ActivatePortalCursor("Candle2",0)~
-  OUTER_TEXT_SPRINT portaltravel_candle2_off ~EnablePortalTravel("Candle2",0)~
-END
-
 <<<<<<<< .../pst-ub/inlinedfile/CANTRIG1.BAF
 IF
   HarmlessEntered("Nordom")
@@ -521,6 +524,27 @@ THEN
     SetGlobal("Candle2_Portal_Open","AR0207",1)
     %portalcursor_candle2_on%
     %portaltravel_candle2_on%
+END
+
+IF
+  HarmlessEntered("Nameless")
+  !PartyHasItem("Purse") // Leather Purse
+  PartyGold(0)
+THEN
+  RESPONSE #100
+    SetGlobal("Candle2_Portal_Open","AR0207",1)
+    %portalcursor_candle2_on%
+    %portaltravel_candle2_on%
+END
+
+IF
+  HarmlessEntered("Nameless")
+  !Global("Candle2_Portal_Open","AR0207",1)
+  !PartyHasItem("Purse") // Leather Purse
+  !PartyGold(0)
+THEN
+  RESPONSE #100
+    Dialogue([PC])
 END
 >>>>>>>>
 COMPILE EVAL ~.../pst-ub/inlinedfile/CANTRIG2.BAF~

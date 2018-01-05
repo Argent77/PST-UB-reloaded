@@ -23,3 +23,21 @@ ADD_TRANS_TRIGGER DSHERYL 6 ~False()~ DO 0
 REPLACE_ACTION_TEXT DSHERYL
    ~DestroyItem.*("Arkring",.*,.*)~
    ~DestroyPartyItem("Arkring",FALSE) AddexperienceParty(500)~
+
+// ======================================================================================
+
+// The additions below are made by Argent77 for PST-UB Reloaded.
+
+BEGIN DCANTRG2
+
+IF ~!PartyHasItem("Purse") !PartyGold(0) !Global("Candle2_Portal_Open","AR0207",1)~ DCANTRG2.1
+  SAY @500 /* This archway extends only a few feet into the east wall before coming to an abrupt end. You would expect the portal that leads out of the tomb to appear here. Unfortunately, you don't have an empty purse in your possession, which is, according to Ulthera, the key to activate it. */
+  + ~!PartyGold(0)~ + @501 /* Leave all your money behind. */ DO ~DestroyPartyGold(1000000)~ + DCANTRG2.2
+  ++ #48363 /* Leave. */ EXIT
+END
+
+IF ~~ DCANTRG2.2
+  SAY @502 /* As reluctant as one might be to part with their money, a single wayward look at the body of Sheryl's father makes you reach for it with no hesitation. Before long it's all on the ground. */
+  = @503 /* To your surprise it vanishes almost instantly into thin air, followed moments later by a portal opening right before you. */
+  IF ~~ DO ~SetGlobal("Candle2_Portal_Open","AR0207",1) %portalcursor_candle2_on% %portaltravel_candle2_on%~ EXIT
+END
