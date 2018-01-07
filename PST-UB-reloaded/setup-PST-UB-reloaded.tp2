@@ -12,9 +12,6 @@ ALWAYS
   // Compatibility layer (for script commands, etc.)
   INCLUDE ~%MOD_FOLDER%/utils/A7_Compatibility.tph~
 
-  // This local copy contains a number of bugfixes specifically for PSTEE. Remove when fixed in WeiDU.
-  INCLUDE ~%MOD_FOLDER%/utils/fj_are_struct.tpa~
-
   // Defining paths to PSTEE-specific translation files
   ACTION_IF (IS_PSTEE) BEGIN
     OUTER_TEXT_SPRINT TRA_DCHEATS_PSTEE ~%MOD_FOLDER%/tra/%LANGUAGE%/dcheats_pstee.tra~
