@@ -133,6 +133,7 @@ COMPILE ~%MOD_FOLDER%/Elyce/dlg/Elyce.d~
 // ELYCE.CRE - Default script 0400ELY.BCS
 COPY_EXISTING ~ELYCE.CRE~ ~override~
   WRITE_ASCII 0x268 ~0400ELY~ #8
+  WRITE_BYTE CRE_OFS_DIALOG_RADIUS 6
  BUT_ONLY
 
 // MAETH.CRE - Default script 0400MAE.BCS
@@ -216,6 +217,9 @@ EXTEND_TOP ~0400ELY.BCS~ ~.../pst-ub/inlinedfile/addelyce.baf~ EVAL
 
 COPY_EXISTING ~0400ELY.BCS~ ~override~
   DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY
+      ~\(Num\(berOf\)?TimesTalkedTo(0)\)~
+      ~Range([PC],20) %sc_nearsavedlocation%(30) !See([ENEMY]) \1~
     REPLACE_TEXTUALLY 
       ~IF[ %TAB%%WNL%]+Global("Elyce","AR0400",0)[ %TAB%%WNL%]+THEN~
       ~IF GlobalLT("Elyce","AR0400",4) !Global("Elyce","AR0400",2) THEN~
