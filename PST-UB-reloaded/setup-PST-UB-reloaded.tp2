@@ -102,10 +102,11 @@ UNINSTALL ~setup-PST-UB-reloaded.tp2~ 13
 UNINSTALL ~setup-PST-UB-reloaded.tp2~ 14
 UNINSTALL ~setup-PST-UB-reloaded.tp2~ 15
 UNINSTALL ~setup-PST-UB-reloaded.tp2~ 16
+UNINSTALL ~setup-PST-UB-reloaded.tp2~ 17
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ABLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Able/tph/Able.tph~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MMMM.xxx~
-INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteIntro.tph~
+INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteComment.tph~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CANDLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Candlestick/tph/Candlestick.tph~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!DTRUTH.xxx~
@@ -144,12 +145,22 @@ COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ABLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Able/tph/Able.tph~
 
 
-BEGIN @3 // ~Restored More Morte Mortuary Moments~
+BEGIN @17 // ~Everything~
+SUBCOMPONENT @3 // ~Restored More Morte Mortuary Moments~
 DESIGNATED 2
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
 FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MMMM.xxx~
 INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteIntro.tph~
+INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteComment.tph~
+
+BEGIN @18 // ~Comments only~
+SUBCOMPONENT @3 // ~Restored More Morte Mortuary Moments~
+DESIGNATED 17
+REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
+FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MMMM.xxx~
+INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteComment.tph~
 
 
 BEGIN @4 // ~Restored Candlestick Quest~

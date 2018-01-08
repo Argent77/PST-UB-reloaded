@@ -157,6 +157,15 @@ roughly 20 game hours for Able to complete his research.
 
 3. Restored More Morte Mortuary Moments
 
+This component comes in two variants. The first option applies two restorations, Morte's original 
+introduction dialog and Morte commenting on Dhaal's book. The second option restores only his 
+comments regarding Dhaal's book.
+
+Morte's original introduction contains many conversation branches that are repeated in future 
+conversations by Morte or other characters. Moreover, at that point of the story it doesn't make 
+sense to learn too much about those topics yet. Therefore only the second option will be included 
+in the convenience component "All Recommended PS:T Unfinished Business Components" (see above).
+
 From PST-UB Readme:
 This component restores two bits regarding Morte in the Mortuary. They are "Morte's Original Intro" 
 which was originally restored in the Restoration Pack but which I handle completely differently, 
@@ -516,6 +525,7 @@ available for PST:EE.
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
 French translation updates by mirandir.
+Additional help by lujo.
 
 
 *** Original PS:T Unfinished Business ***
@@ -565,3 +575,7 @@ History
   ("Restored Party Comments and Banters")
 - Fixed dialog conditions of fiends in SCB to return the pendant only after making a deal with them 
   ("Restored Pendant of Yemeth Quest")
+- Resolved a dead end if the party entered the Mausoleum without an empty purse in their possession 
+  ("Restored Candlestick Quest")
+- Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
+  "Comments only"
