@@ -86,23 +86,10 @@ LANGUAGE ~French~
 BEGIN @1  // ~All Recommended PS:T Unfinished Business Components~
 DESIGNATED 0
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 1
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 2
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 3
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 4
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 5
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 6
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 7
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 8
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 9
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 10
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 11
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 12
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 13
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 14
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 15
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 16
-UNINSTALL ~setup-PST-UB-reloaded.tp2~ 17
+ACTION_FOR_EACH number IN 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+BEGIN
+  UNINSTALL ~setup-PST-UB-reloaded.tp2~ number
+END
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ABLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Able/tph/Able.tph~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MMMM.xxx~
