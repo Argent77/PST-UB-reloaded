@@ -86,7 +86,7 @@ LANGUAGE ~French~
 BEGIN @1  // ~All Recommended PS:T Unfinished Business Components~
 DESIGNATED 0
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-ACTION_FOR_EACH number IN 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+ACTION_FOR_EACH number IN 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 BEGIN
   UNINSTALL ~setup-PST-UB-reloaded.tp2~ number
 END
@@ -122,6 +122,8 @@ COPY_EXISTING ~SCALPEL.itm~ ~override/Q!LOWERW.xxx~
 INCLUDE ~%MOD_FOLDER%/LowerWard/tph/LowerWard.tph~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ALUFND.xxx~
 INCLUDE ~%MOD_FOLDER%/Bestiary/tph/Bestiary.tph~
+COPY_EXISTING ~SCALPEL.itm~ ~override/Q!LOTHAR.xxx~
+INCLUDE ~%MOD_FOLDER%/Lothar/tph/Lothar.tph~
 
 
 BEGIN @2 // ~Restored Able Ponder-Thought Research~
@@ -260,6 +262,14 @@ REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Pla
 FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!BESTIA.xxx~
 INCLUDE ~%MOD_FOLDER%/Bestiary/tph/Bestiary.tph~
+
+
+BEGIN @19 // ~Restored Lothar's Abode~
+DESIGNATED 18
+REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
+FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+COPY_EXISTING ~SCALPEL.itm~ ~override/Q!LOTHAR.xxx~
+INCLUDE ~%MOD_FOLDER%/Lothar/tph/Lothar.tph~
 
 
 BEGIN @21 // Expanded Deionarra's Truth Mod

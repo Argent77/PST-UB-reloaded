@@ -1,0 +1,159 @@
+// ================= ARGENT77'S RESTORED LOTHAR'S DWELLING ================
+// ============= Coded:  January 11, 2017 for UB Reloaded v1.0 ============
+
+// The game contains unused creature animations for a Ghoul Stone Golem.
+// This restoration adds two instances of this creature to Lothar's home to guard his treasures.
+// As a bonus I will also add a minor magical artifact to one of the containers in Lothar's 
+// private chamber, that is also not available anywhere else in the game.
+// All these resources (except for the golem's combat script and a script block for Lothar) exist 
+// already in the base game. All I do is add them to the map and update a game script.
+
+ACTION_IF (IS_PST) BEGIN
+  INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
+  COPY ~VAR.VAR~ ~VAR.TMP~
+    SET Q_FileSize = SOURCE_SIZE
+    SPRINT "Q_NewVarType"  ~AR0508  ~
+    SPRINT "Q_NewVarName"  ~Lothar_Golem_Reaction           ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+   BUT_ONLY
+  COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
+END
+
+COPY_EXISTING ~AR0508.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 1245
+    fj_loc_y          = 440
+    fj_orientation    = 0
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Ghoul Stone Golem 1~
+    fj_cre_resref     = ~GHOULSG~
+    fj_bcs_default    = ~0508GGLM~
+  END
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 3075
+    fj_loc_y          = 515
+    fj_orientation    = 0
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~Ghoul Stone Golem 2~
+    fj_cre_resref     = ~GHOULSG~
+    fj_bcs_default    = ~0508GGLM~
+  END
+  LPF ADD_AREA_ITEM
+  INT_VAR
+    container_to_add_to = 4  // Nightstands
+    charges1            = 1
+  STR_VAR
+    item_to_add         = ~WWARD~
+  END
+  LPF ADD_AREA_ITEM
+  INT_VAR
+    container_to_add_to = 4  // Nightstands
+    charges1            = 137
+  STR_VAR
+    item_to_add         = ~COPPER~
+  END
+  LPF ADD_AREA_ITEM
+  INT_VAR
+    container_to_add_to = 3  // Spilled Jar
+    charges1            = 1
+  STR_VAR
+    item_to_add         = ~EMBALM~
+  END
+ BUT_ONLY
+
+<<<<<<<< .../pst-ub/inlinedfile/0508GGLM.BAF
+IF
+  Allegiance(Myself,ENEMY)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    %sc_randomface%
+END
+
+IF
+  GlobalGT("Lothar_Mad","AR0508",0)
+  GlobalLT("Lothar_Mad","AR0508",3)
+  See([PC])
+THEN
+  RESPONSE #100
+    FaceObject([PC])
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  Global("Lothar_Mad","AR0508",3)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+>>>>>>>>
+COMPILE EVAL ~.../pst-ub/inlinedfile/0508GGLM.BAF~
+
+
+COPY_EXISTING ~0508TRAP.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY
+      ~\(Opened(.*)\)[ %TAB%%WNL%]*Global("Lothar_Mad","AR0508",0)~
+      ~\1 GlobalLT("Lothar_Mad","AR0508",3)~
+  END
+ BUT_ONLY
+
+<<<<<<<< .../pst-ub/inlinedfile/0508TRAP_bottom.baf
+IF
+  Unlocked([PC])
+  GlobalLT("Lothar_Mad","AR0508",2)
+THEN
+  RESPONSE #100
+    SetGlobal("Lothar_Mad","AR0508",2)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~0508TRAP.BCS~ ~.../pst-ub/inlinedfile/0508TRAP_bottom.baf~
+
+
+COPY_EXISTING ~0508LOTH.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(See(.*)\)~ ~\1 !Global("Lothar_Golem_Reaction","AR0508",1)~
+  END
+ BUT_ONLY
+
+<<<<<<<< .../pst-ub/inlinedfile/0508LOTH_top.baf
+IF
+  See([PC])
+  Global("Lothar_Mad","AR0508",3)
+  Global("Lothar_Golem_Reaction","AR0508",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Lothar_Golem_Reaction","AR0508",1)
+    Wait(1)
+    FaceObject([PC])
+    Wait(2)
+    FloatMessage(Myself,@510)  // "Hmph! How ill-mannered you be."
+    SetGlobal("Lothar_Golem_Reaction","AR0508",2)
+END
+>>>>>>>>
+EXTEND_TOP ~0508LOTH.BCS~ ~.../pst-ub/inlinedfile/0508LOTH_top.baf~
+
+// Set a meaningful bestiary description for Ghoul Stone Golems
+STRING_SET 3622 @3622

@@ -62,8 +62,11 @@ Restores 9 creatures to the main Lower Ward area, 6 creatures around Deran, the 
 ### 17. Restored Bestiary Entries
 Restores descriptions for a number of bestiary entries. It also adds a new alu-fiend entry for Vrischika, that has been improved to match the other bestiary images. Finally, the bestiary image of the TO will change from a shadowy figure to a glowing version at a point in the plot.
 
-### 18. Expanded Deionarra's Truth Mod
+### 18. Restored Lothar's Abode
+Restores guard creatures and minor treasure to Lothar's abode in the Lower Ward, that are found nowhere else in the game.
+
+### 19. Expanded Deionarra's Truth Mod
 Adds a great deal of new content (including 180 new lines of dialogue) that will allow the player to find out her fate before it becomes too late to do anything about it. Once the new content has been played, about 30-40 more lines of original dialogue will become accessible.
 
-### 19. Restored Item Cheats (Not Recommended)
+### 20. Restored Item Cheats (Not Recommended)
 Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".

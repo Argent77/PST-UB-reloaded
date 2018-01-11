@@ -7,7 +7,8 @@ Author:       Argent77, original PS:T Unfinished Business by Qwinn
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
 Discussion:   https://forums.beamdog.com/discussion/comment/938523
 
-The original readme files from PST-UB 4.12 can be found in the "readme-original" folder of this mod.
+The original readme files from PST-UB 4.12 can be found in the "readme-original" folder of this 
+mod.
 
 
 Overview
@@ -95,12 +96,16 @@ Restores descriptions for a number of bestiary entries. It also adds a new alu-f
 Vrischika, that has been improved to match the other bestiary images. Finally, the bestiary image 
 of the TO will change from a shadowy figure to a glowing version at a point in the plot.
 
-18. "Expanded Deionarra's Truth Mod"
+18. "Restored Lothar's Abode"
+Restores guard creatures and minor treasure to Lothar's abode in the Lower Ward, that are found 
+nowhere else in the game.
+
+19. "Expanded Deionarra's Truth Mod"
 Adds a great deal of new content (including 180 new lines of dialogue) that will allow the player 
 to find out her fate before it becomes too late to do anything about it. Once the new content has 
 been played, about 30-40 more lines of original dialogue will become accessible.
 
-19. "Restored Item Cheats (Not Recommended)"
+20. "Restored Item Cheats (Not Recommended)"
 Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - 
 aka "The Cheater's Blade", and "The Tome o' Cheats".
 
@@ -444,7 +449,15 @@ the variable to check exclusively for images. If this variable is not found 'glo
 instead. It is fully backwards compatible with the default implementation of the unmodded game.
 
 
-18. Expanded Deionarra's Truth mod
+18. Restored Lothar's Abode
+
+This component restores an unused creature as well as an unused item to Lothar's home in the 
+Lower Ward area. The creature is a Ghoul Stone Golem. You can find one of them guarding the 
+chamber of skulls and another one protecting the treasures in Lothar's private chambers. The 
+treasure includes a minor magical artifact not available elsewhere in the game.
+
+
+19. Expanded Deionarra's Truth mod
 
 From PST-UB Readme:
 I am not including this in the "Recommended" section of the installation procedure because it 
@@ -478,7 +491,7 @@ received strong approval from Colin McComb, original designer of the area where 
 takes place.
 
 
-19. Restored Item Cheats (Not Recommended)
+20. Restored Item Cheats (Not Recommended)
 
 From PST-UB Readme:
 Vrischika's dialogue has disabled conversation paths where she offers to sell you the "Sword of 
@@ -566,6 +579,8 @@ History
 1.0 (Initial release)
 - Cleaned up and modernized WeiDU code of the mod
 - Made content from PS:T Unfinished Business v4.12 available for PST:EE
+- Added new component "Restored Lothar's Abode": Restores creature "Ghoul Stone Golem" and item 
+  "Bone Ward" to Lothar's home in the Lower Ward
 - Added an improved alu-fiend image intended for Vrischika to the bestiary in PST:EE ("Restored 
   Bestiary Entries")
 - Fixed a container polygon in the Festhall Private Quarters that overlapped the blocking door 
