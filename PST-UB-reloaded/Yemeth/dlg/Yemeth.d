@@ -41,6 +41,10 @@
 // little bit of conversational content.
 ADD_TRANS_TRIGGER DRATBONE 74 ~False()~ DO 1
 
+// Argent77 - TakePartyItemNum() seems to have issues in PST:EE. I'm replacing it by a 
+// different pair of actions that pretty much does the same.
+REPLACE_ACTION_TEXT DRATBONE ~TakePartyItem.*(.*)~ ~DestroyPartyItem("Tail",FALSE) CreateItem("Tail",1,0,0)~
+
 // Argent77 - Added a check for global "RC_ID" to prevent reply option before making a deal with 
 // the fiends.
 EXTEND_BOTTOM DTEGARIN 8 #1
