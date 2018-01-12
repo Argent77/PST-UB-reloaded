@@ -142,6 +142,7 @@ THEN
   RESPONSE #100
     CreateCreature("CRSTADMN",[1845.615]%sc_comma_null%)
     SetGlobal("Spawn_Carl","GLOBAL",1)
+    Continue()
 END
 >>>>>>>>
 EXTEND_TOP ~AR0701.BCS~ ~.../pst-ub/inlinedfile/spawncarl.baf~ EVAL
