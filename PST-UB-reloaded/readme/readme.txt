@@ -1,7 +1,7 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:      1.0-beta5
+Version:      1.0-beta6
 Author:       Argent77, original PS:T Unfinished Business by Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
