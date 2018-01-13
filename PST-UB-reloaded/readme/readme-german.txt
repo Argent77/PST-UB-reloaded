@@ -6,6 +6,7 @@ Autor:        Argent77, original PS:T Unfinished Business by Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
 Diskussion:   https://forums.beamdog.com/discussion/comment/938523
+              http://www.shsforums.net/topic/59645-pst-ub-reloaded-a-continuation-of-qwinns-pst-ub-for-pstee/
 
 Die originale Liesmich-Datei von PST-UB 4.12 befindet sich im Unterordner "readme-original".
 

@@ -6,6 +6,7 @@ Author:       Argent77, original PS:T Unfinished Business by Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
 Discussion:   https://forums.beamdog.com/discussion/comment/938523
+              http://www.shsforums.net/topic/59645-pst-ub-reloaded-a-continuation-of-qwinns-pst-ub-for-pstee/
 
 The original readme files from PST-UB 4.12 can be found in the "readme-original" folder of this 
 mod.
