@@ -270,16 +270,30 @@ COPY_EXISTING ~AR0109.ARE~ ~override~
 // First, delete 4th trigger point (labelled Trigger Point 5 in original game)
 // and it's vertexes, update any other vertex files' First Vertex Index.
 
+// Animation id is needed further below
+COPY_EXISTING ~SKELAR.CRE~ ~override~
+  READ_LONG 0x28 skel_anim
+ BUT_ONLY
+
 COPY_EXISTING ~AR0207.ARE~ ~override~
 
   // No one assigned AR0207.BCS to be the area script for AR0207.ARE.
   WRITE_ASCII 0x94 ~AR0207~ #8
 
-  // 0207ATTK script defined below in Qwinn section, replaces ENEMY.BCS
+  // 0207ATTK script defined below in Qwinn section, replaces ENEMY.BCS.
+  // Additionally, creature animation id should be fixed.
   READ_LONG 0x54 ofsActors
-  WRITE_ASCII (ofsActors + 0 * 0x110 + 0x70) ~0207ATTK~ #8
-  WRITE_ASCII (ofsActors + 1 * 0x110 + 0x70) ~0207ATTK~ #8
-  WRITE_ASCII (ofsActors + 2 * 0x110 + 0x70) ~0207ATTK~ #8
+  FOR (idx = 0; idx < 3; ++idx) BEGIN
+    SET ofs = ofsActors + idx * 0x110
+    WRITE_LONG (ofs + 0x30) skel_anim
+    WRITE_ASCII (ofs + 0x70) ~0207ATTK~ #8
+    PATCH_IF (idx = 2) BEGIN
+      // Ghoul is not appropriate for a tomb guardian: replaced by another skeleton.
+      WRITE_ASCII ofs ~Armored Skeleton~ #32
+      WRITE_ASCII (ofs + 0x80) ~SKELAR~ #8
+    END
+  END
+
 
 // Now it's time to insert our proximity trigger for the portal exit as the 4th
 // trigger point, and our actual travel trigger.  Our new trigger 4 has 7 vertexes, and
@@ -576,3 +590,18 @@ THEN
 END
 >>>>>>>>
 EXTEND_TOP ~AR0207.BCS~ ~.../pst-ub/inlinedfile/closecantrig2.baf~ EVAL
+
+
+// Renaming tomb from "Mausoleum" to "Ancient Crypt".
+
+COPY_EXISTING ~MAPNAME.2DA~ ~override~
+  SET strref = RESOLVE_STR_REF(@504)  // ~Ancient Crypt~
+  COUNT_2DA_ROWS 2 numRows
+  FOR (row = 1; row < numRows; ++row) BEGIN
+    READ_2DA_ENTRY row 0 2 map
+    PATCH_IF (~%map%~ STR_EQ ~AR0207~) BEGIN
+      SET_2DA_ENTRY row 1 2 strref
+      SET row = numRows
+    END
+  END
+ BUT_ONLY
