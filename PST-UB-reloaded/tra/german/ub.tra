@@ -1,3 +1,11 @@
+@500 = ~Dieser Torbogen führt nur ein kurzes Stück in die östliche Mauer hinein und endet dann abrupt. Du hättest erwartet, dass sich das Portal nach draußen öffnet. Dummerweise hast du keinen leeren Geldbeutel in deinem Besitz, der, laut Ulthera, als Schlüssel für dieses Portal dient.~
+@501 = ~Laß dein ganzes Geld zurück.~
+@502 = ~Nur widerwillig greifst du in deine eigene Geldtasche. Aber ein kurzer Blick auf die Überreste von Sheryls Vater genügt, um sie ohne weitere Umschweife zu entleeren.~
+@503 = ~Zu deiner Überraschung löst es sich fast augenblicklich in Luft auf, nur um kurze Zeit später das Portal zu aktivieren.~
+@504 = ~Krypta~
+
+@510 = ~"Hmpf! Wie ungehobelt von euch."~
+
 @517 = ~Untersuche das blaue Buch.~
 @518 = ~Untersuche das Schwert.~
 @519 = ~INGRESS' ZAEHNE
@@ -13,6 +21,7 @@ Du hast diesen Federkiel in einem Schrank in deinem Zimmer in der Festhalle gefu
 "Ich weiß, daß du dich so fühlst, als hättest du'n paar Eimer Styx-Wasser getrunken, aber du mußt dein ZENTRUM finden. In deinem Besitz sollte sich ein JOURNAL befinden, das ein wenig Licht in das Dunkel dieser Angelegenheit bringen kann. PHAROD sollte dir den restlichen Plausch liefern können, wenn er nicht bereits im Totenbuch steht."
 
 "Verlier das Journal nicht oder wir landen wieder im Styx. Und was auch geschieht, erzähl KEINEM, WER du bist oder WAS dir widerfahren ist. Sonst schicken sie dich im Handumdrehen auf eine Pilgerfahrt ins Krematorium. Tu, was ich dir sage: LIES das Journal, und dann FINDE Pharod."~
+@3622 = ~Steingolem sind Konstrukte, die durch Magie zum Leben erweckt wurden. Ihre Erschaffer geben ihnen normalerweise eine klobige, schmucklose Form. Dieser wurde jedoch so gestaltet, daß er einem gewaltigen Ghul mit scharfen Klauen und schwarzer Zunge ähnelt. Das war zweifelsohne das Werk von Lothar, dem Herrn der Knochen der Nacht.~
 @33606 = ~"Deine Geliebte hat mich angefleht, euch auseinanderzubringen."~
 @50577 = ~Es gibt zahlreiche Kapitel in diesem Buchband: Teleport-Cheat, "Überall rasten"-Cheat, Reichtum-Cheat, "Attribut ändern"-Cheat, Sterben-Cheat, Erfahrungspunkte-Cheat, "Wort des Guten und Bösen"-Cheat und "Wort des Rechtschaffenen und Chaotischen"-Cheat.~
 
