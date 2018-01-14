@@ -326,7 +326,9 @@ of the Gorgon Salve and Embalming Fluid.
 
 Gorgon Salve might have another use if you install the component "Restored Lothar's Abode". You 
 can find one Gorgon Salve somewhere in the Brothel of Slating Intellectual Lusts. Another instance 
-can be purchased from Pestle after helping him out.
+can be purchased from Pestle after helping him out. The original inventory icon of the item was 
+also shared by Embalming Fluid. This component replaces it with another icon that was previously 
+unused in the game.
 
 For some reason Embalming Fluid is scarce in the Hive. This component will add one more instance 
 to the Mausoleum. Even more fluids can be purchased from Giscorl at the Hive Market.
@@ -607,3 +609,4 @@ History
   ("Restored Candlestick Quest")
 - Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
   "Comments only"
+- Added more items ("Restored Items")

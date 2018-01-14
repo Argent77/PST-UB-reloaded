@@ -340,7 +340,8 @@ weitere Gorgonische Salben und Balsamierungsöle hinzu.
 Gorgonische Salben haben einen weiteren Nutzen, wenn die Komponente "Wiederhergestellt: Lothars 
 Residenz" installiert wird. Eine Salbe kann im Bordell zum Befriedigen Intellektueller Lüste 
 gefunden werden. Eine weitere wird vom Apotheker Pestle verkauft, nachdem man seine Probleme 
-gelöst hat.
+gelöst hat. Das Inventarsymbol für Gorgonische Salben wurde außerdem für Balsamierungsöle genutzt. 
+Diese Komponente ersetzt es mit einem bisher ungenutztem Symbol.
 
 Aus unerfindlichen Gründen sind Balsamierungsöle Mangelware im Stock. Mit dieser Komponente kann 
 man ein weiteres Öl im Mausoleum finden. Noch mehr Balsamierungsöle kann man von Giscorl auf dem 
@@ -646,3 +647,4 @@ History
   ("Restored Candlestick Quest")
 - Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
   "Comments only"
+- Added more items ("Restored Items")
