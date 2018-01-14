@@ -334,6 +334,18 @@ zumindest für eine Weile.
 
 13. Wiederhergestellt: Gegenstände
 
+Zusätzlich zu den Wiederherstellungen vom originalen PST-UB, fügt diese Komponente dem Spiel 
+weitere Gorgonische Salben und Balsamierungsöle hinzu.
+
+Gorgonische Salben haben einen weiteren Nutzen, wenn die Komponente "Wiederhergestellt: Lothars 
+Residenz" installiert wird. Eine Salbe kann im Bordell zum Befriedigen Intellektueller Lüste 
+gefunden werden. Eine weitere wird vom Apotheker Pestle verkauft, nachdem man seine Probleme 
+gelöst hat.
+
+Aus unerfindlichen Gründen sind Balsamierungsöle Mangelware im Stock. Mit dieser Komponente kann 
+man ein weiteres Öl im Mausoleum finden. Noch mehr Balsamierungsöle kann man von Giscorl auf dem 
+Marktplatz kaufen.
+
 Aus der PST-UB Liesmich:
 Ab Version 2.0 sind die Elemente, die durch diese Komponente wiederhergestellt wurden, der 
 Rattentalisman, die Scheusalzähne, Gestachelte Handschuhe, Klauenhandschuhe, Auge des Vecna, 

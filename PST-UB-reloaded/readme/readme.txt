@@ -321,6 +321,16 @@ she's there) will find it so. I do continue the original banter's providing of b
 
 13. Restored Items
 
+In addition to the restorations from original PST-UB, this component will also add more instances 
+of the Gorgon Salve and Embalming Fluid. 
+
+Gorgon Salve might have another use if you install the component "Restored Lothar's Abode". You 
+can find one Gorgon Salve somewhere in the Brothel of Slating Intellectual Lusts. Another instance 
+can be purchased from Pestle after helping him out.
+
+For some reason Embalming Fluid is scarce in the Hive. This component will add one more instance 
+to the Mausoleum. Even more fluids can be purchased from Giscorl at the Hive Market.
+
 From PST-UB Readme:
 As of version 2.0, the items restored to the game by this component are the Rat Charm, the Fiend's 
 Teeth, Spiked Gauntlets, Gauntlets of Rending, the Eye of Vecna, Devil's Due and the Chaos Feather. 
