@@ -8,6 +8,8 @@
 // All these resources (except for the golem's combat script and a script block for Lothar) exist 
 // already in the base game. All I do is add them to the map and update a game script.
 
+COMPILE EVAL ~%MOD_FOLDER%/Lothar/dlg/Golem.d~
+
 ACTION_IF (IS_PST) BEGIN
   INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
   COPY ~VAR.VAR~ ~VAR.TMP~
@@ -16,9 +18,17 @@ ACTION_IF (IS_PST) BEGIN
     SPRINT "Q_NewVarName"  ~Lothar_Golem_Reaction           ~
     SET    Q_NewVarValue = 0
     LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
+    SPRINT "Q_NewVarType"  ~GLOBAL  ~
+    SPRINT "Q_NewVarName"  ~Lothar_Chaotic_Golem_1          ~
+    SET    Q_NewVarValue = 0
+    LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
    BUT_ONLY
   COPY ~VAR.TMP~ ~VAR.VAR~ IF_EXISTS
 END
+
+COPY_EXISTING ~GHOULSG.CRE~ ~override~
+  WRITE_ASCII CRE_OFS_DIALOG ~DGHOULSG~ #8
+ BUT_ONLY
 
 COPY_EXISTING ~AR0508.ARE~ ~override~
   LPF fj_are_structure
@@ -141,6 +151,7 @@ COPY_EXISTING ~0508LOTH.BCS~ ~override~
 <<<<<<<< .../pst-ub/inlinedfile/0508LOTH_top.baf
 IF
   See([PC])
+  See([ENEMY])
   Global("Lothar_Mad","AR0508",3)
   Global("Lothar_Golem_Reaction","AR0508",0)
 THEN
@@ -149,6 +160,19 @@ THEN
     Wait(1)
     FaceObject([PC])
     Wait(2)
+    FloatMessage(Myself,@510)  // "Hmph! How ill-mannered you be."
+    SetGlobal("Lothar_Golem_Reaction","AR0508",2)
+END
+
+IF
+  See([PC])
+  !Global("Lothar_Chaotic_Golem_1","GLOBAL",0)
+  Global("Lothar_Golem_Reaction","AR0508",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Lothar_Golem_Reaction","AR0508",1)
+    FaceObject([PC])
+    Wait(1)
     FloatMessage(Myself,@510)  // "Hmph! How ill-mannered you be."
     SetGlobal("Lothar_Golem_Reaction","AR0508",2)
 END

@@ -496,6 +496,8 @@ Kreatur ist ein Ghul-Steingolem. Man kann zwei von ihnen in Lothars Behausung fi
 welche seine Schätze bewachen. Der Schatz beinhaltet ein magisches Artefakt von geringer Macht, 
 welches nirgendwo sonst im Spiel erhältlich ist.
 
+Es ist sinnvoll, zusätzlich die Komponente "Wiederhergestellt: Gegenstände" zu installieren.
+
 
 18. Erweiterte Wahrheit über Deionarras Schicksal
 

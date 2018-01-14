@@ -467,6 +467,8 @@ Lower Ward area. The creature is a Ghoul Stone Golem. You can find one of them g
 chamber of skulls and another one protecting the treasures in Lothar's private chambers. The 
 treasure includes a minor magical artifact not available elsewhere in the game.
 
+It is recommended to install the component "Restored Items" as well.
+
 
 19. Expanded Deionarra's Truth mod
 
