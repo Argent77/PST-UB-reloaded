@@ -195,7 +195,7 @@ END
 
 // =====================BEGIN AREA 0109 EDIT ===========================
 
-// Adding 1 actor (0x110), 2 trigger points (0xc4 each, total 0x188), 10 vertexes (0x4 each, total 0x28)
+// Adding 1 actor
 
 COPY_EXISTING ~AR0109.ARE~ ~override~
   // Add Actor
@@ -210,30 +210,39 @@ COPY_EXISTING ~AR0109.ARE~ ~override~
     fj_cre_resref     = ~ULTHERA~
     fj_dlg_resref     = ~DULTHERA~
   END
+ BUT_ONLY
 
+// =====================BEGIN AREA 1400 EDIT ===========================
+
+// Adding 2 trigger points
+
+COPY_EXISTING ~AR1400.ARE~ ~override~
   // Add trigger 1
   // PSTEE: "Cannot be passed by NPC" and "Use activation point" in addition to "Party required"
   SET flags = IS_PSTEE ? (1 << 2 | 1 << 9 | 1 << 10) : (1 << 2)
-  SET alt_x = IS_PSTEE ? 749 : 0
-  SET alt_y = IS_PSTEE ? 768 : 0
+  SET alt_x = IS_PSTEE ? 1850 : 0
+  SET alt_y = IS_PSTEE ? 1935 : 0
   LPF fj_are_structure
   INT_VAR
     fj_type             = 2   // travel region
     fj_flags            = flags
-    fj_box_left         = 695
-    fj_box_top          = 686
-    fj_box_right        = 804
-    fj_box_bottom       = 839
+    fj_box_left         = 1811
+    fj_box_top          = 1868
+    fj_box_right        = 1888
+    fj_box_bottom       = 1966
     fj_cursor_idx       = 48
-    fj_loc_x            = 749
-    fj_loc_y            = 762
+    fj_loc_x            = 1850
+    fj_loc_y            = 1930
     fj_alt_x            = alt_x
     fj_alt_y            = alt_y
-    fj_vertex_0         = 804 + (779 << 16)
-    fj_vertex_1         = 784 + (686 << 16)
-    fj_vertex_2         = 698 + (736 << 16)
-    fj_vertex_3         = 695 + (839 << 16)
-    fj_vertex_4         = 804 + (779 << 16)
+    fj_vertex_0         = 1848 + (1868 << 16)
+    fj_vertex_1         = 1876 + (1882 << 16)
+    fj_vertex_2         = 1888 + (1914 << 16)
+    fj_vertex_3         = 1878 + (1951 << 16)
+    fj_vertex_4         = 1851 + (1966 << 16)
+    fj_vertex_5         = 1821 + (1953 << 16)
+    fj_vertex_6         = 1811 + (1914 << 16)
+    fj_vertex_7         = 1819 + (1881 << 16)
   STR_VAR
     fj_structure_type   = ~region~
     fj_name             = ~candle1~
@@ -246,22 +255,32 @@ COPY_EXISTING ~AR0109.ARE~ ~override~
   INT_VAR
     fj_type             = 0   // trap region
     fj_flags            = 2   // [Reset trap]
-    fj_box_left         = 572
-    fj_box_top          = 697
-    fj_box_right        = 876
-    fj_box_bottom       = 918
+    fj_box_left         = 1738
+    fj_box_top          = 1821
+    fj_box_right        = 1954
+    fj_box_bottom       = 1998
     fj_cursor_idx       = 0
-    fj_loc_x            = 724
-    fj_loc_y            = 807
-    fj_vertex_0         = 721 + (918 << 16)
-    fj_vertex_1         = 572 + (865 << 16)
-    fj_vertex_2         = 794 + (697 << 16)
-    fj_vertex_3         = 876 + (809 << 16)
-    fj_vertex_4         = 721 + (918 << 16)
+    fj_loc_x            = 1860
+    fj_loc_y            = 1935
+    fj_vertex_0         = 1821 + (1833 << 16)
+    fj_vertex_1         = 1954 + (1913 << 16)
+    fj_vertex_2         = 1862 + (1998 << 16)
+    fj_vertex_3         = 1738 + (1927 << 16)
   STR_VAR
     fj_structure_type   = ~region~
     fj_name             = ~cantrig1~
     fj_reg_script       = ~CANTRIG1~
+  END
+
+  // Add entrance from tomb
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x            = 1975
+    fj_loc_y            = 1810
+    fj_orientation      = 10  // NE
+  STR_VAR
+    fj_structure_type   = ~entrance~
+    fj_name             = ~fr0207~
   END
  BUT_ONLY
 
@@ -296,8 +315,7 @@ COPY_EXISTING ~AR0207.ARE~ ~override~
 
 
 // Now it's time to insert our proximity trigger for the portal exit as the 4th
-// trigger point, and our actual travel trigger.  Our new trigger 4 has 7 vertexes, and
-// our travel trigger has 9.
+// trigger point, and our actual travel trigger.
 
   // Remove original travel trigger at index 3
   LPF fj_are_structure
@@ -365,8 +383,8 @@ COPY_EXISTING ~AR0207.ARE~ ~override~
   STR_VAR
     fj_structure_type   = ~region~
     fj_name             = ~candle2~
-    fj_destination_area = ~AR0109~
-    fj_destination_name = ~frommap~
+    fj_destination_area = ~AR1400~
+    fj_destination_name = ~fr0207~
   END
  BUT_ONLY
 
@@ -473,7 +491,7 @@ ACTION_IF (IS_PST) BEGIN
   INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
   COPY ~VAR.VAR~ ~VAR.TMP~
     SET Q_FileSize = SOURCE_SIZE
-    SPRINT "Q_NewVarType"  ~AR0109  ~
+    SPRINT "Q_NewVarType"  ~AR1400  ~
     SPRINT "Q_NewVarName"  ~Candle1_Portal_Open             ~
     SET    Q_NewVarValue = 0
     LAUNCH_PATCH_MACRO Q_VarVar_AddNewRecord
@@ -513,7 +531,7 @@ IF
   Global("Ulthera_Quest","GLOBAL",4)
 THEN
   RESPONSE #100
-    SetGlobal("Candle1_Portal_Open","AR0109",1)
+    SetGlobal("Candle1_Portal_Open","AR1400",1)
     %portalcursor_candle1_on%
     %portaltravel_candle1_on%
 END
@@ -565,17 +583,17 @@ COMPILE EVAL ~.../pst-ub/inlinedfile/CANTRIG2.BAF~
 
 <<<<<<<< .../pst-ub/inlinedfile/closecantrig1.baf
 IF
-  Global("Candle1_Portal_Open","AR0109",1)
-  !NearLocation(Protagonist,%sc_bracket_l%749%sc_dot_comma%762%sc_bracket_r%,20)
+  Global("Candle1_Portal_Open","AR1400",1)
+  !NearLocation(Protagonist,%sc_bracket_l%1850%sc_dot_comma%1930%sc_bracket_r%,20)
 THEN
   RESPONSE #100
-    SetGlobal("Candle1_Portal_Open","AR0109",0)
+    SetGlobal("Candle1_Portal_Open","AR1400",0)
     %portalcursor_candle1_off%
     %portaltravel_candle1_off%
     Continue()
 END
 >>>>>>>>
-EXTEND_TOP ~AR0109.BCS~ ~.../pst-ub/inlinedfile/closecantrig1.baf~ EVAL
+EXTEND_TOP ~AR1400.BCS~ ~.../pst-ub/inlinedfile/closecantrig1.baf~ EVAL
 
 <<<<<<<< .../pst-ub/inlinedfile/closecantrig2.baf
 IF
@@ -605,3 +623,9 @@ COPY_EXISTING ~MAPNAME.2DA~ ~override~
     END
   END
  BUT_ONLY
+
+
+// Update dialog and journal strings to account for the new portal location
+STRING_SET 64883 @64883   // Ulthera glances about cautiously and then takes the bone from you....
+STRING_SET 64936 @64936   // I found the leg bone for Ulthera and asked her to find the location of the portal Arkin used....
+STRING_SET 64945 @64945   // I found the leg bone for Ulthera and asked her to find the location of the portal Arkin used....

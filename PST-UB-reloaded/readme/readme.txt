@@ -607,6 +607,7 @@ History
   ("Restored Pendant of Yemeth Quest")
 - Resolved a dead end if the party entered the Mausoleum without an empty purse in their possession 
   ("Restored Candlestick Quest")
+- Moved a portal to a more appropriate location ("Restored Candlestick Quest")
 - Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
   "Comments only"
 - Added more items ("Restored Items")
