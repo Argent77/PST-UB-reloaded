@@ -42,6 +42,12 @@ COPY ~%MOD_FOLDER%/XPDeionarra/copy/%game_name%/AR3017C.ARE~  ~override/AR3017C.
 COPY ~%MOD_FOLDER%/XPDeionarra/copy/AR3017C.INI~  ~override/AR3017C.INI~
 COPY ~%MOD_FOLDER%/XPDeionarra/copy/%game_name%/QUILLJNL.ITM~ ~override/QUILLJNL.ITM~
 
+ACTION_IF (IS_PSTEE) BEGIN
+  COPY_EXISTING ~AR3017.ARE~ ~override~
+    WRITE_LONG 0x14 (THIS | BIT3) // Enable "Dream Area" flag
+   BUT_ONLY
+END
+
 COPY_EXISTING ~QUILLJNL.ITM~ ~override~
   SAY 0x50 @523
   SAY 0x54 @523
