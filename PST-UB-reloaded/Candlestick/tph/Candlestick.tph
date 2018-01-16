@@ -295,6 +295,7 @@ COPY_EXISTING ~SKELAR.CRE~ ~override~
  BUT_ONLY
 
 COPY_EXISTING ~AR0207.ARE~ ~override~
+  WRITE_SHORT 0x48 0  // Location: Indoors
 
   // No one assigned AR0207.BCS to be the area script for AR0207.ARE.
   WRITE_ASCII 0x94 ~AR0207~ #8
