@@ -1,4 +1,13 @@
-@504 = ~Crypte~
+@500 = ~Cette arche dépasse à peine du mur est, et s'arrête de façon abrupte. Le portail permettant de sortir de la tombe devrait être par ici. D'après Ulthéra, la clé pour l'activer est une bourse vide. Malheureusement, la tienne n'est pas vide.~
+@501 = ~Abandonne tout ton cuivre.~
+@502 = ~Même si tu es réticent à te séparer ainsi de ton argent, un simple regard sur le corps du père de Sheryl te convainc de le faire sans plus d'hésitation. D'ici peu il n'en restera rien.~
+@503 = ~À ta grande surprise, tout disparaît quasi-immédiatement dans les airs. Quelques instants plus tard, un portail s'ouvre devant toi.~
+@504 = ~Crypte antique~
+
+@510 = ~"Hmph ! Tu es vraiment mal élevé."~
+@511 = ~Ce golem massif ressemble à une énorme goule, avec des griffes acérées et une langue noire. Il reste immobile et regarde droit devant lui. Rien n'indique qu'il s'agisse d'autre chose que d'une statue.~
+@512 = ~Applique le Baume de Gorgone sur le golem.~
+@513 = ~Tu badigeonnes le golem avec le baume nauséabond. Dans un premier temps rien ne se produit ; mais après quelques instants des fissures et des gouttes apparaissent sur tout son corps, qui devient de plus en plus fragile. Au bout d'un moment, le golem ne peut plus supporter son propre poids - il s'effondre en un tas d'os cassants et de chair pourrissante.~
 
 @517 = ~Examine le livre bleu.~
 @518 = ~Examine l'épée.~
@@ -16,8 +25,12 @@ Tu as trouvé cette plume d'écriture dans un placard de ta chambre de la Salle de
 "Je sais que tu as l'impression d'avoir bu plusieurs barils d'eau du Styx, mais il faut te RESSAISIR. Parmi tes biens, tu dois avoir un JOURNAL qui pourra éclaircir le soltif de cette affaire. PHAROD devrait pouvoir te donner les dernières notes de la chanson, s'il n'est pas déjà inscrit dans le livre des morts."
 
 "Ne perds pas le journal ou on se retrouvera encore à traverser le Styx. Et quoi que tu fasses, NE raconte à personne QUI tu es et CE qui t'arrive, ou on t'enverra faire un rapide pèlerinage vers le crématorium. Fais ce que je te dis : LIS le journal, puis TROUVE Pharod."~
+@3622 = ~Les golems de pierre sont des gardiens animés par magie. Leurs créateurs ne se soucient généralement pas de leur donner une forme différente de celle d'une statue austère et imposante. Celui-ci a été sculpté pour ressembler à une énorme goule, avec des griffes acérées et une langue noir... Sans aucun doute l'½uvre de Lothar, le seigneur des Os de la Nuit.~
 @33606 = ~"Ta copine voulait que je vous empêche de vous battre."~
 @50577 = ~Il y a plusieurs chapitres dans le grimoire : la Triche de téléportation, la Triche de repos, la Triche de richesse, la Triche d'attribution des points des caractéristiques, la Triche de mort, la Triche d'expérience, la Triche du mot de Bonté et de Méchanceté et la Triche du mot de Loi et de Chaos.~
+@64883 = ~Ulthéra regarde prudemment autour d'elle, puis te prend l'os des mains. Elle le tient serré contre sa poitrine et commence à psalmodier en se balançant. L'anxiété monte dans sa voix, alors que celle-ci faiblit jusqu'à devenir à peine audible. Enfin, Ulthéra pousse un soupir et brandit l'os dans la direction du sud-est. "Ouais, il est dans les catacombes, va vers le sud jusqu'à ce que tu trouves un cul-de-sac... Ulthéra te l'a trouvé, maintenant va-t'en !"~
+@64936 = ~J'ai trouvé le fémur que voulait Ulthéra et je lui ai demandé où se trouvait le portail utilisé par Arkin. Elle a commencé par me raconter des trucs sans intérêt, puis a dit qu'il se trouvait dans les catacombes de la Pierre Pleureuse, près d'un cul-de-sac, au sud. J'espère qu'elle ne se trompe pas.~
+@64945 = ~J'ai trouvé le fémur que voulait Ulthéra et je lui ai demandé où se trouvait le portail utilisé par Arkin. Elle a commencé par me raconter des trucs sans intérêt, puis a dit qu'il se trouvait dans les catacombes de la Pierre Pleureuse, près d'un cul-de-sac, au sud. J'espère qu'elle ne se trompe pas.~
 
 // Originally from PST Fixpack
 @49632 = ~Carver~

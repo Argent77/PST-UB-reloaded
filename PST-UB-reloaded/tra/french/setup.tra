@@ -77,9 +77,13 @@ choisir un parmi :"
 @14 = ~Dialogues et commentaires du groupe restaures~
 @15 = ~Objets de triche restaures (non recommande)~
 @16 = ~Deja installe avec succes !~
-
+@17 = ~En totalite~
+@18 = ~Uniquement les commentaires~
+@19 = ~Domicile de Lothar restaure~
 @20 = ~Mebbeth restauree~
 @21 = ~Extension des dialogues concernant le sort de Deionarra~
 @22 = ~Rencontres du Bas Quartier restaurees~
 
 @25 = ~Entrees du bestiaire restaurees~
+
+@50 = ~Planescape Torment ou Planescape Torment: Enhanced Edition est requis !~
