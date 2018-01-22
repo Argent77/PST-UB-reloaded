@@ -54,7 +54,8 @@ COPY_EXISTING ~VRIS.STO~ ~override~
     SET offset = ItemSoldOffset + (idx * 0x58)
     READ_ASCII offset resref (8) NULL
     PATCH_IF (~%resref%~ STR_EQ ~EYEVECNA~) BEGIN
-      WRITE_LONG (offset + 0x18) 0
+      WRITE_LONG (offset + 0x10) (THIS | 1) // Identified
+      WRITE_LONG (offset + 0x18) 0  // No infinite supply
       SET idx = "-1"
     END
   END
