@@ -335,19 +335,6 @@ de faire, au moins pour un temps.
 
 13. Objets restaurés
 
-En plus des restaurations du PST-UB original, ce composant ajoute des exemplaires supplémentaires 
-du Baume de Gorgone et de la Lotion d'embaumement.
-
-Le Baume de Gorgone a un autre usage si vous installez le composant "Domicile de Lothar restauré". 
-Vous pouvez trouver du Baume de Gorgone quelque part dans la Maison de tolérance des Plaisirs 
-Intellectuels. Un autre exemplaire peut être acheté auprès de Pilon après l'avoir aidé. Cet objet 
-avait la même icône d'inventaire que la Lotion d'embaumement, ce composant la remplace par une 
-nouvelle icône.
-
-Pour une raison inconnue, la Lotion d'embaumement est rare dans la Ruche. Ce composant en rajoute 
-un exemplaire dans le Mausolée. Des Lotions supplémentaires peuvent être achetées auprès de Giscorl, 
-au marché de la Ruche.
-
 D'après le Lisez-moi du PST-UB :
 Depuis la version 2.0, les objets restaurés par ce composant sont le charme de rat, les dents de 
 fiélon, les gantelets à pointes, les gantelets d'équarrissage, l'oeil de Vecna, le dû du diable 
@@ -501,7 +488,10 @@ Quartier. La créature est un Golem de pierre goule. L'un d'entre eux garde la p
 un autre protège les trésors dans les quartiers privés de Lothar. Ces trésors incluent un objet 
 magique mineur qui n'est pas disponible ailleurs dans le jeu.
 
-Il est recommandé d'installer le composant "Objets restaurés" avec ce composant.
+[Introductory sentence...] Vous pouvez trouver du Baume de Gorgone quelque part dans la Maison de tolérance des Plaisirs 
+Intellectuels. Un autre exemplaire peut être acheté auprès de Pilon après l'avoir aidé. Cet objet 
+avait la même icône d'inventaire que la Lotion d'embaumement, ce composant la remplace par une 
+nouvelle icône.
 
 
 19. Extension des dialogues concernant le sort de Deionarra
@@ -654,3 +644,5 @@ History
 - Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
   "Comments only"
 - Added more items ("Restored Items")
+- Updated French translation and added readme (thanks mirandir)
+- Updated German translation and added readme

@@ -321,18 +321,6 @@ she's there) will find it so. I do continue the original banter's providing of b
 
 13. Restored Items
 
-In addition to the restorations from original PST-UB, this component will also add more instances 
-of the Gorgon Salve and Embalming Fluid. 
-
-Gorgon Salve might have another use if you install the component "Restored Lothar's Abode". You 
-can find one Gorgon Salve somewhere in the Brothel of Slating Intellectual Lusts. Another instance 
-can be purchased from Pestle after helping him out. The original inventory icon of the item was 
-also shared by Embalming Fluid. This component replaces it with another icon that was previously 
-unused in the game.
-
-For some reason Embalming Fluid is scarce in the Hive. This component will add one more instance 
-to the Mausoleum. Even more fluids can be purchased from Giscorl at the Hive Market.
-
 From PST-UB Readme:
 As of version 2.0, the items restored to the game by this component are the Rat Charm, the Fiend's 
 Teeth, Spiked Gauntlets, Gauntlets of Rending, the Eye of Vecna, Devil's Due and the Chaos Feather. 
@@ -469,7 +457,11 @@ Lower Ward area. The creature is a Ghoul Stone Golem. You can find one of them g
 chamber of skulls and another one protecting the treasures in Lothar's private chambers. The 
 treasure includes a minor magical artifact not available elsewhere in the game.
 
-It is recommended to install the component "Restored Items" as well.
+The component will also add two additional instances of Gorgon Salve to the game, which may have 
+an additional use in Lothar's home. You can find one Gorgon Salve somewhere in the Brothel of 
+Slating Intellectual Lusts. Another instance can be purchased from Pestle after helping him out. 
+The original inventory icon of the item was also shared by Embalming Fluid. This component 
+replaces it with another icon that was previously unused in the game.
 
 
 19. Expanded Deionarra's Truth mod
@@ -553,6 +545,7 @@ available for PST:EE.
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
 French translation updates by mirandir.
+German translation updates by Argent77.
 Additional help by lujo.
 
 
@@ -611,3 +604,5 @@ History
 - Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
   "Comments only"
 - Added more items ("Restored Items")
+- Updated French translation and added readme (thanks mirandir)
+- Updated German translation and added readme

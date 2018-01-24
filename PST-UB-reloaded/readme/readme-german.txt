@@ -334,19 +334,6 @@ zumindest für eine Weile.
 
 13. Wiederhergestellt: Gegenstände
 
-Zusätzlich zu den Wiederherstellungen vom originalen PST-UB, fügt diese Komponente dem Spiel 
-weitere Gorgonische Salben und Balsamierungsöle hinzu.
-
-Gorgonische Salben haben einen weiteren Nutzen, wenn die Komponente "Wiederhergestellt: Lothars 
-Residenz" installiert wird. Eine Salbe kann im Bordell zum Befriedigen Intellektueller Lüste 
-gefunden werden. Eine weitere wird vom Apotheker Pestle verkauft, nachdem man seine Probleme 
-gelöst hat. Das Inventarsymbol für Gorgonische Salben wurde außerdem für Balsamierungsöle genutzt. 
-Diese Komponente ersetzt es mit einem bisher ungenutztem Symbol.
-
-Aus unerfindlichen Gründen sind Balsamierungsöle Mangelware im Stock. Mit dieser Komponente kann 
-man ein weiteres Öl im Mausoleum finden. Noch mehr Balsamierungsöle kann man von Giscorl auf dem 
-Marktplatz kaufen.
-
 Aus der PST-UB Liesmich:
 Ab Version 2.0 sind die Elemente, die durch diese Komponente wiederhergestellt wurden, der 
 Rattentalisman, die Scheusalzähne, Gestachelte Handschuhe, Klauenhandschuhe, Auge des Vecna, 
@@ -497,7 +484,11 @@ Kreatur ist ein Ghul-Steingolem. Man kann zwei von ihnen in Lothars Behausung fi
 welche seine Schätze bewachen. Der Schatz beinhaltet ein magisches Artefakt von geringer Macht, 
 welches nirgendwo sonst im Spiel erhältlich ist.
 
-Es ist sinnvoll, zusätzlich die Komponente "Wiederhergestellt: Gegenstände" zu installieren.
+Die Komponente fügt dem Spiel außerdem zwei weitere Gorgonische Salben hinzu, die in Lothars Haus 
+einen weiteren Nutzen haben könnten. Eine Salbe kann im Bordell zum Befriedigen Intellektueller 
+Lüste gefunden werden. Eine weitere wird vom Apotheker Pestle verkauft, nachdem man seine Probleme 
+gelöst hat. Das Inventarsymbol für Gorgonische Salben wurde außerdem für Balsamierungsöle genutzt. 
+Diese Komponente ersetzt es mit einem bisher ungenutztem Symbol.
 
 
 18. Erweiterte Wahrheit über Deionarras Schicksal
@@ -591,6 +582,7 @@ available for PST:EE.
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
 French translation updates by mirandir.
+German translation updates by Argent77.
 Additional help by lujo.
 
 
@@ -649,3 +641,5 @@ History
 - Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or 
   "Comments only"
 - Added more items ("Restored Items")
+- Updated French translation and added readme (thanks mirandir)
+- Updated German translation and added readme
