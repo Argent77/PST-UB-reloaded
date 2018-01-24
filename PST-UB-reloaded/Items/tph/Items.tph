@@ -90,7 +90,16 @@ COPY_EXISTING ~AR1900.ARE~ ~override~
 // ======================================================================================
 
 // RESTORED RAT CHARM
-// Realized this was a fix and not a restoration.  Put back in Fixpack PFixPack.d in v4.0.
+// From Qwinn: Realized this was a fix and not a restoration.  Put back in Fixpack PFixPack.d 
+//             in v4.0.
+// From Argent77: This particular fix was not ported to PST:EE, so I'll include it here.
+
+ACTION_IF (IS_PSTEE) BEGIN
+<<<<<<<< .../pst-ub/inlinedfile/DBARKING_ratcharm.d
+ALTER_TRANS DBARKING BEGIN 6 END BEGIN 10 END BEGIN "EPILOGUE" ~GOTO 30~ END
+>>>>>>>>
+COMPILE ~.../pst-ub/inlinedfile/DBARKING_ratcharm.d~
+END
 
 // ======================================================================================
 
