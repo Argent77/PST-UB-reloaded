@@ -41,3 +41,12 @@ IF ~~ DCANTRG2.2
   = @503 /* To your surprise it vanishes almost instantly into thin air, followed moments later by a portal opening right before you. */
   IF ~~ DO ~SetGlobal("Candle2_Portal_Open","AR0207",1) %portalcursor_candle2_on% %portaltravel_candle2_on%~ EXIT
 END
+
+
+// Sheryl's dialog is rather short and feels incomplete. Moreover, you can't ask the usual bunch 
+// of questions after you accepted her request. This component fixes the latter.
+
+// No need to ask about her problems again if she already told you about it.
+ADD_TRANS_TRIGGER DSHERYL 2 ~Global("Sheryl_Quest","GLOBAL",0)~ DO 3
+
+EXTEND_TOP DSHERYL 24 25 26 28 IF ~~ THEN REPLY #64754 GOTO 2 END
