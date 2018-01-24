@@ -401,8 +401,10 @@ COPY_EXISTING ~AR0903.ARE~ ~override~
 // =================================================================================
 
 COPY_EXISTING ~ARKRING.ITM~ ~override~
-  WRITE_LONG 0x8 26009
-  WRITE_LONG 0xc 26009
+  WRITE_LONG NAME1 26009
+  SAY NAME2 @505  // Arkin's ring
+  WRITE_LONG UNIDENTIFIED_DESC 14333
+  WRITE_SHORT 0x42 1  // Lore
  BUT_ONLY
 
 COPY_EXISTING ~SHERYL.CRE~ ~override~
