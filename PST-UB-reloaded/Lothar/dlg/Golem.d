@@ -4,10 +4,17 @@ REPLACE_ACTION_TEXT DTOMB ~DestroyPartyItem("Gsalve",.*)~ ~DestroyPartyItem("Gsa
 
 BEGIN DGHOULSG
 
-IF ~True()~ Golem-1
+IF ~Global("Lothar_Mad","AR0508",0)~ Golem-1a
   SAY @511 /* ~The golem's massive frame resembles an enormous ghoul, complete with sharp claws and a black tongue. It stands motionless and stares straight ahead. There is no indication that it is more than a simple statue.~ */
   + ~PartyHasItem("Gsalve")~ + @512 /* ~Apply the Gorgon Salve to the golem.~ */ 
     DO ~DestroyPartyItem("Gsalve",FALSE) IncrementGlobalOnce("Lothar_Chaotic_Golem_1","GLOBAL","Law","GLOBAL",-1)~ + Golem-2
+  ++ #3018 /* ~Leave the golem alone.~ */ EXIT
+END
+
+IF ~!Global("Lothar_Mad","AR0508",0)~ Golem-1b
+  SAY @514 /* ~~The golem's massive frame resembles an enormous ghoul, complete with sharp claws and a black tongue. Its eyes are fixed on you and follow each of your movements. Apart from that, there is no further indication that it is more than a simple statue.~ */
+  + ~PartyHasItem("Gsalve")~ + @512 /* ~Apply the Gorgon Salve to the golem.~ */ 
+    DO ~DestroyPartyItem("Gsalve",FALSE) IncrementGlobalOnce("Lothar_Chaotic_Golem_1","GLOBAL","Law","GLOBAL",-1) Enemy()~ + Golem-2
   ++ #3018 /* ~Leave the golem alone.~ */ EXIT
 END
 

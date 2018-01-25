@@ -28,6 +28,7 @@ END
 
 COPY_EXISTING ~GHOULSG.CRE~ ~override~
   WRITE_ASCII CRE_OFS_DIALOG ~DGHOULSG~ #8
+  WRITE_LONG CRE_OFS_ATTRIBUTES (THIS | BIT14)  // should behave like a statue
  BUT_ONLY
 
 COPY_EXISTING ~AR0508.ARE~ ~override~
@@ -187,8 +188,9 @@ STRING_SET 3622 @3622
 // Gorgon Salve might have additional uses in this component if one of the other UB components is installed.
 
 COPY_EXISTING ~GSALVE.ITM~ ~override~
-  WRITE_LONG 0x34 100           // Price
-  WRITE_ASCII 0x3a ~II063~ #8   // Icon
+  WRITE_LONG 0x18 (THIS & `BIT0)  // Remove "Unsellable" flag
+  WRITE_LONG 0x34 100             // Price
+  WRITE_ASCII 0x3a ~II063~ #8     // Icon
  BUT_ONLY
 
 COPY_EXISTING ~AR0605.ARE~ ~override~
