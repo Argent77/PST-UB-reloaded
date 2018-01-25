@@ -488,10 +488,11 @@ Quartier. La créature est un Golem de pierre goule. L'un d'entre eux garde la p
 un autre protège les trésors dans les quartiers privés de Lothar. Ces trésors incluent un objet 
 magique mineur qui n'est pas disponible ailleurs dans le jeu.
 
-[Introductory sentence...] Vous pouvez trouver du Baume de Gorgone quelque part dans la Maison de tolérance des Plaisirs 
-Intellectuels. Un autre exemplaire peut être acheté auprès de Pilon après l'avoir aidé. Cet objet 
-avait la même icône d'inventaire que la Lotion d'embaumement, ce composant la remplace par une 
-nouvelle icône.
+Ce composant rajoute également 2 exemplaires supplémentaires du Baume de Gorgone. Le Baume peut 
+maintenant être utilisé dans la demeure de Lothar. Vous pouvez trouver du Baume de Gorgone quelque 
+part dans la Maison de tolérance des Plaisirs Intellectuels, et un autre exemplaire peut être 
+acheté auprès de Pilon après l'avoir aidé. Cet objet avait la même icône d'inventaire que la 
+Lotion d'embaumement, ce composant la remplace par une nouvelle icône.
 
 
 19. Extension des dialogues concernant le sort de Deionarra
