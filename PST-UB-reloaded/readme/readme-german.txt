@@ -623,7 +623,7 @@ History
 
 1.0 (Initial release)
 - Cleaned up and modernized WeiDU code of the mod
-- Made content from PS:T Unfinished Business v4.12 available for PST:EE
+- Made content from PS:T Unfinished Business v4.12 available to PST:EE
 - Added new component "Restored Lothar's Abode": Restores creature "Ghoul Stone Golem" and item 
   "Bone Ward" to Lothar's home in the Lower Ward
 - Added an improved alu-fiend image intended for Vrischika to the bestiary in PST:EE ("Restored 

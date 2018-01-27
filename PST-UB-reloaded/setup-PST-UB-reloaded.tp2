@@ -20,7 +20,7 @@ ALWAYS
   END
 
   // Tra UTF-8 conversion
-  ACTION_DEFINE_ARRAY tra_noconvert BEGIN ~setup dcheats_pstee~ END
+  ACTION_DEFINE_ARRAY tra_noconvert BEGIN ~setup~ ~dcheats_pstee~ END
   ACTION_DEFINE_ARRAY tra_reload BEGIN ~ub~ END
   LAF HANDLE_CHARSETS
   INT_VAR
