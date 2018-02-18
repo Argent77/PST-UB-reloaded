@@ -18,7 +18,8 @@ Ce mod est la reprise du mod de Qwinn PS:T Unfinished Business (PST-UB), version
 complètement remanié, et est compatible aussi bien avec Planescape Torment: Enhanced Edition 
 (PST:EE) qu'avec la version classique de Planescape: Torment (PST).
 
-Ce mod est disponible en anglais, français, allemand, italien, polonais, russe et espagnol.
+Ce mod est disponible en anglais, français, allemand, italien, polonais, portugais, russe et 
+espagnol.
 
 D'après le Lisez-moi du PST-UB :
 Ce mod WeiDU utilise le contenu presque-mais-pas-complètement-terminé disponible dans le RPG de 

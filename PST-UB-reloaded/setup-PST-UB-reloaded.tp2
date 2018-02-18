@@ -21,11 +21,22 @@ ALWAYS
   // Tra UTF-8 conversion
   ACTION_DEFINE_ARRAY tra_noconvert BEGIN ~setup~ ~dcheats_pstee~ END
   ACTION_DEFINE_ARRAY tra_reload BEGIN ~ub~ END
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY charset_table BEGIN
+    ~english~     => ~cp1252~
+    ~german~      => ~cp1252~
+    ~spanish~     => ~cp1252~
+    ~italian~     => ~cp1252~
+    ~polish~      => ~cp1250~
+    ~russian~     => ~cp1251~
+    ~french~      => ~cp1252~
+    ~portuguese~  => ~cp1252~
+  END
   LAF HANDLE_CHARSETS
   INT_VAR
-    infer_charset = 1
+    infer_charset = 0
   STR_VAR
     tra_path = EVAL ~%MOD_FOLDER%/tra~
+    charset_table
     noconvert_array = tra_noconvert
     reload_array    = tra_reload
   END
@@ -80,6 +91,13 @@ LANGUAGE ~French~
          ~%MOD_FOLDER%/tra/english/ub.tra~
          ~%MOD_FOLDER%/tra/french/setup.tra~
          ~%MOD_FOLDER%/tra/french/ub.tra~
+
+LANGUAGE ~Portuguese~
+         ~portuguese~
+         ~%MOD_FOLDER%/tra/english/setup.tra~
+         ~%MOD_FOLDER%/tra/english/ub.tra~
+         ~%MOD_FOLDER%/tra/portuguese/setup.tra~
+         ~%MOD_FOLDER%/tra/portuguese/ub.tra~
 
 
 BEGIN @1  // ~All Recommended PS:T Unfinished Business Components~

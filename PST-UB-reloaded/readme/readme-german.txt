@@ -18,8 +18,8 @@ Diese Mod ist eine Weiterentwicklung von Qwinns originaler Mod "PS:T Unfinished 
 (PST-UB), basierend auf Version 4.12. Sie wurde komplett überholt und ist nun zusätzlich zu 
 Planescape: Torment (PST) auch für Planescape Torment: Enhanced Edition (PST:EE) verfügbar.
 
-Die Mod kann in den folgenden Sprachen installiert werden: englisch, französisch, deutsch, 
-italienisch, polnisch, russisch und spanisch.
+Die Mod kann in den folgenden Sprachen installiert werden: Englisch, Französisch, Deutsch, 
+Italienisch, Polnisch, Portugiesisch, Russisch und Spanisch.
 
 Aus der PST-UB Liesmich:
 Diese WeiDU-Mod greift die beinahe-vollendeten Inhalte des von Black Isle vertriebenen Spiels 
