@@ -1,7 +1,7 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version :        1.0
+Version :        1.1
 Auteur :         Argent77, original PS:T Unfinished Business by Qwinn
 
 Téléchargement : https://github.com/Argent77/PST-UB-reloaded/releases/latest
@@ -584,10 +584,13 @@ Argent77:
 Greatly revised, modernized and optimized the original code base of PST-UB, and made the mod 
 available for PST:EE.
 
-Additional contributors:
-Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
+Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
+Portuguese translation by Felipe.
+
+Additional contributors:
+Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
 Additional help by lujo.
 
 
@@ -625,6 +628,10 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 
 History
 ~~~~~~~
+
+1.1
+- Added Portuguese translation (thanks Felipe)
+- Fixed various typos
 
 1.0 (Initial release)
 - Cleaned up and modernized WeiDU code of the mod
