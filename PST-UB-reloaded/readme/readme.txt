@@ -19,7 +19,8 @@ This mod is a continuation of Qwinn's original PS:T Unfinished Business (PST-UB)
 version 4.12. It has been completely overhauled and made compatible with Planescape Torment: 
 Enhanced Edition (PST:EE) in addition to classic Planescape: Torment (PST).
 
-The mod is available in English, French, German, Italian, Polish, Portuguese, Russian and Spanish.
+The mod is available in English, French, German, Italian, Polish, Brazilian Portuguese, Russian 
+and Spanish.
 
 From PST-UB Readme:
 This WeiDU mod takes the almost-but-not-quite-finished content that shipped with Black Isle's 
@@ -545,7 +546,7 @@ available for PST:EE.
 Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
-Portuguese translation by Felipe.
+Brazilian Portuguese translation by Felipe.
 
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
@@ -588,7 +589,7 @@ History
 ~~~~~~~
 
 1.1
-- Added Portuguese translation (thanks Felipe)
+- Added Brazilian Portuguese translation (thanks Felipe)
 - Fixed various typos
 
 1.0 (Initial release)
