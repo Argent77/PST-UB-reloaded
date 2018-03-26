@@ -332,7 +332,7 @@ Charm. It is now usable only by Xaositects, as was intended. Previous workaround
 usable only by Chaotic characters have been rolled back. The rat charm is available from Barking 
 Wilder if you are a Xaositect, you ask him the right question, and you have the right component 
 item in your inventory. If you install this component without installing the Fixpack, you will not 
-be able to use the Rat Charm.
+be able to use the Rat Charm (PST only).
 
 The Fiend's Teeth (usable by Morte), Spiked Gauntlets and the Gauntlets of Rending are sold by a 
 merchant named Murk who is restored to Curst. His store already contained these items, all I do is 
@@ -547,6 +547,7 @@ Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
 Brazilian Portuguese translation by Felipe.
+Polish translation updates by memory (Stars of Mystra).
 
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
@@ -587,6 +588,9 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 
 History
 ~~~~~~~
+
+1.2
+- Updated Polish translation and added readme (thanks memory)
 
 1.1
 - Added Brazilian Portuguese translation (thanks Felipe)

@@ -587,7 +587,8 @@ available for PST:EE.
 Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
-Portuguese translation by Felipe.
+Brazilian Portuguese translation by Felipe.
+Polish translation updates by memory (Stars of Mystra).
 
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
@@ -629,8 +630,11 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 History
 ~~~~~~~
 
+1.2
+- Updated Polish translation and added readme (thanks memory)
+
 1.1
-- Added Portuguese translation (thanks Felipe)
+- Added Brazilian Portuguese translation (thanks Felipe)
 - Fixed various typos
 
 1.0 (Initial release)

@@ -1,12 +1,22 @@
+@500 = ~To wiod¹ce w kierunku wschodnim ³ukowato sklepione przejœcie jest raczej p³ytkie i koñczy siê doœæ nagle. Mo¿na oczekiwaæ, ¿e to w³aœnie tutaj powinien siê pojawiæ portal umo¿liwiaj¹cy opuszczenie krypty. Niestety nie masz przy sobie ¿adnej pustej torby, która wed³ug s³ów Ulthery, powinna byæ kluczem do jego aktywacji.~
+@501 = ~Wyrzuæ tutaj wszystkie swoje pieni¹dze.~
+@502 = ~Raczej niechêtnie siêgasz po sakiewkê, by j¹ opró¿niæ, ale jedno spojrzenie na zw³oki ojca Sheryl pomaga ci podj¹æ w³aœciw¹ decyzjê. Ju¿ po chwili wszystkie monety l¹duj¹ na ziemi.~
+@503 = ~I ku twojemu zaskoczeniu prawie natychmiast znikaj¹, rozp³ywaj¹c siê w powietrzu, a tu¿ przed tob¹ otwiera siê portal.~
 @504 = ~Krypta~
-@505 = ~Pierscien Arkina~
+@505 = ~Pierœcieñ Arkina~
+
+@510 = ~"Hmf! Ale¿ ty jesteœ Ÿle wychowany."~
+@511 = ~Masywne cia³o golema przypomina z wygl¹du wielkiego ghula, razem z jego ostrymi szponami i czarnym jêzykiem. Golem stoi bez ruchu i wpatruje siê w dal. Nic nie wskazuje na to, ¿e jest czymœ wiêcej ni¿ tylko pos¹giem.~
+@512 = ~U¿yj na golemie Maœci z Gorgony.~
+@513 = ~Rozsmarowujesz cuchn¹c¹ maœæ po ciele golema. Przez moment nic siê nie dzieje, ale ju¿ po kilku chwilach pojawiaj¹ siê pierwsze pêkniêcia i rozdarcia, a cia³o golema zaczyna miêkn¹æ. Nie mog¹c ju¿ d³u¿ej utrzymaæ swojego w³asnego ciê¿aru, golem zapada siê w kupê kruchych koœci i gnij¹cego cia³a.~
+@514 = ~Masywne cia³o golema przypomina z wygl¹du wielkiego ghula, razem z jego ostrymi szponami i czarnym jêzykiem. Jego oczy skupiaj¹ siê na tobie i pod¹¿aj¹ za ka¿dym twoim ruchem.~
 
 @517 = ~Zbadaj niebiesk¹ ksiêgê.~
 @518 = ~Zbadaj miecz.~
 @519 = ~ZÊBY INGRESSY
 Waga: 1
 
-To garœæ ¿ywych zêbów Ingressy. Najwidoczniej nie chcia³y udaæ siê razem z ni¹ w podró¿ do jej rodzinnej Sfery. Za ka¿dym razem, kiedy trzyma siê je w kupie, zaczynaj¹ nieznoœnie grzechotaæ, co jako ¿ywo, przypomna ci odg³os upiornych œwierszczy.~
+To garœæ ¿ywych zêbów Ingressy. Najwidoczniej nie chcia³y udaæ siê razem z ni¹ w podró¿ do jej rodzinnej Sfery. Za ka¿dym razem, kiedy trzyma siê je w kupie, zaczynaj¹ nieznoœnie grzechotaæ, co jako ¿ywo, przypomina ci odg³os upiornych œwierszczy.~
 @523 = ~PIÓRO DO PISANIA
 Waga: 0
 
@@ -14,11 +24,15 @@ To gêsie pióro znalaz³eœ w schowku w swoim pokoju w Gmachu Rozrywki. Wygl¹da ca³
 @524 = ~Zapieczêtowany schowek~
 @1117 = ~"Ha! Wygl¹da na to, ¿e to jakieœ rady..." Morte chrz¹ka zaciekawiony. "Zobaczmy, co to jest... zaczyna siê od..."
 
-"Wiem ¿e czujesz siê, jakbyœ w³adowa³ w siebie kilka bary³ek wody ze Styksu, ale musisz siê wzi¹æ w GARŒÆ. Masz przy sobie DZIENNIK, który powinien trochê rozjaœniæ sprawê. Resztê œpiewki us³yszysz od FARODA, chyba ¿e ju¿ go wpisali do ksiêgi umar³ych."
+"Wiem, ¿e czujesz siê, jakbyœ w³adowa³ w siebie kilka bary³ek wody ze Styksu, ale musisz siê wzi¹æ w GARŒÆ. Masz przy sobie DZIENNIK, który powinien trochê rozjaœniæ sprawê. Resztê œpiewki us³yszysz od FARODA, chyba ¿e ju¿ go wpisali do ksiêgi umar³ych."
 
-"Nie zgub dziennika, bo znowu pop³yniemy w górê Styksu. I cokolwiek robisz, NIE MÓW nikomu KIM jesteœ, ani CO siê z tob¹ dzieje, bo inaczej wyl¹dujesz w krematorium. Rób co ci ka¿ê: PRZECZYTAJ dziennik, a potem ODSZUKAJ Faroda."~
-@33606 = ~"Twa mi³a chcia³a, bym powstrzyma³ was dwóch od walki."~
+"Nie zgub dziennika, bo znowu pop³yniemy w górê Styksu. I cokolwiek robisz, NIE MÓW nikomu, KIM jesteœ, ani CO siê z tob¹ dzieje, bo inaczej wyl¹dujesz w krematorium. Rób, co ci ka¿ê: PRZECZYTAJ dziennik, a potem ODSZUKAJ Faroda."~
+@3622 = ~Kamienne golemy to o¿ywieni za pomoc¹ magii zwaliœci, toporni stra¿nicy. Ich twórcy nie staraj¹ siê nawet im nadaæ bardziej wyszukanego kszta³tu. Ten akurat zosta³ ukszta³towany na podobieñstwo ogromnego ghula o ostrych szponach i wystaj¹cym czarnym jêzyku... To bez w¹tpienia dzie³o Lotara, pana Koœci Nocy.~
+@33606 = ~"Twoja ukochana poprosi³a mnie, bym zapobieg³ tej walce."~
 @50577 = ~Ksiêga ma wiele rozdzia³ów: Oszustwo Teleportowania, Oszustwo Nieograniczonego Odpoczynku, Oszustwo Bogactwa, Oszustwo Wspó³czynników, Oszustwo Œmierci, Oszustwo Doœwiadczenia, Oszustwo Dobra i Z³a oraz Oszustwo Prawa i Chaosu.~
+@64883 = ~Ulthera rozgl¹da siê ostro¿nie na wszystkie strony i wyjmuje ci z r¹k koœæ. Przyciska koœæ do piersi i zaczyna ko³ysaæ j¹, podœpiewuj¹c. Jej g³os stopniowo nape³nia siê niepokojem, ale jednoczeœnie coraz bardziej cichnie, a¿ staje siê niemal niedos³yszalny. Wreszcie, odkaszln¹wszy, czarownica pokazuje koœci¹ w kierunku pó³nocno-zachodnim. "Tak, to bêdzie na pó³noc i na zachód st¹d. Niedaleko wejœcia do miasta. Masz, coœ chcia³ od Ulthery, tedy idŸ!"~
+@64936 = ~Znalaz³em dla Ulthery koœci z nogi i poprosi³em j¹, ¿eby pomog³a znaleŸæ mi miejsce, gdzie znajduje siê portal, z którego korzysta³ Arkin. WiedŸma zaczê³a przyd³ug¹ i nudnaw¹ œpiewkê, ale wreszcie wydusi³a z siebie, ¿e portal znajduje siê na pó³nocny-zachód od jej siedziby, niedaleko wejœcia do Zakopanej Wioski. Mam nadziejê, ¿e jej wskazówki s¹ trafne.~
+@64945 = ~Znalaz³em dla Ulthery koœci z nogi i poprosi³em j¹, ¿eby pomog³a znaleŸæ mi miejsce, gdzie znajduje siê portal, z którego korzysta³ Arkin. WiedŸma zaczê³a przyd³ug¹ i nudnaw¹ œpiewkê, ale wreszcie wydusi³a z siebie, ¿e portal znajduje siê na pó³nocny-zachód od jej siedziby, niedaleko wejœcia do Zakopanej Wioski. Mam nadziejê, ¿e jej wskazówki s¹ trafne.~
 
 // Originally from PST Fixpack
 @49632 = ~Kosa~
