@@ -5,7 +5,7 @@
 
 This mod is a continuation of Qwinn's original *PS:T Unfinished Business* (PST-UB), based on version 4.12. It has been completely overhauled and made compatible with Planescape Torment: Enhanced Edition in addition to classic Planescape: Torment.
 
-The mod is currently available in English, French, German, Italian, Polish, Russian and Spanish.
+The mod is currently available in English, French, German, Italian, Polish, Brazilian Portuguese, Russian and Spanish.
 
 **From the original PST-UB readme:** *This WeiDU mod takes the almost-but-not-quite-finished content that shipped with Black Isle's classic Planescape: Torment CRPG, and finishes and polishes it so you can actually see and enjoy the new content in your game. And as you shall soon see, there's quite a bit of it. Version 4.0 of this mod comes with no less than 18 full and non-trivial restorations.*
 
