@@ -589,6 +589,7 @@ French translation updates by mirandir.
 German translation updates by Argent77.
 Brazilian Portuguese translation by Felipe.
 Polish translation updates by memory (Stars of Mystra).
+Russian translation updates by Eugene Vlasov (aka EugVV).
 
 Additional contributors:
 Qwinn's PS:T Fixpack for the Ratbone/Carver fix.
@@ -632,6 +633,8 @@ History
 
 1.2
 - Updated Polish translation and added readme (thanks memory)
+- Updated Russian translation (thanks Eugene Vlasov)
+- Changed encoding of Russian setup.tra from CP855 to CP866
 
 1.1
 - Added Brazilian Portuguese translation (thanks Felipe)
