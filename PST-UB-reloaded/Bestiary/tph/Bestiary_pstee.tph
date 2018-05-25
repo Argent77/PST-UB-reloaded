@@ -152,6 +152,7 @@ ACTION_IF index > 0 BEGIN
   APPEND ~ANIMATE.IDS~ ~0x%new_anim_code% cl_4_Alufiend_Female~
 
   // Alu-fiend entry, original portrait based on Aasimar portrait, reworked by Leila and Maebe, ported to PSTEE by Argent77.
+  COPY ~%MOD_FOLDER%/Bestiary/copy/pst/JRALUKN.BMP~ ~override~    // installed for compatibility with other mods
   COPY ~%MOD_FOLDER%/Bestiary/copy/pstee/JRALUKN.MOS~ ~override~
     LPF UPDATE_PVRZ_INDICES
     RET
