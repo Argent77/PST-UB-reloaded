@@ -401,12 +401,12 @@ ACTION_IF (IS_PSTEE) BEGIN
         OUTER_SPRINT carver @49632  // "Carver"
       END
     END
-    // ~ru_ru~
-    // BEGIN
-      // WITH_TRA ~%MOD_FOLDER%/tra/russian/ub.tra~ BEGIN
-        // OUTER_SPRINT carver @49632  // "Carver"
-      // END
-    // END
+    ~ru_ru~
+    BEGIN
+      WITH_TRA ~%MOD_FOLDER%/tra/russian/ub.tra~ BEGIN
+        OUTER_SPRINT carver @49632  // "Carver"
+      END
+    END
     // ~es_es~
     // BEGIN
       // WITH_TRA ~%MOD_FOLDER%/tra/spanish/ub.tra~ BEGIN
