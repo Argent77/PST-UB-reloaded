@@ -42,7 +42,9 @@ ALWAYS
   END
 END
 
-README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.txt~
+README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.html~
+       ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.txt~
+       ~%MOD_FOLDER%/readme/readme.html~
        ~%MOD_FOLDER%/readme/readme.txt~
 
 LANGUAGE ~English~

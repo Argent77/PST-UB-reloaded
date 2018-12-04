@@ -5,8 +5,9 @@ Wersja:       1.2
 Autor:        Argent77, oryginalne PS:T Unfinished Business: Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
+              http://www.shsforums.net/files/file/1220-pst-unfinished-business-reloaded/
 Discusion:    https://forums.beamdog.com/discussion/comment/938523
-              http://www.shsforums.net/topic/59645-pst-ub-reloaded-a-continuation-of-qwinns-pst-ub-for-pstee/
+              http://www.shsforums.net/forum/553-pst-ub/
 
 Oryginalny plik "readme" dla PST-UB 4.12 znajduje się w folderze "readme-original" w zasobach moda. 
 

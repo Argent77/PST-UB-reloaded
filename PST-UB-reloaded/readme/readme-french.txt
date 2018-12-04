@@ -5,8 +5,9 @@ Version :        1.2
 Auteur :         Argent77, original PS:T Unfinished Business by Qwinn
 
 Téléchargement : https://github.com/Argent77/PST-UB-reloaded/releases/latest
+                 http://www.shsforums.net/files/file/1220-pst-unfinished-business-reloaded/
 Discussion :     https://forums.beamdog.com/discussion/comment/938523
-                 http://www.shsforums.net/topic/59645-pst-ub-reloaded-a-continuation-of-qwinns-pst-ub-for-pstee/
+                 http://www.shsforums.net/forum/553-pst-ub/
 
 Les fichiers Lisez-moi originaux peuvent être trouvés dans le dossier "readme-original" du mod.
 
