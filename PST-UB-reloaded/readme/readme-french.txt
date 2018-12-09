@@ -1,7 +1,7 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version :        1.2
+Version :        1.3
 Auteur :         Argent77, original PS:T Unfinished Business by Qwinn
 
 Téléchargement : https://github.com/Argent77/PST-UB-reloaded/releases/latest
@@ -631,6 +631,11 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 
 History
 ~~~~~~~
+
+1.3
+- Updated Russian translation (thanks Eugene Vlasov)
+- Improved compatibility of Alu-fiend bestiary image with other mods
+- Replaced readme.txt by readme.html (English only)
 
 1.2
 - Updated Polish translation and added readme (thanks memory)
