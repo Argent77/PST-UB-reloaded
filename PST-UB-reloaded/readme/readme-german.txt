@@ -20,7 +20,7 @@ Diese Mod ist eine Weiterentwicklung von Qwinns originaler Mod "PS:T Unfinished 
 Planescape: Torment (PST) auch für Planescape Torment: Enhanced Edition (PST:EE) verfügbar.
 
 Die Mod kann in den folgenden Sprachen installiert werden: Englisch, Französisch, Deutsch, 
-Italienisch, Polnisch, Brasilianisches Portugiesisch, Russisch und Spanisch.
+Italienisch, Polnisch, Brasilianisches Portugiesisch, Russisch, Chinesisch und Spanisch.
 
 Aus der PST-UB Liesmich:
 Diese WeiDU-Mod greift die beinahe-vollendeten Inhalte des von Black Isle vertriebenen Spiels 
@@ -584,6 +584,7 @@ Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
 Brazilian Portuguese translation by Felipe.
+Simplified Chinese translation by Hindo's Doom and Mephisto Satan Devil.
 Polish translation updates by memory (Stars of Mystra).
 Russian translation updates by Eugene Vlasov (aka EugVV).
 
@@ -626,6 +627,9 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 
 History
 ~~~~~~~
+
+1.4
+Added Simplified Chinese translation (thanks Hindo's Doom and Mephisto Satan Devil)
 
 1.3
 - Updated Russian translation (thanks Eugene Vlasov)

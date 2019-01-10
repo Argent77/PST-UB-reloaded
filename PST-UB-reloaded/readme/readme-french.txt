@@ -20,7 +20,7 @@ complètement remanié, et est compatible aussi bien avec Planescape Torment: En
 (PST:EE) qu'avec la version classique de Planescape: Torment (PST).
 
 Ce mod est disponible en anglais, français, allemand, italien, polonais, portugais brésilien, 
-russe et espagnol.
+russe, chinois et espagnol.
 
 D'après le Lisez-moi du PST-UB :
 Ce mod WeiDU utilise le contenu presque-mais-pas-complètement-terminé disponible dans le RPG de 
@@ -589,6 +589,7 @@ Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
 Brazilian Portuguese translation by Felipe.
+Simplified Chinese translation by Hindo's Doom and Mephisto Satan Devil.
 Polish translation updates by memory (Stars of Mystra).
 Russian translation updates by Eugene Vlasov (aka EugVV).
 
@@ -631,6 +632,9 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 
 History
 ~~~~~~~
+
+1.4
+Added Simplified Chinese translation (thanks Hindo's Doom and Mephisto Satan Devil)
 
 1.3
 - Updated Russian translation (thanks Eugene Vlasov)

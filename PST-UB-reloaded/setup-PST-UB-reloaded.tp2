@@ -30,6 +30,7 @@ ALWAYS
     ~russian~     => ~cp1251~
     ~french~      => ~cp1252~
     ~portuguese~  => ~cp1252~
+    ~schinese~    => ~cp936~
   END
   LAF HANDLE_CHARSETS
   INT_VAR
@@ -100,6 +101,13 @@ LANGUAGE ~Brazilian Portuguese~
          ~%MOD_FOLDER%/tra/english/ub.tra~
          ~%MOD_FOLDER%/tra/portuguese/setup.tra~
          ~%MOD_FOLDER%/tra/portuguese/ub.tra~
+
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+         ~%MOD_FOLDER%/tra/english/setup.tra~
+         ~%MOD_FOLDER%/tra/english/ub.tra~
+         ~%MOD_FOLDER%/tra/schinese/setup.tra~
+         ~%MOD_FOLDER%/tra/schinese/ub.tra~
 
 
 BEGIN @1  // ~All Recommended PS:T Unfinished Business Components~

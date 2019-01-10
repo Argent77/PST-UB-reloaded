@@ -17,7 +17,7 @@ Opis
 
 Ten mod jest kontynuacją napisanego przez Qwinna PS:T Unfinished Business (PST-UB) w wersji 4.12. Został całkowicie odnowiony i jest teraz kompatybilny także z Planescape Torment: Enhanced Edition (PST:EE).
 
-Mod jest dostępny w językach: angielskim, francuskim, niemieckim, włoskim, polskim, rosyjskim i hiszpańskim.
+Mod jest dostępny w językach: angielskim, francuskim, niemieckim, włoskim, polskim, rosyjskim, chińskim i hiszpańskim.
 
 Wyjątek z oryginalnego "readme":
 Ten mod WeiDU zawiera w sobie treści, które firma Black Isle umieściła w zasobach gry Planescape: Torment, chociaż nigdy ich nie ukończyła. Mod dopracowuje tę zawartość oraz dodaje jej blasku tak, abyście mogli cieszyć się nią w grze. I jak się wkrótce przekonacie, jest tego całkiem sporo. Od wersji 4.0 mod dodaje co najmniej 18 niebanalnych, pełnych komponentów.
@@ -305,6 +305,7 @@ Translations:
 French translation updates by mirandir.
 German translation updates by Argent77.
 Brazilian Portuguese translation by Felipe.
+Simplified Chinese translation by Hindo's Doom and Mephisto Satan Devil.
 Polish translation updates by memory (Stars of Mystra).
 Russian translation updates by Eugene Vlasov (aka EugVV).
 
@@ -347,6 +348,9 @@ under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 
 History
 ~~~~~~~
+
+1.4
+Added Simplified Chinese translation (thanks Hindo's Doom and Mephisto Satan Devil)
 
 1.3
 - Updated Russian translation (thanks Eugene Vlasov)
