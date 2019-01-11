@@ -176,7 +176,7 @@ THEN
     ReturnToSavedPlace()
 END
 >>>>>>>>
-COMPILE EVAL ~.../pst-ub/inlinedfile/0500DCUS.BAF~ ~override~
+COMPILE EVAL ~.../pst-ub/inlinedfile/0500DCUS.BAF~
 
 
 // Add the 2 workers near Lenny
@@ -229,7 +229,7 @@ THEN
     ReturnToSavedPlace()
 END
 >>>>>>>>
-COMPILE EVAL ~.../pst-ub/inlinedfile/0500WRKG.BAF~ ~override~
+COMPILE EVAL ~.../pst-ub/inlinedfile/0500WRKG.BAF~
 
 <<<<<<<< .../pst-ub/inlinedfile/0500WRK2.BAF
 IF
@@ -274,7 +274,7 @@ THEN
     Continue()
 END
 >>>>>>>>
-COMPILE ~.../pst-ub/inlinedfile/0500WRK2.BAF~ ~override~
+COMPILE ~.../pst-ub/inlinedfile/0500WRK2.BAF~
 
 COPY_EXISTING ~0500WRKR.BCS~ ~override~
   DECOMPILE_AND_PATCH BEGIN
