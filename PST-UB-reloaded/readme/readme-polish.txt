@@ -1,7 +1,7 @@
 PS:T Unfinished Business - Reloaded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Wersja:       1.3
+Wersja:       1.4
 Autor:        Argent77, oryginalne PS:T Unfinished Business: Qwinn
 
 Download:     https://github.com/Argent77/PST-UB-reloaded/releases/latest
@@ -350,7 +350,8 @@ History
 ~~~~~~~
 
 1.4
-Added Simplified Chinese translation (thanks Hindo's Doom and Mephisto Satan Devil)
+- Added Simplified Chinese translation (thanks Hindo's Doom and Mephisto Satan Devil)
+- Fixed a bug that may cause installation to fail under certain circumstances
 
 1.3
 - Updated Russian translation (thanks Eugene Vlasov)
