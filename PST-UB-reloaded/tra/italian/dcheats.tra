@@ -1,5 +1,5 @@
-@0  = ~Le pagine di questo Tomo vibrano e sono permeate dal potere del...beh...del cheating. Cheating sfacciato per giunta...  ~ 
-@1  = ~Usa il trucco per Teleportarsi.~
+@0  = ~Le pagine di questo Tomo vibrano e sono permeate dal potere del...beh...dei trucchi. Trucchi sfacciati per giunta...  ~ 
+@1  = ~Usa il trucco per Teletrasportarsi.~
 @2  = ~Usa il trucco per Riposare Ovunque.~ 
 @3  = ~Usa il trucco della Ricchezza.~
 @4  = ~Usa il trucco per modificare gli attributi.~ 
@@ -7,26 +7,26 @@
 @6  = ~Usa il trucco dei Punti Esperienza.~
 @7  = ~Usa il trucco per diventare Buono o Malvagio.~ 
 @8  = ~Usa il trucco per diventare Legale o Caotico.~
-@9  = ~Metti Via il Tomo dei Cheats.~ 
-@10 = ~Dove vuoi essere teleportato?
+@9  = ~Metti Via il Tomo dei Trucchi.~ 
+@10 = ~Dove vuoi essere teletrasportato?
 
-NOTA: AVVERTIMENTO! SUPER-PERICOLO TRIPLO CARPIATO: Teleportarsi in un luogo che non si è ancora raggiunto nel gioco può causare crash o bloccare il naturale svolgimento della partita. Usalo a tuo rischio, un rischio bello grosso.~
+NOTA: AVVERTIMENTO! SUPER-PERICOLO TRIPLO CARPIATO: Teletrasportarsi in un luogo che non si e ancora raggiunto nel gioco può causare crash o bloccare il naturale svolgimento della partita. Usalo a tuo rischio, un rischio molto elevato.~
 @11 = ~Non importa. Fammi vedere nuovamente i vari capitoli.~
-@12 = ~Un accecante raggio di luce fuoriesce dal Tomo, ergendosi come una barriera magica impenetrabile attorno a te e al tuo party, permettendovi così di riposare, salvi da ogni pericolo.~ 
+@12 = ~Un accecante raggio di luce fuoriesce dal Tomo, ergendosi come una barriera magica impenetrabile attorno a te e al tuo gruppo, permettendovi cosi di riposare, salvi da ogni pericolo.~ 
 @13 = ~Tirate fuori i cuscini.~
 @14 = ~Recitare l'incantesimo su questa pagina sembra possa far apparire centomila monete di rame al tuo cospetto. Il modo in cui intendi trasportarli è un tuo problema, ma certamente troverai il modo.~ 
 @15 = ~Recita: 'Sgancia i Soldi!'~
 @16 = ~Questo capitolo ti permette di impostare uno qualsiasi dei tuoi attributi al livello desiderato. Quale attributo vorresti modificare?~
-@17 = ~Questo capitolo ti permette di morire, ma non annulla la tua immortalita'.~
+@17 = ~Questo capitolo ti permette di morire, ma non annulla la tua immortalità.~
 @18 = ~Quanti punti esperienza vuoi?~ 
 @19 = ~1,000 punti esperienza solo a me stesso.~
 @20 = ~10,000 punti esperienza solo a me stesso.~ 
 @21 = ~100,000 punti esperienza solo a me stesso.~ 
 @22 = ~1,000,000 punti esperienza solo a me stesso.~
-@23 = ~1,000 punti esperienza al party.~ 
-@24 = ~10,000 punti esperienza al party.~
-@25 = ~100,000 punti esperienza al party.~
-@26 = ~1,000,000 punti esperienza al party.~
+@23 = ~1,000 punti esperienza al gruppo.~ 
+@24 = ~10,000 punti esperienza al gruppo.~
+@25 = ~100,000 punti esperienza al gruppo.~
+@26 = ~1,000,000 punti esperienza al gruppo.~
 @27 = ~Quanto vuoi essere Buono?~
 @28 = ~MOLTO Buono.~
 @29 = ~Buono.~

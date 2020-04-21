@@ -1,47 +1,54 @@
+@1 = ~Tutti i componenti consigliati di PS:T Unfinisched Business~
+@2 = ~Ripristinata la ricerca di Able Pensiero-Ponderato~
+@3 = ~Ripristinati alcuni dialoghi di Morte nel Mortuario~
+@4 = ~Ripristinata la missione del Portacandele~
+@5 = ~Ripristinate le conversazioni di Deionnara sulla Verita~
+@6 = ~Ripristinato la missione del ciondolo di Yemeth~
+@7 = ~Ripristinata l'azienda Elyce~
+@8 = ~Ripristinati alcuni cittadini di Curst~
+@9 = ~Ripristinati alcuni prigionieri di Curst~
+@10 = ~Ripristinato Carl Parfidor~
+@11 = ~Ripristinati i dialoghi dei denti tra Morte e Ingress~
+@12 = ~Ripristinati i teppisti del Vicolo degli Angoli Pericolosi~
+@13 = ~Ripristinati alcuni oggetti~
+@14 = ~Ripristinati commenti e battute del gruppo~
+@15 = ~Ripristinati alcuni elementi delle cheat (non consigliato)~
+@16 = ~   Gia installato con successo!~
+@17 = ~Tutto~
+@18 = ~Solo commenti~
+@19 = ~Ripristinata la dimora di Lothar~
+@20 = ~Ripristinata Mebbeth~
+@21 = ~Estesa la mod di Deionnara sulla Verita~
+@22 = ~Ripristinati incontri nel Distretto Inferiore~
+
+@25 = ~Ripristinate registrazioni del Bestiario~
+
+@50 = ~Richiede Planescape Torment o Planescape Torment: Enhanced Edition!~
+
 @-1000 = ~Il mod %TP2_FILE_NAME ha~
 @-1001 = ~diversi componenti opzionali. \nPer risparmiare tempo, puoi scegliere cosa fare per l'insieme dei componenti\npiuttosto che decidere per ognuno singolarmente.\n~
-@-1002 = ~Cosa desideri fare con tutti i componenti che NON SONO ANCORA stati installati?\n[I]nstallali, [S]Tralasciali, [A]Chiedi per ognuno?~ 
-@-1003 = ~Cosa desideri fare con tutti i componenti che SONO GIA' stati installati?\n[R]e-installali, [U]Disinstallali, [S]Tralasciali, [A]Chiedi per ognuno?~
-@-1004 = ~PER FAVORE spedisci via e-mail il file~ 
+@-1002 = ~Cosa desideri fare con tutti i componenti che NON SONO ANCORA stati installati?\n[I]nstallali, [S]Tralasciali, [A]Chiedi per ognuno? ~
+@-1003 = ~Cosa desideri fare con tutti i componenti che SONO GIA' stati installati?\n[R]e-installali, [U]Disinstallali, [S]Tralasciali, [A]Chiedi per ognuno? ~
+@-1004 = ~PER FAVORE spedisci via e-mail il file~
 @-1005 = ~a~
-@-1006 = ~Installa~
+@-1006 = ~Installa ~
 @-1007 = ~?
-[R]e-Installa, [N]essun Cambiamento o [U]Disinstalla o [Q]Esci?~ 
+[R]e-Installa, [N]essun Cambiamento o [U]Disinstalla o [Q]Esci? ~
 @-1008 = ~?
-[I]nstalla, o [N]on installare o [Q]Esci?~
-@-1009 = ~Inserisci una parte del nome del modulo:~ 
+[I]nstalla, o [N]on installare o [Q]Esci? ~
+@-1009 = ~Inserisci una parte del nome del modulo: ~
 @-1010 = ~Re-installazione in corso [~
 @-1011 = ~] componente ~
-@-1012 = ~Re-Installazione in corso Usando Lingua~ 
+@-1012 = ~Re-Installazione in corso Usando Lingua~
 @-1013 = ~RImozione della vecchia installazione di [~
-@-1014 = ~] primo...~ 
+@-1014 = ~] primo...~
 @-1015 = ~RIMOZIONE AVVENUTA CON SUCCESSO~
 @-1016 = ~Installazione in corso~
 @-1017 = ~ERRORE di Installazione [~
-@-1018 = ~], ripristino stato precedente~ 
+@-1018 = ~], ripristino stato precedente~
 @-1019 = ~INSTALLAZIONE AVVENUTA CON SUCCESSO~
-@-1020 = ~Tralasciato ~ 
-@-1021 = ~Rimozione in corso [~ 
+@-1020 = ~Tralasciato ~
+@-1021 = ~Rimozione in corso [~
 @-1022 = ~] (componente #~
-@-1023 = ~)~ 
+@-1023 = ~)~
 @-1024 = ~RIMOZIONE AVVENUTA CON SUCCESSO [~
-@1 = ~Tutti i componenti raccomandati di PS:T Unfinished Business~
-@2 = ~Ripristinata la Ricerca di Able Ponder~
-@3 = ~Ripristinati Interventi Aggiuntivi di Morte nel Mortuario~
-@4 = ~Ripristinata la Quest del Candelabro~
-@5 = ~Ripristinate le Conversazioni della Verita' di Deionarra~
-@6 = ~Ripristinata la quest del Pendente di Yemeth~
-@7 = ~Ripristinata la Compagnia di Elyce~
-@8 = ~Ripristinati i Cittadini di Curst~
-@9 = ~Ripristinati i Prigionieri di Curst~
-@10 = ~Ripristinato Carl Parfidor~
-@11 = ~Ripristinato il battibecco tra i Denti di Ingress e Morte~
-@12 = ~Ripristinati i Thugs nella Alley of Dangerous Angles~
-@13 = ~Ripristinati Alcuni oggetti~
-@14 = ~Ripristinate Alcuni commenti e conversazioni del Party ~
-@15 = ~Ripristinati gli oggetti per i Cheats [Sconsigliato]~
-@16 = ~   Gia installato correttamente!~
-
-@20 = ~Ripristinata Mebbeth~
-@21 = ~Mod esteso della Verita' di Deionarra~
-@22 = ~Ripristinati gli Incontri del Lower Ward~
