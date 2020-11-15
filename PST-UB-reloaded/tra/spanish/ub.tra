@@ -1,4 +1,15 @@
+@500 = ~Este arco se extiende unos pocos pasos hacia el este antes de llegar a un abrupto final. Esperarías que por aquí estuviera el portal que lleva afuera de la tumba. Desafortunadamente no posees una bolsa vacía, la cual es, según Ulthera, la llave para activarlo.~
+@501 = ~Dejar todo tu dinero.~
+@502 = ~Por mas reacio que uno pueda ser a separarse de su dinero, un solo vistazo al cuerpo del padre de Sheryl te hace desprenderte de tu dinero sin vacilar. En un instante todo está en el suelo.~
+@503 = ~Para tu sorpresa, se desvanece casi instantaneamente en el aire, seguido un tiempo después por la abertura de un portal frente tuyo.~
 @504 = ~Cripta~
+@505 = ~Anillo de Arkin~
+
+@510 = ~"Hmph! Qué mal educado eres."~
+@511 = ~El masivo golem se parece a un enorme necrófago, con sus afiladas garras y lengua negra. Permanece inmóvil y mira fijamente al frente. No hay indicación alguna de que sea algo más que una estatua.~
+@512 = ~Aplicar la Pomada de Gorgona al golem.~
+@513 = ~Embarras al golem con la maloliente pomada. Al principio no ocurre nada, pero luego de un rato aparecen roturas y desgarros por todo su cuerpo mientras se ablanda lentamente. Siendo incapaz de levantar su propio peso, el golem se reduce a sólo un montón de huesos rotos y carne podrida.~
+@514 = ~El masivo golem se parece a un enorme necrófago, con sus afiladas garras y lengua negra. Sus ojos te apuntan y siguen cada uno de tus movimientos.~
 
 @517 = ~Examina el libro azul.~
 @518 = ~Examina la espada.~
@@ -16,8 +27,12 @@ Encontraste esta pluma de escribir en un armario de tu habitación en el Salón de
 "Ya sé que te sientes como si te hubieras estado bebiendo unos cuantos barriles de agua del Estigia, pero necesitas CENTRARTE. Entre tus posesiones hay un DIARIO que arrojará algo de luz sobre el oscuro de este asunto. PHAROD puede ponerte al corriente del resto de la cruda realidad, si es que no se encuentra ya en el libro de los muertos."
 
 "No pierdas el diario, o estaremos otra vez en el Estigia, ¿vale? Y hagas lo que hagas, NO le digas a nadie QUIÉN eres, QUÉ te ha pasado, o de DÓNDE vienes, o te verás inmerso en un rápido viaje al crematorio. Haz lo que te digo: LEE el diario, después ENCUENTRA a Pharod."~
+@3622 = ~Los golems de piedra son guardianes animados mágicamente. Usualmente sus creadores no se molestan en darles otra forma que no sea la de una estatua voluminosa e intimidante. Éste ha sido esculpido para parecerse a un enorme necrófago, con sus afiladas garras y una temblorosa lengua negra... No hay duda que es obra de Lothar, maestro de los Huesos de la Noche.~
 @33606 = ~"Tu amante me pidió que detuviera esta pelea."~
 @50577 = ~Hay un número de capítulos dentro del tomo: Truco de Teletransporte, Truco de Descansar en Cualquier Lugar, Truco de Riqueza, Truco de Puntuación de Atributo, Truco de Muerte, Truco de Experiencia, Truco de Palabra Buena y Maligna, y Truco de Palabra Legal y Caótica.~
+@64883 = ~Ulthera pega un vistazo cautelosamente y te quita el hueso. Lo agarra cerca de su pecho y empieza a entonar unos cánticos mientras lo mueve de aquí para allá. Su voz se vuelve más y más ansiosa pero la baja hasta un punto que apenas puedes escucharla. Finalmente suspira y apunta con el hueso hacia el sureste. "Bien, por las catacumbas, ve al sur hasta que llegues a un callejón sin salida ... Ulthera lo encontró por ti, ahora ve!"~
+@64936 = ~Encontré el hueso de la pierna para Ulthera y le pedí que encontrara la ubicación del portal que Arkin utilizó. Ella lo llevaba mientras entonaba unos cánticos por unos pocos minutos, entonces dijo que el portal se podría encontrar abajo, en las Catacumbas de Piedra, cerca de un callejón sin salida hacia el sur. Espero que tenga razón.~
+@64945 = ~Encontré el hueso de la pierna para Ulthera y le pedí que encontrara la ubicación del portal que Arkin utilizó. Ella lo llevaba mientras entonaba unos cánticos por unos pocos minutos, entonces dijo que el portal se podría encontrar abajo, en las Catacumbas de Piedra, cerca de un callejón sin salida hacia el sur. Espero que tenga razón.~
 
 // Originally from PST Fixpack
 @49632 = ~Tallista~
