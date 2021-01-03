@@ -50,64 +50,64 @@ README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.html~
 
 LANGUAGE ~English~
          ~english~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
 
 LANGUAGE ~German~
          ~german~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/german/setup.tra~
-         ~%MOD_FOLDER%/tra/german/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/german/setup.tra~
+         ~PST-UB-reloaded/tra/german/ub.tra~
 
 LANGUAGE ~Spanish~
          ~spanish~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/spanish/setup.tra~
-         ~%MOD_FOLDER%/tra/spanish/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/spanish/setup.tra~
+         ~PST-UB-reloaded/tra/spanish/ub.tra~
 
 LANGUAGE ~Italian~
          ~italian~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/italian/setup.tra~
-         ~%MOD_FOLDER%/tra/italian/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/italian/setup.tra~
+         ~PST-UB-reloaded/tra/italian/ub.tra~
 
 LANGUAGE ~Polish~
          ~polish~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/polish/setup.tra~
-         ~%MOD_FOLDER%/tra/polish/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/polish/setup.tra~
+         ~PST-UB-reloaded/tra/polish/ub.tra~
 
 LANGUAGE ~Russian~
          ~russian~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/russian/setup.tra~
-         ~%MOD_FOLDER%/tra/russian/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/russian/setup.tra~
+         ~PST-UB-reloaded/tra/russian/ub.tra~
 
 LANGUAGE ~French~
          ~french~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/french/setup.tra~
-         ~%MOD_FOLDER%/tra/french/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/french/setup.tra~
+         ~PST-UB-reloaded/tra/french/ub.tra~
 
 LANGUAGE ~Brazilian Portuguese~
          ~portuguese~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/portuguese/setup.tra~
-         ~%MOD_FOLDER%/tra/portuguese/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/portuguese/setup.tra~
+         ~PST-UB-reloaded/tra/portuguese/ub.tra~
 
 LANGUAGE ~Simplified Chinese~
          ~schinese~
-         ~%MOD_FOLDER%/tra/english/setup.tra~
-         ~%MOD_FOLDER%/tra/english/ub.tra~
-         ~%MOD_FOLDER%/tra/schinese/setup.tra~
-         ~%MOD_FOLDER%/tra/schinese/ub.tra~
+         ~PST-UB-reloaded/tra/english/setup.tra~
+         ~PST-UB-reloaded/tra/english/ub.tra~
+         ~PST-UB-reloaded/tra/schinese/setup.tra~
+         ~PST-UB-reloaded/tra/schinese/ub.tra~
 
 
 BEGIN @1  // ~All Recommended PS:T Unfinished Business Components~
@@ -115,7 +115,7 @@ DESIGNATED 0
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
 ACTION_FOR_EACH number IN 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 BEGIN
-  UNINSTALL ~setup-PST-UB-reloaded.tp2~ number
+  UNINSTALL ~PST-UB-reloaded.tp2~ number
 END
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ABLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Able/tph/Able.tph~
@@ -156,7 +156,7 @@ INCLUDE ~%MOD_FOLDER%/Lothar/tph/Lothar.tph~
 BEGIN @2 // ~Restored Able Ponder-Thought Research~
 DESIGNATED 1
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ABLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Able/tph/Able.tph~
 
@@ -165,7 +165,7 @@ BEGIN @17 // ~Everything~
 SUBCOMPONENT @3 // ~Restored More Morte Mortuary Moments~
 DESIGNATED 2
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MMMM.xxx~
 INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteIntro.tph~
 INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteComment.tph~
@@ -174,7 +174,7 @@ BEGIN @18 // ~Comments only~
 SUBCOMPONENT @3 // ~Restored More Morte Mortuary Moments~
 DESIGNATED 17
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MMMM.xxx~
 INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteComment.tph~
 
@@ -182,7 +182,7 @@ INCLUDE ~%MOD_FOLDER%/MorteIntro/tph/MorteComment.tph~
 BEGIN @4 // ~Restored Candlestick Quest~
 DESIGNATED 3
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CANDLE.xxx~
 INCLUDE ~%MOD_FOLDER%/Candlestick/tph/Candlestick.tph~
 
@@ -190,7 +190,7 @@ INCLUDE ~%MOD_FOLDER%/Candlestick/tph/Candlestick.tph~
 BEGIN @5 // ~Restored Deionarra's Truth Conversations~
 DESIGNATED 4
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!DTRUTH.xxx~
 INCLUDE ~%MOD_FOLDER%/Deionarra/tph/Deionarra.tph~
 
@@ -198,7 +198,7 @@ INCLUDE ~%MOD_FOLDER%/Deionarra/tph/Deionarra.tph~
 BEGIN @6 // ~Restored Pendant of Yemeth Quest~
 DESIGNATED 5
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!YEMETH.xxx~
 INCLUDE ~%MOD_FOLDER%/Yemeth/tph/Yemeth.tph~
 
@@ -206,7 +206,7 @@ INCLUDE ~%MOD_FOLDER%/Yemeth/tph/Yemeth.tph~
 BEGIN @7 // ~Restored Elyce's Company~
 DESIGNATED 6
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ELYCE.xxx~
 INCLUDE ~%MOD_FOLDER%/Elyce/tph/Elyce.tph~
 
@@ -214,7 +214,7 @@ INCLUDE ~%MOD_FOLDER%/Elyce/tph/Elyce.tph~
 BEGIN @8 // ~Restored Curst Citizens~
 DESIGNATED 7
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CRSTMN.xxx~
 INCLUDE ~%MOD_FOLDER%/CurstCitizens/tph/CurstCitizens.tph~
 
@@ -222,7 +222,7 @@ INCLUDE ~%MOD_FOLDER%/CurstCitizens/tph/CurstCitizens.tph~
 BEGIN @9 // ~Restored Curst Prisoners~
 DESIGNATED 8
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CRSTPR.xxx~
 INCLUDE ~%MOD_FOLDER%/CurstPrisoners/tph/CurstPrisoners.tph~
 
@@ -230,7 +230,7 @@ INCLUDE ~%MOD_FOLDER%/CurstPrisoners/tph/CurstPrisoners.tph~
 BEGIN @10 // ~Restored Carl Parfidor~
 DESIGNATED 9
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CARLP.xxx~
 INCLUDE ~%MOD_FOLDER%/Parfidor/tph/Parfidor.tph~
 
@@ -238,7 +238,7 @@ INCLUDE ~%MOD_FOLDER%/Parfidor/tph/Parfidor.tph~
 BEGIN @11 // ~Restored Morte-Ingress's Teeth Banter~
 DESIGNATED 10
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MTEETH.xxx~
 INCLUDE ~%MOD_FOLDER%/MorteTeeth/tph/MorteTeeth.tph~
 
@@ -246,7 +246,7 @@ INCLUDE ~%MOD_FOLDER%/MorteTeeth/tph/MorteTeeth.tph~
 BEGIN @12 // ~Restored Alley of Dangerous Angles Thugs~
 DESIGNATED 11
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!THUGS.xxx~
 INCLUDE ~%MOD_FOLDER%/AlleyThug/tph/AlleyThug.tph~
 
@@ -254,7 +254,7 @@ INCLUDE ~%MOD_FOLDER%/AlleyThug/tph/AlleyThug.tph~
 BEGIN @13 // ~Restored Items~
 DESIGNATED 12
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!ITEMS.xxx~
 INCLUDE ~%MOD_FOLDER%/Items/tph/Items.tph~
 
@@ -262,7 +262,7 @@ INCLUDE ~%MOD_FOLDER%/Items/tph/Items.tph~
 BEGIN @14 // ~Restored Party Comments and Banters~
 DESIGNATED 13
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!SOUNDS.xxx~
 INCLUDE ~%MOD_FOLDER%/Sounds/tph/Sounds.tph~
 
@@ -270,7 +270,7 @@ INCLUDE ~%MOD_FOLDER%/Sounds/tph/Sounds.tph~
 BEGIN @20 // ~Restored Mebbeth~
 DESIGNATED 14
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MEBBTH.xxx~
 INCLUDE ~%MOD_FOLDER%/Mebbeth/tph/Mebbeth.tph~
 
@@ -278,7 +278,7 @@ INCLUDE ~%MOD_FOLDER%/Mebbeth/tph/Mebbeth.tph~
 BEGIN @22 // ~Restored Lower Ward~
 DESIGNATED 15
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!LOWERW.xxx~
 INCLUDE ~%MOD_FOLDER%/LowerWard/tph/LowerWard.tph~
 
@@ -286,7 +286,7 @@ INCLUDE ~%MOD_FOLDER%/LowerWard/tph/LowerWard.tph~
 BEGIN @25 // ~Restored Bestiary Entries~
 DESIGNATED 16
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!BESTIA.xxx~
 INCLUDE ~%MOD_FOLDER%/Bestiary/tph/Bestiary.tph~
 
@@ -294,7 +294,7 @@ INCLUDE ~%MOD_FOLDER%/Bestiary/tph/Bestiary.tph~
 BEGIN @19 // ~Restored Lothar's Abode~
 DESIGNATED 18
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
-FORBID_COMPONENT ~setup-PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
+FORBID_COMPONENT ~PST-UB-reloaded.tp2~ 0 @16 // ~   Already Successfully Installed!~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!LOTHAR.xxx~
 INCLUDE ~%MOD_FOLDER%/Lothar/tph/Lothar.tph~
 
