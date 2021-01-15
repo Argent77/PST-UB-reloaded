@@ -5,7 +5,7 @@
 @5 = ~"Muito bem, eu não incomodarei mais você a respeito dela. Adeus."~
 @6 = ~A Kesai para abruptamente, então ri. "Você deve estar brincando. Ravel morta? Como? O que poderia possivelmente matá-la?"~
 @7 = ~"Eu fui forçado a matá-la em auto-defesa. Eu não tive prazer nisso."~
-@8 = ~"Eu matei ela. Ela era um grande mal como você mesma me disse e ele precisava ter um fim."~
+@8 = ~"Eu matei ela. Ela era um grande mal como você mesma me disse e precisava ter um fim."~
 @9 = ~"Ela morreu pela minha mão. A bruxa mereceu como você bem sabe."~
 @10 = ~"Eu... entendo." Várias expressões conflitantes cruzam o rosto exótico dela, difíceis de interpretar. "E por que você sente necessidade de me dizer isto?"~
 @11 = ~"Porque há mais. ela falou de você perto do fim."~
@@ -17,103 +17,103 @@
 @17 = ~A Kesai está escutando atentamente, fascinada pela sua história. "Continue..."~
 @18 = ~"Antes que a Mebbeth morresse ela falou com arrependimento que ela não poderia mostrar bondade a você pois como ela colocou: 'Há um ditado no planos que a bondade de uma bruxa é mais cruel do que o ódio dela e envenena tudo o que toca.'"~
 @19 = ~"Você está dizendo que esta Mebbeth, que ela não era má como minha mãe? Você acabou de dizer que ela era uma parte dela."~
-@20 = ~"Um aspecto, sim. Até mesmo Ravel tinha um lado bondoso eu acho, e eu acredito que a Mebbeth era a expressão mais pura dessa parte dela. Ela me mostrou bondade e me pediu por pouco em retorno. Eu sou grato a ela."~
+@20 = ~"Um aspecto, sim. Até mesmo Ravel tinha um lado bondoso, eu acho, e eu acredito que a Mebbeth era a expressão mais pura dessa parte dela. Ela me mostrou bondade e me pediu por pouco em retorno. Eu sou grato a ela."~
 @21 = ~A Kesai olha pra você, até mesmo mais conflitada agora. "E você acha que esta parte dela desejava ser uma mãe pra mim, pra me mostrar bondade mas que temia que a natureza dela me trouxesse dano?"~
 @22 = ~"Isso é o que eu juntei das últimas palavras dela, sim."~
 @23 = ~Ela treme involuntariamente, então suspira. "Eu não tenho certeza se eu deveria ser grata que você me disse isto. Mas agora que eu sei eu tenho que saber a verdade completa. Me dê um momento pra perguntar a meu pai sobre isto."~
 @24 = ~"Tome seu tempo. Eu esperarei aqui se você não se importar. Eu também quero saber o que ele diz."~
 @25 = ~A Kesai olha pra você silenciosamente por um tempo, então acena com a cabeça. "Me dê um momento." Ela fica de costas pra você e começa a murmurar levemente como ela uma vez fez antes... o ar parece alumiar ao redor dela levemente e se enche com um cheiro de cobre, como sangue quente...~
-@26 = ~Voce se inclina em direção a Kesai, tentando ouvir o que ela está murmurando.
+@26 = ~"Voce se inclina em direção a Kesai, tentando ouvir o que ela está murmurando.
 
 "Haughazanenel, Príncipe Banido de Ithag, Marquês da Sombra Sangrenta, meu pai, me ouça pois eu devo chamar você de novo mais uma vez..."~
 @27 = ~A voz dela está baixa e apressada conforme ela continua e a única coisa que você consegue ouvir na voz dela é uma tristeza profunda.~
 @28 = ~A Kesai retorna a você, os olhos exóticos dela rodeados de lágrimas. "Meu pai confirma seu conto. Minha mãe não está de fato mais entre os vivos."~
 @29 = ~"Como eu disse. Eu lamento, Kesai. Eu deixarei você com seus pensamentos. Adeus."~
 @30 = ~"Como eu disse. Adeus, Kesai-Serris."~
-@31 = ~"Obrigado por tomar o tempo pra me deixar saber. Teria sido pior sempre imaginando se ela algum dia viria por mim. Adeus."~
+@31 = ~"Obrigado por tomar o tempo pra me deixar saber. Teria sido pior sempre me perguntando se ela algum dia viria por mim. Adeus."~
 @32 = ~"Espere um momento por favor. Há mais. Meu pai disse que você mostrou bondade a minha mãe no fim, uma que ele gostaria de retribuir."~
 @33 = ~"Uma bondade? Você quer dizer a semente farpada do jardim que eu dei a ela?"~
 @34 = ~"Precisamente. Meu pai pediu pra dizer a você que algo que você procura jaz nos seus sonhos."~
 @35 = ~"Mas eu não sonho. Eu não o fiz por tanto quanto eu consiga me lembrar."~
 @36 = ~"Um homem na Fundição clama ser capaz de construir uma máquina que me permitiria sonhar mas eu não levei isso adiante."~
-@37 = ~"Eu achei um meio de sonhar de novo mas eu não achei nada que eu procurasse neles."~
+@37 = ~"Eu achei um meio de sonhar de novo mas eu não achei nada que eu procurasse nele."~
 @38 = ~"O pai diz que há um jeito. Você precisará achá-lo. Quando você tiver um sonho retorne a mim."~
 @39 = ~"De verdade? Que estranho. Se você acredita nele então eu sugeriria completar a máquina dele e usá-la. Volte a mim quando você o tiver feito."~
 @40 = ~"Tudo bem. Se eu for bem-sucedido em experimentar um sonho eu retornarei. Adeus."~
 @41 = ~"Talvez você devesse tentar de novo. Talvez..."~
-@42 = ~Ela suspira, ponderando você, então parece chegar a uma decisão relutante. "Talvez eu possa ser de ajuda neste assunto. Você sabe que eu sempre fui fascinada com sonhos. Aprender sobre minha linhagem me fez perceber por que. O sangue dos Gray Wastes em mim significa que eu tenho poder sobre os sonhos embora eu nunca o usei porque eu nunca soube que eu os possuía. Mas talvez eu poderia usá-lo a seu favor nesta instância. Bruxas são conhecidas por andar nos sonhos dos homens e transformá-los em pesadelos e andar neles até a morte deles."~
+@42 = ~Ela suspira, ponderando você, então parece chegar a uma decisão relutante. "Talvez eu possa ser de ajuda neste assunto. Você sabe que eu sempre fui fascinada com sonhos. Aprender sobre minha linhagem me fez perceber por quê. O sangue dos Gray Wastes em mim significa que eu tenho poder sobre os sonhos embora eu nunca o usei porque eu nunca soube que eu os possuía. Mas talvez eu poderia usá-lo em seu interesse nesta instância. As bruxas são conhecidas por andar nos sonhos dos homens e transformá-los em pesadelos e andar neles até a morte deles."~
 @43 = ~"Eu duvido que eu poderia fazer algo assim, nem eu iria querer mas é possível que eu poderia acompanhar você nos seus sonhos e poderia talvez ajudar você a achar o que quer que seja que meu pai falou a respeito. Você gostaria? Eu percebo que seria uma grande invasão de privacidade mas talvez eu pudesse ajudar, o que faria valer a pena pra você."~
-@44 = ~"Minha dama, eu receberia você bem em meus sonhos, pois eu suspeito que de qualquer jeito você terá um lugar lá."~
-@45 = ~"Eu apreciaria qualquer ajuda que você puder dar Kesai. Obrigado ."~
-@46 = ~"Isto me deixa desconfortável. Eu lamento mas eu acho que eu terei que declinar embora eu agradeça a você pela oferta."~
-@47 = ~"Meu sonhos são meus meia-bruxa. Fique fora deles."~
+@44 = ~"Minha dama, eu receberia você bem em meus sonhos pois eu suspeito que de qualquer jeito você terá um lugar lá."~
+@45 = ~"Eu apreciaria qualquer ajuda que você puder dar, Kesai. Obrigado ."~
+@46 = ~"Isto me deixa desconfortável. Eu lamento mas eu acho que eu terei que recusar embora eu agradeço a você pela oferta."~
+@47 = ~"Meu sonhos são meus, meia-bruxa. Fique fora deles."~
 @48 = ~A Kesai dá a você um sorriso brilhante com caninos. "Minha nossa, você *é* um galanteador. Talvez nós teremos mais pra discutir entre estas frases quando nós tivermos terminado."~
-@49 = ~No canto do seu olho você nota Annah está com os pelos em pé, a cauda dela chicoteando pra frente e pra trás mas ela não diz nada.~
-@50 = ~No canto do seu olho você nota que a Grace arqueia uma sombrancelha delicada sobre isto mas ela permanece silenciosa.~
+@49 = ~No canto do seu olho você nota que Annah está com os pêlos em pé, a cauda dela chicoteando pra frente e pra trás mas ela não diz nada.~
+@50 = ~No canto do seu olho você nota que a Grace arqueia uma sombrancelha delicada por causa disto mas ela permanece silenciosa.~
 @51 = ~"Tudo bem. Me dê algum tempo pra me preparar. Volte em um dia e nós iremos pra essa máquina dos sonhos que você falou."~
 @52 = ~"Eu achei um meio de sonhar, Kesai. Na Fundição existe uma máquina, uma que um eu formal meu encomendou há muito tempo atrás. Ela me permitiu sonhar."~
-@53 = ~"Você está pronta Kesai? Eu acho que é a hora de nós explorarmos meus sonhos."~
+@53 = ~"Você está pronta, Kesai? Eu acho que é a hora de nós explorarmos meus sonhos."~
 @54 = ~"Ainda não. Eu preciso de um pouco mais de tempo. Lembre-se, eu nunca tentei isto antes e só recentemente descobri que eu seria capaz disso. Não deve demorar muito pra eu tentar o que eu tenho em mente como prática. Volte mais tarde."~
-@55 = ~A Kesai parece um pouco desgrenhada mas estranhamente mais... cofiante... do que a última vez que você viu ela. "Olá de novo. E antes que você pergunte, sim, eu tenho certeza que eu posso ajudar você agora. A Nenny se voluntariou pra me permitir visitar os sonhos dela na última noite. Eu imaginei que se o sonho de alguém seria relativamente seguro visitar seria o dela." Ela pausa, então sussurra. "Eu *não* tinha idéia. Eu não acho que *ela* tenha qualquer idéia."~
+@55 = ~A Kesai parece um pouco despenteada mas estranhamente mais... confiante... do que na última vez que você viu ela. "Olá de novo. E antes que você pergunte, sim, eu tenho certeza que eu posso ajudar você agora. A Nenny se voluntariou pra me permitir visitar os sonhos dela na última noite. Eu imaginei que se o sonho de alguém seria relativamente seguro de se visitar seria o dela." Ela pausa, então sussurra. "Eu *não* tinha idéia. Eu não acho que *ela* tenha qualquer idéia."~
 @56 = ~O Morte sacode pra cima e pra baixo. "Oh, você *não* pode deixar assim. Vamos lá. Eu *tenho* que saber."~
 @57 = ~A Kesai balança a cabeça dela. "Não, eu prometi respeitar a privacidade dela. Eu não compartilharei o que estava lá. Eu temo que eu não deveria nem mesmo ter dito tanto assim. Eu apenas estou... ainda... me recuperando." Ela fecha os olhos dela por um momento e engole a saliva com a lembrança.~
 @58 = ~"Isso é muito ruim, eu estou tão intrigado quanto o Morte. Mas muito bem, eu não me intrometerei."~
 @59 = ~"Mesmo? Como eram os sonhos dela?"~
-@60 = ~"Eu entendo. Por favor lembre-se de acrescentar meus agradecimentos a ela pela ajuda dela nisto."~
+@60 = ~"Eu entendo. Por favor lembre-se de acrescentar meus agradecimentos aos seus pela ajuda dela nisto."~
 @61 = ~"Eu não estou surpreso. Os mais doces estão sempre escondendo os pensamentos mais sombrios. O que você viu?"~
 @62 = ~O Morte começar a bater a testa dele contra a parede próxima. "Os... " *bang* "planos..." *bang* "são..." *bang* "tão..." *bang* "CRUÉIS!*"~
-@63 = ~"Obrigado por entender. E você tem minha palavra que eu manterei o que quer que nós acharmos lá com a mesma confiança. Nós iremos?"~
+@63 = ~"Obrigado por entender. E você tem minha palavra que eu manterei o que quer que nós acharmos nos seus sonhos com a mesma confidência. Nós iremos?"~
 @64 = ~"Pronto quando você estiver minha dama."~
 @65 = ~"Vamos. E Kesai? Obrigado de novo por isto."~
 @66 = ~"Eu mudei de idéia. Eu não acho que eu quero fazer isto."~
 @67 = ~"Muito bem. Mas eu ainda me sinto em débito com você. Se você mudar de idéia eu ainda farei o que eu puder pra ajudar."~
-@68 = ~"Eu não devo entrar com você mas eu devo ser capaz de alcançar seus sonhos daqui. Você pode ou não pode me perceber nos seus sonhos - A Nenny não percebeu." Ela treme de novo e o Morte murmura em frustação. "Vão em frente. Eu ficarei ali observando e manterei um olho aberto pra qualquer coisa que possa ser de ajuda pra você."~
-@69 = ~"Eu não devo entrar com você mas eu devo ser capaz de alcançar seus sonhos daqui. Você pode ou não pode me perceber nos seus sonhos - A Nenny não percebeu." Ela treme de novo e o Morte murmura em frustação. "Vão em frente. Eu ficarei ali observando e manterei um olho aberto pra qualquer coisa que possa ser de ajuda pra você."~
-@70 = ~"Oh, e há algo mais. Eu não tenho o poder pra deixar você trazer qualquer coisa que você achar nos seus sonhos com você mas eu *devo* ser capaz de deixar você trazer coisas pra *dentro* deles. Se for necessário qualquer coisa que você estiver carregando com você quando você entrar na máquina deve estar disponível pra você nos seus sonhos. Contudo cuidado, qualquer coisa que você consumir ou largar nos seus sonhos provavelmente desaparecerá pra sempre. Boa sorte!"~
-@71 = ~Mais uma vez de novo você se acha sob um laço de um enforcador. A voz ameaçadora gargalha, "*Outro* sonho? Outro! Outro! Hahahahaha!"~
-@72 = ~Como antes seu corpo parece estranhamente leve e aéreo, como se você perdesse o controle dele. Apesar disso o sonho logo se fragmenta e cada imagem desliza da sua mente tão rápido quanto a próxima aparece. Você não consegue se agarrar a nada mais ao acordar.~
-@73 = ~Mais uma vez de novo você se acha sob o laço de um enforcador. Você se acha apertando uma semente farpada fortemente na sua mão esquerda. A voz ameaçadora gargalha, "*Outro* sonho? Outro! Outro! Espera? Quem? Intrusos!"~
-@74 = ~Como antes seu corpo parece estranhamente leve e aéreo, como se você perdesse o controle dele. Desta vez contudo, o vento que sopra você parece dirigido de alguma forma. Você sabe que você não está sozinho embora você não consiga perceber outra alma.~
-@75 = ~Mais uma vez de novo você se acha sob o laço de um enforcador. A voz ameaçadora parece furiosa. "*Não*! Os sonhos não são pra moldar! Intrusa! Bruxa! Suma!"~
+@68 = ~"Eu não devo entrar com você mas eu devo ser capaz de alcançar seus sonhos daqui. Você pode ou não pode me perceber nos seus sonhos - A Nenny não percebeu." Ela treme de novo e o Morte resmunga de frustação. "Vão em frente. Eu ficarei ali observando e manterei um olho aberto pra qualquer coisa que possa ser de ajuda pra vocês."~
+@69 = ~"Eu não devo entrar com você mas eu devo ser capaz de alcançar seus sonhos daqui. Você pode ou não pode me perceber nos seus sonhos - A Nenny não percebeu." Ela treme de novo e o Morte resmunga de frustação. "Vão em frente. Eu ficarei ali observando e manterei um olho aberto pra qualquer coisa que possa ser de ajuda pra vocês."~
+@70 = ~"Oh, e há algo mais. Eu não tenho o poder pra deixar você trazer qualquer coisa que você achar nos seus sonhos com você mas eu *devo* ser capaz de deixar você trazer coisas pra *dentro* deles. Se for necessário qualquer coisa que você estiver carregando com você quando você entrar na máquina deve estar disponível pra você nos seus sonhos. Contudo, cuidado, qualquer coisa que você consumir ou largar nos seus sonhos provavelmente desaparecerá pra sempre. Boa sorte!"~
+@71 = ~Mais uma vez de novo você se acha sob um laço de um carrasco. A voz grave estala, "*Outro* sonho? Outro! Outro! Hahahahaha!"~
+@72 = ~Como antes seu corpo parece estranhamente leve e aéreo, como se você perdesse o controle dele. Apesar disso o sonho logo se fragmenta e cada imagem escapa da sua mente tão rápido quanto a próxima aparece. Você não consegue se agarrar a nada mais ao acordar.~
+@73 = ~Mais uma vez de novo você se acha sob o laço de um carrasco. Você se acha apertando uma semente farpada fortemente na sua mão esquerda. A voz grave estala, "*Outro* sonho? Outro! Outro! Espera? Quem? Intrusos!"~
+@74 = ~Como antes seu corpo parece estranhamente leve e aéreo, como se você perdesse o controle dele. Desta vez contudo o vento que sopra você parece dirigido de alguma forma. Você sabe que você não está sozinho embora você não consiga perceber outra alma.~
+@75 = ~Mais uma vez de novo você se acha sob o laço de um carrasco. A voz grave parece enfurecida. "*Não*! Os sonhos não são pra moldar! Intrusa! Bruxa! Suma!"~
 @76 = ~Como antes seu corpo parece estranhamente leve e aéreo, como se você perdesse o controle dele. Desta vez contudo você pode sentir Kesai moldando o sonho, retornando você para o sonho de UnderSigil. Você vagamente sente uma terceira presença mas você não consegue identificá-la.~
-@81 = ~Você se acha no Mortuário rodeado por aqueles que você coagiu via vários meios pra seguirem você. Eles estão falando com você mas as palavras deles passam sobre e além de você como o som de muitos pés arrastando. Conforme eles conversam fiado com as perguntas fúteis deles você verifica na sua mente todas as preparações que você fez pra esta jornada...~
+@81 = ~Você se acha no Necrotério rodeado por aqueles que você coagiu via vários meios pra seguirem você. Eles estão falando com você mas as palavras deles passam sobre e além de você como o som de muitos pés arrastando. Conforme eles tagarelam com as perguntas vazias deles você verifica na sua mente todas as preparações que você fez pra esta jornada...~
 @82 = ~Você se acha na sua sala no FestHall e você se aproxima do armário de armazenagem que você encomendou, aquele que só pode ser aberto se você souber o que está dentro. Você se move pra pôr 3 objetos dentro, os pedaços finais do seu legado pras suas futuras encarnações caso sua viagem pro Plano Material Negativo não vá como planejado.~
 @83 = ~Do limite da sua visão uma mulher de aparência exótica marcante se aproxima com caninos e pele azul. Você pode jurar que você conhece ela e ainda você também tem certeza que você nunca viu ela antes. Como estas duas coisas podem ser verdade não parece aborrecer muito você por algum motivo.~
 @84 = ~"Quem é você?"~
 @85 = ~"Oh, apenas outra aspirante a Sensitiva, dando uma olhada no Festhall. Eu vi você através da sua porta aberta e não pude resistir a descobrir mais sobre você. Eu posso perguntar o que você está fazendo?"~
-@86 = ~"Eu estou me preparando pra uma viagem *muito* perigosa. Sempre tenho que pensar vários passos adiante. Eu tenho um hábito de esquecer as coisas então eu estou apenas deixando alguns lembretes pra mim."~
+	@86 = ~"Eu estou me preparando pra uma viagem *muito* perigosa. Sempre tenho que pensar vários passos adiante. Eu tenho um hábito de esquecer as coisas então eu estou apenas deixando alguns lembretes pra mim."~
 @87 = ~"Eu entendo, que fascinante! Tais como?" Ela olha pra ver o que você segura nas suas mãos mas quando você olha pra baixo tudo que você está segurando são 3 sementes farpadas.~
-@88 = ~"Ah, bem, há uma chave... eu designei estas portas pra que você deva usar a chave de *dentro*. Você deve ser capaz de visualizar claramente algo dentro de modo a abrí-las. Esperto eh? E uma mensagem pra mim mesmo mas não, você *não* pode lê-la. E finalmente, uma pequena arma forte que eu peguei em UnderSigil em outro dia. Eu não posso fazer qualquer uso dela mas talvez algum dia eu serei capaz de fazê-lo, então eu poderia também deixá-la pra trás para o próximo eu."~
-@89 = ~"Oooh, UnderSigil?" Eu nunca estive lá!" Ela se aproxima de você sedutivamente colocando a mão dela no seu peito e você não consegue evitar senão apreciar sua forma incrivelmente voluptuosa. "Eu ouvi que lá é tão perigoso. Você pode mostrar como é que é?~
+@88 = ~"Ah, bem, há uma chave... eu designei estas portas pra que você deva usar a chave de *dentro*. Você deve ser capaz de visualizar claramente algo dentro de modo a abrí-las. Esperto eh? E uma mensagem pra mim mesmo mas não, você *não* pode lê-la. E finalmente, uma pequena arma forte que eu peguei em UnderSigil outro dia. Eu não posso fazer qualquer uso dela mas talvez algum dia eu serei capaz de fazê-lo, então eu poderia também deixá-la pra trás para o próximo eu."~
+@89 = ~"Uh, UnderSigil?" Eu nunca estive lá!" Ela se aproxima de você sedutivamente colocando a mão dela no seu peito e você não consegue evitar senão apreciar sua forma espantosamente voluptuosa. "Eu ouvi que lá é tão perigoso. Você pode mostrar como é que é?~
 @90 = ~"Hmm. Com certeza, por que não? A Deionarra não voltará por um pouco de tempo, ela está visitando com aquele tolo do pai dela. Tanto quanto você prometa não dizer a ela, ela é uma coisa ciumenta e eu ainda tenho necessidade dela."~
-@91 = ~Você não consegue ter certeza se a mulher fez uma careta pois o olhar se foi quase instantaneamente. "Oh, claro, eu não direi uma palavra. Eu amaria vê-la."~
+@91 = ~Você não consegue ter certeza se a mulher fez uma careta pois o olhar se foi quase instantaneamente. "Oh, claro, eu não direi uma palavra. Eu amaria ver."~
 @92 = ~Você coloca as semente farpadas no armário e fecha as portas. "Vamos lá então."~
-@93 = ~De repente você está de volta em UnderSigil e da passagem sudeste os rugidos de demônios ferozes reverberam nos salões abaixo. "Ouviu isso? Eu matei esses algumas noites atrás, todos sozinho também" você mente. "Eu achei um prêmio bacana na sala também."~
+@93 = ~De repente você está de volta em UnderSigil e da passagem sudeste os rugidos de demônios ferozes reverberam nos salões abaixo. "Ouviu isso? Eu matei esses algumas noites atrás, todos sozinho também", você mente. "Eu achei um prêmio bacana na sala também."~
 @94 = ~A mulher de pele azul fala de modo ofegante lindamente. "Mesmo? Eu posso ver? Você pode me mostrar como você matou essas feras ferozes? Isso é tão fascinante."~
 @95 = ~Você sabe que esta mulher está manipulando você pois é algo que você mesmo o fez bastante frequentemente mas por algum motivo você é incapaz de resistir. "Isso será fácil o bastante. Fique bem aí, eu voltarei rápido."~
-@96 = ~Conforme você se aproxima das criaturas de repente você não está mais lá sob o controle da mulher. Você está se aproximando destas criaturas pela primeira vez, explorando UnderSigil procurando algo útil pra sua jornada vindoura.~
-@97 = ~O últim glabrezu cai e você vasculha a sala pra ver se eles estavam carregando qualquer coisa de uso. De repente, sob uma pilha de resíduos de demônio, seus olhos se iluminam por causa de uma arma formidável, dos tipos das quais você nunca viu antes. Uma aura terrível de poder emana desta arma massiva. Linhas afiadas, poderosas adornam o bastão dela o qual liga diretamente a uma esfera perfeita que serve como o ponto de contato desta arma. Espinhos perfeitamente curvados emanam desta esfera moldada perfeitamente, produzindo uma imagem que é ambas de uma vez impressionante e ainda inspiradora de medo. Uma cor púrpura real vibrante rodeia esta arma de poder.~
-@99 = ~Você se acha de volta na Fundição. Os sonhos de Kesai estão ofegando conforme ela tenta recuperar a respiração dela. Após um momento ela sussura, "Isso foi... uma experiência intensa eu devo dizer. Eu acho que eu posso trazer você de volta pra aquele sonho se você deseja se preparar e retornar pra tentar de novo. Você precisará derrotar todas aquelas criaturas nos seus sonhos pra achar o que você procura. Eu esperarei você aqui. Eu gostaria de investigar esta máquina com sua permissão. Eu acho que eu poderia aprender muito sobre sonhos com ela. É verdadeiramente uma realização incrível."~
-@100 = ~"Certamente Kesai. Obrigado pela sua ajuda. Eu me prepararei e retornarei pra tentar de novo."~
-@101 = ~"Eu entendo, então você me acompanha nos meus sonhos e me convence a ser rasgado por demônios ferozes? Você tem mais da sua mãe do que eu teria suposto. Nós acabamos aqui."~
-@102 = ~A Kesai rosna furiosamente pra você, o lábio superior dela enrola pra trás exibindo os caninos dela. "Certo! Eu só estava tentando ajudar. As criaturas não tinham poder pra ferir você no mundo real... e de qualquer forma você não é imortal? Se elas assustaram você então você não é metade do homem que eu pensei que você era. Adeus!"~
-@103 = ~Você ouve um suspiro feminino através de dentes com caninos ao redor de você. "Sucesso..." O mundo se dissolve ao redor de você...~
-@104 = ~Você se acha de volta na Fundição. A Kesai parece exausta mas triunfante. "Aí. Você deveria ir na sala no Festhall que nós vimos no seu sonho. Há um armário selado que não pode aberto a menos que você saiba o que está dentro. Lembre-se daquela maça que você viu e imagine-a na sua mente quando você abrí-la. Lá meu pai diz que você achará algo mais que você há muito tempo procurou."~
+@96 = ~Conforme você se aproxima das criaturas de repente você não está mais lá sob o comando da mulher. Você está se aproximando destas criaturas pela primeira vez, explorando UnderSigil, procurando algo útil pra sua futura jornada.~
+@97 = ~O último glabrezu cai e você vasculha a sala pra ver se eles estavam juntando qualquer coisa de uso. De repente, sob uma pilha de resíduos de demônio, seus olhos se iluminam por causa de uma arma formidável, dos tipos das quais você nunca viu antes. Uma aura terrível de poder emana desta arma massiva. Linhas afiadas, poderosas adornam a haste dela o qual liga diretamente a uma esfera perfeita que serve como o ponto de contato desta arma. Espinhos perfeitamente curvados emanam desta esfera moldada perfeitamente, produzindo uma imagem que é ambas notável e ainda inspiradora de medo. Uma cor púrpura real vibrante rodeia esta arma de poder.~
+@99 = ~Você se acha de volta na Fundição. Os peitos de Kesai estão ofegando conforme ela tenta recuperar a respiração dela. Após um momento ela sussura, "Isso foi... uma experiência intensa eu devo dizer. Eu acho que eu posso trazer você de volta para aquele sonho se você deseja se preparar e retornar pra tentar de novo. Você precisará derrotar todas aquelas criaturas nos seus sonhos pra achar o que você procura. Eu esperarei você aqui. Eu gostaria de investigar esta máquina com sua permissão. Eu acho que eu poderia aprender muito sobre sonhos com ela. É verdadeiramente uma realização incrível."~
+@100 = ~"Certamente Kesai. Obrigado pela sua ajuda. Eu me prepararei e retorno pra tentar de novo."~
+@101 = ~"Eu entendo, então você me acompanha nos meus sonhos e me convence a ser despedaçado por demônios ferozes? Você tem mais da sua mãe do que eu teria suposto. Nós acabamos aqui."~
+@102 = ~A Kesai rosna furiosamente pra você, o lábio superior dela enrola pra trás mostrando os caninos dela. "Certo! Eu só estava tentando ajudar. As criaturas não tinham poder pra ferir você no mundo real... e de qualquer forma você não é imortal? Se elas assustaram você então você não é metade do homem que eu pensei que você era. Adeus!"~
+@103 = ~Você ouve um susurro feminino através de dentes com caninos ao redor de você. "Sucesso..." O mundo se dissolve ao redor de você...~
+@104 = ~Você se acha de volta na Fundição. A Kesai parece exausta mas triunfante. "Aí! Você deveria ir na sala no Festhall que nós vimos no seu sonho. Há um armário selado que não pode aberto a menos que você saiba o que está dentro. Lembre-se daquela maça que você viu e imagine-a na sua mente quando você abrí-la. Lá meu pai diz que você achará algo mais que você há muito tempo procurou."~
 @105 = ~"Muito obrigado, Kesai. Você me ajudou mais do que eu posso retribuir."~
 @106 = ~"Tolice. Eu nos considero quites agora. E eu não acho que eu voltarei pro bordel. Eu acho que eu aprendi o que eu pude lá e eu tenho outros interesses e experiências pra perseguir agora tais como estudar mais esta máquina."~
 @107 = ~"Tolice. Eu nos considero quites agora. E eu não acho que eu voltarei pro bordel. Eu acho que eu aprendi o que eu pude lá e eu tenho outros interesses e experiências pra perseguir agora tais como estudar mais esta máquina. Senhora Grace, eu tenho sua permissão pra sair?"~
 @108 = ~"Claro Kesai-Serris, você não tem necessidade de minha permissão. Foi uma honra ter você como uma estudante. Obrigado pela sua ajuda a nosso líder e eu espero que nós nos encontraremos de novo."~
-@109 = ~A Kesai se aproxima de você e põe uma mão no seu peito. "Você é um homem muito charmoso e eu admito que eu achei seu interesse bem lisonjeiro. Talvez algum dia nós possamos vir a conhecer um ao outro melhor." Ela beija sua bochecha e você sente os caninos dela levemente contra sua bochecha conforme ela rosna levemente. "Mas agora não é a hora. Você claramente tem assuntos importantes pra perseguir como eu tenho agora."~
+@109 = ~A Kesai se aproxima de você e põe uma mão no seu peito. "Você é um homem muito charmoso e eu admito que eu achei seu interesse bem lisonjeiro. Talvez algum dia nós possamos vir a conhecer um ao outro melhor." Ela beija sua bochecha e você sente os caninos dela rasparem mais ou menos contra sua bochecha conforme ela rosna levemente. "Mas agora não é a hora. Você claramente tem assuntos importantes pra perseguir como eu tenho agora."~
 @110 = ~A cauda da Annah chicoteia. "Então talvez você devesse ir perseguí-los rápido sua vadia!"~
 @111 = ~"Calma Annah. A Kesai não é uma vadia e ela merece mais."~
-@112 = ~"A Annah está certa, Kesai. Eu não quero atrasar você pra perseguir seu caminho nem posso eu atrasar o meu."~
-@113 = ~"Boa sorte pra você meu estranho cavalheiro de mistério e revelação. De qualquer forma que as coisas aconteçam eu *espero* que nós nos encontraremos de novo." Ela abraça você fortemente e sai.~
+@112 = ~"A Annah está certa, Kesai. Eu não quero atrasar você pra perseguir seu caminho, nem posso eu atrasar o meu."~
+@113 = ~"Boa sorte pra você meu estranho cavalheiro de mistério e revelação. De qualquer forma que as coisas acabem eu *espero* que nós nos encontraremos de novo." Ela abraça você fortemente e sai.~
 @114 = ~"Oh, você está de volta. Você quer tentar derrotar as criaturas no seu sonho de novo?"~
 @115 = ~"Sim, eu acho que eu estou pronto agora. Você estará lá pra ajudar?"~
-@116 = ~"Claro. Eu lamento que eu não possa ajudar você mais na luta mas eu posso observar e se eu puder ver qualquer meio de ajudar você eu o farei."~
-@117 = ~Você se acha de volta em UnderSigil. Uivos demoníacos continuam a emanar do salão sudeste.~
+@116 = ~"Claro. Eu lamento que eu não possa ajudar mais você na luta mas eu posso observar e se eu puder ver qualquer meio de ajudar você eu o farei."~
+@117 = ~Você se acha de volta em UnderSigil. Uivos demoníacos continuam a emanar do corredor sudeste.~
 @118 = ~"Você é um homem tão *fascinante*. *Por favor*, me mostre de novo como você derrotou esses monstros enormes! Seria uma experiência tão excitante, as garotas no Festhall ficariam com tanta inveja e eu seria tão grata."~
-@119 = ~"Tudo bem. Espera aquí."~
+@119 = ~"Tudo bem. Espere aquí."~
 @121 = ~"Nós precisamos falar da morte da sua mãe de novo, Kesai."~
 @122 = ~"Kesai, eu devo partir. Talvez nós possamos continuar esta conversa mais tarde. Adeus."~
 @123 = ~"Maravilhoso! E você achou o que você procurava?"~
@@ -128,7 +128,7 @@
 @132 = ~"Me fale sobre os sonhos dela meia-bruxa ou eu arrancarei seu coração!"~
 @133 = ~"Eu me desculpo... eu... não sei o que veio sobre mim. Você pode manter os segredos dela."~
 @136 = ~"Eu aprecio você me falar sobre o destino da minha mãe mas eu não acredito que nós tenhamos algo mais pra dizer um ao outro. Adeus."~
-@137 = ~"Eu mudei de idéia Kesai. eu peço a você pra me ajudar a revelar meus sonhos."~
+@137 = ~"Eu mudei de idéia Kesai. eu peço a você pra me ajudar a desvendar meus sonhos."~
 @138 = ~A Kesai parece ter recuperado a compostura dela. Ela explora você com os olhos escarlates dela. "É bom ver você de novo. Você mudou de idéia? Nós exploraremos seus sonhos?"~
 @141 = ~A Grace olha pra trás e pra frente entre você, Annah e Kesai, uma delicada sombrancelha arqueada em perplexidade. Ela também não diz nada.~
 @142 = ~"Que máquina maravilhosa!"~
@@ -139,9 +139,9 @@
 @147 = ~"Eu estou bem Kesai, mas obrigado. Parece que eu precisarei me preparar um pouco mais."~
 @148 = ~"Não, agora não. Eu voltarei quando eu estiver preparado."~
 @149 = ~Não há tranca, fecho ou outro caminho óbvio pra abrir este armário de armazenagem selado.~
-@150 = ~A Mebbeth se foi, seu próprio ser se desfazendo conforme os fios da feitiçaria de Ravel se desfazem através dos planos. A Kesai-Serris no bordel provavelmente deveria saber do destino da mãe dela.~
+@150 = ~A Mebbeth se foi, seu próprio ser se desenmaranhando conforme os fios da feitiçaria de Ravel se desfazem através dos planos. A Kesai-Serris no bordel provavelmente deveria saber do destino da mãe dela.~
 @151 = ~A Kesai me diz que seu pai sugeriu que eu acharei algo valioso nos meus sonhos. Apesar disso eu não sonho. Se eu de algum modo recuperar minha habilidade de sonhar eu deveria falar com a Kesai de novo.~
-@152 = ~A Kesai me diz que seu pai sugeriu que eu acharei algo valioso nos meus sonhos. Apesar disso eu não sonho. Aquele camarada Xander na Fundição mencionou que ele estava construindo uma máquina que poderia me dar a habilidade de sonhar de novo. Eu provavelmente deveria levar isso adiante.~
+@152 = ~A Kesai me diz que seu pai sugeriu que eu acharei algo valioso nos meus sonhos. Apesar disso eu não sonho. Aquele camarada Xander na Fundição mencionou que ele estava construindo uma máquina que poderia me dar a habilidade de sonhar de novo. Eu provavelmente deveria ir adiante nisso.~
 @153 = ~A Kesai me diz que o pai dela sugeriu que eu acharei algo valioso nos meus sonhos. Apesar disso meu sonho no construtor de sonhos do Xander não me mostrou qualquer coisa valiosa.~
 @154 = ~Eu informei a Kesai do meu sonho no construtor de sonhos. Ela diz que ela está desejando vir comigo para a Fundição pra me ajudar a revelar meus sonhos.~
 @155 = ~A Kesai diz que eu preciso derrotar os demônios no meu sonho pra achar algo valioso pra mim.~
@@ -155,26 +155,26 @@ Você achou esta pena pra escrever num armário de armazenagem na sua sala no Fest
 
 Ela escreve:
 
-"Se tudo foi de acordo com o plano você seguiu minhas direções no jornal que nós carregamos conosco, achou o olho de vidro que eu deixei com os Anarquistas que você visualizou de modo a abrir o armário na nossa sala e adquiriu esta pena. Excelente. Eu queria ter certeza que seria uma encarnação de recursos e inteligência que achou isto antes de qualquer outra. Agora escute cuidadosamente porque você tem um trabalho a fazer."~
+"Se tudo foi de acordo com o plano, você seguiu minhas direções no jornal que nós carregamos conosco, achou o olho de vidro que eu deixei com os Anarquistas que você visualizou de modo a abrir o armário na nossa sala e adquiriu esta pena. Excelente. Eu queria ter certeza que seria uma encarnação de recursos e inteligência que achasse isto antes de qualquer outra. Agora escute cuidadosamente porque você tem um trabalho a fazer."~
 @202 = ~A pena continua escrevendo: "Se você está lendo isto significa que eu falhei em derrotar nosso inimigo. Conforme você certamente sabe agora uma força malevolente continua enviando sombras contra nós, nos matando de novo e de novo. Eu cruzei os planos procurando pela identidade dele e eu acredito que eu pelo menos achei o local dele. Ele reside numa grande fortaleza no Plano Material Negativo. Além disso, eu sei como chegar até ele."~
-@203 = ~A pena continua escrevendo, descrevendo o que você já descobriu do Trias do portal no mortuário e o que você precisa fazer pra ativá-lo.~
-@204 = ~A pena continua escrevendo: "Você deve continuar meu trabalho e destruir esta criatura para que nós possamos finalmente obter alguma paz dela. Use quem quer que você precise pra alcançar este fim. Se eles de algum modo conseguirem sobreviver a nossa jornada ache o githzerai Dak'kon, a espada dele tem o potencial pra ser a mais poderosa das armas. Leve a caveira, ela pode ser útil mas o que quer que você faça não confie nela. O velho arqueiro Xachariah é um tolo cego, bêbado, idiota mas a mira dele é infalível. Quanto a garota Deionarra, se meu plano de backup funcionar então você não achará ela mais entre os vivos mas ela será de mais uso pra você do que qualquer deles."~
-@205 = ~A pena continua escrevendo: "Você terá uma vantagem que eu não tive você entende. Ela está vindo comigo para a fortaleza e se eu trabalhei certo com as coisas ela morrerá lá. Mas ela nos ama grandemente, a coisa burra e como os Dustmen dizem, emoções fortes como a dela nos prendem a este mundo. Ela existirá em ambos, naquele plano e no nosso, provavelmente onde quer que a memória dela é posta pra descansar. Ela pode servir como um espião sobre os movimentos do nosso inimigo pra você, mas não seja um tolo e diga a ela para o que ela é, ela provavelmente não o aceitará bondosamente e isso encerrará o uso dela pra nós."~
+@203 = ~A pena continua escrevendo, descrevendo o que você já descobriu do Trias sobre o portal no necrotério e o que você precisa fazer pra ativá-lo.~
+@204 = ~A pena continua escrevendo: "Você deve continuar meu trabalho e destruir esta criatura para que nós possamos finalmente obter alguma paz dela. Use quem quer que você precise pra alcançar este fim. Se eles de algum modo conseguirem sobreviver a nossa jornada ache o githzerai Dak'kon, a espada dele tem o potencial pra ser a mais poderosa das armas. Leve a caveira, ela pode ser útil mas o que quer que você faça, não confie nela. O velho arqueiro Xachariah é um tolo cego, bêbado, idiota mas a mira dele é infalível. Quanto a garota Deionarra, se meu plano de backup funcionar então você não achará ela mais entre os vivos mas ela será de mais uso pra você do que qualquer deles."~
+@205 = ~A pena continua escrevendo: "Você terá uma vantagem que eu não tive, você entende. Ela está vindo comigo para a fortaleza e se eu trabalhei certo com as coisas ela morrerá lá. Mas ela nos ama grandemente, a coisa burra e como os Dustmen dizem, emoções fortes como a dela nos prendem a este mundo. Ela existirá em ambos, naquele plano e no nosso, provavelmente aonde quer que a memória dela é posta pra descansar. Ela pode servir como um espião sobre os movimentos do nosso inimigo pra você, mas não seja um tolo e diga a ela para o que ela é, ela provavelmente não o aceitará bondosamente e isso encerrará o uso dela pra nós."~
 @206 = ~A pena continua escrevendo: "Use o conhecimento que ela pode dar a você sabiamente, não deixe o sentimentalismo ficar no seu caminho e pare este matador de uma vez por todas."~
-@207 = ~A pena para por um momento, então adiciona a última de um modo mais apressado: "P.S. Eu achei esta maça em UnderSigil em outro dia. Eu não consigo fazer qualquer uso dela mas talvez você consiga então eu pensei que eu a deixaria aqui pra você. Aproveite."~
-@208 = ~A pena para. Qualquer que seja o encantamente que controlava os movimentos dela parece gasto. Ela aparenta ser nada mais do que uma pena pra escrever perfeitamente comum agora.~
+@207 = ~A pena para por um momento, então adiciona a última de um modo mais apressado: "PS: Eu achei esta maça em UnderSigil outro dia. Eu não consigo fazer qualquer uso dela mas talvez você consiga então eu pensei que eu a deixaria aqui pra você. Aproveite."~
+@208 = ~A pena para. Qualquer que seja o encantamento que controlava os movimentos dela parece gasto. Ela aparenta ser nada mais do que uma pena pra escrever perfeitamente comum agora.~
 @209 = ~Continuar escrevendo.~
 @210 = ~Tentar escrever com ela.~
 @211 = ~Guardar a pena.~
-@212 = ~Se tudo foi de acordo com o plano você seguiu minhas direções no jornal que nós carregamos conosco, achou o olho de vidro que eu deixei com os Anarquistas que você visualizou de modo a abrir o armário na nossa sala e adquiriu esta pena. Excelente. Eu queria ter certeza que seria uma encarnação de recursos e inteligência que achou isto antes de qualquer outra. Agora escute cuidadosamente porque você tem um trabalho a fazer.
+@212 = ~Se tudo foi de acordo com o plano você seguiu minhas direções no jornal que nós carregamos conosco, achou o olho de vidro que eu deixei com os Anarquistas que você visualizou de modo a abrir o armário na nossa sala e adquiriu esta pena. Excelente. Eu queria ter certeza que seria uma encarnação de recursos e inteligência que achasse isto antes de qualquer outra. Agora escute cuidadosamente porque você tem um trabalho a fazer.
 
 Se você está lendo isto significa que eu falhei em derrotar nosso inimigo. Conforme você certamente sabe agora uma força malevolente continua enviando sombras contra nós, nos matando de novo e de novo. Eu cruzei os planos procurando pela identidade dele e eu acredito que eu pelo menos achei o local dele. Ele reside numa grande fortaleza no Plano Material Negativo. Além disso, eu sei como chegar até ele.
 
 ... Escrito aqui está uma longa passagem relatando o que você já descobriu com o Trias, incluindo como e aonde alcançar a fortaleza do seu inimigo...
 
-Você deve continuar meu trabalho e destruir esta criatura para que nós possamos finalmente obter alguma paz dela. Use quem quer que você precise pra alcançar este fim. Se eles de algum modo conseguirem sobreviver a nossa jornada ache o githzerai Dak'kon, a espada dele tem o potencial pra ser a mais poderosa das armas. Leve a caveira, ela pode ser útil mas o que quer que você faça não confie nela. O velho arqueiro Xachariah é um tolo cego, bêbado, idiota mas a mira dele é infalível. Quanto a garota Deionarra, se meu plano de backup funcionar então você não achará ela mais entre os vivos mas ela será de mais uso pra você do que qualquer deles.
+Você deve continuar meu trabalho e destruir esta criatura para que nós possamos finalmente obter alguma paz dela. Use quem quer que você precise pra alcançar este fim. Se eles de algum modo conseguirem sobreviver a nossa jornada ache o githzerai Dak'kon, a espada dele tem o potencial pra ser a mais poderosa das armas. Leve a caveira, ela pode ser útil mas o que quer que você faça, não confie nela. O velho arqueiro Xachariah é um tolo cego, bêbado, idiota mas a mira dele é infalível. Quanto a garota Deionarra, se meu plano de backup funcionar então você não achará ela mais entre os vivos mas ela será de mais uso pra você do que qualquer deles.
 
-Você terá uma vantagem que eu não tive você entende. Ela está vindo comigo para a fortaleza e se eu trabalhei certo com as coisas ela morrerá lá. Mas ela nos ama grandemente, a coisa burra e como os Dustmen dizem, emoções fortes como a dela nos prendem a este mundo. Ela existirá em ambos, naquele plano e no nosso, provavelmente onde quer que a memória dela é posta pra descansar. Ela pode servir como um espião sobre os movimentos do nosso inimigo pra você, mas não seja um tolo e diga a ela para o que ela é, ela provavelmente não o aceitará bondosamente e isso encerrará o uso dela pra nós.
+Você terá uma vantagem que eu não tive, você entende. Ela está vindo comigo para a fortaleza e se eu trabalhei certo com as coisas ela morrerá lá. Mas ela nos ama grandemente, a coisa burra e como os Dustmen dizem, emoções fortes como a dela nos prendem a este mundo. Ela existirá em ambos, naquele plano e no nosso, provavelmente onde quer que a memória dela é posta pra descansar. Ela pode servir como um espião sobre os movimentos do nosso inimigo pra você, mas não seja um tolo e diga a ela para o que ela é, ela provavelmente não o aceitará bondosamente e isso encerrará o uso dela pra nós.
 
 Use o conhecimento que ela pode dar a você sabiamente, não deixe o sentimentalismo ficar no seu caminho e pare este matador de uma vez por todas...
 
@@ -186,5 +186,5 @@ P.S.  A propósito, eu achei esta maça em UnderSigil no outro dia. Eu não consigo
 @217 = ~Você achou esta pena pra escrever no armário de armazenagem na sua sala no Festhall. Parece bem comum.~
 @218 = ~Visualizar a maça que você viu no construtor de sonhos.~
 @219 = ~Deixar as portas do armário de armazenagem em paz.~
-@220 = ~Você foca na sua memória da maça, visualizando as linhas que passam pelo bastão até a esfera pontuda, imaginando a aura de poder que a rodeava. Você ouve um clique e o compartimento se racha aberto o bastante pra você deslizar seus dedos dentro e abrir o resto do caminho.~
+@220 = ~Você foca na sua memória da maça, visualizando as linhas que passam pela haste até a esfera pontuda, imaginando a aura de poder que a rodeava. Você ouve um clique e o compartimento se abre o bastante pra você deslizar seus dedos dentro e abrir o resto do caminho.~
 @300 = ~Mod Expandido da Verdade sobre Deionarra~
