@@ -29,7 +29,7 @@ ALWAYS
     ~polish~      => ~cp1250~
     ~russian~     => ~cp1251~
     ~french~      => ~cp1252~
-    ~portuguese~  => ~cp1252~
+    ~brazilianportuguese~ => ~cp1252~
     ~schinese~    => ~cp936~
   END
   LAF HANDLE_CHARSETS
@@ -96,11 +96,11 @@ LANGUAGE ~French~
          ~PST-UB-reloaded/tra/french/ub.tra~
 
 LANGUAGE ~Brazilian Portuguese~
-         ~portuguese~
+         ~brazilianportuguese~
          ~PST-UB-reloaded/tra/english/setup.tra~
          ~PST-UB-reloaded/tra/english/ub.tra~
-         ~PST-UB-reloaded/tra/portuguese/setup.tra~
-         ~PST-UB-reloaded/tra/portuguese/ub.tra~
+         ~PST-UB-reloaded/tra/brazilianportuguese/setup.tra~
+         ~PST-UB-reloaded/tra/brazilianportuguese/ub.tra~
 
 LANGUAGE ~Simplified Chinese~
          ~schinese~
