@@ -1,38 +1,38 @@
-@500 = ~Esta arcada se extende só por alguns metros pra parede do leste antes de chegar a um fim abrupto. Você esperava que o portal que leva pra fora da tumba aparecesse aqui. Infelizmente você não tem uma bolsa vazia em sua posse, a qual é de acordo com Ulthera a chave pra ativá-lo.~
-@501 = ~Deixar todo seu dinheiro pra trás.~
-@502 = ~Tão relutante quanto alguém poderia ser ao se separar do dinheiro deles um único olhar errático no corpo do pai da Sheryl faz você pegá-lo sem nenhuma hesitação. Antes de tudo estar no chão.~
-@503 = ~Pra sua surpresa ele desaparece quase instantaneamente no ar seguido momentos depois por um portal abrindo bem diante de você.~
+@500 = ~Esta arcada se extende sÃ³ por alguns metros pra parede do leste antes de chegar a um fim abrupto. VocÃª esperava que o portal que leva pra fora da tumba aparecesse aqui. Infelizmente vocÃª nÃ£o tem uma bolsa vazia em sua posse, a qual Ã© de acordo com Ulthera a chave pra ativÃ¡-lo.~
+@501 = ~Deixar todo seu dinheiro pra trÃ¡s.~
+@502 = ~TÃ£o relutante quanto alguÃ©m poderia ser ao se separar do dinheiro deles um Ãºnico olhar errÃ¡tico no corpo do pai da Sheryl faz vocÃª pegÃ¡-lo sem nenhuma hesitaÃ§Ã£o. Antes de tudo estar no chÃ£o.~
+@503 = ~Pra sua surpresa ele desaparece quase instantaneamente no ar seguido momentos depois por um portal abrindo bem diante de vocÃª.~
 @504 = ~Cripta Antiga~
 @505 = ~Anel do Arkin~
 
-@510 = ~"Hmph! Quão mal-educado você ser."~
-@511 = ~A moldura massiva do golem lembra um ghoul enorme, completo, com garras afiadas e uma língua preta. Ele está de pé sem movimento e olha direto pra frente. Não há indicação que é mais do que uma estátua.~
+@510 = ~"Hmph! QuÃ£o mal-educado vocÃª ser."~
+@511 = ~A moldura massiva do golem lembra um ghoul enorme, completo, com garras afiadas e uma lÃ­ngua preta. Ele estÃ¡ de pÃ© sem movimento e olha direto pra frente. NÃ£o hÃ¡ indicaÃ§Ã£o que Ã© mais do que uma estÃ¡tua.~
 @512 = ~Aplicar a pomada do Gorgon no golem.~
-@513 = ~Você unta a pomada de cheiro horrível sobre o golem. A princípio nada acontece mas após vários momentos rachaduras e gotas aparecem por todo o corpo dele conforme ele lentamente amolece. Não mais capaz de levantar seu próprio peso o golem cai em nada mais do que uma pilha de ossos quebradiços e carne podre.~
-@514 = ~A moldura massiva do golem lembra um ghoul enorme, completo com garras afiadas e uma língua preta. Os olhos dele estão fixos em você e seguem cada um dos seus movimentos.~
+@513 = ~VocÃª unta a pomada de cheiro horrÃ­vel sobre o golem. A princÃ­pio nada acontece mas apÃ³s vÃ¡rios momentos rachaduras e gotas aparecem por todo o corpo dele conforme ele lentamente amolece. NÃ£o mais capaz de levantar seu prÃ³prio peso o golem cai em nada mais do que uma pilha de ossos quebradiÃ§os e carne podre.~
+@514 = ~A moldura massiva do golem lembra um ghoul enorme, completo com garras afiadas e uma lÃ­ngua preta. Os olhos dele estÃ£o fixos em vocÃª e seguem cada um dos seus movimentos.~
 
 @517 = ~Examinar o livro azul.~
 @518 = ~Examinar a espada.~
 @519 = ~OS DENTES DA INGRESS
 Weight: 1
 
-Este é um punhado dos dentes vivos da Ingress. Aparentemente eles não queriam voltar com ela através do portal pro plano nativo dela. Eles tagarelam entre eles mesmos sempre que eles são mantidos juntos; eles lembram você de um bando de insetos de marfim assustadores que pulam.~
+Este Ã© um punhado dos dentes vivos da Ingress. Aparentemente eles nÃ£o queriam voltar com ela atravÃ©s do portal pro plano nativo dela. Eles tagarelam entre eles mesmos sempre que eles sÃ£o mantidos juntos; eles lembram vocÃª de um bando de insetos de marfim assustadores que pulam.~
 @523 = ~PENA PRA ESCREVER
 Weight: 0
 
-Você achou esta pena pra escrever num armário de armazenagem no seu quarto no Festhall. Aparenta ser bem comum.~
-@524 = ~Armário Selado~
-@1117 = ~"Parecem direções..." O Morte limpa a garganta dele. "Vamos ver. Começa com..."
+VocÃª achou esta pena pra escrever num armÃ¡rio de armazenagem no seu quarto no Festhall. Aparenta ser bem comum.~
+@524 = ~ArmÃ¡rio Selado~
+@1117 = ~"Parecem direÃ§Ãµes..." O Morte limpa a garganta dele. "Vamos ver. ComeÃ§a com..."
 
-"Eu sei que você se sente como se você estivesse bebendo alguns barris de restos do Styx mas você precisa se CENTRAR. Entre suas posses está um JORNAL que esclarecerá sobre a escuridão do assunto. O PHAROD pode informar você sobre o resto das coisas se ele já não está no livro dos mortos."
+"Eu sei que vocÃª se sente como se vocÃª estivesse bebendo alguns barris de restos do Styx mas vocÃª precisa se CENTRAR. Entre suas posses estÃ¡ um JORNAL que esclarecerÃ¡ sobre a escuridÃ£o do assunto. O PHAROD pode informar vocÃª sobre o resto das coisas se ele jÃ¡ nÃ£o estÃ¡ no livro dos mortos."
 
-"Não perca o jornal ou nós estaremos no Styx de novo. E o que quer que você faça, NÃO diga a ninguém QUEM você é ou O QUE acontece com você ou eles porão você numa peregrinação rápida para o crematório. Faça o que eu digo a você: LEIA o jornal, ENTÃO ache o Pharod."~
-@3622 = ~Os golems de pedra são guardiões animados magicamente. Os criadores dele não se importam em dá-los uma forma outra do que a de uma estátua austera, corpulenta. Este foi esculpido pra lembrar um ghoul enorme, completo com garras afiadas e uma língua preta oscilante... sem dúvida o trabalho de Lothar, mestre dos Ossos da Noite.~
-@33606 = ~"Seu amante queria que eu impedisse vocês duas de brigar."~
-@50577 = ~Há um número de capítulos dentro do tomo: Trapaça do Tele-Transporte, Trapaça pra Descansar em Qualquer Lugar, Trapaça da Riqueza, Trapaça da Pontuação dos Atributos, Trapaça da Morte, Trapaça da Experiência, Trapaça da Palavra Boa e Má e Trapaça da Lei e do Caos.~
-@64883 = ~A Ulthera dá um olhar rápido cuidadosamente e então toma o osso de você. Ela o aperta	perto do peito dela e começa a cantar enquanto balança pra frente e pra trás. A voz dela se torna mais ansiosa mas diminui em volume até que você mal consegue ouvi-la. Finalmente ela ofega e aponta pro sudeste com o osso. "Aye, pra baixo nas catacumbas estar, vá pro sul até um beco sem saída você achar... Ulthera achou pra você, agora vá!"~
-@64936 = ~Eu achei o osso da perna pra Ulthera e pedi a ela que achasse o local do portal que o Arkin usou. Ela cantou e continuou um pouco, então disse que o portal poderia ser achado abaixo nas Catacumbas da Pedra que Chora, perto de um beco sem saída ao sul. Eu espero que ela esteja certa.~
-@64945 = ~Eu achei o osso da perna pra Ulthera e pedi a ela que achasse o local do portal que o Arkin usou. Ela cantou e continuou um pouco, então disse que o portal poderia ser achado abaixo nas Catacumbas da Pedra que Chora, perto de um beco sem saída ao sul. Eu espero que ela esteja certa.~
+"NÃ£o perca o jornal ou nÃ³s estaremos no Styx de novo. E o que quer que vocÃª faÃ§a, NÃƒO diga a ninguÃ©m QUEM vocÃª Ã© ou O QUE acontece com vocÃª ou eles porÃ£o vocÃª numa peregrinaÃ§Ã£o rÃ¡pida para o crematÃ³rio. FaÃ§a o que eu digo a vocÃª: LEIA o jornal, ENTÃƒO ache o Pharod."~
+@3622 = ~Os golems de pedra sÃ£o guardiÃµes animados magicamente. Os criadores dele nÃ£o se importam em dÃ¡-los uma forma outra do que a de uma estÃ¡tua austera, corpulenta. Este foi esculpido pra lembrar um ghoul enorme, completo com garras afiadas e uma lÃ­ngua preta oscilante... sem dÃºvida o trabalho de Lothar, mestre dos Ossos da Noite.~
+@33606 = ~"Seu amante queria que eu impedisse vocÃªs duas de brigar."~
+@50577 = ~HÃ¡ um nÃºmero de capÃ­tulos dentro do tomo: TrapaÃ§a do Tele-Transporte, TrapaÃ§a pra Descansar em Qualquer Lugar, TrapaÃ§a da Riqueza, TrapaÃ§a da PontuaÃ§Ã£o dos Atributos, TrapaÃ§a da Morte, TrapaÃ§a da ExperiÃªncia, TrapaÃ§a da Palavra Boa e MÃ¡ e TrapaÃ§a da Lei e do Caos.~
+@64883 = ~A Ulthera dÃ¡ um olhar rÃ¡pido cuidadosamente e entÃ£o toma o osso de vocÃª. Ela o aperta	perto do peito dela e comeÃ§a a cantar enquanto balanÃ§a pra frente e pra trÃ¡s. A voz dela se torna mais ansiosa mas diminui em volume atÃ© que vocÃª mal consegue ouvi-la. Finalmente ela ofega e aponta pro sudeste com o osso. "Aye, pra baixo nas catacumbas estar, vÃ¡ pro sul atÃ© um beco sem saÃ­da vocÃª achar... Ulthera achou pra vocÃª, agora vÃ¡!"~
+@64936 = ~Eu achei o osso da perna pra Ulthera e pedi a ela que achasse o local do portal que o Arkin usou. Ela cantou e continuou um pouco, entÃ£o disse que o portal poderia ser achado abaixo nas Catacumbas da Pedra que Chora, perto de um beco sem saÃ­da ao sul. Eu espero que ela esteja certa.~
+@64945 = ~Eu achei o osso da perna pra Ulthera e pedi a ela que achasse o local do portal que o Arkin usou. Ela cantou e continuou um pouco, entÃ£o disse que o portal poderia ser achado abaixo nas Catacumbas da Pedra que Chora, perto de um beco sem saÃ­da ao sul. Eu espero que ela esteja certa.~
 
 // Originally from PST Fixpack
 @49632 = ~Carver~

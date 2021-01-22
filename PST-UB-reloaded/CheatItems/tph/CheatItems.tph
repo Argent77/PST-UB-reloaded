@@ -52,7 +52,7 @@ CLEAR_IDS_MAP
 
 COMPILE ~%MOD_FOLDER%/CheatItems/dlg/CheatItems.d~
 
-COMPILE EVAL ~%MOD_FOLDER%/CheatItems/dlg/DCHEATS.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/dcheats.tra~ ~%TRA_DCHEATS_PSTEE%~
+COMPILE EVAL ~%MOD_FOLDER%/CheatItems/dlg/DCHEATS.d~ USING ~%DEFAULT_LANG_FOLDER%/dcheats.tra~ ~%LANG_FOLDER%/dcheats.tra~ ~%TRA_DCHEATS_PSTEE%~
 
 // The original game files (strref 50577) said:
 // ~There are a number of chapters within the tome:  Teleport Cheat, Healing Cheat, Wealth Cheat, Spell Recharge

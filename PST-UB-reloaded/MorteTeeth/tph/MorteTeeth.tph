@@ -14,7 +14,7 @@ ACTION_IF (IS_PSTEE) BEGIN
 END ELSE BEGIN
   OUTER_TEXT_SPRINT sc_incrementglobal_ingress_teeth ~IncrementGlobalOnce("Good_Ingress_Teeth_1","GLOBAL","Good","GLOBAL",1)~
 END
-COMPILE EVAL ~%MOD_FOLDER%/MorteTeeth/dlg/MorteTeeth.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/MorteTeeth.tra~
+COMPILE EVAL ~%MOD_FOLDER%/MorteTeeth/dlg/MorteTeeth.d~ USING ~%DEFAULT_LANG_FOLDER%/MorteTeeth.tra~ ~%LANG_FOLDER%/MorteTeeth.tra~
 
 // Note:  This is just StrRef #6166 with the combat stuff stripped off.
 COPY_EXISTING ~ICTEETH.ITM~ ~override/ITEETH.ITM~

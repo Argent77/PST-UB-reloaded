@@ -6,9 +6,9 @@
 @505 = ~Anello di Arkin~
 
 @510 = ~"Hmph! Come sei maleducato."~
-@511 = ~La massiccia struttura del golem ricorda un enorme ghoul, completo di artigli affilati e una lingua nera. È immobile e fissa davanti a se. Non vi e alcun segnale che non sia altro che una statua.~
+@511 = ~La massiccia struttura del golem ricorda un enorme ghoul, completo di artigli affilati e una lingua nera. Ãˆ immobile e fissa davanti a se. Non vi e alcun segnale che non sia altro che una statua.~
 @512 = ~Applichi il Balsamo della della Gorgone al golem.~
-@513 = ~Spalmi il maleodorante balsamo sul golem. Dapprima non succede nulla, ma dopo diversi istanti compaiono crepe e lacrime su tutto il corpo mentre lentamente si ammorbidisce. Non più in grado di sostenere il proprio peso, il golem si sbriciola in nient'altro che un mucchio di ossa fragili e carne in decomposizione.~
+@513 = ~Spalmi il maleodorante balsamo sul golem. Dapprima non succede nulla, ma dopo diversi istanti compaiono crepe e lacrime su tutto il corpo mentre lentamente si ammorbidisce. Non piÃ¹ in grado di sostenere il proprio peso, il golem si sbriciola in nient'altro che un mucchio di ossa fragili e carne in decomposizione.~
 @514 = ~La massiccia struttura del golem ricorda un enorme ghoul, completo di artigli affilati e una lingua nera. I suoi occhi sono fissi su di te e seguono tutti i tuoi movimenti.~
 
 @517 = ~Esamini il tomo blu.~
@@ -24,13 +24,13 @@ Hai trovato questa piuma d'oca in uno sgabuzzino della tua camera al Centro Civi
 @524 = ~Ripostiglio Sigillato~
 @1117 = ~"Sembrano delle indicazioni..." Morte si schiarisce la voce. "Vediamo...cominciano con..."
 
-"So che ti senti come se avessi bevuto un paio di galloni d'acqua dello Stige, ma hai bisogno di CONCENTRARTI. Tra le cose che possedi vi e un DIARIO che getterà uno spiraglio di luce sull'oscurità della tua mente. PHAROD ti potrà dire il resto, se non e già nel Libro dei Morti."
+"So che ti senti come se avessi bevuto un paio di galloni d'acqua dello Stige, ma hai bisogno di CONCENTRARTI. Tra le cose che possedi vi e un DIARIO che getterÃ  uno spiraglio di luce sull'oscuritÃ  della tua mente. PHAROD ti potrÃ  dire il resto, se non e giÃ  nel Libro dei Morti."
 
-"Non perdere il diario o navigheremo ancora sullo Stige. E, qualunque cosa tu faccia, NON dire a NESSUNO CHI sei o QUELLO che ti succede, o ti metteranno sulla strada più breve per il forno crematorio. Fai quel che ti dico: LEGGI il diario, poi TROVA Pharod."~
-@3622 = ~I golem di pietra sono guardiani magicamente animati. I loro creatori di solito non si preoccupano di dare loro una forma diversa da quella di una statua austera e massiccia. Questo è stato scolpito per assomigliare a un enorme ghoul, completo di artigli affilati e una lingua nera guizzante... Senza dubbio un lavoro di Lothar, il maestro delle Ossa della Notte.~
+"Non perdere il diario o navigheremo ancora sullo Stige. E, qualunque cosa tu faccia, NON dire a NESSUNO CHI sei o QUELLO che ti succede, o ti metteranno sulla strada piÃ¹ breve per il forno crematorio. Fai quel che ti dico: LEGGI il diario, poi TROVA Pharod."~
+@3622 = ~I golem di pietra sono guardiani magicamente animati. I loro creatori di solito non si preoccupano di dare loro una forma diversa da quella di una statua austera e massiccia. Questo Ã¨ stato scolpito per assomigliare a un enorme ghoul, completo di artigli affilati e una lingua nera guizzante... Senza dubbio un lavoro di Lothar, il maestro delle Ossa della Notte.~
 @33606 = ~"La tua amante voleva che vi facessi smettere di litigare."~
 @50577 = ~Ci sono parecchi capitoli nel tomo: Trucco per il Teletrasporto, Trucco per Dormire Ovunque, Trucco per Arricchirsi, Trucco per migliorare gli Attributi, Trucco per Suicidarsi, Trucco per i Punti Esperienza, Trucco per divenire Buono o Malvagio, e Trucco per divenire Legale o Caotico.~
-@64883 = ~Ulthera lancia uno sguardo cauto e poi ti prende l'osso. Lo stringe al petto e inizia a cantare mentre ondeggia. La sua voce diventa più ansiosa ma si abbassa di volume fino a quando riesci a malapena a sentirla. Alla fine ansima e indica a sud-est con l'osso. "Sì, giù per le catacombe, vai a sud fino a trovare un vicolo cieco ... Ulthera l'ha trovato per te, ora va'!"~
+@64883 = ~Ulthera lancia uno sguardo cauto e poi ti prende l'osso. Lo stringe al petto e inizia a cantare mentre ondeggia. La sua voce diventa piÃ¹ ansiosa ma si abbassa di volume fino a quando riesci a malapena a sentirla. Alla fine ansima e indica a sud-est con l'osso. "SÃ¬, giÃ¹ per le catacombe, vai a sud fino a trovare un vicolo cieco ... Ulthera l'ha trovato per te, ora va'!"~
 @64936 = ~Ho trovato l'osso della gamba per Ulthera e le ho chiesto di individuare la posizione del portale usato da Arkin. Ha cantato e tentennato per un po', poi ha detto che il portale poteva essere trovato nelle Catacombe delle Pietre Piangenti, vicino a un vicolo cieco a sud. Spero che abbia ragione.~
 @64945 = ~Ho trovato l'osso della gamba per Ulthera e le ho chiesto di individuare la posizione del portale usato da Arkin. Ha cantato e tentennato per un po', poi ha detto che il portale poteva essere trovato nelle Catacombe delle Pietre Piangenti, vicino a un vicolo cieco a sud. Spero che abbia ragione.~
 

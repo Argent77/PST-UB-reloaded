@@ -279,30 +279,30 @@ END
 // Grace enters Festhall for the first time:
 // "Through observation, sensation and experience, the truth of the multiverse shall be revealed."
 
-COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/Sounds.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/Sounds.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 
 ACTION_IF (FILE_EXISTS ~override/Q!B4HRS.xxx~) BEGIN
   OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",1200) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B6HRS.xxx~) BEGIN
   OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",1800) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B10HRS.xxx~) BEGIN
   OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",3000) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B15HRS.xxx~) BEGIN
   OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",4500) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B20HRS.xxx~) BEGIN
   OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",6000) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (IS_PST) BEGIN
   // PST without Banter Accelerator
   OUTER_SPRINT "BanterDo" ~GlobalSet("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA0.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA0.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (IS_PSTEE) BEGIN
   // PSTEE
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA2.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/sounds.tra~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA2.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END
 
 
@@ -375,13 +375,13 @@ EXTEND_BOTTOM ~AR0300.BCS~ ~.../pst-ub/inlinedfile/gracehive.baf~
 // Version 4.0:
 
 // Restoring Annah's unused backstab sounds.  See sounds.tra.
-STRING_SET 36644 @36644 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA520F "Time to kick some back", changed to ANA522D "Backstab"
-STRING_SET 36924 @36924 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA522D "Backstab", changed to ANA523B "Left yerself exposed, ya eejit."
-STRING_SET 36925 @36925 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA522A "Backstab", changed to ANA524B "Left yourself wide open."
-STRING_SET 36926 @36926 USING ~%MOD_FOLDER%/tra/english/sounds.tra~   // Was ANA522D "Backstab", changed to ANA520F "Time to kick some back."
+STRING_SET 36644 @36644 USING ~%LANG_FOLDER%/sounds.tra~   // Was ANA520F "Time to kick some back", changed to ANA522D "Backstab"
+STRING_SET 36924 @36924 USING ~%LANG_FOLDER%/sounds.tra~   // Was ANA522D "Backstab", changed to ANA523B "Left yerself exposed, ya eejit."
+STRING_SET 36925 @36925 USING ~%LANG_FOLDER%/sounds.tra~   // Was ANA522A "Backstab", changed to ANA524B "Left yourself wide open."
+STRING_SET 36926 @36926 USING ~%LANG_FOLDER%/sounds.tra~   // Was ANA522D "Backstab", changed to ANA520F "Time to kick some back."
 
 // DAK043, previously a Repeat Select sound, is now being used as a restored banter, so replace its use in Repeat Select with unused DAK027B
-STRING_SET 61916 @61916 USING ~%MOD_FOLDER%/tra/english/sounds.tra~
+STRING_SET 61916 @61916 USING ~%LANG_FOLDER%/sounds.tra~
 
 // Adding unused Fhjull lines to his CRE
 COPY_EXISTING ~FHJULL.CRE~ ~override~

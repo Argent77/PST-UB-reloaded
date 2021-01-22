@@ -379,42 +379,42 @@ ACTION_IF (IS_PSTEE) BEGIN
   ACTION_MATCH ~%weidu_lang%~ WITH
     ~fr_fr~
     BEGIN
-      WITH_TRA ~%MOD_FOLDER%/tra/french/ub.tra~ BEGIN
+      WITH_TRA ~%LANG_FOLDER_BASE%/french/ub.tra~ BEGIN
         OUTER_SPRINT carver @49632  // "Carver"
       END
     END
     ~de_de~
     BEGIN
-      WITH_TRA ~%MOD_FOLDER%/tra/german/ub.tra~ BEGIN
+      WITH_TRA ~%LANG_FOLDER_BASE%/german/ub.tra~ BEGIN
         OUTER_SPRINT carver @49632  // "Carver"
       END
     END
     // ~it_it~
     // BEGIN
-      // WITH_TRA ~%MOD_FOLDER%/tra/italian/ub.tra~ BEGIN
+      // WITH_TRA ~%LANG_FOLDER_BASE%/italian/ub.tra~ BEGIN
         // OUTER_SPRINT carver @49632  // "Carver"
       // END
     // END
     ~pl_pl~
     BEGIN
-      WITH_TRA ~%MOD_FOLDER%/tra/polish/ub.tra~ BEGIN
+      WITH_TRA ~%LANG_FOLDER_BASE%/polish/ub.tra~ BEGIN
         OUTER_SPRINT carver @49632  // "Carver"
       END
     END
     ~ru_ru~
     BEGIN
-      WITH_TRA ~%MOD_FOLDER%/tra/russian/ub.tra~ BEGIN
+      WITH_TRA ~%LANG_FOLDER_BASE%/russian/ub.tra~ BEGIN
         OUTER_SPRINT carver @49632  // "Carver"
       END
     END
     // ~es_es~
     // BEGIN
-      // WITH_TRA ~%MOD_FOLDER%/tra/spanish/ub.tra~ BEGIN
+      // WITH_TRA ~%LANG_FOLDER_BASE%/spanish/ub.tra~ BEGIN
         // OUTER_SPRINT carver @49632  // "Carver"
       // END
     // END
     DEFAULT
-      WITH_TRA ~%MOD_FOLDER%/tra/english/ub.tra~ BEGIN
+      WITH_TRA ~%LANG_FOLDER_BASE%/english/ub.tra~ BEGIN
         OUTER_SPRINT carver @49632  // "Carver"
       END
   END

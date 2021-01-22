@@ -1,10 +1,15 @@
-BACKUP ~PST-UB-reloaded/backup~
+BACKUP ~weidu_external/backup/PST-UB-reloaded~
 SUPPORT ~https://forums.beamdog.com/discussion/comment/938523~
 VERSION ~v1.4~
 
 ASK_EVERY_COMPONENT
 
 ALWAYS
+  // required because of non-standard BACKUP path
+  OUTER_TEXT_SPRINT MOD_FOLDER ~PST-UB-reloaded~
+  // root folder for mutable data
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
+
   OUTER_SET IS_PSTEE = GAME_IS ~pstee~
   OUTER_SET IS_PST   = GAME_IS ~pst~
 
@@ -34,19 +39,37 @@ ALWAYS
   END
   LAF HANDLE_CHARSETS
   INT_VAR
-    infer_charset = 0
+    from_utf8         = 1
+    infer_charset     = 0
   STR_VAR
-    tra_path = EVAL ~%MOD_FOLDER%/tra~
+    default_language  = ~english~
+    tra_path          = EVAL ~%MOD_FOLDER%/tra~
+    out_path          = EVAL ~%WORK_FOLDER%/lang/%MOD_FOLDER%~
     charset_table
-    noconvert_array = tra_noconvert
-    reload_array    = tra_reload
+    noconvert_array   = ~tra_noconvert~
+    reload_array      = ~tra_reload~
+  END
+
+  // Translation folder might have changed after HANDLE_CHARSETS
+  ACTION_IF (FILE_EXISTS ~%WORK_FOLDER%/lang/%MOD_FOLDER%/%LANGUAGE%/ub.tra~) BEGIN
+    OUTER_TEXT_SPRINT LANG_FOLDER_BASE ~%WORK_FOLDER%/lang/%MOD_FOLDER%~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT LANG_FOLDER_BASE ~%MOD_FOLDER%/tra~
+  END
+  OUTER_TEXT_SPRINT LANG_FOLDER ~%LANG_FOLDER_BASE%/%LANGUAGE%~
+
+  // Translation folder for the default language (used in case translation is incomplete)
+  ACTION_IF (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
+    OUTER_TEXT_SPRINT DEFAULT_LANG_FOLDER_DEFAULT ~~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT DEFAULT_LANG_FOLDER ~%LANG_FOLDER_BASE%/english~
   END
 END
 
-README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.html~
-       ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.txt~
-       ~%MOD_FOLDER%/readme/readme.html~
-       ~%MOD_FOLDER%/readme/readme.txt~
+README ~PST-UB-reloaded/readme/readme-%LANGUAGE%.html~
+       ~PST-UB-reloaded/readme/readme-%LANGUAGE%.txt~
+       ~PST-UB-reloaded/readme/readme.html~
+       ~PST-UB-reloaded/readme/readme.txt~
 
 LANGUAGE ~English~
          ~english~

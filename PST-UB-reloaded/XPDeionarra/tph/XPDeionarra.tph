@@ -1,5 +1,5 @@
 
-COMPILE EVAL ~%MOD_FOLDER%/XPDeionarra/dlg/XPDeionarra.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/XPDeionarra.tra~
+COMPILE EVAL ~%MOD_FOLDER%/XPDeionarra/dlg/XPDeionarra.d~ USING ~%DEFAULT_LANG_FOLDER%/XPDeionarra.tra~ ~%LANG_FOLDER%/XPDeionarra.tra~
 
 ACTION_IF (IS_PST) BEGIN
   INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~
@@ -472,7 +472,7 @@ THEN
     FloatMessage(Myself,@145)
 END
 >>>>>>>>
-COMPILE ~.../pst-ub/inlinedfile/0502KESA.BAF~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/XPDeionarra.tra~
+COMPILE ~.../pst-ub/inlinedfile/0502KESA.BAF~ USING ~%DEFAULT_LANG_FOLDER%/XPDeionarra.tra~ ~%LANG_FOLDER%/XPDeionarra.tra~
 
 <<<<<<<< .../pst-ub/inlinedfile/0602DTRP.BAF
 IF
