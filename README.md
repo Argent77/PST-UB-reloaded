@@ -69,8 +69,11 @@ Restores descriptions for a number of bestiary entries. It also adds a new alu-f
 ### 18. Restored Lothar's Abode
 Restores guard creatures and minor treasure to Lothar's abode in the Lower Ward, that are found nowhere else in the game.
 
-### 19. Expanded Deionarra's Truth Mod
+### 19. Restored Tenement of Thugs
+Adds more roleplay opportunities to the Tenement of Thugs area by making the thugs initially neutral and including the secret door in the Xaositects quest line. This component is only available for PST:EE. For classic PST these issues are fixed by Qwinn's PS:T Fixpack.
+
+### 20. Expanded Deionarra's Truth Mod
 Adds a great deal of new content (including 180 new lines of dialogue) that will allow the player to find out her fate before it becomes too late to do anything about it. Once the new content has been played, about 30-40 more lines of original dialogue will become accessible.
 
-### 20. Restored Item Cheats (Not Recommended)
+### 21. Restored Item Cheats (Not Recommended)
 Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".

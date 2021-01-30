@@ -1,0 +1,54 @@
+// ================================== RESTORED TENEMENT OF THUGS ==================================
+// ====================== Based on fixes from PST Fixpack by Qwinn and scient =====================
+// ======================== Coded:  January 30, 2021 for UB Reloaded v1.5 =========================
+
+// This component is based on content from Qwinn's PS:T Fixpack. Although the majority of fixes were
+// integrated directly into PST:EE by the developers this fix was left out for some reason.
+
+// From the PST Fixpack Readme:
+// The Tenement of Thugs area is designed to be a Thieves' Playground, but instead it was a boring
+// interruption to the game. There were 3 reasons for this:
+// 1. There's a secret door near the area exit that lets you run right through the place with zero
+//    challenge that was only supposed to be available to Xaositects (if they talked to the right
+//    person).
+// 2. All the thugs were set to be initially hostile, which made them unable to be pickpocketed.
+//    There was tons of scripting to make them aggro when they saw you, but none of it mattered
+//    because they were hostile to begin with. Making them neutral to start with reactivated all
+//    their excellent aggro scripting, and made them able to be pickpocketed, which was supposed
+//    to be the only way for non-Xaositects to get through the Tenement without combat.
+// 3. The thugs couldn't run to block your path to the escape should you attempt to do so without
+//    stealth.
+
+// Only the first two issues are addressed by this component.
+
+
+// Tenement thugs should be initially neutral
+COPY_EXISTING ~SDMAGE.CRE~ ~override~
+              ~SDSENTRY.CRE~ ~override~
+              ~SDTHUG1.CRE~ ~override~
+              ~SDTHUG2.CRE~ ~override~
+              ~SDTHUG3.CRE~ ~override~
+              ~SDVET.CRE~ ~override~
+  WRITE_BYTE 0x270 128    // NEUTRAL
+BUT_ONLY
+
+
+// Secret door in tenements is only available to Chaositects after talking to Tiresias
+OUTER_TEXT_SPRINT secret_door_script ~~
+OUTER_FOR (i = 2; i < 10 && ~%secret_door_script%~ STR_EQ ~~; i += 1) BEGIN
+  // finding available door script name
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~0403DOR%i%.BCS~) BEGIN
+    OUTER_TEXT_SPRINT secret_door_script ~0403DOR%i%~
+  END
+END
+EXTEND_TOP ~%secret_door_script%.BCS~ ~%MOD_FOLDER%/Tenements/bcs/secret_door_script.baf~
+
+COPY_EXISTING ~AR0403.ARE~ ~override~
+  LPF ALTER_AREA_DOOR
+    INT_VAR
+      door_detect = 1000
+    STR_VAR
+      door_name = ~ar403d22~
+      door_script = EVAL ~%secret_door_script%~
+  END
+BUT_ONLY
