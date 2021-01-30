@@ -1,6 +1,10 @@
 # PS:T Unfinished Business - Reloaded
 *A mod for PST and PST:EE, based on Qwinn's PS:T Unfinished Business*
 
+**Website:** https://argent77.github.io/PST-UB-reloaded/index.html
+
+**Discussion:** [Beamdog Forums](https://forums.beamdog.com/discussion/comment/938523) or [Spellhold Studios Forums](http://www.shsforums.net/forum/553-pst-ub/)
+
 ## Overview
 
 This mod is a continuation of Qwinn's original *PS:T Unfinished Business* (PST-UB), based on version 4.12. It has been completely overhauled and made compatible with Planescape Torment: Enhanced Edition in addition to classic Planescape: Torment.
