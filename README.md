@@ -7,9 +7,10 @@
 # PS:T Unfinished Business - Reloaded
 *A mod for PST and PST:EE, based on Qwinn's PS:T Unfinished Business*
 
-**Website:** https://argent77.github.io/PST-UB-reloaded/index.html
+[![Website](https://img.shields.io/static/v1?label=Website&message=Name-of-the-project&color=ccc7ba&labelColor=eee&style=flat)](https://argent77.github.io/PST-UB-reloaded/index.html)
 
-**Discussion:** [Beamdog Forums](https://forums.beamdog.com/discussion/comment/938523) or [Spellhold Studios Forums](http://www.shsforums.net/forum/553-pst-ub/)
+[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=flat)](https://forums.beamdog.com/discussion/comment/938523)
+[![SHS Forums](https://img.shields.io/static/v1?label=Discussion&message=SHS%20Forums&color=951514&labelColor=eee&style=flat)](http://www.shsforums.net/forum/553-pst-ub/)
 
 ## Overview
 
