@@ -1,8 +1,9 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/PST-UB-reloaded?color=darkred&include_prereleases&label=latest%20release)](https://GitHub.com/Argent77/PST-UB-reloaded/releases/latest)
-[![GitHub release date (latest by date)](https://img.shields.io/github/release-date/Argent77/PST-UB-reloaded?color=gold)](https://GitHub.com/Argent77/PST-UB-reloaded/releases/latest)
-[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/PST-UB-reloaded/total.svg?color=blueviolet)](https://GitHub.com/Argent77/PST-UB-reloaded/releases)
-[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://GitHub.com/Argent77/PST-UB-reloaded/releases/latest)
-[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish%20%7C%20Brazilian%20Portuguese%20%7C%20Russian%20%7C%20Simplified%20Chinese%20%7C%20Spanish&color=limegreen)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/PST-UB-reloaded?color=darkred&include_prereleases&label=latest%20release)](https://github.com/Argent77/PST-UB-reloaded/releases/latest)
+[![GitHub release date (latest by date)](https://img.shields.io/github/release-date/Argent77/PST-UB-reloaded?color=gold)](https://github.com/Argent77/PST-UB-reloaded/releases/latest)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/PST-UB-reloaded/total.svg?color=blueviolet)](https://github.com/Argent77/PST-UB-reloaded/releases)
+[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/Argent77/PST-UB-reloaded/releases/latest)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish%20%7C%20Brazilian%20Portuguese%20%7C%20Russian%20%7C%20Simplified%20Chinese%20%7C%20Spanish&color=limegreen)](https://github.com/Argent77/PST-UB-reloaded)
+[![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=PST%20%7C%20PST%3AEE&color=indigo)](https://github.com/Argent77/PST-UB-reloaded)
 
 # PS:T Unfinished Business - Reloaded
 *A mod for PST and PST:EE, based on Qwinn's PS:T Unfinished Business*
@@ -15,8 +16,6 @@
 ## Overview
 
 This mod is a continuation of Qwinn's original *PS:T Unfinished Business* (PST-UB), based on version 4.12. It has been completely overhauled and made compatible with Planescape Torment: Enhanced Edition in addition to classic Planescape: Torment.
-
-The mod is currently available in English, French, German, Italian, Polish, Brazilian Portuguese, Russian, Simplified Chinese and Spanish.
 
 **From the original PST-UB readme:** *This WeiDU mod takes the almost-but-not-quite-finished content that shipped with Black Isle's classic Planescape: Torment CRPG, and finishes and polishes it so you can actually see and enjoy the new content in your game. And as you shall soon see, there's quite a bit of it. Version 4.0 of this mod comes with no less than 18 full and non-trivial restorations.*
 
@@ -76,7 +75,7 @@ Restores descriptions for a number of bestiary entries. It also adds a new alu-f
 ### 18. Restored Lothar's Abode
 Restores guard creatures and minor treasure to Lothar's abode in the Lower Ward, that are found nowhere else in the game.
 
-### 19. Restored Tenement of Thugs
+### 19. Restored Tenement of Thugs *(PST:EE only)*
 Adds more roleplay opportunities to the Tenement of Thugs area by making the thugs initially neutral and including the secret door in the Xaositects quest line. This component is only available for PST:EE. For classic PST these issues are fixed by Qwinn's PS:T Fixpack.
 
 ### 20. Expanded Deionarra's Truth Mod
