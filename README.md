@@ -1,9 +1,8 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/PST-UB-reloaded?color=darkred&include_prereleases&label=latest%20release)](https://github.com/Argent77/PST-UB-reloaded/releases/latest)
-[![GitHub release date (latest by date)](https://img.shields.io/github/release-date/Argent77/PST-UB-reloaded?color=gold)](https://github.com/Argent77/PST-UB-reloaded/releases/latest)
-[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/PST-UB-reloaded/total.svg?color=blueviolet)](https://github.com/Argent77/PST-UB-reloaded/releases)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/PST-UB-reloaded/total.svg?color=gold)](https://github.com/Argent77/PST-UB-reloaded/releases)
 [![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/Argent77/PST-UB-reloaded/releases/latest)
-[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish%20%7C%20Brazilian%20Portuguese%20%7C%20Russian%20%7C%20Simplified%20Chinese%20%7C%20Spanish&color=limegreen)](https://github.com/Argent77/PST-UB-reloaded)
 [![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=PST%20%7C%20PST%3AEE&color=indigo)](https://github.com/Argent77/PST-UB-reloaded)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish%20%7C%20Brazilian%20Portuguese%20%7C%20Russian%20%7C%20Simplified%20Chinese%20%7C%20Spanish&color=limegreen)](https://github.com/Argent77/PST-UB-reloaded)
 
 # PS:T Unfinished Business - Reloaded
 *A mod for PST and PST:EE, based on Qwinn's PS:T Unfinished Business*
