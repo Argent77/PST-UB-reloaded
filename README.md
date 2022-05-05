@@ -85,4 +85,4 @@ Adds a great deal of new content (including 180 new lines of dialogue) that will
 Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".
 
 ### 22. Miscellaneous Restorations and Improvements
-Installs various minor restorations and improvements which are not strictly based on cut content.
+Installs various restorations and improvements which are either too small to warrant their own components, or aren't strictly based on cut content.
