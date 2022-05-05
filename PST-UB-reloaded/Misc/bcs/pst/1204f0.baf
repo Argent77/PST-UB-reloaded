@@ -1,0 +1,96 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Face(0)
+    Wait(1)
+    PlaySequence(ANIM_CAST)
+    Wait(3)
+    EndCutSceneMode()
+    QuitGame(3,0,0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Morte")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Annah")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Dakkon")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Grace")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Nordom")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Ignus")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Vhail")
+    Wait(1)
+    SmallWait(5)
+    StickySinisterPoof("S113SMOK",Myself,1)
+    Wait(1)
+    DestroySelf()
+END

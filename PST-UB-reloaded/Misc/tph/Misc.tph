@@ -1,0 +1,15 @@
+// =============== MISCELLANEOUS RESTORATIONS AND IMPROVEMENTS ===============
+// ================ Coded:  May 4, 2022 for UB Reloaded v1.6 =================
+
+
+// When TNO and TTO have merged, the game ends without any hints about the fate
+// of the companions who are left behind in the Fortress of Regrets.
+// This code adds a cutscene right before the ending cinematics, which takes
+// care of that detail.
+ACTION_IF (IS_PSTEE) BEGIN
+  COMPILE ~%MOD_FOLDER%/Misc/bcs/pstee/1204f0.baf~
+  COMPILE ~%MOD_FOLDER%/Misc/dlg/npc_final_pstee.d~
+END ELSE BEGIN
+  COMPILE ~%MOD_FOLDER%/Misc/bcs/pst/1204f0.baf~
+  COMPILE ~%MOD_FOLDER%/Misc/dlg/npc_final_pst.d~
+END

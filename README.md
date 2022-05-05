@@ -22,7 +22,7 @@ This mod is a continuation of Qwinn's original *PS:T Unfinished Business* (PST-U
 ## Components
 
 ### 1. All Recommended PS:T Unfinished Business Components
-A convenience option that installs all components except "Expanded Deionarra's Truth Mod" and "Restored Item Cheats (Not Recommended)"
+A convenience option that installs all components except "Expanded Deionarra's Truth Mod", "Restored Item Cheats (Not Recommended)", and "Miscellaneous Restorations and Improvements".
 
 ### 2. Restored Able Ponder-Thought Research
 Completes a number of subjects Able Ponder-Thought will conduct research on.
@@ -83,3 +83,6 @@ Adds a great deal of new content (including 180 new lines of dialogue) that will
 
 ### 21. Restored Item Cheats (Not Recommended)
 Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".
+
+### 22. Miscellaneous Restorations and Improvements
+Installs various minor restorations and improvements which are not strictly based on cut content.
