@@ -1,0 +1,65 @@
+// Deionarra dialog
+@0 = ~"Dieser Ort unterdrückt alle Energien, die nicht von dieser Ebene sind. Wenn du auf Beschwörungen und Zauber angewiesen bist, um dich zu verteidigen, dann wirst du gewiss fallen." Sie fährt in einem eindringlicheren Ton fort. "Halte nach Hinweisen Ausschau, die dein vergangenes Ich hinterlassen hat, als es diesen Ort aufsuchte."~
+
+
+// Fhjull dialog
+@50 = ~"Gibt es sonst noch etwas, dass ich in Baator beachten sollte?"~
+@51 = ~"Es *könnte* sein, dass deine magischen Fähigkeiten an diesem Ort beeinträchtigt sind. Aber jemand von deiner... Statur sollte keine Schwierigkeiten haben, unbehelligt durch die Weiten von Baator zu kommen."~
+@52 = ~"Kannst du das näher erläutern?"~
+@53 = ~"Wenn du darauf bestehst? Pah! Die äußeren Ebenen könnten für jemanden wie dich zu weit von der Quelle der Magie entfernt sein, außer..."~
+@54 = ~"Außer was?"~
+@55 = ~"Außer du besäßest einen 'Schlüssel', um sich auf die magischen Energien zu konzentrieren."~
+@56 = ~"Hast du einen solchen Schlüssel?"~
+@57 = ~"Häh? Nun, es könnte sein, dass hier so etwas irgendwo herumliegt."~
+@58 = ~"Bitte gib ihn mir!"~
+@59 = ~"Pah! Aber natürlich, bitte sehr. Wie kann ich dir *noch* zu Diensten sein?"~
+@60 = ~"Pah! Aber natürlich..."~
+@61 = ~"Dreimal verflucht! Du hast dich bereits daran bedient? Die Jungen haben einfach keinen Respekt mehr vor den Älteren. Aber es erspart mir zumindest, dir mehr von meiner *Großzügigkeit* zu zeigen."~
+
+
+// Modron Engineer dialog
+@100 = ~"Benötige ich einen Schlüssel, damit meine Zauber in diesem Ort funktionieren?"~
+@101 = ~"Gibt es für Zauberkundige irgendwelche Gefahren an diesem Ort?"~
+@102 = ~"Ja, Herr Direktor. Er kann vom 'Aufseher' angefordert werden."~
+@103 = ~"Der Aufseher? Wo kann ich ihn finden?"~
+@104 = ~"Ja, Herr Direktor. Es besteht eine hohe Wahrscheinlichkeit, dass die Verbindung zu Energien fremden Ursprungs unterbrochen werden."~
+@105 = ~"Bedeutet das, ich kann keine Zauber wirken kann?"~
+@106 = ~"Positiv."~
+@107 = ~"Wie kann ich mich vor diesem Effekt schützen?"~
+@108 = ~"Ein Zauberschlüssel wird benötigt, um die Verbindung wiederherzustellen."~
+@109 = ~"Wo kann ich diesen Zauberschlüssel finden?"~
+@110 = ~"Er kann vom 'Aufseher' angefordert werden."~
+@111 = ~"Der Aufseher wurde mit der Aufgabe betraut, Abenteurer willkommen zu heißen. Du kannst ihn im Eingangsbereich des Rubikon-Verlies-Konstrukts finden. Ein Schlüsselwort wird benötigt, um den Zauberschlüssel zu erhalten."~
+@112 = ~"Und wie lautet es?"~
+@113 = ~"Das Schlüsselwort für den Zauberschlüssel lautet 'Sterngucker'."~
+
+
+// Modron steward dialog
+@150 = ~"Ich soll dir das Schlüsselwort 'Sterngucker' übermitteln."~
+@151 = ~Die Kreatur blinzelt zweimal, bevor sie einen leisen, summenden Ton von sich gibt, der nach einigen Sekunden wieder abklingt. Ohne ein Wort zu sagen, händigt sie dir ein papierähnliches Stück Stoff aus.~
+@152 = ~"Danke. Leb wohl."~
+
+
+// Interactive region
+@500 = ~"Säule"~
+@501 = ~Es sieht so aus, als ob der Boden um die Säule herum leicht aufgewühlt ist, als ob dort jemand 'kürzlich' - vielleicht in den letzten Jahren - gewesen ist.~
+@502 = ~Lege den Schalter um.~
+@503 = ~Lass den Schalter in Ruhe.~
+@504 = ~Du greifst nach dem Schalter und legst ihn um. Zu deiner Überraschung löst sich eine gut getarnte Platte und bringt einen versteckten Behälter zum Vorschein.~
+
+
+// Items
+@1000 = ~Zauberschlüssel Limbos~
+@1001 = ~ZAUBERSCHLÜSSEL LIMBOS
+Gewicht: 0
+
+Dieses Symbol Limbos ist in ein Stück Menschenfleisch eingeritzt. Er riecht metallisch, fühlt sich aber weich an, wie Samt. Solang du ihn bei dir trägst, verhindert er ein Mißlingen deiner Zauber, während du dich auf der Ebene von Limbo aufhältst.~
+
+
+// Journal entries
+@1500 = ~Ich konnte von Fhjull Schlangenzunge einen Zauberschlüssel für die Ebene von Baator erhalten. Laut Fhjull werden Zauberschlüssel benötigt, um zu verhindern, dass meine Zauber misslingen. Jede Ebene scheint einen bestimmten Schlüssel zu benötigen.~
+@1510 = ~Kyse, der Müllhalden-Verwalter, hat mir in Carzeri einen 'Zauberschlüssel' hinterlassen, bevor er verschwand. Er wird anscheinend benötigt, um zu verhindern, dass meine Zauber auf der Ebene von Carzeri misslingen.~
+@1520 = ~Deionarra meinte, die Festung der Reue sei gegen Energien von außen abgeschirmt, so dass es unmöglich sei, an diesem Ort Zauber zu wirken. Weiteres könnte ich aus den Hinweisen erfahren, die meine vergangen Ichs hinterlassen haben.~
+@1530 = ~Rubikon Zauberschlüssel beschaffen.~
+@1531 = ~Ein Modron-Ingenieur teilte mir mit, dass der Modron-Aufseher im Eingangsbereich des Rubikon-Konstrukts verantwortlich ist, "Abenteurer" mit Werkzeugen für das Verlies auszustatten. Er nannte mir das Schlüsselwort "Sterngucker", das den Aufseher dazu veranlassen sollte, mir den Zauberschlüssel zu übergeben. Dieser Schlüssel ist notwendig, um zu verhindern, dass meine Zauber auf der Ebene von Limbo, auf der das Verlies-Konstrukt erschaffen wurde, misslingen.~
+@1532 = ~Der Modron im Eingangsbereich des Rubikon-Konstrukts übergab mir den Zauberschlüssel für die Ebene von Limbo, nachdem ich ihm das korrekte Schlüsselwort genannt habe.~

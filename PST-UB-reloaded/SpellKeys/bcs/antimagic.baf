@@ -1,0 +1,19 @@
+IF
+  TimerActive(%timer_id%)
+  HasItem("%spell_key%",Protagonist)
+THEN
+  RESPONSE #100
+    ApplySpellRES("A7SPAM1D",Protagonist)
+    StartTimer(%timer_id%,0)
+    Continue()
+END
+
+IF
+  !TimerActive(%timer_id%)
+  !HasItem("%spell_key%",Protagonist)
+THEN
+  RESPONSE #100
+    ApplySpellRES("A7SPAM1",Protagonist)
+    StartTimer(%timer_id%,12)
+    Continue()
+END

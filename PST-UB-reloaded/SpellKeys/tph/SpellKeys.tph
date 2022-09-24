@@ -1,0 +1,197 @@
+// =========================== RESTORED SPELL KEYS ===========================
+// ================ Coded: Sep 23, 2022 for UB Reloaded v1.6 =================
+
+INCLUDE ~%MOD_FOLDER%/SpellKeys/tph/Functions.tph~
+INCLUDE ~%MOD_FOLDER%/utils/A7_PSTEEFunctions.tph~
+
+// Spells for applying and removing the antimagic effect
+COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1.SPL~ ~override~
+  SAY NAME1 ~Spell Failure~
+COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1D.SPL~ ~override~
+  SAY NAME1 ~Remove Spell Failure~
+
+COMPILE ~%MOD_FOLDER%/SpellKeys/dlg/antimagic_pstee.d~ USING ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~
+
+
+// Negative Material Plane Spell Key: Required in the Fortress of Regrets
+// Item can be found in a secret stash in the fortress interior map.
+
+// Spell Key item resref
+OUTER_SPRINT spell_key ~NEGMATSK~
+
+EXTEND_TOP ~AR1201.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/1201_stash.baf~
+ACTION_FOR_EACH script IN ~AR1200~ ~AR1201~ ~AR1202~ ~AR1203~ ~AR1204~ BEGIN
+  // find reserved timer ids
+  COPY_EXISTING ~%script%.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      LPF FIND_TIMER_ID RET timer_id END
+    END
+  BUT_ONLY
+
+  EXTEND_TOP ~%script%.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/antimagic.baf~ EVAL
+END
+
+// Adding a secret stash to AR1201.ARE containing item NEGMATSK.ITM
+COPY_EXISTING ~AR1201.ARE~ ~override~
+  // adding container
+  LPF fj_are_structure
+  INT_VAR
+    fj_flags            = BIT5  // disabled
+    fj_type             = 8     // non-visible
+    fj_lock_diff        = 0
+    fj_trap_detect      = 0
+    fj_trap_remove_diff = 0
+    fj_loc_x            = 420
+    fj_loc_y            = 1100
+    fj_box_left         = 361
+    fj_box_top          = 1019
+    fj_box_right        = 373
+    fj_box_bottom       = 1063
+    fj_vertex_0         = 373 + (1019 << 16)
+    fj_vertex_1         = 373 + (1049 << 16)
+    fj_vertex_2         = 361 + (1063 << 16)
+    fj_vertex_3         = 361 + (1030 << 16)
+  STR_VAR
+    fj_structure_type   = ~container~
+    fj_name             = ~A7_Stash~
+  RET
+    fj_return_offset
+  END
+
+  // adding item to container
+  READ_LONG 0x70 ofs_containers
+  SET container_index = (fj_return_offset - ofs_containers) / 192
+  LPF ADD_AREA_ITEM
+    INT_VAR
+      container_to_add_to = container_index + 1   // one-based container index
+    STR_VAR
+      item_to_add = ~NEGMATSK~
+  END
+
+  PATCH_WITH_TRA ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~ BEGIN
+    // adding stash trigger
+    LPF fj_are_structure
+    INT_VAR
+      fj_type               = 1   // info region
+      fj_cursor_idx         = 8   // "interactable" cursor
+      fj_box_left           = 317
+      fj_box_top            = 998
+      fj_box_right          = 375
+      fj_box_bottom         = 1072
+      fj_vertex_0           = 375 + (998 << 16)
+      fj_vertex_1           = 375 + (1065 << 16)
+      fj_vertex_2           = 317 + (1072 << 16)
+      fj_vertex_3           = 317 + (1006 << 16)
+      fj_flags              = BIT8 | BIT9 | BIT10  // "Trigger deactivated", "Cannot be passed by NPC", "Use activation point"
+      fj_info_point_strref  = 34103 // "You are too far away to examine this."
+      fj_loc_x              = 420
+      fj_loc_y              = 1100
+      fj_alt_x              = 420
+      fj_alt_y              = 1100
+      fj_talk_loc_x         = 420
+      fj_talk_loc_y         = 1100
+      fj_speaker_strref     = RESOLVE_STR_REF(@500)
+    STR_VAR
+      fj_structure_type     = ~region~
+      fj_name               = ~A7_Stash_Trigger~
+      fj_dialog             = ~1201sk1~
+    END
+  END
+BUT_ONLY
+
+
+// Baator Spell Key: Required in Baator and the Pillar of Skulls
+// Item can be requested from Fhjull.
+
+// Spell Key item resref
+OUTER_SPRINT spell_key ~BAATORSK~
+
+ACTION_FOR_EACH script IN ~AR1000~ ~AR1001~ BEGIN
+  // find reserved timer ids
+  COPY_EXISTING ~%script%.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      LPF FIND_TIMER_ID RET timer_id END
+    END
+  BUT_ONLY
+
+  EXTEND_TOP ~%script%.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/antimagic.baf~ EVAL
+END
+
+// Adding key item to Fhjull's inventory
+COPY_EXISTING ~FHJULL.CRE~ ~override~
+  ADD_CRE_ITEM ~%spell_key%~ #0 #0 #0 ~none~ ~INV~
+BUT_ONLY
+
+
+// Carceri Spell Key: Required in the Carceri version of Curst
+// Item is provided by Kyse the dump caretaker if you don't turn him down.
+
+// Spell Key item resref
+OUTER_SPRINT spell_key ~CARCERSK~
+
+ACTION_FOR_EACH script IN ~AR0900~ ~AR0901~ ~AR0902~ ~AR0904~ BEGIN
+  // find reserved timer ids
+  COPY_EXISTING ~%script%.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      LPF FIND_TIMER_ID RET timer_id END
+    END
+  BUT_ONLY
+
+  EXTEND_TOP ~%script%.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/antimagic.baf~ EVAL
+END
+
+// Adding key item to Kyse's inventory
+COPY_EXISTING ~CARETKR.CRE~ ~override~
+  ADD_CRE_ITEM ~%spell_key%~ #0 #0 #0 ~unstealable~ ~INV~
+BUT_ONLY
+
+
+// Limbo Spell Key: 
+
+// Spell Key item resref
+OUTER_SPRINT spell_key ~LIMBOSK~
+
+// Installing Limbo Spell Key item
+WITH_TRA ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~ BEGIN
+  COPY ~%MOD_FOLDER%/SpellKeys/copy/LIMBOSK.ITM~ ~override~
+    SAY NAME2 @1000
+    SAY IDENTIFIED_DESC @1001
+END
+
+ACTION_FOR_EACH script IN ~AR1300~ ~AR13EN~ ~AR13FY~ BEGIN
+  // find reserved timer ids
+  COPY_EXISTING ~%script%.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      LPF FIND_TIMER_ID RET timer_id END
+    END
+  BUT_ONLY
+
+  EXTEND_TOP ~%script%.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/antimagic.baf~ EVAL
+END
+
+// Adding key item to inventory of Welcoming Modron
+COPY_EXISTING ~MODMDO.CRE~ ~override~
+  ADD_CRE_ITEM ~%spell_key%~ #0 #0 #0 ~unstealable~ ~INV~
+BUT_ONLY
+
+// Related quest entries
+WITH_TRA ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~ BEGIN
+  COPY_EXISTING ~BGEE.LUA~ ~override~
+    LPF A7_ADD_QUEST_PSTEE
+    INT_VAR
+      title           = RESOLVE_STR_REF(@1530)
+      descAssigned    = RESOLVE_STR_REF(@1531)
+      descCompleted   = RESOLVE_STR_REF(@1532)
+      assignedChecks  = 1
+      aValue1         = 1
+      completeChecks  = 1
+      cValue1         = 1
+    STR_VAR
+      aVar1           = ~A7_AntiMagicHelpModrons~
+      aCondition1     = ~EQ~
+      cVar1           = ~A7_AntiMagicHelpModrons~
+      cCondition1     = ~GT~
+      comment         = ~Acquire the Rubikon Spell Key.~
+    END
+  BUT_ONLY
+END

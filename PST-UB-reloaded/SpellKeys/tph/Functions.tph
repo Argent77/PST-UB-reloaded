@@ -1,0 +1,18 @@
+// Returns a timer id that is not used by the current script source.
+DEFINE_PATCH_FUNCTION FIND_TIMER_ID
+RET timer_id
+BEGIN
+  // find reserved timer ids
+  REPLACE_EVALUATE CASE_SENSITIVE ~\(Start\)?Timer\(Active\)?(\([0-9]+\)~ BEGIN
+    SET $timers(~%MATCH3%~) = 1
+  END ~%MATCH0%~
+
+  // determine free timer id
+  SET timer_id = 65535
+  FOR (i = 1; i < 65536; ++i) BEGIN
+    PATCH_IF (NOT VARIABLE_IS_SET $timers(~%i%~)) BEGIN
+      SET timer_id = i
+      SET i = 65536
+    END
+  END
+END

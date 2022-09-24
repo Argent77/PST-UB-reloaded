@@ -58,12 +58,8 @@ ALWAYS
   END
   OUTER_TEXT_SPRINT LANG_FOLDER ~%LANG_FOLDER_BASE%/%LANGUAGE%~
 
-  // Translation folder for the default language (used in case translation is incomplete)
-  ACTION_IF (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
-    OUTER_TEXT_SPRINT DEFAULT_LANG_FOLDER_DEFAULT ~~
-  END ELSE BEGIN
-    OUTER_TEXT_SPRINT DEFAULT_LANG_FOLDER ~%LANG_FOLDER_BASE%/english~
-  END
+  // Translation folder for the default language (fallback option when translation is incomplete)
+  OUTER_TEXT_SPRINT DEFAULT_LANG_FOLDER ~%LANG_FOLDER_BASE%/english~
 END
 
 README ~PST-UB-reloaded/readme/readme-%LANGUAGE%.html~
@@ -371,8 +367,16 @@ COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CITEMS.xxx~
 INCLUDE ~%MOD_FOLDER%/CheatItems/tph/CheatItems.tph~
 
 
-BEGIN @52 // Miscellaneous Restorations and Improvements
+BEGIN @26 // Restored Spell Keys
 DESIGNATED 52
+LABEL ~A7-PST-UB-RELOADED-RESTORED_SPELL_KEYS~
+REQUIRE_PREDICATE GAME_IS ~pstee~ @51 // ~Requires Planescape Torment: Enhanced Edition!~
+COPY_EXISTING ~SCALPEL.itm~ ~override/Q!SPKEYS.xxx~
+INCLUDE ~%MOD_FOLDER%/SpellKeys/tph/SpellKeys.tph~
+
+
+BEGIN @27 // Miscellaneous Restorations and Improvements
+DESIGNATED 60
 LABEL ~A7-PST-UB-RELOADED-MISC_RESTORATION_AND_IMPROVEMENTS~
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!MISC.xxx~

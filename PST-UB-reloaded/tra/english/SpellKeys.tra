@@ -1,0 +1,65 @@
+// Deionarra dialog
+@0 = ~"This place suppresses all energies that are not of this plane. If you rely on enchantments or spells to defend yourself, you will surely fall." She continues in a more insistent tone. "Look for hints you have left behind when you last visited this place."~
+
+
+// Fhjull dialog
+@50 = ~"Is there anything else I need to be aware of in Baator?"~
+@51 = ~"It *could* be that your magics are disturbed in that place. But someone of your... stature should have no trouble getting through the plains unmolested."~
+@52 = ~"Can you explain it further?"~
+@53 = ~"If you insist? Feh! The Outer Planes may be too far away from the source of magic for someone like you, unless..."~
+@54 = ~"Unless what?"~
+@55 = ~"Unless you had a 'key' in your possession to focus on the magical energies."~
+@56 = ~"Do you have such a key?"~
+@57 = ~"Eh? Yes, it could be that something like this is lying around here somewhere."~
+@58 = ~"Please give it to me!"~
+@59 = ~"Feh! Of course, here it is. How *else* may I serve you?"~
+@60 = ~"Feh! Of course..."~
+@61 = ~"Thrice-damned! You took it already? The young just don't respect their elders anymore. But it spares me of showing you more of my *generosity*, at least."~
+
+
+// Modron Engineer dialog
+@100 = ~"Do I need a key for my spells to work in this area?"~
+@101 = ~"Are there any dangers for spellcasters in this area?"~
+@102 = ~"Yes, Director. It can be requested from the 'majordomo'."~
+@103 = ~"The majordomo? Where can I find him?"~
+@104 = ~"Yes, Director. There is a high probability that links to energies of outside origin will be disrupted."~
+@105 = ~"Does that mean I can't cast spells?"~
+@106 = ~"Affirmative."~
+@107 = ~"How can I protect myself from this effect?"~
+@108 = ~"A spell key is required to reestablish the link."~
+@109 = ~"Where can I find this spell key?"~
+@110 = ~"It can be requested from the 'majordomo'."~
+@111 = ~"The majordomo has been assigned with the task to welcome adventurers and can be found in the entrance area of the Rubikon Dungeon Construct. A keyword is needed to receive the spell key."~
+@112 = ~"What keyword?"~
+@113 = ~"The keyword for requesting a spell key is 'Stargazer'."~
+
+
+// Modron steward dialog
+@150 = ~"I was told to tell you the keyword 'Stargazer'."~
+@151 = ~The creature blinks twice before it starts emitting a low buzzing sound that subsides after a couple of seconds. Without saying a word, it hands you a sheet of paper-like piece of cloth.~
+@152 = ~"Thank you, farewell."~
+
+
+// Interactive region
+@500 = ~"Column"~
+@501 = ~It looks like the ground around the column is slightly disturbed, as if someone walked there 'recently' - perhaps in the last few years. A more thorough search reveals a tiny switch on one side of the column.~
+@502 = ~Flip the switch.~
+@503 = ~Leave the switch alone.~
+@504 = ~You reach for the switch and flip it. To your surprise a well disguised panel comes loose and reveals a hidden cache.~
+
+
+// Items
+@1000 = ~Limbo Spell Key~
+@1001 = ~LIMBO SPELL KEY
+Weight: 0
+
+This symbol of Limbo is inscribed upon a piece of human flesh. It has a metallic smell, yet it feels smooth to the touch, like velvet. As long as you carry it on your person, it will prevent your spells from going awry while on the plane of Limbo.~
+
+
+// Journal entries
+@1500 = ~I was able to acquire a spell key for the plane of Baator from Fhjull Forked-Tongue. According to Fhjull, spell keys are needed to prevent my spells from going awry on the Outer Planes. Each plane seems to require a specific key.~
+@1510 = ~Kyse, the dump caretaker, left me with a 'spell key' before he vanished from the place. It is apparently required to prevent my spells from going awry on the plane of Carceri.~
+@1520 = ~Deionarra told me that the Fortress of Regrets is shielded from outside energies, which makes it impossible to cast spells in that place. I may find out more from hints left behind by my former selves.~
+@1530 = ~Acquire the Rubikon Spell Key.~
+@1531 = ~A Modron Engineer told me that the modron in the foyer is responsible for providing tools to the "adventurers" who come to try out the dungeon construct. He told me the keyword "Stargazer" which instructs the welcoming modron to hand over a spell key. This item is needed to prevent my spells from going awry on the plane of Limbo, where the Rubikon dungeon construct was created.~
+@1532 = ~The Modron in the foyer gave me the spell key for the plane of Limbo after telling him the right keyword.~
