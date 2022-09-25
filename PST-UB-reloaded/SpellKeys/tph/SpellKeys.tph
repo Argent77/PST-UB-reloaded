@@ -146,7 +146,8 @@ COPY_EXISTING ~CARETKR.CRE~ ~override~
 BUT_ONLY
 
 
-// Limbo Spell Key: 
+// Limbo Spell Key: Required in the Rubikon Dungeon Construct (Modron Maze)
+// Item is provided by the Modron in the foyer after asking the Modron Engineer for a keyword.
 
 // Spell Key item resref
 OUTER_SPRINT spell_key ~LIMBOSK~

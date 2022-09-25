@@ -32,6 +32,8 @@
 @111 = ~"The majordomo has been assigned with the task to welcome adventurers and can be found in the entrance area of the Rubikon Dungeon Construct. A keyword is needed to receive the spell key."~
 @112 = ~"What keyword?"~
 @113 = ~"The keyword for requesting a spell key is 'Stargazer'."~
+@114 = ~"Nevermind. I have some more questions..."~
+@115 = ~"I see. Farewell."~
 
 
 // Modron steward dialog

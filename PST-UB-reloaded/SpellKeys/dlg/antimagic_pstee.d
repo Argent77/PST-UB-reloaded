@@ -2,7 +2,7 @@
 APPEND ~DFHJULL~
   IF ~~ DFHJULL.1
     SAY @51
-    ++ @52 DO ~SetGlobal("A7_AntiMagicHelpFhjull","GLOBAL",1)~ + DFHJULL.2
+    ++ @52 DO ~~ + DFHJULL.2
   END
 
   IF ~~ DFHJULL.2
@@ -17,8 +17,10 @@ APPEND ~DFHJULL~
 
   IF ~~ DFHJULL.4
     SAY @57
-    + ~HasItem("BAATORSK",Myself)~ + @58 + DFHJULL.5
-    + ~!HasItem("BAATORSK",Myself)~ + @58 + DFHJULL.6
+    + ~HasItem("BAATORSK",Myself)~ + @58 DO ~SetGlobal("A7_AntiMagicHelpFhjull","GLOBAL",1)~ + DFHJULL.5
+    + ~!HasItem("BAATORSK",Myself)~ + @58 DO ~SetGlobal("A7_AntiMagicHelpFhjull","GLOBAL",1)~ + DFHJULL.6
+    ++ #55803 + 46
+    ++ #55804 EXIT
   END
 
   IF ~~ DFHJULL.5
@@ -104,16 +106,22 @@ APPEND ~DMENGINE~
   IF ~~ DMENGINE.3
     SAY @108
     ++ @109 + DMENGINE.4
+    ++ @114 + 2
+    ++ @115 EXIT
   END
 
   IF ~~ DMENGINE.4
     SAY @110
     ++ @103 + DMENGINE.5
+    ++ @114 + 2
+    ++ @115 EXIT
   END
 
   IF ~~ DMENGINE.5
     SAY @111
     ++ @112 + DMENGINE.6
+    ++ @114 + 2
+    ++ @115 EXIT
   END
 
   IF ~~ DMENGINE.6

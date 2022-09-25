@@ -32,6 +32,8 @@
 @111 = ~"Der Aufseher wurde mit der Aufgabe betraut, Abenteurer willkommen zu heißen. Du kannst ihn im Eingangsbereich des Rubikon-Verlies-Konstrukts finden. Ein Schlüsselwort wird benötigt, um den Zauberschlüssel zu erhalten."~
 @112 = ~"Und wie lautet es?"~
 @113 = ~"Das Schlüsselwort für den Zauberschlüssel lautet 'Sterngucker'."~
+@114 = ~"Vergiss es. Ich habe noch ein paar Fragen..."~
+@115 = ~"Aha. Leb wohl."~
 
 
 // Modron steward dialog
