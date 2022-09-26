@@ -31,7 +31,7 @@ ACTION_FOR_EACH script IN ~AR1200~ ~AR1201~ ~AR1202~ ~AR1203~ ~AR1204~ BEGIN
   EXTEND_TOP ~%script%.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/antimagic.baf~ EVAL
 END
 
-// Adding a secret stash to AR1201.ARE containing item NEGMATSK.ITM
+// Adding a secret stash to AR1201.ARE containing spell key item
 COPY_EXISTING ~AR1201.ARE~ ~override~
   // adding container
   LPF fj_are_structure
@@ -119,6 +119,52 @@ END
 
 // Adding key item to Fhjull's inventory
 COPY_EXISTING ~FHJULL.CRE~ ~override~
+  ADD_CRE_ITEM ~%spell_key%~ #0 #0 #0 ~none~ ~INV~
+BUT_ONLY
+
+
+// Outlands Spell Key: Required in and under Curst
+// Item can be looted or stolen from Voorsha in Curst Underground.
+
+// Spell Key item resref
+OUTER_SPRINT spell_key ~OUTLANSK~
+
+// Installing Limbo Spell Key item
+WITH_TRA ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~ BEGIN
+  COPY ~%MOD_FOLDER%/SpellKeys/copy/OUTLANSK.ITM~ ~override~
+    SAY NAME2 @1002
+    SAY IDENTIFIED_DESC @1003
+END
+
+<<<<<<<< .../inlined/pst-ub-reloaded/empty
+>>>>>>>>
+ACTION_FOR_EACH script IN ~AR0104C~ ~AR0700~ ~AR0701~ ~AR0702~ ~AR0703~ ~AR0704~ ~AR0705~ ~AR0706~
+                          ~AR0707~ ~AR0708~ ~AR0800~ ~AR1100~ ~AR1101~ ~AR3001~ ~AR3010B~ ~AR3011A~
+                          ~AR3011B~ ~AR3011C~ ~AR3014~ BEGIN
+  // Create empty area script if needed
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%script%.BCS~) BEGIN
+    COPY ~.../inlined/pst-ub-reloaded/empty~ ~override/%script%.BCS~
+      INSERT_BYTES 0 6
+      WRITE_ASCIIE 0 ~SC%LNL%SC%LNL%~ (6)   // precompiled script code
+
+    // assign to map
+    COPY_EXISTING ~%script%.ARE~ ~override~
+      WRITE_ASCIIE 0x94 ~%script%~ (8)
+    BUT_ONLY IF_EXISTS
+  END
+
+  // find reserved timer ids
+  COPY_EXISTING ~%script%.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      LPF FIND_TIMER_ID RET timer_id END
+    END
+  BUT_ONLY
+
+  EXTEND_TOP ~%script%.BCS~ ~%MOD_FOLDER%/SpellKeys/bcs/antimagic.baf~ EVAL
+END
+
+// Adding key item to inventory of the bootlegger Voorsha
+COPY_EXISTING ~BOOTLEG.CRE~ ~override~
   ADD_CRE_ITEM ~%spell_key%~ #0 #0 #0 ~none~ ~INV~
 BUT_ONLY
 
