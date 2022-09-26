@@ -351,6 +351,14 @@ COPY_EXISTING ~SCALPEL.itm~ ~override/Q!TENMNT.xxx~
 INCLUDE ~%MOD_FOLDER%/Tenements/tph/Tenements.tph~
 
 
+BEGIN @26 // Restored Spell Keys
+DESIGNATED 25
+LABEL ~A7-PST-UB-RELOADED-RESTORED_SPELL_KEYS~
+REQUIRE_PREDICATE GAME_IS ~pstee~ @51 // ~Requires Planescape Torment: Enhanced Edition!~
+COPY_EXISTING ~SCALPEL.itm~ ~override/Q!SPKEYS.xxx~
+INCLUDE ~%MOD_FOLDER%/SpellKeys/tph/SpellKeys.tph~
+
+
 BEGIN @21 // Expanded Deionarra's Truth Mod
 DESIGNATED 50
 LABEL ~A7-PST-UB-RELOADED-EXPANDED_DEIONARRA_TRUTH~
@@ -365,14 +373,6 @@ LABEL ~A7-PST-UB-RELOADED-RESTORED_CHEAT_ITEMS~
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CITEMS.xxx~
 INCLUDE ~%MOD_FOLDER%/CheatItems/tph/CheatItems.tph~
-
-
-BEGIN @26 // Restored Spell Keys
-DESIGNATED 52
-LABEL ~A7-PST-UB-RELOADED-RESTORED_SPELL_KEYS~
-REQUIRE_PREDICATE GAME_IS ~pstee~ @51 // ~Requires Planescape Torment: Enhanced Edition!~
-COPY_EXISTING ~SCALPEL.itm~ ~override/Q!SPKEYS.xxx~
-INCLUDE ~%MOD_FOLDER%/SpellKeys/tph/SpellKeys.tph~
 
 
 BEGIN @27 // Miscellaneous Restorations and Improvements

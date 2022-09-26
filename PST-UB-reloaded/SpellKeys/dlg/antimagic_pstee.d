@@ -160,3 +160,42 @@ END
 EXTEND_BOTTOM ~DMAJORD~ 1 #1
   + ~Global("A7_AntiMagicHelpModrons","GLOBAL",1)~ + @150 + DMAJORD.1
 END
+
+
+// Pillar of Skulls dialog additions
+APPEND ~DPILLAR~
+  IF ~~ DPILLAR.1
+    SAY @201
+    + ~CheckStatGT(Protagonist,15,INT)~ + @202 + DPILLAR.2
+    + ~!CheckStatGT(Protagonist,15,INT) CheckStatGT(Protagonist,17,WIS)~ + @202 + DPILLAR.2
+    ++ #53555 DO ~AddexperienceParty(50000)~ JOURNAL @1540 + 12
+    + ~NearbyDialog("Dmorte")~ + #53556 DO ~AddexperienceParty(50000)~ JOURNAL @1540 + 50
+    + ~!NearbyDialog("Dmorte")~ + #53557 DO ~AddexperienceParty(50000)~ JOURNAL @1540 EXIT
+  END
+
+  IF ~~ DPILLAR.2
+    SAY @203
+    ++ @204 + DPILLAR.3
+  END
+
+  IF ~~ DPILLAR.3
+    SAY @205
+    ++ #53555 DO ~AddexperienceParty(75000)~ JOURNAL @1541 + 12
+    + ~NearbyDialog("Dmorte")~ + #53556 DO ~AddexperienceParty(75000)~ JOURNAL @1541 + 50
+    + ~!NearbyDialog("Dmorte")~ + #53557 DO ~AddexperienceParty(75000)~ JOURNAL @1541 EXIT
+  END
+END
+
+EXTEND_BOTTOM ~DPILLAR~ 12 #2
+  + ~Global("A7_AntiMagicHelpPillar","AR1001",0)
+     OR(4)
+       PartyHasItem("BAATORSK")
+       PartyHasItem("LIMBOSK")
+       !Global("A7_AntiMagicHelpFhjull","GLOBAL",0)
+       !Global("A7_AntiMagicHelpModrons","GLOBAL",0)~
+    + @200 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",1)~ + 15
+END
+
+EXTEND_BOTTOM ~DPILLAR~ 29
+  + ~Global("A7_AntiMagicHelpPillar","AR1001",1)~ + #53454 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",2)~ + DPILLAR.1
+END

@@ -42,6 +42,15 @@
 @152 = ~"Thank you, farewell."~
 
 
+// Pillar of Skulls dialog
+@200 = ~"Why are my spells not working in the planes without spell keys?"~
+@201 = ~"YOU ARE DIVIDED. YOUR BODY STANDS BEFORE US, BUT THE CORE OF YOUR EXISTENCE IS SEALED OFF FROM THE PLANES. ARCANE ENERGIES REQUIRE A CATALYST - THE CORE OF YOUR EXISTENCE - TO UNFOLD THEIR EFFECTS. A SPELL KEY CAN ACT AS A SUBSTITUTE."~
+@202 = ~"But why isn't that true for Sigil?"~
+@203 = ~"SIGIL IS THE 'CITY OF DOORS'." The heads of the pillar get progressively quieter until you can hear only the occasional moans from individual heads.~
+@204 = ~"And?"~
+@205 = ~The pillar remains silent for a while. Eventually, the heads turn their attention back to you and speak once more: "WE DO NOT KNOW."~
+
+
 // Interactive region
 @500 = ~"Column"~
 @501 = ~It looks like the ground around the column is slightly disturbed, as if someone walked there 'recently' - perhaps in the last few years. A more thorough search reveals a tiny switch on one side of the column.~
@@ -65,3 +74,5 @@ This symbol of Limbo is inscribed upon a piece of human flesh. It has a metallic
 @1530 = ~Acquire the Rubikon Spell Key.~
 @1531 = ~A Modron Engineer told me that the modron in the foyer is responsible for providing tools to the "adventurers" who come to try out the dungeon construct. He told me the keyword "Stargazer" which instructs the welcoming modron to hand over a spell key. This item is needed to prevent my spells from going awry on the plane of Limbo, where the Rubikon dungeon construct was created.~
 @1532 = ~The Modron in the foyer gave me the spell key for the plane of Limbo after telling him the right keyword.~
+@1540 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence - my mortality - is needed to cast spells. A spell key can act as a substitute, as long as I carry it with me.~
+@1541 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence - my mortality - is needed to cast spells. A spell key can act as a substitute, as long as I carry it with me. Apparently this restriction doesn't apply to Sigil. The pillar couldn't tell me why.~

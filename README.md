@@ -22,7 +22,7 @@ This mod is a continuation of Qwinn's original *PS:T Unfinished Business* (PST-U
 ## Components
 
 ### 1. All Recommended PS:T Unfinished Business Components
-A convenience option that installs all components except "Expanded Deionarra's Truth Mod", "Restored Item Cheats (Not Recommended)", and "Miscellaneous Restorations and Improvements".
+A convenience option that installs all components except the last four items listed below.
 
 ### 2. Restored Able Ponder-Thought Research
 Completes a number of subjects Able Ponder-Thought will conduct research on.
@@ -78,14 +78,14 @@ Restores guard creatures and minor treasure to Lothar's abode in the Lower Ward,
 ### 19. Restored Tenement of Thugs *(PST:EE only)*
 Adds more roleplay opportunities to the Tenement of Thugs area by making the thugs initially neutral and including the secret door in the Xaositects quest line. This component is only available for PST:EE. For classic PST these issues are fixed by Qwinn's PS:T Fixpack.
 
-### 20. Expanded Deionarra's Truth Mod
+### 20. Restored Spell Keys *(PST:EE only)*
+Restores a number of "spell key" artifacts which will prevent spells cast by The Nameless One from going awry in the Outer Planes and other specially shielded places.
+
+### 21. Expanded Deionarra's Truth Mod
 Adds a great deal of new content (including 180 new lines of dialogue) that will allow the player to find out her fate before it becomes too late to do anything about it. Once the new content has been played, about 30-40 more lines of original dialogue will become accessible.
 
-### 21. Restored Item Cheats (Not Recommended)
+### 22. Restored Item Cheats (Not Recommended)
 Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".
-
-### 22. Restored Spell Keys *(PST:EE only)*
-Restores a number of "spell key" artifacts which will prevent spells cast by The Nameless One from going awry in the Outer Planes and other specially shielded places.
 
 ### 23. Miscellaneous Restorations and Improvements
 Installs various restorations and improvements which are either too small to warrant their own components, or aren't strictly based on cut content.
