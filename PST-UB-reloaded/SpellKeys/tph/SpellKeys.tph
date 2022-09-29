@@ -10,7 +10,8 @@ COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1.SPL~ ~override~
 COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1D.SPL~ ~override~
   SAY NAME1 ~Remove Spell Failure~
 
-COMPILE ~%MOD_FOLDER%/SpellKeys/dlg/antimagic_pstee.d~ USING ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~
+COMPILE ~%MOD_FOLDER%/SpellKeys/dlg/antimagic_pstee.d~
+  USING ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~
 
 
 // Negative Material Plane Spell Key: Required in the Fortress of Regrets
@@ -129,7 +130,7 @@ BUT_ONLY
 // Spell Key item resref
 OUTER_SPRINT spell_key ~OUTLANSK~
 
-// Installing Limbo Spell Key item
+// Installing Outlands Spell Key item
 WITH_TRA ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~ BEGIN
   COPY ~%MOD_FOLDER%/SpellKeys/copy/OUTLANSK.ITM~ ~override~
     SAY NAME2 @1002

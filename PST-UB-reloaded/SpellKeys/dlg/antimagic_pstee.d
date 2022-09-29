@@ -188,9 +188,11 @@ END
 
 EXTEND_BOTTOM ~DPILLAR~ 12 #2
   + ~Global("A7_AntiMagicHelpPillar","AR1001",0)
-     OR(4)
+     OR(6)
+       PartyHasItem("OUTLANSK")
        PartyHasItem("BAATORSK")
        PartyHasItem("LIMBOSK")
+       !Global("A7_AntiMagicHelpKitla","GLOBAL",0)
        !Global("A7_AntiMagicHelpFhjull","GLOBAL",0)
        !Global("A7_AntiMagicHelpModrons","GLOBAL",0)~
     + @200 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",1)~ + 15
@@ -198,4 +200,44 @@ END
 
 EXTEND_BOTTOM ~DPILLAR~ 29
   + ~Global("A7_AntiMagicHelpPillar","AR1001",1)~ + #53454 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",2)~ + DPILLAR.1
+END
+
+
+// Kitla (Cust Citizen) dialog additions
+APPEND ~DKITLA~
+  IF ~~ DKITLA.1
+    SAY @251
+    = @252
+    ++ @253 + DKITLA.2
+  END
+
+  IF ~~ DKITLA.2
+    SAY @254
+    ++ #67752 DO ~AddexperienceParty(10000)~ JOURNAL @1550 EXIT
+  END
+END
+
+// If TNO has the chance to as about becoming a Mage
+EXTEND_BOTTOM ~DKITLA~ 14 15 16 #1
+  + ~Global("A7_AntiMagicHelpKitla","GLOBAL",0) OR(2) Class(Protagonist,MAGE) Class(Protagonist,CLERIC)~
+    + @250 DO ~SetGlobal("A7_AntiMagicHelpKitla","GLOBAL",1)~ + DKITLA.1
+END
+
+// After switching to Mage
+EXTEND_TOP ~DKITLA~ 26
+  + ~Global("A7_AntiMagicHelpKitla","GLOBAL",0)~
+    + @250
+    DO ~SetGlobal("A7_AntiMagicHelpKitla","GLOBAL",1)~ + DKITLA.1
+END
+
+// After learning the Art from Kitla
+EXTEND_TOP ~DKITLA~ 37
+  + ~Global("A7_AntiMagicHelpKitla","GLOBAL",0)~
+    + @250
+    DO ~SetGlobal("A7_AntiMagicHelpKitla","GLOBAL",1)
+        SetNamelessClass(MAGE)
+        GiveExperience(Protagonist,5000)
+        GiveItemCreate("SPWI105",Protagonist,0,0,0)
+        GiveItemCreate("SPWI502",Protagonist,0,0,0)
+        GiveItemCreate("SPWI207",Protagonist,0,0,0)~ + DKITLA.1
 END
