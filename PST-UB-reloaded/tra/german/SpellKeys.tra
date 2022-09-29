@@ -18,18 +18,18 @@
 
 
 // Modron Engineer dialog
-@100 = ~"Benötige ich einen Schlüssel, damit meine Zauber in diesem Ort funktionieren?"~
+@100 = ~"Benötige ich einen Schlüssel, damit meine Zauber an diesem Ort funktionieren?"~
 @101 = ~"Gibt es für Zauberkundige irgendwelche Gefahren an diesem Ort?"~
-@102 = ~"Ja, Herr Direktor. Er kann vom 'Aufseher' angefordert werden."~
-@103 = ~"Der Aufseher? Wo kann ich ihn finden?"~
-@104 = ~"Ja, Herr Direktor. Es besteht eine hohe Wahrscheinlichkeit, dass die Verbindung zu Energien fremden Ursprungs unterbrochen werden."~
+@102 = ~"Ja, Herr Direktor. Er kann vom Rubikon-Reiseführer angefordert werden."~
+@103 = ~"Vom Rubikon-Reiseführer? Wo kann ich ihn finden?"~
+@104 = ~"Ja, Herr Direktor. Es ist wahrscheinlich, dass Verbindungen zu Energien fremden Ursprungs gestört sind."~
 @105 = ~"Bedeutet das, ich kann keine Zauber wirken kann?"~
 @106 = ~"Positiv."~
 @107 = ~"Wie kann ich mich vor diesem Effekt schützen?"~
 @108 = ~"Ein Zauberschlüssel wird benötigt, um die Verbindung wiederherzustellen."~
 @109 = ~"Wo kann ich diesen Zauberschlüssel finden?"~
-@110 = ~"Er kann vom 'Aufseher' angefordert werden."~
-@111 = ~"Der Aufseher wurde mit der Aufgabe betraut, Abenteurer willkommen zu heißen. Du kannst ihn im Eingangsbereich des Rubikon-Verlies-Konstrukts finden. Ein Schlüsselwort wird benötigt, um den Zauberschlüssel zu erhalten."~
+@110 = ~"Er kann vom Rubikon-Reiseführer angefordert werden."~
+@111 = ~"Der Rubikon-Reiseführer wurde mit der Aufgabe betraut, Abenteurer willkommen zu heißen. Du kannst ihn im Eingangsbereich des Rubikon-Verlies-Konstrukts finden. Ein Schlüsselwort wird benötigt, um einen Zauberschlüssel zu erhalten."~
 @112 = ~"Und wie lautet es?"~
 @113 = ~"Das Schlüsselwort für den Zauberschlüssel lautet 'Sterngucker'."~
 @114 = ~"Vergiss es. Ich habe noch ein paar Fragen..."~
@@ -44,7 +44,7 @@
 
 // Pillar of Skulls dialog
 @200 = ~"Warum funktionieren meine Zauber in den Ebenen nicht ohne Zauberschlüssel?"~
-@201 = ~"DU BIST GETEILT. DEIN KÖRPER STEHT VOR UNS, ABER DER KERN DEINER EXISTENZ IST VON DEN EBENEN ABGESCHIRMT. ARKANE ENERGIEN BENÖTIGEN EINEN AUSLÖSER - DEN KERN DEINER EXISTENZ - UM IHRE WIRKUNG ZU OFFENBAREN. EIN ZAUBERSCHLÜSSEL KANN ALS FOKUS DIENEN."~
+@201 = ~"DU BIST GETEILT. DEIN KÖRPER STEHT VOR UNS, ABER DER KERN DEINER EXISTENZ IST VON DEN EBENEN ABGESCHIRMT. ARKANE ENERGIEN BENÖTIGEN EINEN AUSLÖSER, UM IHRE WIRKUNG ZU ENTFALTEN. DER KERN DEINER EXISTENZ IST SO EIN AUSLÖSER. EIN ZAUBERSCHLÜSSEL KANN ALS FOKUS DIENEN."~
 @202 = ~"Aber warum gilt das nicht für Sigil?"~
 @203 = ~"SIGIL IST DIE 'STADT DER TORE'." Die Köpfe der Säule werden zunehmend leiser bis nur noch ein gelegentliches Jammern einzelner Köpfe zu hören ist.~
 @204 = ~"Und?"~
@@ -52,9 +52,9 @@
 
 
 // Kitla dialog
-@250 = ~"Gibt es etwas, auf das ich als Zauberkundiger achten sollte?"~
-@251 = ~Sie betrachtet dich für eine Weile etwas genauer. "Ja, da ist vielleicht etwas. Du scheinst mir nicht die übliche Person zu sein, die mit der Gabe der Magie ausgestattet ist."~
-@252 = ~"Falls deine Zauber nicht funktionieren, dann benötigst du wohl einen Zauberschlüssel, der als Fokus dient."~
+@250 = ~"Gibt es etwas, auf das ich hier als Zauberkundiger achten sollte?"~
+@251 = ~Sie betrachtet dich für eine Weile etwas genauer. "Ja, da ist vielleicht etwas. Du scheinst mir nicht die übliche Art Person zu sein, die mit der Gabe der Magie ausgestattet ist."~
+@252 = ~"Falls deine Zauber nicht funktionieren, dann benötigst du wohl einen Zauberschlüssel. Er kann als eine Art Fokus dienen."~
 @253 = ~"Wo kann ich so einen finden?"~
 @254 = ~"Das weiß ich nicht." Sie legt eine kurze Pause ein und denkt nach. "Schau dich um. So ein Schlüssel könnte sich irgendwo in oder unterhalb von Verdammnis befinden."~
 
@@ -87,6 +87,6 @@ Dieses Symbol der Außenländer ist in ein Stück Menschenfleisch eingeritzt. Er
 @1530 = ~Rubikon Zauberschlüssel beschaffen.~
 @1531 = ~Ein Modron-Ingenieur teilte mir mit, dass der Modron-Aufseher im Eingangsbereich des Rubikon-Konstrukts verantwortlich ist, "Abenteurer" mit Werkzeugen für das Verlies auszustatten. Er nannte mir das Schlüsselwort "Sterngucker", das den Aufseher dazu veranlassen sollte, mir den Zauberschlüssel zu übergeben. Dieser Schlüssel ist notwendig, um zu verhindern, dass meine Zauber auf der Ebene von Limbo, auf der das Verlies-Konstrukt erschaffen wurde, misslingen.~
 @1532 = ~Der Modron im Eingangsbereich des Rubikon-Konstrukts übergab mir den Zauberschlüssel für die Ebene von Limbo, nachdem ich ihm das korrekte Schlüsselwort genannt habe.~
-@1540 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz - meine Sterblichkeit - wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage.~
-@1541 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz - meine Sterblichkeit - wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage. Anscheinend gilt diese Einschränkung nicht für Sigil. Die Säule konnte mir dafür keinen Grund nennen.~
-@1550 = ~Kitla erklärte mir, dass ich einen 'Zauberschlüssel' benötigen könnte. Das ist eine Art Fokus, der verhindert, dass ich in oder unterhalb von Verdammnis Zauber wirken kann. Sie konnte mir nicht sagen, wo ich einen finden kann. Ich sollte  meine Augen danach offen halten.~
+@1540 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz, also meine Sterblichkeit, wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage.~
+@1541 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz, also meine Sterblichkeit, wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage. Anscheinend gilt diese Einschränkung nicht für Sigil. Die Säule konnte mir dafür keinen Grund nennen.~
+@1550 = ~Kitla erklärte mir, dass ich einen 'Zauberschlüssel' benötigen könnte. Das ist eine Art Fokus, der verhindert, dass ich in oder unterhalb von Verdammnis Zauber wirken kann. Sie konnte mir nicht sagen, wo ich einen finden könnte. Ich sollte meine Augen danach offen halten.~

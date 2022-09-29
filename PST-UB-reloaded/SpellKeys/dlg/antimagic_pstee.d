@@ -198,8 +198,14 @@ EXTEND_BOTTOM ~DPILLAR~ 12 #2
     + @200 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",1)~ + 15
 END
 
-EXTEND_BOTTOM ~DPILLAR~ 29
+ADD_TRANS_TRIGGER ~DPILLAR~ 52 ~Global("A7_AntiMagicHelpPillar","AR1001",0)~ DO 4 IF ~Global("Pillar_Question","AR1001",0)~
+
+EXTEND_TOP ~DPILLAR~ 29
   + ~Global("A7_AntiMagicHelpPillar","AR1001",1)~ + #53454 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",2)~ + DPILLAR.1
+END
+
+EXTEND_TOP ~DPILLAR~ 52
+  + ~Global("A7_AntiMagicHelpPillar","AR1001",1)~ + #53454 DO ~SetGlobal("A7_AntiMagicHelpPillar","AR1001",2) SetGlobal("Pillar","GLOBAL",3)~ + DPILLAR.1
 END
 
 
