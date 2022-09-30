@@ -43,12 +43,12 @@
 
 
 // Pillar of Skulls dialog
-@200 = ~"Why are my spells not working in the planes without spell keys?"~
+@200 = ~"Why are my spells not working in the planes without a spell key?"~
 @201 = ~"YOU ARE DIVIDED. YOUR BODY STANDS BEFORE US, BUT THE CORE OF YOUR EXISTENCE IS SEALED OFF FROM THE PLANES. ARCANE ENERGIES REQUIRE A CATALYST TO UNFOLD THEIR EFFECTS. THE CORE OF YOUR EXISTENCE IS SUCH A CATALYST. A SPELL KEY CAN ACT AS A FOCUS."~
 @202 = ~"But why isn't that true for Sigil?"~
 @203 = ~"SIGIL IS THE 'CITY OF DOORS'." The heads of the pillar get progressively quieter until you can hear only the occasional moans from individual heads.~
 @204 = ~"And?"~
-@205 = ~The pillar remains silent for a while. Eventually, the heads turn their attention back to you and speak once more: "WE DO NOT KNOW."~
+@205 = ~The pillar remains silent for a while. Eventually, the heads turn their attention back to you and speak once more: "WE HAVE NOTHING MORE TO SAY."~
 
 
 // Kitla dialog
@@ -87,6 +87,6 @@ This symbol of the Outlands is inscribed upon a piece of human flesh. It has an 
 @1530 = ~Acquire the Rubikon Spell Key.~
 @1531 = ~A Modron Engineer told me that the modron in the foyer is responsible for providing tools to the "adventurers" who come to try out the dungeon construct. He told me the keyword "Stargazer" which instructs the welcoming modron to hand over a spell key. This item is needed to prevent my spells from going awry on the plane of Limbo, where the Rubikon dungeon construct was created.~
 @1532 = ~The Modron in the foyer gave me the spell key for the plane of Limbo after telling him the right keyword.~
-@1540 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence - my mortality - is needed to cast spells. A spell key can act as a focus, as long as I carry it with me.~
-@1541 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence - my mortality - is needed to cast spells. A spell key can act as a focus, as long as I carry it with me. Apparently this restriction doesn't apply to Sigil, but the pillar couldn't tell me why.~
+@1540 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence, that is, my mortality, is needed to cast spells. A spell key can act as a focus, as long as I carry it with me.~
+@1541 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence, that is, my mortality, is needed to cast spells. A spell key can act as a focus, as long as I carry it with me. Apparently this restriction doesn't apply to Sigil, but the pillar didn't tell me why.~
 @1550 = ~Kitla told me that I might need a 'spell key', which is some kind of focus, to prevent my spells from failing in or below Curst. She couldn't tell me where to find one, so I should keep my eyes open.~

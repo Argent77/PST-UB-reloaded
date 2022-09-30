@@ -48,7 +48,7 @@
 @202 = ~"Aber warum gilt das nicht für Sigil?"~
 @203 = ~"SIGIL IST DIE 'STADT DER TORE'." Die Köpfe der Säule werden zunehmend leiser bis nur noch ein gelegentliches Jammern einzelner Köpfe zu hören ist.~
 @204 = ~"Und?"~
-@205 = ~Die Säule bleibt für eine Weile stumm. Schließlich wenden die Köpfe ihre Aufmerksamkeit erneut dir zu und sprechen wieder: "WIR WISSEN ES NICHT."~
+@205 = ~Die Säule bleibt für eine Weile stumm. Schließlich wenden die Köpfe ihre Aufmerksamkeit erneut dir zu und sprechen wieder: "MEHR HABEN WIR NICHT ZU SAGEN."~
 
 
 // Kitla dialog
@@ -88,5 +88,5 @@ Dieses Symbol der Außenländer ist in ein Stück Menschenfleisch eingeritzt. Er
 @1531 = ~Ein Modron-Ingenieur teilte mir mit, dass der Modron-Aufseher im Eingangsbereich des Rubikon-Konstrukts verantwortlich ist, "Abenteurer" mit Werkzeugen für das Verlies auszustatten. Er nannte mir das Schlüsselwort "Sterngucker", das den Aufseher dazu veranlassen sollte, mir den Zauberschlüssel zu übergeben. Dieser Schlüssel ist notwendig, um zu verhindern, dass meine Zauber auf der Ebene von Limbo, auf der das Verlies-Konstrukt erschaffen wurde, misslingen.~
 @1532 = ~Der Modron im Eingangsbereich des Rubikon-Konstrukts übergab mir den Zauberschlüssel für die Ebene von Limbo, nachdem ich ihm das korrekte Schlüsselwort genannt habe.~
 @1540 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz, also meine Sterblichkeit, wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage.~
-@1541 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz, also meine Sterblichkeit, wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage. Anscheinend gilt diese Einschränkung nicht für Sigil. Die Säule konnte mir dafür keinen Grund nennen.~
+@1541 = ~Die Schädelsäule verriet mir, dass meine Unfähigkeit, Zauber zu wirken, auf meine Unsterblichkeit zurückzuführen ist. Der Kern meiner Existenz, also meine Sterblichkeit, wird zum Zaubern benötigt. Ein Zauberschlüssel kann als Fokus dienen, solange ich ihn bei mir trage. Anscheinend gilt diese Einschränkung nicht für Sigil. Die Säule wollte mir dafür keinen Grund nennen.~
 @1550 = ~Kitla erklärte mir, dass ich einen 'Zauberschlüssel' benötigen könnte. Das ist eine Art Fokus, der verhindert, dass ich in oder unterhalb von Verdammnis Zauber wirken kann. Sie konnte mir nicht sagen, wo ich einen finden könnte. Ich sollte meine Augen danach offen halten.~

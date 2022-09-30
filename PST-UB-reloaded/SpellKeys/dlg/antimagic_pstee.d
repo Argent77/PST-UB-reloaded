@@ -166,8 +166,9 @@ END
 APPEND ~DPILLAR~
   IF ~~ DPILLAR.1
     SAY @201
-    + ~CheckStatGT(Protagonist,15,INT)~ + @202 + DPILLAR.2
-    + ~!CheckStatGT(Protagonist,15,INT) CheckStatGT(Protagonist,17,WIS)~ + @202 + DPILLAR.2
+    + ~GlobalGT("Mage_Training","GLOBAL",0)
+       GlobalLT("Mage_Training","GLOBAL",4)
+       CheckStatGT(Protagonist,14,INT)~ + @202 + DPILLAR.2
     ++ #53555 DO ~AddexperienceParty(50000)~ JOURNAL @1540 + 12
     + ~NearbyDialog("Dmorte")~ + #53556 DO ~AddexperienceParty(50000)~ JOURNAL @1540 + 50
     + ~!NearbyDialog("Dmorte")~ + #53557 DO ~AddexperienceParty(50000)~ JOURNAL @1540 EXIT
@@ -223,7 +224,7 @@ APPEND ~DKITLA~
   END
 END
 
-// If TNO has the chance to as about becoming a Mage
+// If TNO has the chance to ask about becoming a Mage
 EXTEND_BOTTOM ~DKITLA~ 14 15 16 #1
   + ~Global("A7_AntiMagicHelpKitla","GLOBAL",0) OR(2) Class(Protagonist,MAGE) Class(Protagonist,CLERIC)~
     + @250 DO ~SetGlobal("A7_AntiMagicHelpKitla","GLOBAL",1)~ + DKITLA.1
