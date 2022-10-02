@@ -1,0 +1,92 @@
+// Deionarra dialog
+@0 = ~"Este sitio suprime toda energía que no sea de este plano. Si recurres a encantamientos o conjuros para defenderte, seguro caerás." Prosigue en un tono más insistente. "Busca pistas que hayas pasado por alto la última vez que estuviste aquí."~
+
+
+// Fhjull dialog
+@50 = ~"Hay algo más que deba tener en cuenta en Baator?"~
+@51 = ~"*Podría* ser que tu magia se vea alterada en ese lugar. Pero alguien de tu... estatura no deberia tener problemas para atravesar las llanuras"~
+@52 = ~"Podrías explicarlo más detalladamente?"~
+@53 = ~"Si insistes? Feh! Los Planos Exteriores podrían estar muy lejos de la fuente de la magia para alguien como tú, a menos que..."~
+@54 = ~"Que?"~
+@55 = ~"A menos que tuvieras una 'llave' en tu posesión para concentrar las energías mágicas."~
+@56 = ~"Tienes una llave así?"~
+@57 = ~"Eh? Sí, puede ser que haya algo como eso tirado por aquí."~
+@58 = ~"Por favor dámela!"~
+@59 = ~"Feh! Por supuesto, aquí está. De que *otra* manera puedo servirte?"~
+@60 = ~"Feh! Por supuesto..."~
+@61 = ~"Demonios! Ya la tomaste? Los jóvenes ya no tienen respeto por los viejos. Pero me ahorra mostrarte más de mi *generosidad*, al menos."~
+
+
+// Modron Engineer dialog
+@100 = ~"Necesito una llave para que mis conjuros funcionen en este lugar?"~
+@101 = ~"Hay algún peligro para los lanzadores de conjuros en este sitio?"~
+@102 = ~"Sí, Director. Puedes pedirsela al Guía Rubikon."~
+@103 = ~"El Guía Rubikon? Dónde podría encontrarlo?"~
+@104 = ~"Sí, Director. Es probable que las conexiones con las energías mágicas del exterior se vean interrumpidas por este lugar."~
+@105 = ~"Eso quiere decir que no puedo utilizar conjuros?"~
+@106 = ~"Afirmativo."~
+@107 = ~"Como podría protegerme de este efecto?"~
+@108 = ~"Se necesita una llave de conjuros para estabilizar la conexión."~
+@109 = ~"Dónde puedo encontrar una llave de conjuros?"~
+@110 = ~"Se la puede solicitar al Guía Rubikon."~
+@111 = ~"El Guía Rubikon fue asignado con la tarea de darles la bienvenida a los aventureros. Se lo puede encontrar en la entrada de la Mazmorra Constructo Rubikon. Se necesita una palabra clave para recibir la llave"~
+@112 = ~"Y cual es?"~
+@113 = ~"La palabra clave para pedir una llave de conjuros es 'Stargazer'."~
+@114 = ~"Da igual. Tengo otras preguntas..."~
+@115 = ~"Ya veo. Nos vemos."~
+
+
+// Modron steward dialog
+@150 = ~"Me indicaron que te dijera la palabra en clave 'Stargazer'."~
+@151 = ~La criatura parpadea un par de veces antes de empezar a emitir un bajo zumbido que se detiene luego de unos pocos segundos. Sin decir ni una palabra, te entrega una especie de papel de tela.~
+@152 = ~"Gracias, adiós."~
+
+
+// Pillar of Skulls dialog
+@200 = ~"Por qué mis conjuros no funcionan en los planos sin una llave de conjuros?"~
+@201 = ~"ESTÁS DIVIDIDO. TU CUERPO ESTÁ FRENTE NUESTRO, PERO EL NÚCLEO DE TU EXISTENCIA ESTÁ SELLADO DE LOS PLANOS. LAS ENERGIAS ARCANAS REQUIEREN UN CATALIZADOR PARA REVELAR SUS EFECTOS. EL NÚCLEO DE TU EXISTENCIA ES ESE CATALIZADOR. UNA LLAVE DE CONJUROS PUEDE USARSE PARA ENFORCARLAS."~
+@202 = ~"Pero por qué no es así en Sigil?"~
+@203 = ~"SIGIL ES LA 'CIUDAD DE LAS PUERTAS'." Poco a poco las cabezas del pilar bajan la voz hasta que solo puedes escuchar los quejidos ocasionales de una que otra cabeza.~
+@204 = ~"Y?"~
+@205 = ~El pilar permanece callado durante un rato. Eventualmente, las cabezas vuelven a prestarte atención para hablarte una vez más: "NO TENEMOS NADA MÁS QUE DECIR."~
+
+
+// Kitla dialog
+@250 = ~"Hay algo de aquí que deba tener en cuenta como lanzador de conjuros?"~
+@251 = ~Ella te estudia atentamente por un rato. "Quizás lo haya. No pareces la tipica persona bendecida con el Arte."~
+@252 = ~"Si tus conjuros no funcionan, entonces necesitas encontrar una llave de conjuros. Puede actuar como una especie de foco o eje central."~
+@253 = ~"Dónde puedo encontrar una?"~
+@254 = ~"No lo sé." Hace una pausa, y piensa. "Seguramente quieras buscar por los alrededores. Podría haber una aquí en Curst o en algún lugar en el subterráneo."~
+
+
+// Interactive region
+@500 = ~"Columna"~
+@501 = ~Parece que el suelo alrededor de la columna está alterado, como si alguien hubiera caminado por ahí 'recientemente' - quizás en los últimos años. Un vistazo más en profundidad revela un pequeño interruptor en un costado de la columna.~
+@502 = ~Tocar el interruptor.~
+@503 = ~No tocar el interruptor.~
+@504 = ~Alcanzas el interruptor y lo tocas. Para tu sorpresa un panel bien disimulado se desprende y revela un alijo oculto.~
+
+
+// Items
+@1000 = ~Llave de Conjuros de Limbo~
+@1001 = ~LLAVE DE CONJUROS DE LIMBO
+Peso: 0
+
+Este simbolo de Limbo esta grabado en un pedazo de carne humana. Tiene un olor metálico, sin embargo es suave al tacto, como terciopelo. Mientras lo lleves encima, evitará que tus conjuros se vayan a la deriva en el plano de Limbo.~
+@1002 = ~Llave de Conjuros de Tierras Exteriores~
+@1003 = ~LLAVE DE CONJUROS DE TIERRAS EXTERIORES 
+Peso: 0
+
+El símbolo de las tierras exteriores está grabado en un pedazo de carne humana. Tiene un olor muy tenue, pero se siente como un trozo de tela humedo. Mientras lo lleves encima, evitará que tus conjuros se vayan a la deriva en el plano de las Tierras Exteriores .~
+
+
+// Journal entries
+@1500 = ~Logré conseguir una llave de conjuros de Fhjull Lengua-Bífida para el plano de Baator. Según Fhjull, las llaves de conjuros son necesarias para que los conjuros funcionen en los Planos Exteriores. Cada plano parece requerir una llave en específico.~
+@1510 = ~Kyse, el encargado del vertedero, me dejó una 'llave de conjuros' antes de desaparecer. Aparentemente es necesaria para que mis conjuros funcionen en el plano de Carceri.~
+@1520 = ~Deionarra me dijo que la Fortaleza del Arrepentimiento está protegida de las energias exteriores, lo que hace que sea imposible usar conjuros en ese lugar. Puede que averigüe más a partir de las pistas dejadas por mis antiguos yo.~
+@1530 = ~Obtiene la llave de conjuros de Rubikon.~
+@1531 = ~Un ingeniero Modron me dijo que el modron en el vestíbulo se encarga de dar herramientas a los "aventureros" que vienen a probar la mazmorra constructo. Me dió la palabra en clave "Stargazer" la cual ordena al modron del vestíbulo dar una llave de conjuros. Este objeto es necesario para utilizar mis conjuros en el plano de Limbo, donde fue creada la mazmorra constructo Rubikon.~
+@1532 = ~El Modron del vestíbulo me entregó una llave de conjuros luego de decirle la palabra en clave.~
+@1540 = ~El Pilar de las Calaveras me reveló que mi incapacidad de lanzar conjuros en los planos es causada por mi inmortalidad. El núcleo de mi existencia, es decir, mi mortalidad, es necesaria para lanzar conjuros. Una llave de conjuros puede actuar como foco, siempre que la lleve conmigo.~
+@1541 = ~El Pilar de las Calaveras me reveló que mi incapacidad de lanzar conjuros en los planos es causada por mi inmortalidad. El núcleo de mi existencia, es decir, mi mortalidad, es necesaria para lanzar conjuros. Una llave de conjuros puede actuar como foco, siempre que la lleve conmigo. Aparentemente esta restricción no aplica en Sigil, pero el pilar no me dijo porque.~
+@1550 = ~Kitla me dijo que necesito una 'llave de conjuros', la cual es una especie de foco, para prevenir que mis conjuros fallen en Curst. No supo decirme dónde encontrar una, asi que debería mantener los ojos abiertos.~
