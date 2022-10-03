@@ -1,92 +1,92 @@
 // Deionarra dialog
-@0 = ~"Este lugar suprime todas as energias que não são deste plano. Se você confiar nos encantamentos ou feitiços pra se defender você certamente cairá." Ela continua num tom mais insistente. "Procure por dicas que você tenha deixado pra trás quando você visitou este lugar pela última vez."~
+@0 = ~"Este lugar suprime todas as energias que nÃ£o sÃ£o deste plano. Se vocÃª confiar nos encantamentos ou feitiÃ§os pra se defender vocÃª certamente cairÃ¡." Ela continua num tom mais insistente. "Procure por dicas que vocÃª tenha deixado pra trÃ¡s quando vocÃª visitou este lugar pela Ãºltima vez."~
 
 
 // Fhjull dialog
-@50 = ~"Há algo mais de que eu precise estar ciente em Baator?"~
-@51 = ~"*Poderia* ser que sua magia é perturbada nesse lugar. Mas alguém da sua... estatura não deve ter problema em atravessar as planícies sem ser molestado."~
-@52 = ~"Você pode explicar mais?"~
-@53 = ~"Se você insiste? Feh! Os Planos Exteriores podem estar muito distantes da fonte da magia pra alguém como você, a menos que..."~
-@54 = ~"A menos o quê?"~
-@55 = ~"A menos que você tivesse uma 'chave' em sua posse pra focar nas energias mágicas."~
-@56 = ~"Você tem tal chave?"~
-@57 = ~"Eh? Sim, poderia ser que algo assim está alojado por aqui em algum lugar."~
-@58 = ~"Por favor dê ele pra mim!"~
-@59 = ~"Feh! Claro, aqui está. De que outro *modo* eu posso servir você?"~
+@50 = ~"HÃ¡ algo mais de que eu precise estar ciente em Baator?"~
+@51 = ~"*Poderia* ser que sua magia Ã© perturbada nesse lugar. Mas alguÃ©m da sua... estatura nÃ£o deve ter problema em atravessar as planÃ­cies sem ser molestado."~
+@52 = ~"VocÃª pode explicar mais?"~
+@53 = ~"Se vocÃª insiste? Feh! Os Planos Exteriores podem estar muito distantes da fonte da magia pra alguÃ©m como vocÃª, a menos que..."~
+@54 = ~"A menos o quÃª?"~
+@55 = ~"A menos que vocÃª tivesse uma 'chave' em sua posse pra focar nas energias mÃ¡gicas."~
+@56 = ~"VocÃª tem tal chave?"~
+@57 = ~"Eh? Sim, poderia ser que algo assim estÃ¡ alojado por aqui em algum lugar."~
+@58 = ~"Por favor dÃª ele pra mim!"~
+@59 = ~"Feh! Claro, aqui estÃ¡. De que outro *modo* eu posso servir vocÃª?"~
 @60 = ~"Feh! Claro..."~
-@61 = ~"Maldito seja três vezes! Você já o pegou? Os jovens simplesmente não respeitam mais seus velhos. Mas pelo menos me poupa de mostrar mais da minha *generosidade* pra você."~
+@61 = ~"Maldito seja trÃªs vezes! VocÃª jÃ¡ o pegou? Os jovens simplesmente nÃ£o respeitam mais seus velhos. Mas pelo menos me poupa de mostrar mais da minha *generosidade* pra vocÃª."~
 
 
 // Modron Engineer dialog
-@100 = ~"Eu preciso de uma chave pros meus feitiços funcionarem neste lugar?"~
-@101 = ~"Há quaisquer perigos pros lançadores de feitiços neste lugar?"~
+@100 = ~"Eu preciso de uma chave pros meus feitiÃ§os funcionarem neste lugar?"~
+@101 = ~"HÃ¡ quaisquer perigos pros lanÃ§adores de feitiÃ§os neste lugar?"~
 @102 = ~"Sim, Diretor. Pode ser requisitado do Guia Rubikon."~
-@103 = ~"O Guia Rubikon? Aonde eu posso achá-lo?"~
-@104 = ~"Sim, Diretor. É provavelmente porque as conexões com energias de origem exterior são perturbadas por este lugar."~
-@105 = ~"Isso quer dizer que eu não posso lançar feitiços?"~
+@103 = ~"O Guia Rubikon? Aonde eu posso achÃ¡-lo?"~
+@104 = ~"Sim, Diretor. Ã‰ provavelmente porque as conexÃµes com energias de origem exterior sÃ£o perturbadas por este lugar."~
+@105 = ~"Isso quer dizer que eu nÃ£o posso lanÃ§ar feitiÃ§os?"~
 @106 = ~"Afirmativo."~
 @107 = ~"Como eu posso proteger a mim deste efeito?"~
-@108 = ~"Uma chave de feitiço é requerida pra estabilizar a conexão."~
-@109 = ~"Aonde eu posso achar esta chave de feitiço?"~
+@108 = ~"Uma chave de feitiÃ§o Ã© requerida pra estabilizar a conexÃ£o."~
+@109 = ~"Aonde eu posso achar esta chave de feitiÃ§o?"~
 @110 = ~"Ela pode ser requisitada no Guia Rubikon."~
-@111 = ~"O Guia Rubikon foi designado com a tarefa de dar boas vindas aos aventureiros. Ele pode ser achado na seção de entrada do Constructo da Masmorra do Rubikon. Uma palavra-chave é necessária pra receber uma chave de feitiço."~
-@112 = ~"E qual é?"~
-@113 = ~"A palavra-chave pra requisitar uma chave de feitiço é 'Stargazer'."~
-@114 = ~"Deixa pra lá. Eu tenho mais algumas perguntas..."~
+@111 = ~"O Guia Rubikon foi designado com a tarefa de dar boas vindas aos aventureiros. Ele pode ser achado na seÃ§Ã£o de entrada do Constructo da Masmorra do Rubikon. Uma palavra-chave Ã© necessÃ¡ria pra receber uma chave de feitiÃ§o."~
+@112 = ~"E qual Ã©?"~
+@113 = ~"A palavra-chave pra requisitar uma chave de feitiÃ§o Ã© 'Stargazer'."~
+@114 = ~"Deixa pra lÃ¡. Eu tenho mais algumas perguntas..."~
 @115 = ~"Eu entendo. Adeus."~
 
 
 // Modron steward dialog
-@150 = ~"Foi dito a mim pra dizer a você a palavra-chave 'Stargazer'."~
-@151 = ~A criatura pisca duaz vez antes dela começar a emitir um som baixo de zumbido que diminui após alguns segundos. Sem dizer uma palavra ela dá a você uma folha de pedaço de pano tipo papel.~
+@150 = ~"Foi dito a mim pra dizer a vocÃª a palavra-chave 'Stargazer'."~
+@151 = ~A criatura pisca duaz vez antes dela comeÃ§ar a emitir um som baixo de zumbido que diminui apÃ³s alguns segundos. Sem dizer uma palavra ela dÃ¡ a vocÃª uma folha de pedaÃ§o de pano tipo papel.~
 @152 = ~"Obrigado, adeus."~
 
 
 // Pillar of Skulls dialog
-@200 = ~"Por que meus feitiços não estão funcionando nos planos sem uma chave de feitiço?"~
-@201 = ~"VOCÊ ESTÁ DIVIDIDO. SEU CORPO PARADO DIANTE DE NÓS MAS O NÚCLEO DA SUA EXISTÊNCIA ESTÁ SELADO DOS PLANOS. AS ENERGIAS ARCANAS REQUEREM UM CATALIZADOR PRA DESENVOLVER SEUS EFEITOS. O NÚCLEO DA SUA EXISTÊNCIA É TAL CATALIZADOR. UMA CHAVE DE FEITIÇO PODE AGIR COMO UMO FOCO."~
-@202 = ~"Mas por que isso não é verdade pra Sigil?"~
-@203 = ~"SIGIL É A 'CIDADE DAS PORTAS'." As cabeças do pilar ficam progressivamente mais quietas até que você só consegue ouvir os gemidos ocasionais de cabeças individuais.~
+@200 = ~"Por que meus feitiÃ§os nÃ£o estÃ£o funcionando nos planos sem uma chave de feitiÃ§o?"~
+@201 = ~"VOCÃŠ ESTÃ DIVIDIDO. SEU CORPO PARADO DIANTE DE NÃ“S MAS O NÃšCLEO DA SUA EXISTÃŠNCIA ESTÃ SELADO DOS PLANOS. AS ENERGIAS ARCANAS REQUEREM UM CATALIZADOR PRA DESENVOLVER SEUS EFEITOS. O NÃšCLEO DA SUA EXISTÃŠNCIA Ã‰ TAL CATALIZADOR. UMA CHAVE DE FEITIÃ‡O PODE AGIR COMO UMO FOCO."~
+@202 = ~"Mas por que isso nÃ£o Ã© verdade pra Sigil?"~
+@203 = ~"SIGIL Ã‰ A 'CIDADE DAS PORTAS'." As cabeÃ§as do pilar ficam progressivamente mais quietas atÃ© que vocÃª sÃ³ consegue ouvir os gemidos ocasionais de cabeÃ§as individuais.~
 @204 = ~"E?"~
-@205 = ~O pilar permanece silencioso por um tempo. Eventualmente as cabeças voltam a atenção delas pra você e falam mais uma vez: "NÓS NÃO TEMOS NADA MAIS A DIZER."~
+@205 = ~O pilar permanece silencioso por um tempo. Eventualmente as cabeÃ§as voltam a atenÃ§Ã£o delas pra vocÃª e falam mais uma vez: "NÃ“S NÃƒO TEMOS NADA MAIS A DIZER."~
 
 
 // Kitla dialog
-@250 = ~"Há algo de que eu precise estar ciente aqui pra ser um lançador de feitiços?"~
-@251 = ~Ela estuda você atentamente por um tempo. "Talvez haja. Você não aparenta ser o tipo comum de pessoa dotada com a Arte."~
-@252 = ~"Se seus feitiços falham em funcionar então você precisa achar uma chave de feitiço. Ele pode agir como um tipo de foco."~
+@250 = ~"HÃ¡ algo de que eu precise estar ciente aqui pra ser um lanÃ§ador de feitiÃ§os?"~
+@251 = ~Ela estuda vocÃª atentamente por um tempo. "Talvez haja. VocÃª nÃ£o aparenta ser o tipo comum de pessoa dotada com a Arte."~
+@252 = ~"Se seus feitiÃ§os falham em funcionar entÃ£o vocÃª precisa achar uma chave de feitiÃ§o. Ele pode agir como um tipo de foco."~
 @253 = ~"Aonde eu consigo achar uma?"~
-@254 = ~"Eu não sei." Ela pausa, pensando. "Você poderia querer olhar por aí. Poderia haver uma aqui em Curst ou em algum lugar no subsolo."~
+@254 = ~"Eu nÃ£o sei." Ela pausa, pensando. "VocÃª poderia querer olhar por aÃ­. Poderia haver uma aqui em Curst ou em algum lugar no subsolo."~
 
 
 // Interactive region
 @500 = ~"Coluna"~
-@501 = ~Parece que o solo ao redor da coluna está levemente perturbado como se alguém caminhasse ali 'recentemente' - talvez nos últimos poucos anos. Uma busca mais profunda revela um minúsculo interruptor em um lado da coluna.~
+@501 = ~Parece que o solo ao redor da coluna estÃ¡ levemente perturbado como se alguÃ©m caminhasse ali 'recentemente' - talvez nos Ãºltimos poucos anos. Uma busca mais profunda revela um minÃºsculo interruptor em um lado da coluna.~
 @502 = ~Pressionar o interruptor.~
 @503 = ~Deixar o interruptor em paz.~
-@504 = ~Você alcança o interruptor e o pressiona. Pra sua surpresa um painel bem disfarçado se solta e revela um esconderijo escondido.~
+@504 = ~VocÃª alcanÃ§a o interruptor e o pressiona. Pra sua surpresa um painel bem disfarÃ§ado se solta e revela um esconderijo escondido.~
 
 
 // Items
-@1000 = ~Chave de Feitiço do Limbo~
-@1001 = ~CHAVE DE FEITIÇO DO LIMBO
+@1000 = ~Chave de FeitiÃ§o do Limbo~
+@1001 = ~CHAVE DE FEITIÃ‡O DO LIMBO
 Peso: 0
 
-Este símbolo do Limbo está inscrito num pedaço de carne humana. Ele tem um cheiro metálico, ainda assim a sensação que traz é de maciez ao toque, tipo veludo. Desde que você o carregue com sua pessoa ele impedirá seus feitiços de falharem em qualquer lugar do Limbo.~
-@1002 = ~Chave de Feitiço das Outlands~
-@1003 = ~CHAVE DE FEITIÇO DAS OUTLANDS
+Este sÃ­mbolo do Limbo estÃ¡ inscrito num pedaÃ§o de carne humana. Ele tem um cheiro metÃ¡lico, ainda assim a sensaÃ§Ã£o que traz Ã© de maciez ao toque, tipo veludo. Desde que vocÃª o carregue com sua pessoa ele impedirÃ¡ seus feitiÃ§os de falharem em qualquer lugar do Limbo.~
+@1002 = ~Chave de FeitiÃ§o das Outlands~
+@1003 = ~CHAVE DE FEITIÃ‡O DAS OUTLANDS
 Peso: 0
 
-Este símbolo das Outlands está inscrito num pedaço de carne humana. Ele tem um cheiro normal, ainda assim a sensação que traz é a de um pedaço de pano molhado. Desde que você o carregue com sua pessoa ele impedirá seus feitiços de falharem em qualquer lugar das Outlands.~
+Este sÃ­mbolo das Outlands estÃ¡ inscrito num pedaÃ§o de carne humana. Ele tem um cheiro normal, ainda assim a sensaÃ§Ã£o que traz Ã© a de um pedaÃ§o de pano molhado. Desde que vocÃª o carregue com sua pessoa ele impedirÃ¡ seus feitiÃ§os de falharem em qualquer lugar das Outlands.~
 
 
 // Journal entries
-@1500 = ~Eu fui capaz de adquirir uma chave de feitiço para o plano de Baator do Fhjull, o de língua bifurcada. De acordo com o Fhjull as chaves de feitiço são necessárias pra impedir meus feitiços de falharem nos Planos Exteriores. Cada plano parece requerir uma chave específica.~
-@1510 = ~Kyse, o zelador da espelunca, me deixou com uma 'chave de feitiço' antes que ele desaparecesse do lugar. É aparentemente requerida pra impedir meus feitiços de falharem no plano de Carceri.~
-@1520 = ~A Deionarra me disse que a Fortaleza dos Arrependimentos é protegida de energias exteriores o que torna impossível lançar feitiços nesse lugar. Eu posso descobrir mais nas dicas deixadas pra trás pelos meus eus formais.~
-@1530 = ~Adquirir a Chave de Feitiço do Rubikon.~
-@1531 = ~Um Engenheiro de Modrons me disse que o modron no saguão é responsável por fornecer ferramentas para os "aventureiros" que vem testar o constructo da masmorra. Ele me disse que a palavra-chave "Stargazer" a qual instrui o modron que dá boas vindas a dar uma chave de feitiço. Este item é necessário pra impedir meus feitiços de falharem no plano do Limbo aonde o constructo da masmorra do Rubikon foi criado.~
-@1532 = ~O Modron no saguão me deu a chave de feitiço para o plano do Limbo após dizer a ele a palavra-chave certa.~
-@1540 = ~O Pilar das Caveiras revelou a mim que minha inabilidade de lançar feitiços nos planos é causada pela minha imortalidade. O núcleo da minha existência, isso é, minha mortalidade, é necessário pra lançar feitiços. Um feitiço pode agir como um foco desde que eu carregue ele comigo.~
-@1541 = ~O Pilar das Caveiras revelou a mim que minha inabilidade de lançar feitiços nos planos é causada pela minha imortalidade. O núcleo da minha existência, isso é, minha mortalidade, é necessário pra lançar feitiços. Um feitiço pode agir como um foco desde que eu carregue ele comigo. Aparentemente esta restrição não se aplica a Sigil mas o pilar não me disse porquê.~
-@1550 = ~A Kitla me disse que eu poderia precisar de uma 'chave de feitiço', a qual é algum tipo de foco, pra impedir meus feitiços de falharem dentro ou abaixo de Curst. Ela não pôde me dizer aonde eu poderia achar uma então eu devo manter meus olhos abertos.~
+@1500 = ~Eu fui capaz de adquirir uma chave de feitiÃ§o para o plano de Baator do Fhjull, o de lÃ­ngua bifurcada. De acordo com o Fhjull as chaves de feitiÃ§o sÃ£o necessÃ¡rias pra impedir meus feitiÃ§os de falharem nos Planos Exteriores. Cada plano parece requerir uma chave especÃ­fica.~
+@1510 = ~Kyse, o zelador da espelunca, me deixou com uma 'chave de feitiÃ§o' antes que ele desaparecesse do lugar. Ã‰ aparentemente requerida pra impedir meus feitiÃ§os de falharem no plano de Carceri.~
+@1520 = ~A Deionarra me disse que a Fortaleza dos Arrependimentos Ã© protegida de energias exteriores o que torna impossÃ­vel lanÃ§ar feitiÃ§os nesse lugar. Eu posso descobrir mais nas dicas deixadas pra trÃ¡s pelos meus eus formais.~
+@1530 = ~Adquirir a Chave de FeitiÃ§o do Rubikon.~
+@1531 = ~Um Engenheiro de Modrons me disse que o modron no saguÃ£o Ã© responsÃ¡vel por fornecer ferramentas para os "aventureiros" que vem testar o constructo da masmorra. Ele me disse que a palavra-chave "Stargazer" a qual instrui o modron que dÃ¡ boas vindas a dar uma chave de feitiÃ§o. Este item Ã© necessÃ¡rio pra impedir meus feitiÃ§os de falharem no plano do Limbo aonde o constructo da masmorra do Rubikon foi criado.~
+@1532 = ~O Modron no saguÃ£o me deu a chave de feitiÃ§o para o plano do Limbo apÃ³s dizer a ele a palavra-chave certa.~
+@1540 = ~O Pilar das Caveiras revelou a mim que minha inabilidade de lanÃ§ar feitiÃ§os nos planos Ã© causada pela minha imortalidade. O nÃºcleo da minha existÃªncia, isso Ã©, minha mortalidade, Ã© necessÃ¡rio pra lanÃ§ar feitiÃ§os. Um feitiÃ§o pode agir como um foco desde que eu carregue ele comigo.~
+@1541 = ~O Pilar das Caveiras revelou a mim que minha inabilidade de lanÃ§ar feitiÃ§os nos planos Ã© causada pela minha imortalidade. O nÃºcleo da minha existÃªncia, isso Ã©, minha mortalidade, Ã© necessÃ¡rio pra lanÃ§ar feitiÃ§os. Um feitiÃ§o pode agir como um foco desde que eu carregue ele comigo. Aparentemente esta restriÃ§Ã£o nÃ£o se aplica a Sigil mas o pilar nÃ£o me disse porquÃª.~
+@1550 = ~A Kitla me disse que eu poderia precisar de uma 'chave de feitiÃ§o', a qual Ã© algum tipo de foco, pra impedir meus feitiÃ§os de falharem dentro ou abaixo de Curst. Ela nÃ£o pÃ´de me dizer aonde eu poderia achar uma entÃ£o eu devo manter meus olhos abertos.~
