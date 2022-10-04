@@ -1,8 +1,8 @@
 IF
-  Global("A7_AntiMagicHelpFR","GLOBAL",1)
+  Global("A7_AntiMagicHelpFortress","GLOBAL",1)
 THEN
   RESPONSE #100
     TriggerActivation("A7_Stash_Trigger",TRUE)
-    SetGlobal("A7_AntiMagicHelpFR","GLOBAL",2)
+    SetGlobal("A7_AntiMagicHelpFortress","GLOBAL",2)
     Continue()
 END
