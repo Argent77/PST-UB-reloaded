@@ -225,7 +225,12 @@ APPEND ~DKITLA~
 END
 
 // If TNO has the chance to ask about becoming a Mage
-EXTEND_BOTTOM ~DKITLA~ 14 15 16 #1
+EXTEND_BOTTOM ~DKITLA~ 14 #1
+  + ~Global("A7_AntiMagicHelpKitla","GLOBAL",0) OR(2) Class(Protagonist,MAGE) Class(Protagonist,CLERIC)~
+    + @250 DO ~SetGlobal("A7_AntiMagicHelpKitla","GLOBAL",1) GiveItem("SPWI912",Protagonist) SetGlobal("Curst_Key","GLOBAL",3)~ + DKITLA.1
+END
+
+EXTEND_BOTTOM ~DKITLA~ 15 16 #1
   + ~Global("A7_AntiMagicHelpKitla","GLOBAL",0) OR(2) Class(Protagonist,MAGE) Class(Protagonist,CLERIC)~
     + @250 DO ~SetGlobal("A7_AntiMagicHelpKitla","GLOBAL",1)~ + DKITLA.1
 END
