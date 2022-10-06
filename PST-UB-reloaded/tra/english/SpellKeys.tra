@@ -14,7 +14,7 @@
 @58 = ~"Please give it to me!"~
 @59 = ~"Feh! Of course, here it is. How *else* may I serve you?"~
 @60 = ~"Feh! Of course..."~
-@61 = ~"Thrice-damned! You took it already? The young just don't respect their elders anymore. But it spares me of showing you more of my *generosity*, at least."~
+@61 = ~"Thrice-damned! You took it already? The young just don't respect their elders anymore. But it spares me of having to show you more of my *generosity*, at least."~
 
 
 // Modron Engineer dialog
@@ -22,14 +22,14 @@
 @101 = ~"Are there any dangers for spellcasters in this place?"~
 @102 = ~"Yes, Director. It can be requested from the Rubikon Guide."~
 @103 = ~"The Rubikon Guide? Where can I find him?"~
-@104 = ~"Yes, Director. It is likely that connections to energies of outside origin are disrupted by this place."~
+@104 = ~"Yes, Director. It is likely that connections to energies of external origin are disrupted by this place."~
 @105 = ~"Does that mean I can't cast spells?"~
 @106 = ~"Affirmative."~
 @107 = ~"How can I protect myself from this effect?"~
 @108 = ~"A spell key is required to stabilize the connection."~
 @109 = ~"Where can I find this spell key?"~
 @110 = ~"It can be requested from the Rubikon Guide."~
-@111 = ~"The Rubikon Guide has been assigned with the task to welcome adventurers. He can be found in the entrance section of the Rubikon Dungeon Construct. A keyword is needed to receive a spell key."~
+@111 = ~"The Rubikon Guide has been assigned the task to welcome adventurers. He can be found in the entrance section of the Rubikon Dungeon Construct. A keyword is needed to receive a spell key."~
 @112 = ~"And what is it?"~
 @113 = ~"The keyword for requesting a spell key is 'Stargazer'."~
 @114 = ~"Nevermind. I have some more questions..."~
@@ -38,7 +38,7 @@
 
 // Modron steward dialog
 @150 = ~"I was told to tell you the keyword 'Stargazer'."~
-@151 = ~The creature blinks twice before it starts emitting a low buzzing sound that subsides after a couple of seconds. Without saying a word, it hands you a sheet of paper-like piece of cloth.~
+@151 = ~The creature blinks twice before it starts emitting a low buzzing sound that subsides after a couple of seconds. Without saying a word, it hands you a sheet-of-paper-like piece of cloth.~
 @152 = ~"Thank you, farewell."~
 
 
@@ -61,7 +61,7 @@
 
 // Interactive region
 @500 = ~"Column"~
-@501 = ~It looks like the ground around the column is slightly disturbed, as if someone walked there 'recently' - perhaps in the last few years. A more thorough search reveals a tiny switch on one side of the column.~
+@501 = ~It looks like the ground around the column is slightly disturbed, as if someone had walked there 'recently' - perhaps in the last few years. A more thorough search reveals a tiny switch on one side of the column.~
 @502 = ~Flip the switch.~
 @503 = ~Leave the switch alone.~
 @504 = ~You reach for the switch and flip it. To your surprise a well disguised panel comes loose and reveals a hidden cache.~
@@ -85,8 +85,8 @@ This symbol of the Outlands is inscribed upon a piece of human flesh. It has an 
 @1510 = ~Kyse, the dump caretaker, left me with a 'spell key' before he vanished from the place. It is apparently required to prevent my spells from going awry on the plane of Carceri.~
 @1520 = ~Deionarra told me that the Fortress of Regrets is shielded from outside energies, which makes it impossible to cast spells in that place. I may find out more from hints left behind by my former selves.~
 @1530 = ~Acquire the Rubikon Spell Key.~
-@1531 = ~A Modron Engineer told me that the modron in the foyer is responsible for providing tools to the "adventurers" who come to try out the dungeon construct. He told me the keyword "Stargazer" which instructs the welcoming modron to hand over a spell key. This item is needed to prevent my spells from going awry on the plane of Limbo, where the Rubikon dungeon construct was created.~
-@1532 = ~The Modron in the foyer gave me the spell key for the plane of Limbo after telling him the right keyword.~
+@1531 = ~The Modron Engineer told me that the modron in the foyer is responsible for providing tools to the "adventurers" who come to try out the dungeon construct. He told me the keyword "Stargazer" which instructs the Rubikon Guide at the Maze entrance to hand over a spell key. This item is needed to prevent my spells from going awry on the plane of Limbo, where the Rubikon dungeon construct was created.~
+@1532 = ~The modron in the foyer gave me the spell key for the plane of Limbo after telling him the right keyword.~
 @1540 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence, that is, my mortality, is needed to cast spells. A spell key can act as a focus, as long as I carry it with me.~
 @1541 = ~The Pillar of Skulls revealed to me that my inability to cast spells in the planes is caused by my immortality. The core of my existence, that is, my mortality, is needed to cast spells. A spell key can act as a focus, as long as I carry it with me. Apparently this restriction doesn't apply to Sigil, but the pillar didn't tell me why.~
 @1550 = ~Kitla told me that I might need a 'spell key', which is some kind of focus, to prevent my spells from failing in or below Curst. She couldn't tell me where to find one, so I should keep my eyes open.~
