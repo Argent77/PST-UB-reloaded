@@ -1,0 +1,92 @@
+// Deionarra dialog
+@0 = ~"Cet endroit rend inopérant toute énergie, sauf celle directement originaire du plan. Si tu comptes sur des enchantements ou des sortilèges pour te défendre, sache que tu échoueras sans doute." Elle poursuit d'un ton insistant. "Tu dois chercher les indices laissés ici lors de ta dernière visite."~
+
+
+// Fhjull dialog
+@50 = ~"Il y a autre chose que je dois savoir à propos de Baator ?"~
+@51 = ~"Il se *pourrait* que ta magie soit… perturbée ici. Mais une personne avec ta stature ne devrait avoir aucun problème à voyager sans être maltraité."~
+@52 = ~"Tu peux développer ?"~
+@53 = ~"Si tu insistes. Feh ! Pour quelqu'un comme toi, les Plans Extérieurs pourraient très bien se trouver trop éloignés de la source de ta magie. À moins que…"~
+@54 = ~"À moins que quoi ?"~
+@55 = ~"À moins que tu n'aies une 'clé' en ta possession, pour te concentrer sur l'énergie magique."~
+@56 = ~"As-tu une telle clé ?"~
+@57 = ~"Hein ? Oui, il se peut que j'aie ce genre de chose qui traîne quelque part par là."~
+@58 = ~"Tu seras gentil de bien vouloir me la donner."~
+@59 = ~"Feh ! Mais bien sûr, la voilà. Que puis-je faire d'*autre* pour te servir ?"~
+@60 = ~"Feh ! Mais bien sûr…"~
+@61 = ~"Sois trois fois damné ! Tu l'as déjà prise ? La jeunesse n'a plus aucun respect pour ses anciens. Mais au moins cela m'épargne la gageure de devoir te montrer mon *hospitalité*."~
+
+
+// Modron Engineer dialog
+@100 = ~"Est-ce que j'ai besoin d'une clé pour que mes sorts fonctionnent normalement ici ?"~
+@101 = ~"Est-ce qu'il y a des dangers particuliers pour les lanceurs de sorts ici ?"~
+@102 = ~"En effet, Directeur. Elle peut être demandée au guide de Rubikon."~
+@103 = ~"Le guide de Rubikon ? Où est-ce que je peux le trouver ?"~
+@104 = ~"En effet, Directeur. Il est probable que les connexions aux énergies extérieures soient perturbées par cet endroit."~
+@105 = ~"Ça veut dire que je ne peux pas lancer de sort ?"~
+@106 = ~"Affirmatif."~
+@107 = ~"Comment je peux me protéger de cet effet ?"~
+@108 = ~"Une clé à sorts est nécessaire pour stabiliser les connexions."~
+@109 = ~"Où est-ce que je peux trouver cette clé à sorts ?"~
+@110 = ~"Elle peut être demandée au guide de Rubikon."~
+@111 = ~"Le guide de Rubikon est chargé d'accueillir les aventuriers. Il peut être trouvé à l'entrée de la Construction de donjon Rubikon. Un mot de passe est requis pour obtenir la clé à sorts."~
+@112 = ~"Et ce mot de passe est… ?"~
+@113 = ~"Le mot de passe permettant d'obtenir la clé à sorts est 'astronome'."~
+@114 = ~"Laisse tomber. J'ai d'autres questions…"~
+@115 = ~"Je vois. Au revoir."~
+
+
+// Modron steward dialog
+@150 = ~"On m'a dit de vous donner le mot de passe 'astronome'."~
+@151 = ~La créature cligne deux fois des yeux, puis commence à émettre un faible son bourdonnant, qui persiste pendant plusieurs secondes. Sans dire un mot, elle te tend un morceau de tissu ressemblant à une feuille de papier.~
+@152 = ~"Merci et au revoir."~
+
+
+// Pillar of Skulls dialog
+@200 = ~"Pourquoi est-ce que mes sorts ne fonctionnent pas dans les plans sans une clé à sorts ?"~
+@201 = ~"TU ES DIVISÉ. TON CORPS SE TIENT DEVANT NOUS, MAIS TON ÊTRE VÉRITABLE EST ISOLÉ DES PLANS. LES ÉNERGIES ARCANIQUES ONT BESOIN D'UN CATALYSEUR POUR FAIRE EFFET. TON ÊTRE VÉRITABLE EST UN CATALYSEUR, MAIS UNE CLÉ À SORTS PEUT FAIRE OFFICE DE SUBSTITUT EN SON ABSENCE."~
+@202 = ~"Mais pourquoi est-ce que ma magie fonctionne à Sigil alors ?"~
+@203 = ~"SIGIL EST LA 'CITÉ DES PORTES'." Les têtes du pilier deviennent peu à peu silencieuses, jusqu'à ce que tu n'entendes plus que le grognement occasionnel d'une tête ou deux.~
+@204 = ~"Et ?"~
+@205 = ~Le pilier reste silencieux un long moment. Finalement, les têtes tournent à nouveau leur attention vers toi et parlent une dernière fois : "NOUS N'AVONS RIEN À DIRE DE PLUS."~
+
+
+// Kitla dialog
+@250 = ~"En tant que lanceur de sort, il y a quelque chose que je devrais savoir sur le coin ?"~
+@251 = ~Elle t'examine attentivement pendant un instant. "Peut-être. Tu n'as pas l'air de la personne classique vaguement douée avec l'Art."~
+@252 = ~"Si tes sorts ne marchent pas, tu dois trouver une clé à sorts. Elle peut concentrer l'énergie magique."~
+@253 = ~"Et où est-ce que je trouve ça ?"~
+@254 = ~"Aucune idée." Elle s'arrête pour réfléchir. "Tu pourrais chercher dans les environs. Peut-être qu'il y en a une à Maudith, ou dans les souterrains."~
+
+
+// Interactive region
+@500 = ~"Colonne"~
+@501 = ~Il semblerait qu'il y ait des marques sur la terre autour de la colonne, comme si quelqu'un y avait marché 'récemment'. Peut-être au cours des dernières années. Une recherche plus approfondie révèle un petit bouton sur l'un des bords de la colonne. ~
+@502 = ~Tourne le bouton.~
+@503 = ~Laisse le bouton.~
+@504 = ~Tu te mets en face du bouton et le tournes. À ta grande surprise, un panneau bien dissimulé se détache et révèle un espace caché.~
+
+
+// Items
+@1000 = ~Clé à sorts des Limbes~
+@1001 = ~CLÉ À SORTS DES LIMBES
+Poids : 0
+
+Ce symbole des Limbes a été inscrit sur un morceau de chair humaine. Il a une odeur métallique, bien qu'il soit doux au toucher, comme du velours. Tant qu'il est en ta possession, tes sorts fonctionneront normalement sur le plan des Limbes.~
+@1002 = ~Clé à sorts de l'Outreterre~
+@1003 = ~CLÉ À SORTS DE L'OUTRETERRE
+Poids : 0
+
+Ce symbole de l'Outreterre a été inscrit sur un morceau de chair humaine. Son odeur est quelconque, et pourtant il sent comme des vêtements mouillés. Tant qu'il est en ta possession, tes sorts fonctionneront normalement, peu importe où tu te trouves sur l'Outreterre.~
+
+
+// Journal entries
+@1500 = ~J'ai pu obtenir une clé à sorts du plan de Baator par Fhjull Langue-fourchue. D'après lui, les clés à sorts sont nécessaires pour que ma magie fonctionne normalement sur les Plans Extérieurs. Il semblerait que chaque plan nécessite une clé spécifique.~
+@1510 = ~Kyse, le gardien de la décharge, m'a laissé une 'clé à sorts' avant de partir. C'est apparemment nécessaire pour que mes sorts fonctionnent normalement sur le plan des Carcères.~
+@1520 = ~Deionarra m'a dit que la Forteresse des Regrets rendait inopérante toute énergie extérieure, ce qui empêche de lancer des sorts dans ce lieu. Je pourrais peut-être en savoir plus grâce aux indices laissés par mes anciennes incarnations.~
+@1530 = ~Obtenir la clé à sorts de Rubikon.~
+@1531 = ~Un ingénieur modrone m'a dit que le modrone du vestibule était chargé de fournir l'équipement aux 'aventuriers' qui viennent essayer la Construction de donjon. Il m'a dit que le mot de passe 'astronome' me permettrait d'obtenir une clé à sorts de ce modrone. Cet objet est nécessaire pour mes sorts fonctionnent normalement dans le plan des Limbes, là où est construit la Construction de donjon Rubikon.~
+@1532 = ~Le modrone du vestibule m'a donné la clé à sorts du plan des Limbes, après que je lui ai indiqué le bon mot de passe.~
+@1540 = ~Le Pilier des Crânes m'a révélé que mon incapacité à lancer des sorts sur les plans était causé par mon immortalité. Mon être véritable – ma mortalité –, est nécessaire pour lancer mes sorts. Une clé à sorts peut servir à concentrer l'énergie requise, tant que je la garde sur moi.~
+@1541 = ~Le Pilier des Crânes m'a révélé que mon incapacité à lancer des sorts sur les plans était causé par mon immortalité. Mon être véritable – ma mortalité –, est nécessaire pour lancer mes sorts. Une clé à sorts peut servir à concentrer l'énergie requise, tant que je la garde sur moi. Apparemment cette restriction n'existe pas à Sigil, mais le pilier ne m'a pas expliqué pourquoi.~
+@1550 = ~Kitla m'a dit que je pourrais avoir besoin d'une 'clé à sorts' (une espèce de catalyseur), pour pouvoir lancer normalement mes sorts à Maudith. Elle ne savait pas où en trouver une, donc je devrais rester attentif.~
