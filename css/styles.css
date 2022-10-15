@@ -194,6 +194,11 @@ a:hover img, a:active img {
   border-bottom: 0.1rem solid #420;
 }
 
+abbr {
+  text-decoration: underline black dotted 1px;
+  cursor: help;
+}
+
 #language {
   width: 80vw;
   margin: 0 auto;
