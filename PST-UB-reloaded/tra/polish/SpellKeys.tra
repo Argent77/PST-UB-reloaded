@@ -1,0 +1,92 @@
+// Deionarra dialog
+@0 = ~"To miejsce tłamsi wszelką energię nienależącą do tej sfery. Jeśli to na czarach lub zaklęciach opierasz swoją obronę, z pewnością upadniesz." I dodaje z naciskiem. "Szukaj wskazówek, które pozostawiłeś tam podczas poprzedniej wizyty."~
+
+
+// Fhjull dialog
+@50 = ~"Czy jest jeszcze coś, na co powinienem uważać w Baator?"~
+@51 = ~"*Może* być tak, że twoja magia zostanie tam zakłócona. Ale ktoś twojej... postury, nie będzie miał raczej problemów z pokonaniem równin w jednym kawałku."~
+@52 = ~"Mógłbyś mi to wyjaśnić dokładniej?"~
+@53 = ~"Skoro nalegasz? Fe! Sfery Zewnętrzne mogą być zbytnio oddalone od źródeł twojej magii, chyba że..."~
+@54 = ~"Chyba że co?"~
+@55 = ~"Chyba że posiadasz 'klucz', który pozwoli ci się skupić na magicznych przepływach."~
+@56 = ~"Masz taki klucz?"~
+@57 = ~"Hę? Tak, całkiem możliwe, że coś takiego, gdzieś tu się wala."~
+@58 = ~"Daj mi go, proszę!"~
+@59 = ~"Fe! Oczywiście, proszę bardzo. W czym *jeszcze* mógłbym ci służyć?"~
+@60 = ~"Fe! Oczywiście..."~
+@61 = ~"Po trzykroć przeklęty! Już go zabrałeś? Młodzież nie szanuje już starszyzny tymi czasy. Ale to przynajmniej oszczędzi mi okazywania ci jeszcze więcej *szczodrości*."~
+
+
+// Modron Engineer dialog
+@100 = ~"Czy potrzebuję klucza, by móc korzystać tutaj z mojej magii?"~
+@101 = ~"Czy są tu jakieś zagrożenia dla osób korzystających z magii?"~
+@102 = ~"Tak, Dyrektorze. Możesz go odebrać u portiera."~
+@103 = ~"Portiera? A gdzie go znajdę?"~
+@104 = ~"Tak, Dyrektorze. Jest wysoce prawdopodobne, że to miejsce zakłóca połączenie z energią pochodzącą z zewnętrznych źródeł."~
+@105 = ~"Czy to oznacza, że nie mogę tu rzucać czarów?"~
+@106 = ~"Potwierdzam."~
+@107 = ~"Jak mogę się przed tym zabezpieczyć?"~
+@108 = ~"Do ustabilizowania połączenia potrzebny jest klucz."~
+@109 = ~"Gdzie znajdę ten klucz?"~
+@110 = ~"Można go odebrać od portiera."~
+@111 = ~"Portier otrzymał zadanie witania poszukiwaczy przygód. Można go znaleźć w strefie wejściowej Rubikonu. Należy podać hasło, by otrzymać od niego klucz."~
+@112 = ~"A jakie to hasło?"~
+@113 = ~"Hasło do uzyskania klucza brzmi 'Obserwator'."~
+@114 = ~"Nieważne. Mam jeszcze kilka pytań..."~
+@115 = ~"Rozumiem. Bywaj."~
+
+
+// Modron steward dialog
+@150 = ~"Miałem podać ci hasło 'Obserwator'."~
+@151 = ~Stwór mruga dwukrotnie i zaczyna wydawać niski, buczący dźwięk, który urywa się po kilku sekundach. Bez słowa podaje ci przypominający papier kawałek materiału.~
+@152 = ~"Dziękuję, żegnaj."~
+
+
+// Pillar of Skulls dialog
+@200 = ~"Dlaczego bez magicznych kluczy moje czary nie działają pośród sfer?"~
+@201 = ~"JESTEŚ PODZIELONY. TWOJE CIAŁO STOI PRZED NAMI, ALE ISTOTA TWEJ EGZYSTENCJI JEST UWIĘZIONA POZA SFERAMI. MISTYCZNA ENERGIA WYMAGA KATALIZATORA, BY UZEWNĘTRZNIĆ SWOJE MOŻLIWOŚCI. TAKIM KATALIZATOREM JEST ISTOTA TWEJ EGZYSTENCJI. MAGICZNE KLUCZE MOGĄ JĄ ZASTĄPIĆ."~
+@202 = ~"Ale dlaczego nie dzieje się tak w Sigil?"~
+@203 = ~"SIGIL JEST 'MIASTEM DRZWI'." Głowy w słupie stają się coraz cichsze, aż możesz usłyszeć tylko sporadyczne pojękiwania niektórych z nich.~
+@204 = ~"I?"~
+@205 = ~Słup pozostaje cichy jeszcze przez chwilę. W końcu jednak głowy znów zwracają na ciebie swoją uwagę i mówią: "NIE MAMY NIC WIĘCEJ DO POWIEDZENIA."~
+
+
+// Kitla dialog
+@250 = ~"Czy jako osoba władająca magią powinienem wiedzieć o tym miejscu coś szczególnego?"~
+@251 = ~Przez chwilę przygląda ci się uważnie. "Chyba tak. Nie wyglądasz na zwykłą osobę dotkniętą darem Sztuki."~
+@252 = ~"Jeśli twoje zaklęcia nie będą tu działać, musisz odnaleźć magiczny klucz, który zadziała niczym soczewka."~
+@253 = ~"Gdzie znajdę coś takiego?"~
+@254 = ~"Nie wiem." Przerywa, by się zastanowić. "Będziesz musiał się tu porozglądać. Powinien być gdzieś tu, w Klątwie lub pod jej powierzchnią."~
+
+
+// Interactive region
+@500 = ~"Kolumna"~
+@501 = ~Wygląda na to, że podłoże wokół kolumny zostało poruszone. Jakby ktoś 'ostatnio' tędy przechodził... Nie dalej jak kilka lat temu. Dokładniejsze poszukiwania ujawniają mały przełącznik na jednym z boków kolumny.~
+@502 = ~Przełącz go.~
+@503 = ~Zostaw przełącznik w spokoju.~
+@504 = ~Sięgasz do przełącznika i go używasz. Ku twojemu zaskoczeniu, dobrze zamaskowany panel odskakuje od kolumny, odsłaniając ukryty za nim schowek.~
+
+
+// Items
+@1000 = ~Magiczny klucz do Limbo~
+@1001 = ~MAGICZNY KLUCZ DO LIMBO
+Waga: 0
+
+Symbol Limbo umieszczony na kawałku ludzkiego ciała. Ma metaliczny zapach, ale w dotyku jest gładki jak aksamit. Nosząc go przy sobie, masz gwarancję, że podczas twojej bytności w Sferze Limbo praktykowane przez ciebie czary zachowają skuteczność.~
+@1002 = ~Magiczny klucz do Zewnętrza~
+@1003 = ~MAGICZNY KLUCZ DO ZEWNĘTRZA
+Waga: 0
+
+Symbol Zewnętrza umieszczony na kawałku ludzkiego ciała. Ma nieokreślony zapach, a w dotyku przypomina wilgotny gałgan. Nosząc go przy sobie, masz gwarancję, że podczas twojej bytności w Zewnętrzu praktykowane przez ciebie czary zachowają skuteczność.~
+
+
+// Journal entries
+@1500 = ~Udało mi się zdobyć Magiczny klucz do Baator od Fhjulla Rozdwojonego Języka. Według Fhjulla magiczne klucze są potrzebne, by móc skutecznie rzucać czary w Sferach zewnętrznych. Każda sfera zdaje się wymagać odpowiedniego klucza..~
+@1510 = ~Kys, zarządca wysypiska, zostawił mi, odchodząc, jakiś magiczny klucz. Wszystko wskazuje na to, że powinien mnie on chronić przed nieudanym rzucaniem czarów w Tartarze.~
+@1520 = ~Deionarra powiedziała mi, że Forteca Żalu jest zabezpieczona przed wpływem zewnętrznych energii, co czyni niemożliwym rzucanie tam czarów. Mogę dowiedzieć się o tym czegoś więcej ze wskazówek, które pozostawiły moje poprzednie wcielenia.~
+@1530 = ~Zdobycie Magicznego klucza do Rubikonu.~
+@1531 = ~Inżynier modronów powiedział mi, że modron stojący w foyer jest odpowiedzialny za to, by zapewnić odpowiednie narzędzia poszukiwaczom przygód, chcącym zmierzyć się z wyzwaniami Rubikonu. Podał mi też hasło "Obserwator", które jest instrukcją dla portiera, by wydać mi magiczny klucz. Przedmiot ten będzie mi potrzebny, by uchronić mnie przed nieudanym rzucaniem zaklęć w Sferze Limbo, gdzie znajduje się Rubikon.~
+@1532 = ~Modron z foyer wydał mi Magiczny klucz do Limbo po tym, jak podałem mu odpowiednie hasło.~
+@1540 = ~Słup Czaszek wyjawił mi, że moja niezdolność do rzucania czarów w sferach jest spowodowana przez moją nieśmiertelność. Normalnie umożliwia mi to istota mojej egzystencji, czyli moja śmiertelność. Magiczne klucze, działając niczym katalizator, mogą mi ją zastąpić tak długo, jak tylko będę je ze sobą nosił.~
+@1541 = ~Słup Czaszek wyjawił mi, że moja niezdolność do rzucania czarów w sferach jest spowodowana przez moją nieśmiertelność. Normalnie umożliwia mi to istota mojej egzystencji, czyli moja śmiertelność. Magiczne klucze, działając niczym katalizator, mogą mi ją zastąpić tak długo, jak tylko będę je ze sobą nosił. Najwyraźniej to ograniczenie nie obowiązuje mnie w Sigil, jednak Słup Czaszek nie powiedział mi dlaczego.~
+@1550 = ~Kitla powiedziała, że mogę potrzebować magicznego klucza, który będzie swego rodzaju soczewką chroniącą moją magię przed niepowodzeniem w Klątwie i pod jej powierzchnią. Nie potrafiła mi powiedzieć, gdzie takiego szukać, więc będę musiał bacznie się rozglądać.~
