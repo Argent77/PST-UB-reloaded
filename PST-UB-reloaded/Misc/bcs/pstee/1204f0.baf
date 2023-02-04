@@ -7,6 +7,8 @@ THEN
     Wait(1)
     PlaySequence(SEQ_CAST)
     Wait(2)
+    FadeToColor([30.0],0)
+    Wait(2)
     EndCutSceneMode()
     QuitGame(FINALE,0,0)
 END
@@ -18,7 +20,7 @@ THEN
     CutSceneId("Morte")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
@@ -30,7 +32,7 @@ THEN
     CutSceneId("Annah")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
@@ -42,7 +44,7 @@ THEN
     CutSceneId("Dakkon")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
@@ -54,7 +56,7 @@ THEN
     CutSceneId("Grace")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
@@ -66,7 +68,7 @@ THEN
     CutSceneId("Nordom")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
@@ -78,7 +80,7 @@ THEN
     CutSceneId("Ignus")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
@@ -90,7 +92,7 @@ THEN
     CutSceneId("Vhail")
     Wait(1)
     SmallWait(5)
-    StickySinisterPoof("S113SMOK",Myself,1)
+    StickySinisterPoof("EF01TPRT",Myself,1)
     Wait(1)
     DestroySelf()
 END
