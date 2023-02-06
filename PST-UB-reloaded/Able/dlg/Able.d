@@ -45,8 +45,8 @@ REPLACE_TRANS_TRIGGER DABLE BEGIN 16 END BEGIN 2 END
    ~Global("CW_Research_Incarnations",[ ]*"AR0600",[ ]*2)~
    ~Global("CW_Research_Incarnations","AR0600",1) GlobalTimerExpired("Able_Timer_Incarnations","GLOBAL")~
 
-ADD_TRANS_ACTION DABLE BEGIN 31 83 END BEGIN 0 END ~SetGlobalTimer("Able_Timer_Language","GLOBAL",6000)~
-ADD_TRANS_ACTION DABLE BEGIN 83 END BEGIN 1 END ~SetGlobalTimer("Able_Timer_Ravel","GLOBAL",6000)~
-ADD_TRANS_ACTION DABLE BEGIN 83 END BEGIN 2 END ~SetGlobalTimer("Able_Timer_Incarnations","GLOBAL",6000)~
+ADD_TRANS_ACTION DABLE BEGIN 31 83 END BEGIN 0 END ~%sc_set_global_timer%("Able_Timer_Language","GLOBAL",%sc_timer_6000%)~
+ADD_TRANS_ACTION DABLE BEGIN 83 END BEGIN 1 END ~%sc_set_global_timer%("Able_Timer_Ravel","GLOBAL",%sc_timer_6000%)~
+ADD_TRANS_ACTION DABLE BEGIN 83 END BEGIN 2 END ~%sc_set_global_timer%("Able_Timer_Incarnations","GLOBAL",%sc_timer_6000%)~
 
-ADD_TRANS_ACTION DABLE BEGIN 79 80 81 END BEGIN 0 END ~SetGlobalTimer("Able_Timer_Ravel","GLOBAL",6000)~
+ADD_TRANS_ACTION DABLE BEGIN 79 80 81 END BEGIN 0 END ~%sc_set_global_timer%("Able_Timer_Ravel","GLOBAL",%sc_timer_6000%)~

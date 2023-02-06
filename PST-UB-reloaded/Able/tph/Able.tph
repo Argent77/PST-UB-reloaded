@@ -19,7 +19,7 @@
 // This will complete the research when you enter the Clerk's Ward from anywhere outside the Clerk's
 // Ward or any of its buildings or subsections.
 
-COMPILE ~%MOD_FOLDER%/Able/dlg/Able.d~
+COMPILE EVAL ~%MOD_FOLDER%/Able/dlg/Able.d~
 
 ACTION_IF (IS_PST) BEGIN
   INCLUDE ~%MOD_FOLDER%/utils/Q_VARMacros.tph~

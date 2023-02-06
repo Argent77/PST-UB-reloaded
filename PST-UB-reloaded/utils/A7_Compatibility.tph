@@ -51,6 +51,17 @@ ACTION_IF IS_PSTEE BEGIN
 
   // For script commands requiring additional number parameters in PSTEE
   OUTER_TEXT_SPRINT sc_comma_null ~,0~
+
+  // Buggy action "SetGlobalTimer(name,scope,value)" in PSTEE: Calculates value based on real time instead of game time
+  // Workaround: Using alternate timer action: SetGlobalTimerRandom(name,scope,min,max)
+  OUTER_TEXT_SPRINT sc_set_global_timer ~SetGlobalTimerRandom~
+  OUTER_TEXT_SPRINT sc_timer_1200 ~1200,1201~     // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_1800 ~1800,1801~     // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_3000 ~3000,3001~     // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_4500 ~4500,4501~     // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_6000 ~6000,6001~     // Able.d, Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_7200 ~7200,7201~     // XPDeionarra.d
+  OUTER_TEXT_SPRINT sc_timer_48000 ~48000,48001~  // LowerWard.d
 END ELSE BEGIN
   // Can be used to locating game-specific resources included in the mod
   OUTER_TEXT_SPRINT game_name ~pst~
@@ -102,4 +113,14 @@ END ELSE BEGIN
 
   // For script commands requiring additional number parameters in PSTEE
   OUTER_TEXT_SPRINT sc_comma_null ~~
+
+  // Workaround for buggy action "SetGlobalTimer(name,scope,value)" in PSTEE
+  OUTER_TEXT_SPRINT sc_set_global_timer ~SetGlobalTimer~
+  OUTER_TEXT_SPRINT sc_timer_1200 ~1200~    // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_1800 ~1800~    // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_3000 ~3000~    // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_4500 ~4500~    // Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_6000 ~6000~    // Able.d, Sounds.tph
+  OUTER_TEXT_SPRINT sc_timer_7200 ~7200~    // XPDeionarra.d
+  OUTER_TEXT_SPRINT sc_timer_48000 ~48000~  // LowerWard.d
 END

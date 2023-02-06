@@ -2,7 +2,7 @@
 // ============Coded:  December 1, 2008 for UB Version 3.0 ================
 // ========================= Revised by Argent77 ==========================
 
-COMPILE ~%MOD_FOLDER%/LowerWard/dlg/LowerWard.d~
+COMPILE EVAL ~%MOD_FOLDER%/LowerWard/dlg/LowerWard.d~
 
 // Add Hailcin'n and the 6 Deran customers
 

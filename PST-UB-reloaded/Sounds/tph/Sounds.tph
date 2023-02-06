@@ -282,27 +282,27 @@ END
 COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/Sounds.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 
 ACTION_IF (FILE_EXISTS ~override/Q!B4HRS.xxx~) BEGIN
-  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",1200) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  OUTER_SPRINT "BanterDo" ~%sc_set_global_timer%("Banter_Timer","GLOBAL",%sc_timer_1200%) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B6HRS.xxx~) BEGIN
-  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",1800) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  OUTER_SPRINT "BanterDo" ~%sc_set_global_timer%("Banter_Timer","GLOBAL",%sc_timer_1800%) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B10HRS.xxx~) BEGIN
-  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",3000) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  OUTER_SPRINT "BanterDo" ~%sc_set_global_timer%("Banter_Timer","GLOBAL",%sc_timer_3000%) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B15HRS.xxx~) BEGIN
-  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",4500) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  OUTER_SPRINT "BanterDo" ~%sc_set_global_timer%("Banter_Timer","GLOBAL",%sc_timer_4500%) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (FILE_EXISTS ~override/Q!B20HRS.xxx~) BEGIN
-  OUTER_SPRINT "BanterDo" ~SetGlobalTimer("Banter_Timer","GLOBAL",6000) SetGlobal("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  OUTER_SPRINT "BanterDo" ~%sc_set_global_timer%("Banter_Timer","GLOBAL",%sc_timer_6000%) SetGlobal("Banter_Attempt","GLOBAL",0)~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA1.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (IS_PST) BEGIN
   // PST without Banter Accelerator
   OUTER_SPRINT "BanterDo" ~GlobalSet("Banter_Attempt","GLOBAL",0)~
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA0.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA0.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END ELSE ACTION_IF (IS_PSTEE) BEGIN
   // PSTEE
-  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Sounds/dlg/BanterA2.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
+  COMPILE EVAL ~%MOD_FOLDER%/Sounds/dlg/BanterA2.d~ USING ~%DEFAULT_LANG_FOLDER%/sounds.tra~ ~%LANG_FOLDER%/sounds.tra~
 END
 
 

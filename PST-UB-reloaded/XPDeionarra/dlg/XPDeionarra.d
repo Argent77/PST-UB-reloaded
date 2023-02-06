@@ -149,7 +149,7 @@ APPEND DKESAI
 
   IF ~~ THEN BEGIN Ravel-Death-23
     SAY @51
-    IF ~~ THEN DO ~SetGlobalTimer("Kesai_Timer","GLOBAL",7200)~ EXIT
+    IF ~~ THEN DO ~%sc_set_global_timer%("Kesai_Timer","GLOBAL",%sc_timer_7200%)~ EXIT
   END
 
   IF ~~ THEN BEGIN Ravel-Death-24
