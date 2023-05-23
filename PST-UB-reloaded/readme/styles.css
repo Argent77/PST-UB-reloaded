@@ -92,6 +92,14 @@ ul {
   list-style-type: square;
 }
 
+li > ul {
+  list-style-type: disc;
+}
+
+li > ul > li > ul {
+  list-style-type: circle;
+}
+
 li {
   line-height: 1.5;
 }
