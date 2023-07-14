@@ -13,3 +13,18 @@ END ELSE BEGIN
   COMPILE ~%MOD_FOLDER%/Misc/bcs/pst/1204f0.baf~
   COMPILE ~%MOD_FOLDER%/Misc/dlg/npc_final_pst.d~
 END
+
+
+// There are no options to raise dead party members while being locked in the Hive
+// if you didn't get the "Raise Dead" ability from Deionarra.
+// This code adds "Raise Dead" as a cure option to Mebbeth's store.
+COPY_EXISTING ~mebbeth.sto~ ~override~
+  LPF ADD_STORE_CURE
+    INT_VAR
+      price = 500
+      overwrite = 1
+    STR_VAR
+      spell_name = ~SPPR502~
+      position = ~LAST~
+  END
+BUT_ONLY
