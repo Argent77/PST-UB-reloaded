@@ -1,0 +1,44 @@
+// Cheats were disabled in Planescape and can easily crash the game.
+// This patch re-enables the debug console in original PsT.
+// Patch provided by Bubb
+
+ACTION_IF (IS_PST) BEGIN
+  COPY ~Torment.exe~ ~Torment.exe~
+    WRITE_BYTE 0x3cdffd 0x8d
+    WRITE_BYTE 0x3cdffe 0x98
+    WRITE_BYTE 0x3cdfff 0xfa
+
+    WRITE_BYTE 0x3ce000 0xff
+    WRITE_BYTE 0x3ce001 0xff
+    WRITE_BYTE 0x3ce002 0xe8
+    WRITE_BYTE 0x3ce003 0xa3
+    WRITE_BYTE 0x3ce004 0x97
+    WRITE_BYTE 0x3ce005 0x00
+    WRITE_BYTE 0x3ce006 0x00
+    WRITE_BYTE 0x3ce007 0xe9
+    WRITE_BYTE 0x3ce008 0x07
+    WRITE_BYTE 0x3ce009 0x17
+    WRITE_BYTE 0x3ce00a 0x00
+    WRITE_BYTE 0x3ce00b 0x00
+    WRITE_BYTE 0x3ce00c 0x90
+
+    WRITE_BYTE 0x3d75d6 0xd2
+    WRITE_BYTE 0x3d75d7 0x04
+
+    WRITE_BYTE 0x3d7800 0xd2
+    WRITE_BYTE 0x3d7801 0x04
+
+    WRITE_BYTE 0x3d780f 0x2e
+
+    WRITE_BYTE 0x3d7810 0x16
+
+    WRITE_BYTE 0x3d7828 0xd2
+    WRITE_BYTE 0x3d7829 0x04
+
+    WRITE_BYTE 0x3d7848 0xd2
+    WRITE_BYTE 0x3d7849 0x04
+
+    WRITE_BYTE 0x3d786d 0xd2
+    WRITE_BYTE 0x3d786e 0x04
+  BUT_ONLY IF_EXISTS
+END

@@ -82,7 +82,7 @@
           <li><p><strong>Wiederhergestellt: Mietshaus der Schläger:</strong> Erlaubt mehr Rollenspielmöglichkeiten im Mietshaus der Schläger. Die Schläger im Gebiet sind zunächst neutral, und die Geheimtür wurde mit der Xaositekten-Quest verbunden. Diese Komponente ist nur für PST:EE verfügbar. Für das klassische PS:T werden diese Probleme in Qwinns PS:T Fixpack gelöst.</p></li>
           <li><p><strong>Wiederhergestellt: Zauberschlüssel:</strong> Stellt einige „Zauberschlüssel‟-Artefakte wieder her, die verhindern sollen, dass Zauber des Namenlosen in den äußeren Ebenen oder anderen speziell abgeschirmten Orten misslingen.</p></li>
           <li><p><strong>Erweiterte Wahrheit über Deionarras Schicksal:</strong> Fügt eine Menge neuer Inhalte hinzu, die sich mit dem Schicksal von Deionarra beschäftigen (ca. 180 neue Dialogzeilen). Nach einer bestimmten Quest werden weitere 30-40 Zeilen freigeschaltet. Diese Komponente gehört nicht zur empfohlenen Auswahl, da sie einige neue Inhalte hinzufügt, die sich nicht in den originalen Spieldateien befinden.</p></li>
-          <li><p><strong>Wiederhergestellt: Cheat-Gegenstände (nicht empfohlen):</strong> Stellt zwei Cheat-Gegenstände und deren Funktionalität wieder her: das Schwert des Wh'ynn - auch bekannt als die Betrügerklinge, und das Almanach der Betrügereien.</p></li>
+          <li><p><strong>Wiederhergestellt: Cheat-Gegenstände (nicht empfohlen):</strong> Stellt zwei Cheat-Gegenstände und deren Funktionalität wieder her: das Schwert des Wh'ynn - auch bekannt als die Betrügerklinge, und das Almanach der Betrügereien. Reaktiviert die Debugkonsole im originalen Spiel (experimentell, weitere Details im "Komponenten"-Abschnitt).</p></li>
           <li><p><strong>Verschiedene Wiederherstellungen und Verbesserungen:</strong> Installiert verschiedene Wiederherstellungen und Verbesserungen, die entweder zu klein für eigene Komponenten sind oder nicht direkt auf gestrichene Inhalte des Spiels basieren.</p></li>
         </ol>
         <hr class="spacer" />
@@ -301,6 +301,9 @@
               <p>Das Restoration Pack sollte auch einige der Optionen des Almanachs der Betrügereien aktivieren, tat dies aber nicht. Die Unfinished Business-Version hingegen schon. Und es wird das Spiel trivial einfach machen, weshalb ich es nicht weiterempfehle (außer für Modder, die ihre Mods testen wollen, was der einzige Grund ist, warum ich mir die Mühe gemacht habe, es wiederherzustellen). Die Cheats, die in der UB-Version 1 des Almanachs der Betrügereien verfügbar sind, sind der Teleport-Cheat, „Überall rasten‟-Cheat, Reichtum-Cheat, „Attribut ändern‟-Cheat, Sterben-Cheat, Erfahrungspunkte-Cheat, „Wort des Guten und Bösen‟-Cheat und „Wort des Rechtschaffenen und Chaotischen‟-Cheat.</p>
               <p>Es gibt zwei Dinge, die man über das Almanach der Betrügereien wissen sollte. Eines davon ist, dass Qwinns PS:T Tweak Pack auch einen „Almanach der Betrügereien‟-Tweak enthält, mit dem Unterschied, dass man mit dem Tweak Pack das Spiel mit dem Almanach der Betrügereien in seinem Besitz startet, während man in diesem Teil warten muss, bis man irgendwann Vrischika trifft (wie es... *hust*... „beabsichtigt‟ war) und den Almanach kaufen kann (und er ist... ziemlich teuer bei ihr). Die andere Sache ist, dass dies nichts mit Platters Tome o' Cheat Mod zu tun hat, den ich noch nie heruntergeladen oder gesehen habe. Der Dialog, den ihr seht, wenn ihr das Buch verwendet, ist vollständig von Qwinn verfasst. Das Gespräch mit Vrischika über das Buch ist das, was in den Originaldateien enthalten war. Das Einzige, was ich dort leicht modifiziere, ist die Auflistung der im Almanach verfügbaren Cheats.</p>
             </blockquote>
+            <p><strong>Originales PST:</strong></p>
+            <p>Ursprünglich wurde die Debugkonsole deaktiviert, da sie das Spiel leicht zum Absturz bringen kann. Diese Komponente reaktiviert die Debugkonsole (mit freundlicher Genehmigung von Bubb) und bindet sie an das Tastaturkürzel für Standortinformationen ("Location").</p>
+            <p>Taste 'L' aktiviert das Konsolenpanel. Falls das Tastaturkürzel für Standortinformationen auf eine andere Taste gelegt wurde, dann muss diese Taste gedrückt werden. Weitere Informationen und eine Liste aller verfügbaren Konsolenbefehle können auf <a href="https://gibberlings3.github.io/iesdp/appendices/clua/pst.htm">IESDP</a> nachgelesen werden. Benutzung der Konsole auf eigene Gefahr.</p>
             <p><strong>PST:EE-Hinweise:</strong></p>
             <p>Das Spiel kommt bereits mit einer mächtigen Debugkonsole daher, die diese Komponente größtenteils überflüssig macht. Sie kann trotzdem nützlich sein, da die Cheats auf recht bequeme Weise in Dialogform präsentiert werden.</p>
           </li>
@@ -337,8 +340,9 @@
         </ul>
         <p><strong>Additional contributors:</strong></p>
         <ul>
-          <li>Qwinn's PS:T Fixpack for the Ratbone/Carver fix and the "Restored Tenement of Thugs" component.</li>
-          <li>Additional help by lujo.</li>
+          <li>Qwinn's PS:T Fixpack: For the Ratbone/Carver fix and the "Restored Tenement of Thugs" component.</li>
+          <li>Bubb: Patch for reactivating the debug console in original PST.</li>
+          <li>lujo: Additional help.</li>
         </ul>
         <hr class="spacer" />
         <h3>Original PS:T Unfinished Business</h3>
@@ -367,6 +371,16 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
+        <h6>Version 2.2</h6>
+        <ul>
+          <li>Component "Restored Item Cheats (Not Recommended)" reactivates the debug console in original PST (by Bubb)</li>
+          <li>Added Mebbeth's store providing an option to raise dead party members to component "Miscellaneous Restorations and Improvements"</li>
+          <li>Improved cutscene in "Miscellaneous Restorations and Improvements"</li>
+          <li>Added workarounds for buggy game timers</li>
+          <li>Fixed character encoding of Chinese setup lines</li>
+          <li>Fixed typos in the readme</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 2.1</h6>
         <ul>
           <li>Updated Polish translation (thanks memory)</li>

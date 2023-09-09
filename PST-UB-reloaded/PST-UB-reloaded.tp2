@@ -373,6 +373,7 @@ LABEL ~A7-PST-UB-RELOADED-RESTORED_CHEAT_ITEMS~
 REQUIRE_PREDICATE GAME_IS ~pst pstee~ @50 // ~Requires Planescape Torment or Planescape Torment: Enhanced Edition~
 COPY_EXISTING ~SCALPEL.itm~ ~override/Q!CITEMS.xxx~
 INCLUDE ~%MOD_FOLDER%/CheatItems/tph/CheatItems.tph~
+INCLUDE ~%MOD_FOLDER%/CheatItems/tph/DebugConsole.tph~
 
 
 BEGIN @27 // Miscellaneous Restorations and Improvements
