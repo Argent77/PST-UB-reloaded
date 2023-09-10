@@ -82,7 +82,7 @@
           <li><p><strong>Restaurado o Cortiço dos Bandidos:</strong> Adiciona mais oportunidades de RPG na área do Cortiço dos Bandidos tornando os bandidos inicialmente neutros e incluindo a porta secreta na frase da missão dos Xaositects. Este componente só está disponível no PST:EE. No PST clássico estes problemas são consertados pelo Fixpack do PS:T do Qwinn.</p></li>
           <li><p><strong>Chaves dos Feitiços Restauradas:</strong> Restaura um número de artefatos "chaves de feitiços" os quais impedirão feitiços lançados pelo Nameless One de darem errado nos Planos Exteriores e outros lugares especialmente protegidos.</p></li>
           <li><p><strong>Mod Expandido da Verdade sobre Deionarra:</strong> Adiciona uma grande quantidade de conteúdo novo (incluindo 180 novas frases de diálogo) que permitirá ao jogador descobrir o destino dela antes que seja tarde demais pra fazer qualquer coisa a respeito. Uma vez que o novo conteúdo foi iniciado, por volta de mais de 30-40 frases de diálogo originais se tornarão acessíveis.</p></li>
-          <li><p><strong>Itens de Trapaça Restaurados (Não Recomendado):</strong> Torna dois itens de trapaça disponíveis para o jogador e restaura as funções deles: a "Espada de Wh'ynn" - também conhecida como a "A Espada do Trapaceiro" e o "O Tomo das Trapaças".</p></li>
+          <li><p><strong>Itens de Trapaça Restaurados (Não Recomendado):</strong> Torna dois itens de trapaça disponíveis para o jogador e restaura as funções deles: a "Espada de Wh'ynn" - também conhecida como a "A Espada do Trapaceiro" e o "O Tomo das Trapaças". Reativa o console do debug no jogo original (experimental, veja o capítulo "Componentes do Mod) pra mais detalhes).</p></li>
           <li><p><strong>Restaurações e Melhorias Mistas:</strong> Instala várias restaurações e melhorias as quais são muito pequenas pra garantir seus próprios componentes ou não são estritamente baseadas no conteúdo cortado.</p></li>
         </ol>
         <hr class="spacer" />
@@ -301,8 +301,11 @@
               <p>O Pacote de Restauração também clamava ativar algumas das opções do Tomo das Trapaças mas de fato não fazia. A versão do Unfinished Business contudo, ativa. E tornará o jogo trivialmente fácil o qual é por que eu não recomendo ele (exceto por modders procurando testar os mods deles, o qual é a única razão pela qual eu me incomodei em fazê-lo). As Trapaças disponíveis no Tomo das Trapaças da versão 1 do UB são a Trapaça do Tele-Transporte, Trapaça pra Descansar em Qualquer Lugar, Trapaça da Riqueza, Trapaça da Pontuação dos Atributos, Trapaça da Morte, Trapaça da Experiência, Trapaça da Palavra do Bem e do Mal e Trapaça da Palavra da Lei e do Caos.</p>
               <p>Duas coisas de nota sobre o Tomo das Trapaças. Uma é que o PS:T Tweak Pack do Qwinn também contém uma melhoria do Tomo das Trapaças, a diferença sendo que com o mod do Tweak Pack você começa o jogo com o Tomo das Trapaças na sua posse enquanto neste componente você tem que esperar até chegar na Vrischika (como era... *cough*... "pretendido") um caminho bem longe no jogo antes que você consiga comprar o Tomo (e é... bem caro, dela). A outra coisa de nota é que isto não tem -nada- a ver com o mod do Tomo das Trapaças do Platter o que eu nunca baixei ou vi. O diálogo que você vê quando você usa o livro é inteiramente autoral, do Qwinn. A conversa com a Vrischika sobre o livro é o que estava contido nos arquivos originais e a única coisa lá que eu modifico levemente é a listagem das trapaças disponíveis no Tomo.</p>
             </blockquote>
+            <p><strong>Original do PST:</strong></p>
+            <p>Originalmente o console do debug foi desativado já que ele pode facilmente causar um crash no jogo. Este componente aplica um patch no executável do jogo pra reativar o console do debug e o associa com a tecla de atalho do "Local" (pela cortesia do Bubb).</p>
+            <p>Pressione 'L' pra ativar o painel do console. Se você remapeou a tecla de atalho do "Local" pra algo mais, pressione essa tecla ao invés disso. Mais informações assim como uma lista de comandos de trapaça disponíveis podem ser achadas em <a href="https://gibberlings3.github.io/iesdp/appendices/clua/pst.htm">IESDP</a>. Use por sua conta e risco.</p>
             <p><strong>Notas do PST:EE:</strong></p>
-            <p>O jogo já vem com um poderoso console de debug que torna este componente grandemente redundante. Apesar disso ainda poderia ser útil já que muitas trapaças são convenientemente apresentadas como opções de diálogo.</p>
+            <p>O jogo já vem com um poderoso console de debug que torna este componente altamente redundante. Apesar disso ainda poderia ser útil já que muitas trapaças são convenientemente apresentadas como opções de diálogo.</p>
           </li>
           <li>
             <p><strong>Restaurações e Melhorias Mistas</strong></p>
@@ -310,6 +313,7 @@
             <p>Atualmente as seguintes adições estão instaladas:</p>
             <ul>
               <li>Uma cena que apropriadamente toma conta dos companheiros quando o Nameless One alcança o fim da sua jornada.</li>
+              <li>Adiciona a opção de cura "Ressuscitar os Mortos" na loja da Mebbeth como não há outras opções pra ressuscitar os membros mortos do grupo na Colméia se o The Nameless One não aprendeu a habilidade de "Ressuscitar os Mortos" da Deionarra.</li>
             </ul>
           </li>
         </ol>
@@ -336,9 +340,9 @@
         </ul>
         <p><strong>Contribuidores adicionais:</strong></p>
         <ul>
-          <li>Fixpack do Qwinn pro PS:T para o conserto do Ratbone/Carver e o componente "Restaurado o Cortiço dos Bandidos".</li>
-          <li>Bubb: Patch for reactivating the debug console in original PST.</li>
-          <li>Ajuda adicional do lujo.</li>
+          <li>Fixpack do Qwinn pro PS:T: Para o conserto do Ratbone/Carver e o componente "Restaurado o Cortiço dos Bandidos".</li>
+          <li>Bubb: Patch pra reativar o console do debug no PST original.</li>
+          <li>lujo: Ajuda adicional.</li>
         </ul>
         <hr class="spacer" />
         <h3>PS:T Unfinished Business Original</h3>
@@ -366,83 +370,83 @@
 
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
-        <h2>Version History</h2>
-        <h6>Version 2.2</h6>
+        <h2>Histórico das Versões</h2>
+        <h6>Versão 2.2</h6>
         <ul>
-          <li>Component "Restored Item Cheats (Not Recommended)" reactivates the debug console in original PST (by Bubb)</li>
-          <li>Added Mebbeth's store providing an option to raise dead party members to component "Miscellaneous Restorations and Improvements"</li>
-          <li>Improved cutscene in "Miscellaneous Restorations and Improvements"</li>
-          <li>Added workarounds for buggy game timers</li>
-          <li>Fixed character encoding of Chinese setup lines</li>
-          <li>Fixed typos in the readme</li>
+          <li>O Componente "Itens de Trapaça Restaurados (Não Recomendado)" reativa o console do debug no PST original (do Bubb)</li>
+          <li>Adicionada uma opção na loja da Mebbeth pra ressuscitar os membros do grupo no componente "Restaurações e Melhorias Mistas"</li>
+          <li>Cena melhorada nas "Restaurações e Melhorias Mistas"</li>
+          <li>Adicionadas soluções alternativas pros cronòmetros bugados do jogo</li>
+          <li>Consertada a codificação dos caracteres das frases do setup chinês</li>
+          <li>Erros de digitação do readme consertados</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 2.1</h6>
+        <h6>Versão 2.1</h6>
         <ul>
-          <li>Updated Polish translation (thanks memory)</li>
+        <li>Tradução pro Polonês atualizada (Obrigado memory)</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 2.0</h6>
+        <h6>Versão 2.0</h6>
         <ul>
-          <li>Added new component: Restored Spell Keys</li>
-          <li>Added new component: Miscellaneous Restorations and Improvements</li>
-          <li>Added Brazilian Portuguese readme (thanks Felipe)</li>
-          <li>Added component labels for Project Infinity</li>
+          <li>Adicionado um novo componente: Chaves dos Feitiços Restauradas</li>
+          <li>Adicionado um novo componente: Restaurações e Melhorias</li>
+          <li>Adicionado o readme do Português Brasileiro (obrigado Felipe)</li>
+          <li>Adicionados os rótulos dos componente ao Project Infinity</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 1.5</h6>
+        <h6>Versão 1.5</h6>
         <ul>
-          <li>Added new component "Restored Tenement of Thugs" for PST:EE</li>
-          <li>Converted readmes into html format</li>
-          <li>Updated Spanish translation (thanks SrReddy)</li>
-          <li>Updated Italian translation</li>
-          <li>Updated Brazilian Portuguese translation</li>
-          <li>Added Project Infinity metadata</li>
-          <li>Added WeiDU SUPPORT information</li>
-          <li>Fixed potential display issues with component names in WeiDU.log and Project Infinity</li>
+          <li>Adicionado um novo componente "Cortiço dos Bandidos Restaurado" for PST:EE</li>
+          <li>Converti os readmes pro formato html</li>
+          <li>Atualizada a tradução pro Espanho (obrigado SrReddy)</li>
+          <li>Atualizada a tradução pro Italiano</li>
+          <li>Atualizada a tradução pro Português Brasileiro</li>
+          <li>Adicionados os metadados do Project Infinity</li>
+          <li>Adicionada a informação de suporte do WeiDU</li>
+          <li>Consertados os problemas de exibição potenciais com os nomes dos componentes no WeiDU.log e Project Infinity</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 1.4</h6>
+        <h6>Versão 1.4</h6>
         <ul>
-          <li>Added Simplified Chinese translation (thanks Hindo's Doom and Mephisto Satan Devil)</li>
-          <li>Fixed a bug that may cause installation to fail under certain circumstances</li>
+          <li>Adicionada a tradução pro Chinês Simplificado (obrigado Hindo's Doom e Mephisto Satan Devil)</li>
+          <li>Consertado um bug que pode fazer a instalação falhar sob certas circumstâncias</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 1.3</h6>
+        <h6>Versão 1.3</h6>
         <ul>
-          <li>Updated Russian translation (thanks Eugene Vlasov)</li>
-          <li>Improved compatibility of Alu-fiend bestiary image with other mods</li>
-          <li>Replaced readme.txt by readme.html (English only)</li>
+          <li>Atualizada a tradução pro Russo (obrigado Eugene Vlasov)</li>
+          <li>Melhorei a compatibilidade da imagem do bestiário do Alu-fiend com outros mods</li>
+          <li>Substituí o readme.txt pelo readme.html (Só em Inglês)</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 1.2</h6>
+        <h6>Versão 1.2</h6>
         <ul>
-          <li>Updated Polish translation and added readme (thanks memory)</li>
-          <li>Updated Russian translation (thanks Eugene Vlasov)</li>
-          <li>Changed encoding of Russian setup.tra from CP855 to CP866</li>
+          <li>Atualizada a tradução pro Polonês e adicionado o readme (obrigado memory)</li>
+          <li>Atualizada a tradução pro Russo (obrigado Eugene Vlasov)</li>
+          <li>Mudei a codificação do setup.tra Russo de CP855 pra CP866</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 1.1</h6>
+        <h6>Versão 1.1</h6>
         <ul>
-          <li>Added Brazilian Portuguese translation (thanks Felipe)</li>
-          <li>Fixed various typos</li>
+          <li>Adicionada a tradução pro Português Brasileiro (obrigado Felipe)</li>
+          <li>Vários erros de digitação consertados</li>
         </ul>
         <hr class="spacer" />
-        <h6>Version 1.0 (Initial release)</h6>
+        <h6>Versão 1.0 (Lançamento inicial)</h6>
         <ul>
-          <li>Cleaned up and modernized WeiDU code of the mod</li>
-          <li>Made content from PS:T Unfinished Business v4.12 available to PST:EE</li>
-          <li>Added new component "Restored Lothar's Abode": Restores creature "Ghoul Stone Golem" and item "Bone Ward" to Lothar's home in the Lower Ward</li>
-          <li>Added an improved alu-fiend image intended for Vrischika to the bestiary in PST:EE ("Restored Bestiary Entries")</li>
-          <li>Fixed a container polygon in the Festhall Private Quarters that overlapped the blocking door polygon. It allowed the player to access the content prematurely, in both PST and PST:EE ("Expanded Deionarra's Truth mod")</li>
-          <li>Restored a generic acoustic feedback when copying spells to the spellbook in PST:EE ("Restored Party Comments and Banters")</li>
-          <li>Fixed dialog conditions of fiends in SCB to return the pendant only after making a deal with them ("Restored Pendant of Yemeth Quest")</li>
-          <li>Resolved a dead end if the party entered the Mausoleum without an empty purse in their possession ("Restored Candlestick Quest")</li>
-          <li>Moved a portal to a more appropriate location ("Restored Candlestick Quest")</li>
-          <li>Turned "Restored More Morte Mortuary Moments" into two subcomponents: Install "Everything" or "Comments only"</li>
-          <li>Added more items ("Restored Items")</li>
-          <li>Updated French translation and added readme (thanks mirandir)</li>
-          <li>Updated German translation and added readme</li>
+          <li>Código do mod do WeiDU limpo e modernizado</li>
+          <li>Tornei o conteúdo do PS:T Unfinished Business v4.12 disponível pro PST:EE</li>
+          <li>Adicionado um novo componente "Residência do Lothar Restaurada": Restaura a criatura "Golem de Pedra Ghoul" e o item "Bone Ward" na casa do Lothar na Ala Inferior</li>
+          <li>Adicionada uma imagem melhorada do Alu-Fiend pretendida pra Vrischika ao bestiário no PST:EE ("Entradas do Bestiário Restauradas")</li>
+          <li>Consertado um polígono do contêiner nos Quartos Privados do Festhall que se sobreporam ao polígono da porta bloqueada. Ele permitia ao jogador acessar o conteúdo prematuramente em ambos o PST e no PST:EE ("Mod Expandido da Verdade sobre Deionarra")</li>
+          <li>Restaurei um feedback acústico genérico quando copiar os feitiços pro livro de feitiços no PST:EE ("Comentários e Conversas do Grupo Restauradas")</li>
+          <li>Consertei as condições dos diálogos dos demônios no SCB pra retornar o pingente só após fazer um acordo com eles ("Missão do Pingente de Yemeth Restaurada")</li>
+          <li>Resolvi um beco sem saída se o grupo entrasse no Mausoléu sem uma bolsa vazia na posse deles ("Missão do Candelabro Restaurada")</li>
+          <li>Movi um portal pra um local mais apropriado ("Missão do Candelabro Restaurada")</li>
+          <li>Tranformou o "Restaurados Mais Momentos do Morte no Necrotério" em dois sub-componentes: Instalar "Tudo" ou "Só os Comentários"</li>
+          <li>Mais itens adicionados ("Itens Restaurados")</li>
+          <li>Atualizada a tradução pro Francês e foi adicionado o readme (obrigado mirandir)</li>
+          <li>Atualizada a tradução pro Alemão e foi adicionado o readme</li>
         </ul>
         <div class="back">
           <a class="novisit" href="#top">DE VOLTA AO TOPO</a>
