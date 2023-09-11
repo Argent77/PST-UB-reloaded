@@ -32,7 +32,7 @@
         <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/553-pst-ub/">SHS</a>)</li>
         <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/comment/938523">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/PST-UB-reloaded">Project</a></li>
-        <li>Version: 2.1</li>
+        <li>Version: 2.2</li>
       </ul>
       <hr />
       <nav>
@@ -82,7 +82,7 @@
           <li><p><strong>Restored Tenement of Thugs:</strong> Adds more roleplay opportunities to the Tenement of Thugs area by making the thugs initially neutral and including the secret door in the Xaositects quest line. This component is only available for PST:EE. For classic PST these issues are fixed by Qwinn's PS:T Fixpack.</p></li>
           <li><p><strong>Restored Spell Keys:</strong> Restores a number of "spell key" artifacts which will prevent spells cast by TNO from going awry in the Outer Planes and other specially shielded places.</p></li>
           <li><p><strong>Expanded Deionarra's Truth Mod:</strong> Adds a great deal of new content (including 180 new lines of dialogue) that will allow the player to find out her fate before it becomes too late to do anything about it. Once the new content has been played, about 30-40 more lines of original dialogue will become accessible.</p></li>
-          <li><p><strong>Restored Item Cheats (Not Recommended):</strong> Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".</p></li>
+          <li><p><strong>Restored Item Cheats (Not Recommended):</strong> Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats". Reactivates the debug console in the original game (experimental, see "Mod Components" chapter for more details).</p></li>
           <li><p><strong>Miscellaneous Restorations and Improvements:</strong> Installs various restorations and improvements which are either too small to warrant their own components, or aren't strictly based on cut content.</p></li>
         </ol>
         <hr class="spacer" />
@@ -301,6 +301,9 @@
               <p>Restoration Pack also claimed to enable some of the Tome o' Cheats options, but did not in fact do so. The Unfinished Business version, however, does. And it will make the game trivially easy, which is why I don't recommend it (except for modders looking to test their mods, which is the only reason I bothered to make it). The Cheats available in the UB version 1 Tome of Cheats are the Teleport Cheat, Rest Anywhere Cheat, Wealth Cheat, Attribute Score Cheat, Death Cheat, Experience Cheat, Word 'o Good and Evil Cheat, and Word o' Law and Chaos Cheat.</p>
               <p>Two things of note about the Tome o' Cheats. One is that Qwinn's PS:T Tweak Pack also contains a Tome o' Cheats tweak, the difference being that with the Tweak Pack mod you start the game with the Tome o' Cheats in your possession, whereas in this component you have to wait until you get to Vrischika (as was... *cough*... "intended") a fair ways into the game before you can buy the Tome (and it's... rather expensive from her). The other thing of note is that this has -nothing- to do with Platter's Tome o' Cheat mod, which I've never even downloaded or seen. The dialog you see when you use the book is entirely authored by Qwinn. The conversation with Vrischika about the book is what was contained in the original files, and the only thing there that I modify slightly is the listing of the cheats available in the Tome.</p>
             </blockquote>
+            <p><strong>Original PST:</strong></p>
+            <p>Originally the debug console was disabled since it can easily crash the game. This component patches the game executable to reactivate the debug console and binds it to the "Location" hotkey (by courtesy of Bubb).</p>
+            <p>Press 'L' to activate the console panel. If you remapped the "Location" hotkey to something else, press that key instead. More information as well as a list of available cheat commands can be found on <a href="https://gibberlings3.github.io/iesdp/appendices/clua/pst.htm">IESDP</a>. Use at your own risk.</p>
             <p><strong>PST:EE notes:</strong></p>
             <p>The game already comes with a powerful debug console that makes this component largely redundant. It might still be useful though, since many cheats are conveniently presented as dialog options.</p>
           </li>
@@ -310,6 +313,7 @@
             <p>Currently the following additions are installed:</p>
             <ul>
               <li>A cutscene that properly takes care of the companions when The Nameless One reaches the end of his journey.</li>
+              <li>Adds the "Raise Dead" cure option to Mebbeth's store, as there are no other options to raise dead party members in the Hive if TNO didn't learn the "Raise Dead" ability from Deionarra.</li>
             </ul>
           </li>
         </ol>
@@ -336,8 +340,9 @@
         </ul>
         <p><strong>Additional contributors:</strong></p>
         <ul>
-          <li>Qwinn's PS:T Fixpack for the Ratbone/Carver fix and the "Restored Tenement of Thugs" component.</li>
-          <li>Additional help by lujo.</li>
+          <li>Qwinn's PS:T Fixpack: For the Ratbone/Carver fix and the "Restored Tenement of Thugs" component.</li>
+          <li>Bubb: Patch for reactivating the debug console in original PST.</li>
+          <li>lujo: Additional help.</li>
         </ul>
         <hr class="spacer" />
         <h3>Original PS:T Unfinished Business</h3>
@@ -366,6 +371,16 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Version History</h2>
+        <h6>Version 2.2</h6>
+        <ul>
+          <li>Component "Restored Item Cheats" reactivates the debug console in original PST (by Bubb)</li>
+          <li>Added Mebbeth's store providing an option to raise dead party members to component "Miscellaneous Restorations and Improvements"</li>
+          <li>Improved cutscene in "Miscellaneous Restorations and Improvements"</li>
+          <li>Added workarounds for buggy game timers</li>
+          <li>Fixed character encoding of Chinese setup lines</li>
+          <li>Fixed typos in the readme</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 2.1</h6>
         <ul>
           <li>Updated Polish translation (thanks memory)</li>
