@@ -85,7 +85,7 @@ Restores a number of "spell key" artifacts which will prevent spells cast by The
 Adds a great deal of new content (including 180 new lines of dialogue) that will allow the player to find out her fate before it becomes too late to do anything about it. Once the new content has been played, about 30-40 more lines of original dialogue will become accessible.
 
 ### 22. Restored Item Cheats (Not Recommended)
-Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats".
+Makes two cheat items available to the player and restores their functions: the "Sword of Wh'ynn" - aka "The Cheater's Blade", and "The Tome o' Cheats". Reactivates the debug console in the original game.
 
 ### 23. Miscellaneous Restorations and Improvements
 Installs various restorations and improvements which are either too small to warrant their own components, or aren't strictly based on cut content.
