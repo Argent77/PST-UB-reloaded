@@ -8,7 +8,7 @@
 
 COMPILE ~%MOD_FOLDER%/CurstPrisoners/dlg/CurstPrisoners.d~
 
-STRING_SET 57437 ~Kemak~
+STRING_SET 57437 @57437 // Kemak
 COPY_EXISTING ~KENAK.CRE~ ~override/KEMAK.CRE~
   WRITE_LONG 0x8 57437 // Kemak
   WRITE_LONG 0xc 57437 // Kemak
