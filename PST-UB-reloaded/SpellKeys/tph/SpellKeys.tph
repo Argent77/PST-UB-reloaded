@@ -4,11 +4,13 @@
 INCLUDE ~%MOD_FOLDER%/SpellKeys/tph/Functions.tph~
 INCLUDE ~%MOD_FOLDER%/utils/A7_PSTEEFunctions.tph~
 
-// Spells for applying and removing the antimagic effect
-COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1.SPL~ ~override~
-  SAY NAME1 ~Spell Failure~
-COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1D.SPL~ ~override~
-  SAY NAME1 ~Remove Spell Failure~
+WITH_TRA ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~ BEGIN
+  // Spells for applying and removing the antimagic effect
+  COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1.SPL~ ~override~
+    SAY NAME1 @1004 // Spell Failure
+  COPY ~%MOD_FOLDER%/SpellKeys/copy/A7SPAM1D.SPL~ ~override~
+    SAY NAME1 @1005 // Remove Spell Failure
+END
 
 COMPILE ~%MOD_FOLDER%/SpellKeys/dlg/antimagic_pstee.d~
   USING ~%DEFAULT_LANG_FOLDER%/SpellKeys.tra~ ~%LANG_FOLDER%/SpellKeys.tra~

@@ -67,7 +67,7 @@
 @504 = ~Du greifst nach dem Schalter und legst ihn um. Zu deiner Überraschung löst sich eine gut getarnte Platte und bringt einen versteckten Behälter zum Vorschein.~
 
 
-// Items
+// Items and spells
 @1000 = ~Zauberschlüssel Limbos~
 @1001 = ~ZAUBERSCHLÜSSEL LIMBOS
 Gewicht: 0
@@ -78,6 +78,8 @@ Dieses Symbol Limbos ist in ein Stück Menschenfleisch eingeritzt. Er riecht met
 Gewicht: 0
 
 Dieses Symbol der Außenländer ist in ein Stück Menschenfleisch eingeritzt. Er hat einen unauffälligen Geruch, fühlt sich aber wie ein feuchtes Stück Stoff an. Solang du ihn bei dir trägst, verhindert er ein Mißlingen deiner Zauber, während du dich irgendwo in den Außenländern aufhältst.~
+@1004 = ~Zauberausfall~
+@1005 = ~Entferne Zauberausfall~
 
 
 // Journal entries

@@ -67,7 +67,7 @@
 @504 = ~You reach for the switch and flip it. To your surprise a well disguised panel comes loose and reveals a hidden cache.~
 
 
-// Items
+// Items and spells
 @1000 = ~Limbo Spell Key~
 @1001 = ~LIMBO SPELL KEY
 Weight: 0
@@ -78,6 +78,8 @@ This symbol of Limbo is inscribed upon a piece of human flesh. It has a metallic
 Weight: 0
 
 This symbol of the Outlands is inscribed upon a piece of human flesh. It has an unremarkable smell, yet it feels like a wet piece of cloth. As long as you carry it on your person, it will prevent your spells from going awry while anywhere in the Outlands.~
+@1004 = ~Spell Failure~
+@1005 = ~Remove Spell Failure~
 
 
 // Journal entries
