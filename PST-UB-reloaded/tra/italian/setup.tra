@@ -5,8 +5,8 @@
 @5 = ~Ripristinate le conversazioni di Deionnara sulla Verita~
 @6 = ~Ripristinato la missione del ciondolo di Yemeth~
 @7 = ~Ripristinata l'azienda Elyce~
-@8 = ~Ripristinati alcuni cittadini di Curst~
-@9 = ~Ripristinati alcuni prigionieri di Curst~
+@8 = ~Ripristinati alcuni cittadini di Esecrata~
+@9 = ~Ripristinati alcuni prigionieri di Esecrata~
 @10 = ~Ripristinato Carl Parfidor~
 @11 = ~Ripristinati i dialoghi dei denti tra Morte e Ingress~
 @12 = ~Ripristinati i teppisti del Vicolo degli Angoli Pericolosi~
@@ -19,38 +19,13 @@
 @19 = ~Ripristinata la dimora di Lothar~
 @20 = ~Ripristinata Mebbeth~
 @21 = ~Estesa la mod di Deionnara sulla Verita~
-@22 = ~Ripristinati incontri nel Distretto Inferiore~
-@23 = ~Caseggiato dei Teppisti Ripristinato~
+@22 = ~Ripristinati gli incontri nel Distretto Inferiore~
+@23 = ~Ripristinato il Caseggiato dei Teppisti~
 
-@25 = ~Ripristinate registrazioni del Bestiario~
+@25 = ~Ripristinate le Registrazioni del Bestiario~
+@26 = ~Ripristinate le Chiavi della Trama~
+@27 = ~Ripristini e Miglioramenti vari~
 
 @50 = ~Richiede Planescape Torment o Planescape Torment: Enhanced Edition!~
 @51 = ~Richiede Planescape Torment: Enhanced Edition!~
 
-@-1000 = ~Il mod %TP2_FILE_NAME ha~
-@-1001 = ~diversi componenti opzionali. \nPer risparmiare tempo, puoi scegliere cosa fare per l'insieme dei componenti\npiuttosto che decidere per ognuno singolarmente.\n~
-@-1002 = ~Cosa desideri fare con tutti i componenti che NON SONO ANCORA stati installati?\n[I]nstallali, [S]Tralasciali, [A]Chiedi per ognuno? ~
-@-1003 = ~Cosa desideri fare con tutti i componenti che SONO GIA' stati installati?\n[R]e-installali, [U]Disinstallali, [S]Tralasciali, [A]Chiedi per ognuno? ~
-@-1004 = ~PER FAVORE spedisci via e-mail il file~
-@-1005 = ~a~
-@-1006 = ~Installa ~
-@-1007 = ~?
-[R]e-Installa, [N]essun Cambiamento o [U]Disinstalla o [Q]Esci? ~
-@-1008 = ~?
-[I]nstalla, o [N]on installare o [Q]Esci? ~
-@-1009 = ~Inserisci una parte del nome del modulo: ~
-@-1010 = ~Re-installazione in corso [~
-@-1011 = ~] componente ~
-@-1012 = ~Re-Installazione in corso Usando Lingua~
-@-1013 = ~RImozione della vecchia installazione di [~
-@-1014 = ~] primo...~
-@-1015 = ~RIMOZIONE AVVENUTA CON SUCCESSO~
-@-1016 = ~Installazione in corso~
-@-1017 = ~ERRORE di Installazione [~
-@-1018 = ~], ripristino stato precedente~
-@-1019 = ~INSTALLAZIONE AVVENUTA CON SUCCESSO~
-@-1020 = ~Tralasciato ~
-@-1021 = ~Rimozione in corso [~
-@-1022 = ~] (componente #~
-@-1023 = ~)~
-@-1024 = ~RIMOZIONE AVVENUTA CON SUCCESSO [~

@@ -1,0 +1,93 @@
+// Deionarra dialog
+@0 = ~"Questo posto sopprime tutte le energie che non sono di questo piano. Se ti affidi a incantesimi o magie per difenderti, sicuramente cadrai." Continua con insistenza. "Cerca gli indizi che hai lasciato dietro di te quando hai visitato questo posto l'ultima volta."~
+
+
+// Fhjull dialog
+@50 = ~"C'è qualcos'altro di cui devo essere a conoscenza a Baator?"~
+@51 = ~"Potrebbe essere che la tua magia sia disturbata in quel posto. Ma qualcuno della tua... statura non dovrebbe avere problemi ad attraversare le pianure indisturbato."~
+@52 = ~"Puoi spiegarmelo meglio?"~
+@53 = ~"Se insisti? Feh! I Piani Esterni potrebbero essere troppo lontani dalla fonte della magia per qualcuno come te, a meno che..."~
+@54 = ~"A meno che cosa?"~
+@55 = ~"A meno che tu non possegga una "chiave" per concentrarti sulle energie magiche."~
+@56 = ~"Hai una chiave del genere?"~
+@57 = ~"Eh? Sì, potrebbe essere che qualcosa del genere sia in giro da qualche parte qui."~
+@58 = ~"Per favore, dammela!"~
+@59 = ~"Feh! Certo, eccola qui. In quale altro modo potrei servirti?"~
+@60 = ~"Feh! Certo..."~
+@61 = ~"Tre volte dannato! L'hai già presa? I giovani non rispettano più gli anziani. Ma almeno mi risparmia di doverti dimostrare di più della mia *generosità*."~
+
+
+// Modron Engineer dialog
+@100 = ~"Ho bisogno di una chiave per far funzionare i miei incantesimi in questo posto?"~
+@101 = ~"Ci sono pericoli per gli incantatori in questo posto?"~
+@102 = ~"Sì, Direttore. Può essere richiesta alla Guida del Rubikon."~
+@103 = ~"La Guida del Rubikon? Dove posso trovarla?"~
+@104 = ~"Sì, Direttore. È probabile che le connessioni con energie di origine esterna siano interrotte da questo posto."~
+@105 = ~"Significa che non posso lanciare incantesimi?"~
+@106 = ~"Affermativo."~
+@107 = ~"Come posso proteggermi da questo effetto?"~
+@108 = ~"È richiesta una chiave della trama per stabilizzare la connessione."~
+@109 = ~"Dove posso trovare questa chiave della trama?"~
+@110 = ~"Può essere richiesta alla Guida del Rubikon."~
+@111 = ~"Alla Guida del Rubikon è stato assegnato il compito di dare il benvenuto agli avventurieri. Lo si può trovare nella sezione d'ingresso del Costrutto del Dungeon Rubikon. Per ricevere una chiave della trama è necessaria una parola d'ordine."~
+@112 = ~"E qual è?"~
+@113 = ~"La parola d'ordine per richiedere una chiave della trama è 'Sguardo Stellare'."~
+@114 = ~"Non importa. Ho altre domande..."~
+@115 = ~"Capisco. Addio."~
+
+
+// Modron steward dialog
+@150 = ~"Mi è stato detto di riferirti la parola d'ordine 'Sguardo Stellare'."~
+@151 = ~La creatura sbatte le palpebre due volte prima di iniziare a emettere un basso ronzio che si attenua dopo un paio di secondi. Senza dire una parola, ti porge un pezzo di stoffa simile a un foglio di carta.~
+@152 = ~"Grazie, arrivederci."~
+
+
+// Pillar of Skulls dialog
+@200 = ~"Perché i miei incantesimi non funzionano nei piani senza una chiave della trama?"~
+@201 = ~"SEI DIVISO. IL TUO CORPO È DAVANTI A NOI, MA IL NUCLEO DELLA TUA ESISTENZA È BLOCCATO FUORI DAI PIANI. LE ENERGIE ARCANE RICHIEDONO UN CATALIZZATORE PER SVOLGERE I LORO EFFETTI. IL NUCLEO DELLA TUA ESISTENZA È UN CATALIZZATORE DEL GENERE. UNA CHIAVE DELLA TRAMA PUÒ AGIRE NELLO STESSO MODO."~
+@202 = ~"Ma perché non è vero per Sigil?"~
+@203 = ~"SIGIL È LA 'CITTÀ DELLE PORTE'." Le teste della colonna diventano progressivamente più silenziose finché non si possono sentire solo i lamenti occasionali delle singole teste.~
+@204 = ~"E?"~
+@205 = ~La colonna rimane in silenzio per un po'. Alla fine, le teste rivolgono di nuovo la loro attenzione su di te e parlano ancora una volta: "NON ABBIAMO PIÙ NULLA DA DIRE."~
+
+// Kitla dialog
+@250 = ~"C'è qualcosa di cui devo essere consapevole come incantatore, in questo luogo?"~
+@251 = ~Ti studia attentamente per un po'. "Forse c'è. Non sembri il solito tipo di persona dotata nell'Arte."~
+@252 = ~"Se i tuoi incantesimi non funzionano, allora devi trovare una chiave della trama. Può fungere come una specie di catalizzatore."~
+@253 = ~"Dove posso trovarne una?"~
+@254 = ~"Non lo so." Fa una pausa, pensando. "Potresti dare un'occhiata in giro. Potrebbe essercene una qui a Esecrata o da qualche parte nel sottosuolo."~
+
+
+// Interactive region
+@500 = ~"Colonna"~
+@501 = ~Sembra che il terreno attorno alla colonna sia leggermente smosso, come se qualcuno ci avesse camminato "di recente", forse negli ultimi anni. Una ricerca più approfondita rivela un piccolo interruttore su un lato della colonna.~
+@502 = ~Aziona l'interruttore.~
+@503 = ~Lascia stare l'interruttore.~
+@504 = ~Allunghi la mano verso l'interruttore e lo azioni. Con tua sorpresa, un pannello ben camuffato si rivela e mostra un deposito nascosto.~
+
+
+// Items and spells
+@1000 = ~Chiave della Trama del Limbo~
+@1001 = ~CHIAVE DELLA TRAMA DEL LIMBO
+Peso: 0
+
+Questo simbolo del Limbo è inciso su un pezzo di carne umana. Ha un odore metallico, ma al tatto è liscio, come il velluto. Finché lo porti con te, impedirà ai tuoi incantesimi di fallire mentre sei nel piano del Limbo.~
+@1002 = ~Chiave della Trama delle Terre Esterne~
+@1003 = ~CHIAVE DELLA TRAMA DELLE TERRE ESTERNE
+Peso: 0
+
+Questo simbolo delle Terre Esterne è inciso su un pezzo di carne umana. Ha un odore insignificante, ma al tatto è come un pezzo di stoffa bagnata. Finché lo porti con te, impedirà ai tuoi incantesimi di fallire mentre sei nelle Terre Esterne.~
+@1004 = ~Fallimento dell'Incantesimo~
+@1005 = ~Rimuovi Fallimento dell'Incantesimo~
+
+
+// Journal entries
+@1500 = ~Ho potuto acquisire una chiave della trama per il piano di Baator da "Fhjull Lingua Biforcuta. Secondo Fhjull, le chiavi della trama servono per impedire che i miei incantesimi falliscano mentre mi trovo sui Piani Esterni. Ogni piano sembra richiedere una chiave specifica.~
+@1510 = ~Kyse, il custode della discarica, mi ha lasciato una "chiave della trama" prima di sparire dal posto. Apparentemente è necessaria per impedire che i miei incantesimi falliscano mentre mi trovo sul piano di Carceri.~
+@1520 = ~Deionarra mi ha detto che la Fortezza dei Rimpianti è protetta dalle energie esterne, il che rende impossibile lanciare incantesimi in quel posto. Potrei scoprire di più dagli indizi lasciati dalle mie precedenti incarnazioni.~
+@1530 = ~Acquista la Chiave della Trama di Rubikon.~
+@1531 = ~L'ingegnere Modron mi ha detto che il modron nell'atrio è responsabile della fornitura di strumenti agli "avventurieri" che vengono a provare il Costrutto del Dungeon. Mi ha detto la parola d'ordine "Sguardo Stellare" che istruisce la guida di Rubikon a consegnare una chiave della trama. Questo oggetto è necessario per impedire che i miei incantesimi falliscano mentre mi trovo sul piano del Limbo, dove è stato creato il Costrutto del Dungeon di Rubikon.~
+@1532 = ~Il modron nell'atrio mi ha dato la chiave della trama per il piano del Limbo dopo avergli riferito la parola d'ordine giusta.~
+@1540 = ~La Colonna di Teschi mi ha rivelato che la mia incapacità di lanciare incantesimi nei piani è influenzata dalla mia immortalità. Il nucleo della mia esistenza, ovvero la mia mortalità, è necessario per lanciare incantesimi. Una chiave della trama può fungere da catalizzatore, finché la porto con me.~
+@1541 = ~La Colonna di Teschi mi ha rivelato che la mia incapacità di lanciare incantesimi nei piani è influenzata dalla mia immortalità. Il nucleo della mia esistenza, ovvero la mia mortalità, è necessario per lanciare incantesimi. Una chiave della trama può fungere da catalizzatore, finché la porto con me. Apparentemente questa restrizione non si applica a Sigil, ma la colonna non mi ha detto perché.~
+@1550 = ~Kitla mi ha detto che potrei aver bisogno di una "chiave della trama", che è una specie di catalizzatore, per evitare che i miei incantesimi falliscano a Esecrata o nel suo sottosuolo. Non sapeva dirmi dove trovarne una, quindi dovrei tenere gli occhi aperti.~
